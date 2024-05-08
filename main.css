@@ -42,6 +42,23 @@
 
 
 
+/* BANNER */
+
+.banner {
+    width: 100%; /* Defina a largura do banner para ocupar 100% da largura do cabeçalho */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Para garantir que a imagem seja exibida como bloco */
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
