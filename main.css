@@ -67,8 +67,12 @@ body {
 }
 
 
-
-
+/* Estilo CSS para centralizar o parágrafo */
+.centralizado {
+    width: 50%; /* Defina a largura desejada */
+    margin: 0 auto; /* Margens automáticas para centralizar */
+    font-size: 60px; /* Tamanho da fonte */
+}
 
 
 
