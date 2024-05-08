@@ -11,23 +11,24 @@
 }
 
 #menu-h ul {
-    /* Remova a largura máxima fixa */
-    /* max-width: 800px; */
+    /* Adicione uma largura máxima para o contêiner do menu */
+    max-width: 800px; /* Ou ajuste conforme necessário */
     list-style: none;
     padding: 0;
+    margin: 0 auto; /* Centralize o menu horizontalmente */
 }
 
 #menu-h ul li {
-    display: inline-block; /* Altere para 'inline-block' para permitir que os itens do menu ocupem toda a largura disponível */
+    display: inline-block;
 }
 
 #menu-h ul li a {
     color: #FFF;
     padding: 14px;
-    display: block; /* Altere para 'block' para que cada item de menu ocupe toda a largura disponível */
+    display: block;
     text-decoration: none;
     transition: background .4s;
-    text-align: center; /* Alinhe o texto centralmente */
+    text-align: center;
 }
 
 #menu-h ul li a:hover {
@@ -35,11 +36,12 @@
 }
 
 #menu-h ul li:last-child {
-    float: right; /* Alinhar o último item à direita */
+    /* Remova o float: right; */
+    margin-left: auto; /* Alinhe o último item à direita */
 }
 
 #menu-h ul li:last-child a {
-    background-color: rgb(0, 0, 0); /* Manter a cor de fundo do último item */
+    background-color: rgb(0, 0, 0);
 }
 
 /* BANNER */
