@@ -32,10 +32,22 @@
     background-color: rgb(0, 0, 0);
 }
 
-#menu-h ul li:last-child a {
-    float: left;
-    background-color: rgb(0, 0, 0);
+#menu-h ul li:last-child {
+    float: right; /* Alinhar o último item à direita */
 }
+
+#menu-h ul li:last-child a {
+    background-color: rgb(0, 0, 0); /* Manter a cor de fundo do último item */
+}
+
+
+
+
+
+
+
+
+
 /*rgb(24, 139, 233);*/
 
 
