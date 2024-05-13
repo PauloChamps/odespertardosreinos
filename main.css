@@ -7,24 +7,24 @@
 
 #menu-h {
     background-color: rgb(0, 0, 0);
-    overflow: auto; /* Para limpar floats */
+    overflow: auto;
 }
 
 #menu-h ul {
-    max-width: 1000px; /* Aumentei a largura máxima */
+    max-width: 1000px;
     list-style: none;
     padding: 0;
-    overflow: hidden; /* Para limpar floats */
+    white-space: nowrap; /* Impede a quebra de linha */
 }
 
 #menu-h ul li {
-    display: inline-block; /* Alterei para inline-block para que todos os itens permaneçam na mesma linha */
+    display: inline-block;
 }
 
 #menu-h ul li a {
     color: #FFF;
     padding: 14px;
-    display: block; /* Alterei para block para ocupar toda a largura do contêiner */
+    display: block;
     text-decoration: none;
     transition: background .4s;
 }
@@ -32,7 +32,7 @@
 #menu-h ul li a:hover {
     background-color: rgb(0, 0, 0);
 }
-}
+
 
 #menu-h ul li:last-child {
     margin-left: auto; /* Alinhar o último item à direita */
