@@ -15,6 +15,7 @@
     list-style: none;
     padding: 0;
     white-space: nowrap; /* Impede a quebra de linha */
+    text-align: center; /* Centraliza os itens do menu */
 }
 
 #menu-h ul li {
