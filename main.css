@@ -54,17 +54,7 @@ body {
     background-color: #000000;
 }
 
-.conteudo-principal {
-    /* Define a imagem de plano de fundo */
-    background-image: url('plano\ de\ fundo.jpg');
-    /* Ajusta a posição da imagem de plano de fundo */
-    background-position: center;
-    /* Define como a imagem de plano de fundo se repete */
-    background-repeat: no-repeat;
-    /* Define o tamanho da imagem de plano de fundo */
-    background-size: cover;
-    /* Adicione outras propriedades de estilo conforme necessário */
-}
+
 
 
 /* Estilo CSS para centralizar o parágrafo */
