@@ -18,19 +18,20 @@
 }
 
 #menu-h ul li {
-    display: inline;
+    display: inline-block; /* Alterei para inline-block para que todos os itens permaneçam na mesma linha */
 }
 
 #menu-h ul li a {
     color: #FFF;
     padding: 14px;
-    display: inline-block;
+    display: block; /* Alterei para block para ocupar toda a largura do contêiner */
     text-decoration: none;
     transition: background .4s;
 }
 
 #menu-h ul li a:hover {
     background-color: rgb(0, 0, 0);
+}
 }
 
 #menu-h ul li:last-child {
