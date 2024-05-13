@@ -5,14 +5,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-#menu-h{
+#menu-h {
     background-color: rgb(0, 0, 0);
+    overflow: auto; /* Para limpar floats */
 }
 
 #menu-h ul {
-    max-width: 800px;
+    max-width: 1000px; /* Aumentei a largura máxima */
     list-style: none;
     padding: 0;
+    overflow: hidden; /* Para limpar floats */
 }
 
 #menu-h ul li {
