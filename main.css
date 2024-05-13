@@ -32,7 +32,7 @@
 }
 
 #menu-h ul li:last-child {
-    float: right; /* Alinhar o último item à direita */
+    margin-left: auto; /* Alinhar o último item à direita */
 }
 
 #menu-h ul li:last-child a {
