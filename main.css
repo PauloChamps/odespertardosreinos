@@ -11,7 +11,7 @@
 }
 
 #menu-h ul {
-    max-width: 1000px;
+    /* Remova a limitação de largura máxima */
     list-style: none;
     padding: 0;
     white-space: nowrap; /* Impede a quebra de linha */
