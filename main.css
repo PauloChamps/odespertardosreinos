@@ -65,11 +65,10 @@ body {
     width: 50%; /* Defina a largura desejada */
     margin: 0 auto; /* Margens automáticas para centralizar */
     font-size: 60px; /* Tamanho da fonte */
-    border: 10px solid color(black);
+    border: 10px solid black; /* Borda sólida com 10px de largura e cor preta */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto horizontalmente */
 }
-
-
-
 
 
 
