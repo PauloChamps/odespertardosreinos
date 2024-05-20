@@ -67,7 +67,7 @@ body {
     font-size: 30px; /* Tamanho da fonte */
     border: 3px solid black; /* Borda sólida com 10px de largura e cor preta */
     padding: 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto horizontalmente */
+    text-align: justify; /* Centraliza o texto horizontalmente */
 }
 
 
