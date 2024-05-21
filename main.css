@@ -64,9 +64,9 @@ body {
 .centralizado {
     width: 55%; /* Defina a largura desejada */
     margin: 0 auto; /* Margens automáticas para centralizar */
-    font-size: 30px; /* Tamanho da fonte */
-    border: 3px solid black; /* Borda sólida com 10px de largura e cor preta */
-    padding: 20px; /* Espaçamento interno */
+    font-size: 25px; /* Tamanho da fonte */
+    /*border: 3px solid black;  Borda sólida com 10px de largura e cor preta */
+    /*padding: 20px; /* Espaçamento interno */
     text-align: justify; /* Centraliza o texto horizontalmente */
 }
 
