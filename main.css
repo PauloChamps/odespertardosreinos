@@ -9,41 +9,35 @@
     background-color: rgb(0, 0, 0);
     overflow: auto;
 }
-
 #menu-h ul {
     max-width: 1000px;
     list-style: none;
     padding: 0;
     white-space: nowrap; /* Impede a quebra de linha */
 }
-
 #menu-h ul li {
     display: inline-block;
 }
-
 #menu-h ul li a {
     color: #FFF;
+    font-family: 'Vollkorn';
     padding: 14px;
     display: block;
     text-decoration: none;
     transition: background .4s;
 }
-
 #menu-h ul li a:hover {
     background-color: rgb(0, 0, 0);
 }
-
-
 #menu-h ul li:last-child {
     margin-left: auto; /* Alinhar o último item à direita */
 }
-
 #menu-h ul li:last-child a {
     background-color: rgb(0, 0, 0); /* Manter a cor de fundo do último item */
 }
 
 
-/* BANNER */
+/* #########################################  BANNER  ######################################### */
 .banner {
     max-width: 100%; /* Define a largura máxima como 100% da largura do cabeçalho */
     height: auto; /* Mantém a proporção da imagem */
@@ -51,7 +45,7 @@
 }
 
 
-/* PLANO DE FUNDO */
+/* #########################################  PLANO DE FUNDO  ######################################### */
 body {
     /* Defina uma cor de fundo padrão para o corpo, caso a imagem não seja carregada */
     background-color: #000000;
@@ -60,7 +54,7 @@ body {
 
 
 
-/*HISTORIA texto */
+/* #########################################  TEXTO HISTORIA  ######################################### */
 .centralizado {
     width: 80%; /* Defina a largura desejada */
     margin: 0 auto; /* Margens automáticas para centralizar */
@@ -73,15 +67,7 @@ body {
 
 
 
-/*fonte do cabeçalho
-h1{
-    font-family: monospace;
-}
-*/
-
-
-
-/* IMAGENS RELIQUIAS PAGINA HISTORIA*/
+/* #########################################  IMAGENS RELIQUIAS PAGINA HISTORIA  ######################################### */
 .image-container {
     display: flex;
     justify-content: center; /* Centraliza as imagens no contêiner */
@@ -157,7 +143,6 @@ h1{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 .form-container input[type=text],
 .form-container input[type=password] {
     width: 100%;
@@ -167,7 +152,6 @@ h1{
     border: none;
     border-bottom: 1px solid #ccc;
 }
-
 .form-container button {
     background-color: #000000;
     color: white;
@@ -177,7 +161,6 @@ h1{
     cursor: pointer;
     width: 100%;
 }
-
 .form-container button:hover {
     opacity: 0.8;
 }
@@ -201,18 +184,43 @@ h1{
     position: absolute;
     top: 20px;
 }
-
 .btn:hover {
     background-color: #f0f0f0;
 }
-
 /* Estilos para posicionar os botões */
 .btn-login {
     right: 190px;
     top: 250px;
 }
-
 .btn-cadastrar {
     right: 50px;
     top: 250px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #########################################  IMAGENS BOSS ZOOM  ######################################### */
+.zoom-container {
+    border-radius: 15px;
+}
+.zoom-image {
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+.zoom-container:hover .zoom-image {
+    transform: scale(1.15); /* Aplica um zoom ligeiramente menor */
+}
+
+
