@@ -95,7 +95,7 @@ body {
 }
 .image-item p {
     margin: 0;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 20px;
 }
 .image-item .btn {
@@ -222,5 +222,7 @@ body {
 .zoom-container:hover .zoom-image {
     transform: scale(1.15); /* Aplica um zoom ligeiramente menor */
 }
+
+
 
 
