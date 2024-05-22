@@ -62,7 +62,7 @@ body {
 
 /*HISTORIA texto */
 .centralizado {
-    width: 55%; /* Defina a largura desejada */
+    width: 80%; /* Defina a largura desejada */
     margin: 0 auto; /* Margens automáticas para centralizar */
     font-size: 25px; /* Tamanho da fonte */
     /*border: 3px solid black;  Borda sólida com 10px de largura e cor preta */
@@ -73,10 +73,75 @@ body {
 
 
 
-/*fonte do cabeçalho*/
+/*fonte do cabeçalho
 h1{
     font-family: monospace;
 }
+*/
+
+
+
+/* IMAGENS RELIQUIAS PAGINA HISTORIA*/
+.image-container {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens no contêiner */
+    gap: 15px; /* Espaçamento de 20px entre as imagens */
+    margin-top: 20px; /* Espaçamento superior para afastar do conteúdo anterior */
+}
+.image-item {
+    width: 260px;
+    text-align: center;
+    border-radius: 15px;
+   /* overflow: hidden; /* Adicionado para evitar overflow ao aplicar zoom */
+}
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+.image-item img:hover {
+    transform: scale(1.1); /* Aplica o zoom */
+}
+.image-item h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+.image-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.image-item .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaçamento acima do botão */
+    position: relative;
+    top: 20px; /* Ajuste a posição vertical do botão */
+}
+.image-item .btn:hover {
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
