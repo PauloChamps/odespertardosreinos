@@ -224,5 +224,9 @@ body {
 }
 
 
-
-
+/* #########################################  CAMPO DE BUSCA  ######################################### */
+.btn-buscar {
+    float: right; /* Alinha o botão à direita */
+    margin-top: -33px; /* Adiciona um espaçamento superior */
+    margin-right: 20px; /* Adiciona um espaçamento direito */
+}
