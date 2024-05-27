@@ -23,7 +23,8 @@
 
 <!--MENU PRINCIPAL-->
     <center>
-        <nav id="menu-h">  
+        <nav id="menu-h">
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <ul>
                 <li><a href="index.html">H O M E</a></li>
                 <li><a href="historia.html">H I S T Ó R I A</a></li>
@@ -33,22 +34,23 @@
                 <li><a href="loja.html">L O J A</a></li>
                 <li><a href="help.html">A J U D A</a></li>
             </ul>
+           <!-- Botão de Busca -->
+         <div class="btn-buscar">
+                <form action="search.php" method="post">ALTERA PAGINA
+                    <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
+                    <input type="search" id="search" name="search">
+                    <!--<button type="submit" class="btn btn-buscar">Buscar Cartas</button>-->
+                </form>
+            </div>
+        </nav>
+    </center>
+
+        <!-- Botão de Busca no meio para pagina javascript
             <form id="search-form" onsubmit="return handleSubmit()">
                 <input type="text" id="search-input" placeholder="Buscar imagens...">
                 <button type="submit">Buscar</button>
             </form>
-            <div id="search-results"></div>
-        </nav>
-    </center>
-
-        <!-- Botão de Busca 
-         <div class="btn-buscar">
-                <form action="search.php" method="get">ALTERA PAGINA
-                    <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                    <input type="search" id="search" name="search">
-                    <button type="submit" class="btn btn-buscar">Buscar Cartas</button>
-                </form>
-            </div>-->
+            <div id="search-results"></div>-->
 
 
 

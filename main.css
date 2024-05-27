@@ -5,15 +5,23 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* #########################################  MENU  ######################################### */
 #menu-h {
     background-color: rgb(0, 0, 0);
-    overflow: auto;
+    overflow: hidden; /*overflow: auto;*/
 }
 #menu-h ul {
     max-width: 1000px;
     list-style: none;
     padding: 0;
-    white-space: nowrap; /* Impede a quebra de linha */
+    /*white-space: nowrap; /* Impede a quebra de linha */
+
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
 }
 #menu-h ul li {
     display: inline-block;
@@ -27,7 +35,7 @@
     transition: background .4s;
 }
 #menu-h ul li a:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(50, 50, 50); /* 0 0 0 */
 }
 #menu-h ul li:last-child {
     margin-left: auto; /* Alinhar o último item à direita */
@@ -35,6 +43,55 @@
 #menu-h ul li:last-child a {
     background-color: rgb(0, 0, 0); /* Manter a cor de fundo do último item */
 }
+
+/* Esconder o botão do menu por padrão */
+.menu-toggle {
+    display: none;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+    /* Exibir o botão do menu */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Esconder o menu inicialmente */
+    #menu-h ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Exibir o menu quando o botão é clicado */
+    #menu-h ul.show {
+        display: flex;
+    }
+
+    #menu-h ul li {
+        display: block;
+        text-align: center;
+    }
+
+    #menu-h ul li a {
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+}
+
+
+
+
+
+
 
 
 /* #########################################  BANNER  ######################################### */
@@ -52,8 +109,6 @@ body {
 }
 
 
-
-
 /* #########################################  TEXTO HISTORIA  ######################################### */
 .centralizado {
     width: 80%; /* Defina a largura desejada */
@@ -63,8 +118,6 @@ body {
     /*padding: 20px; /* Espaçamento interno */
     text-align: justify; /* Centraliza o texto horizontalmente */
 }
-
-
 
 
 /* #########################################  IMAGENS RELIQUIAS PAGINA HISTORIA  ######################################### */
@@ -118,7 +171,25 @@ body {
 }
 
 
+/* #########################################  IMAGENS BOSS ZOOM  ######################################### */
+.zoom-container {
+    border-radius: 15px;
+}
+.zoom-image {
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+.zoom-container:hover .zoom-image {
+    transform: scale(1.15); /* Aplica um zoom ligeiramente menor */
+}
 
+
+/* #########################################  CAMPO DE BUSCA  ######################################### */
+.btn-buscar {
+    float: right; /* Alinha o botão à direita */
+    margin-top: -33px; /* Adiciona um espaçamento superior */
+    margin-right: 20px; /* Adiciona um espaçamento direito */
+}
 
 
 
@@ -211,22 +282,3 @@ body {
 
 
 
-/* #########################################  IMAGENS BOSS ZOOM  ######################################### */
-.zoom-container {
-    border-radius: 15px;
-}
-.zoom-image {
-    border-radius: 15px;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
-}
-.zoom-container:hover .zoom-image {
-    transform: scale(1.15); /* Aplica um zoom ligeiramente menor */
-}
-
-
-/* #########################################  CAMPO DE BUSCA  ######################################### */
-.btn-buscar {
-    float: right; /* Alinha o botão à direita */
-    margin-top: -33px; /* Adiciona um espaçamento superior */
-    margin-right: 20px; /* Adiciona um espaçamento direito */
-}
