@@ -11,7 +11,7 @@ function searchImages(searchTerm) {
     searchResults.innerHTML = ''; // Limpa os resultados anteriores
 
     // Lista de nomes de arquivos de imagens (substitua com os seus nomes de arquivo)
-    var imageFiles = ['boss.jpeg', 'imagem2.jpg', 'imagem3.jpg'];
+    var imageFiles = ['boss_arquidemonio.jpeg', 'imagem2.jpg', 'imagem3.jpg'];
 
     // Filtra os nomes de arquivo que contêm o termo de busca
     var filteredImages = imageFiles.filter(function(imageFile) {
@@ -24,7 +24,7 @@ function searchImages(searchTerm) {
     if (filteredImages.length > 0) {
         filteredImages.forEach(function(imageFile) {
             var imgElement = document.createElement('img');
-            imgElement.src = 'O Despertar dos Reinos/arquivos/' + imageFile; // Corrigido o caminho da imagem
+            imgElement.src = 'arquivos/' + imageFile;
             imgElement.alt = imageFile; // Use o nome do arquivo como texto alternativo
             searchResults.appendChild(imgElement);
         });
