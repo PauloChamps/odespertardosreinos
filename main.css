@@ -16,12 +16,10 @@
     list-style: none;
     padding: 0;
     /*white-space: nowrap; /* Impede a quebra de linha */
-
     margin: 0;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    
 }
 #menu-h ul li {
     display: inline-block;
@@ -29,23 +27,14 @@
 #menu-h ul li a {
     color: #FFF;
     font-family: 'Vollkorn';
-    padding: 14px;
+    padding: 12px;
     display: block;
     text-decoration: none;
     transition: background .4s;
 }
 #menu-h ul li a:hover {
     background-color: rgb(50, 50, 50); /* 0 0 0 */
-}/*
-#menu-h ul li:last-child {
-    margin-left: auto; /* Alinhar o último item à direita 
-}/*
-#menu-h ul li:last-child a {
-    background-color: rgb(0, 0, 0); /* Manter a cor de fundo do último item 
-}*/
-
-
-
+}
 
 /* Esconder o botão do menu por padrão */
 .menu-toggle {
@@ -58,8 +47,6 @@
     cursor: pointer;
 }
 
-
-
 /* Estilo para telas menores */
 @media (max-width: 768px) {
     /* Exibir o botão do menu */
@@ -68,34 +55,33 @@
         margin-top: -5px; /* Adiciona um espaçamento superior */
         margin-left: 20px; /* Adiciona um espaçamento direito */
     }
-
     /* Esconder o menu inicialmente */
     #menu-h ul {
         display: none;
-        flex-direction: column;
-        width: 100%;
+        position: fixed; /* Para manter o menu fixo na tela */
+        top: 0; /* Alinha o menu no topo */
+        left: 0; /* Alinha o menu à esquerda */
+        height: 42%; /* Define a altura do menu para preencher toda a tela */
+        width: 250px; /* Largura da caixa do menu */
+        background-color: #000000; /* Cor de fundo do menu */
+        padding: 20px; /* Espaçamento interno do menu */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+        z-index: 999; /* Para garantir que o menu esteja acima de outros elementos */
     }
-
     /* Exibir o menu quando o botão é clicado */
     #menu-h ul.show {
-        display: flex;
-        left: 0;
+        display: block; /* Altera para exibir o menu */
     }
-
     #menu-h ul li {
         display: block;
         text-align: center;
     }
-
     #menu-h ul li a {
+        display: block; /* Ajusta para ocupar toda a largura da caixa do menu */
         padding: 10px;
         border-bottom: 1px solid #444;
     }
 }
-
-
-
-
 
 
 
@@ -189,6 +175,34 @@ body {
     transform: scale(1.15); /* Aplica um zoom ligeiramente menor */
 }
 
+.boss-description p{
+    font-size: 18px;
+    text-align: justify;
+    margin-right: 30px; /* Margem à direita */
+}
+
+  /* Estilo para telas menores */
+@media (max-width: 768px) {
+    /* Ajustando o tamanho das imagens */
+.zoom-container {
+    width: 50%; /* Ajusta a largura da imagem */
+    margin-right: 5%; /* Espaçamento à direita */
+     margin-left: 5%; /* Espaçamento à esquerda */
+    margin-bottom: 40px;
+}
+.zoom-image {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+}
+/* Ajustando o tamanho do texto */
+.boss-description h1,
+.boss-description p {
+    font-size: 14px; /* Tamanho da fonte */
+    margin-left: 10px; /* Margem à esquerda */
+    margin-right: 10px; /* Margem à direita */
+    text-align: justify;
+}
+}
 
 /* #########################################  CAMPO DE BUSCA  ######################################### */
 .btn-buscar {
@@ -277,8 +291,63 @@ body {
 
 
 
+/* Estilos principais do menu 
+#menu-h {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+    transition: left 0.3s ease;
+    z-index: 1000;  Certifique-se de que o menu esteja acima do conteúdo 
+}
 
+#menu-h ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 
+#menu-h ul li {
+    display: block;
+}
+
+#menu-h ul li a {
+    color: #FFF;
+    font-family: 'Vollkorn';
+    padding: 14px;
+    display: block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+/* Botão do menu 
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001; /* Certifique-se de que o botão esteja acima do menu 
+}
+
+/* Estilo para quando o menu está visível 
+#menu-h.show {
+    left: 0;
+}
+*/
 
 
 

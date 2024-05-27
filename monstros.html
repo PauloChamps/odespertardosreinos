@@ -19,7 +19,8 @@
 
 <!--MENU PRINCIPAL-->
 <center>
-    <nav id="menu-h">  
+    <nav id="menu-h">
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         <ul>
             <li><a href="index.html">H O M E</a></li>
             <li><a href="historia.html">H I S T Ó R I A</a></li>
@@ -29,8 +30,9 @@
             <li><a href="loja.html">L O J A</a></li>
             <li><a href="help.html">A J U D A</a></li>
         </ul>
-        <div class="btn-buscar">
-            <form action="search.php" method="get">
+       <!-- Botão de Busca -->
+     <div class="btn-buscar">
+            <form action="search.php" method="post">
                 <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
                 <input type="search" id="search" name="search">
                 <!--<button type="submit" class="btn btn-buscar">Buscar Cartas</button>-->
@@ -38,6 +40,7 @@
         </div>
     </nav>
 </center>
+<script src="search.js"></script>
     
     <br><br><br>
 &emsp;&emsp;&emsp;<img src="Imagens_personagens/monstros_groomm.jpeg" width="350" style="position: absolute"></a>
