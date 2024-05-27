@@ -36,13 +36,16 @@
 }
 #menu-h ul li a:hover {
     background-color: rgb(50, 50, 50); /* 0 0 0 */
-}
+}/*
 #menu-h ul li:last-child {
-    margin-left: auto; /* Alinhar o último item à direita */
+    margin-left: auto; /* Alinhar o último item à direita 
 }/*
 #menu-h ul li:last-child a {
     background-color: rgb(0, 0, 0); /* Manter a cor de fundo do último item 
 }*/
+
+
+
 
 /* Esconder o botão do menu por padrão */
 .menu-toggle {
@@ -76,6 +79,7 @@
     /* Exibir o menu quando o botão é clicado */
     #menu-h ul.show {
         display: flex;
+        left: 0;
     }
 
     #menu-h ul li {
