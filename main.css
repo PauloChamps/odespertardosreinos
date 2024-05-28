@@ -97,7 +97,7 @@
 /* #########################################  PLANO DE FUNDO  ######################################### */
 body {
     /* Defina uma cor de fundo padrão para o corpo, caso a imagem não seja carregada */
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 
@@ -162,6 +162,56 @@ body {
     background-color: #333;
 }
 
+/* #########################################  IMAGENS BOSS PAGINA BOSS  ######################################### */
+.image-container-boss {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens no contêiner */
+    gap: 10px; /* Espaçamento de 20px entre as imagens */
+    margin-top: 20px; /* Espaçamento superior para afastar do conteúdo anterior */
+}
+.image-item-boss {
+    width: 350px;
+    text-align: center;
+    border-radius: 15px;
+   /* overflow: hidden; /* Adicionado para evitar overflow ao aplicar zoom */
+}
+.image-item-boss img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+.image-item-boss img:hover {
+    transform: scale(1.1); /* Aplica o zoom */
+}
+.image-item-boss h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
+.image-item-boss p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 20px;
+}
+.image-item-boss .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px; /* Espaçamento acima do botão */
+    position: relative;
+    top: 20px; /* Ajuste a posição vertical do botão */
+}
+.image-item-boss .btn:hover {
+    background-color: #333;
+}
+
 
 /* #########################################  IMAGENS BOSS ZOOM  ######################################### */
 .zoom-container {
@@ -187,7 +237,7 @@ body {
 .zoom-container {
     width: 50%; /* Ajusta a largura da imagem */
     margin-right: 5%; /* Espaçamento à direita */
-     margin-left: 5%; /* Espaçamento à esquerda */
+    margin-left: 5%; /* Espaçamento à esquerda */
     margin-bottom: 40px;
 }
 .zoom-image {
@@ -195,8 +245,7 @@ body {
     border-radius: 15px; /* Adiciona bordas arredondadas */
 }
 /* Ajustando o tamanho do texto */
-.boss-description h1,
-.boss-description p {
+.boss-description h1, .boss-description p {
     font-size: 14px; /* Tamanho da fonte */
     margin-left: 10px; /* Margem à esquerda */
     margin-right: 10px; /* Margem à direita */
@@ -290,64 +339,6 @@ body {
 
 
 
-
-/* Estilos principais do menu 
-#menu-h {
-    background-color: rgb(0, 0, 0);
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    overflow: hidden;
-    transition: left 0.3s ease;
-    z-index: 1000;  Certifique-se de que o menu esteja acima do conteúdo 
-}
-
-#menu-h ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-#menu-h ul li {
-    display: block;
-}
-
-#menu-h ul li a {
-    color: #FFF;
-    font-family: 'Vollkorn';
-    padding: 14px;
-    display: block;
-    text-decoration: none;
-    transition: background .4s;
-}
-
-#menu-h ul li a:hover {
-    background-color: rgb(50, 50, 50);
-}
-
-/* Botão do menu 
-.menu-toggle {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    background-color: rgb(0, 0, 0);
-    border: none;
-    color: white;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1001; /* Certifique-se de que o botão esteja acima do menu 
-}
-
-/* Estilo para quando o menu está visível 
-#menu-h.show {
-    left: 0;
-}
-*/
 
 
 
