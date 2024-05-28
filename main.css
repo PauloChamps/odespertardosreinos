@@ -6,6 +6,7 @@
 }
 
 
+
 /* #########################################  MENU  ######################################### */
 #menu-h {
     background-color: rgb(0, 0, 0);
@@ -85,6 +86,29 @@
 
 
 
+/* #########################################  RODAPÉ  ######################################### */
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999;
+    font-family: 'Sedan SC';
+}
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+    .footer {
+        position: static; /* Remove a posição absoluta */
+        margin-top: 20px; /* Adiciona um espaçamento superior */
+    }
+}
+
+
+
 
 /* #########################################  BANNER  ######################################### */
 .banner {
@@ -101,7 +125,7 @@ body {
 }
 
 
-/* #########################################  TEXTO HISTORIA  ######################################### */
+/* #########################################  TEXTO -- PAGINA HISTORIA --  ######################################### */
 .centralizado {
     width: 80%; /* Defina a largura desejada */
     margin: 0 auto; /* Margens automáticas para centralizar */
@@ -112,7 +136,7 @@ body {
 }
 
 
-/* #########################################  IMAGENS RELIQUIAS PAGINA HISTORIA  ######################################### */
+/* #########################################  IMAGENS RELIQUIAS -- PAGINA HISTORIA -- ######################################### */
 .image-container {
     display: flex;
     justify-content: center; /* Centraliza as imagens no contêiner */
@@ -162,17 +186,19 @@ body {
     background-color: #333;
 }
 
-/* #########################################  IMAGENS BOSS PAGINA BOSS  ######################################### */
+/* #########################################  IMAGENS BOSS -- PAGINA BOSS --  ######################################### */
 .image-container-boss {
     display: flex;
     justify-content: center; /* Centraliza as imagens no contêiner */
-    gap: 10px; /* Espaçamento de 20px entre as imagens */
+    gap: 5px; /* Espaçamento de 20px entre as imagens */
     margin-top: 20px; /* Espaçamento superior para afastar do conteúdo anterior */
 }
 .image-item-boss {
     width: 350px;
     text-align: center;
     border-radius: 15px;
+    margin-left: 50px; /* Adiciona margem à esquerda */
+    margin-right: 50px; /* Adiciona margem à direita */
    /* overflow: hidden; /* Adicionado para evitar overflow ao aplicar zoom */
 }
 .image-item-boss img {
@@ -202,18 +228,50 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border-radius: 20px;
+    border-radius: 15px;
     cursor: pointer;
     margin-top: 10px; /* Espaçamento acima do botão */
     position: relative;
-    top: 20px; /* Ajuste a posição vertical do botão */
+    top: 5px; /* Ajuste a posição vertical do botão */
 }
 .image-item-boss .btn:hover {
     background-color: #333;
 }
 
+@media (max-width: 768px) {
+    .image-container-boss {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .image-item-boss {
+        flex-basis: calc(50% - 5px); /* Define a largura para ocupar metade da largura do contêiner, subtraindo o espaçamento */
+        margin-bottom: 10px;
+    }
+    .image-item-boss img {
+        width: 100%;
+    }
+    .image-item-boss h2 {
+        font-size: 18px;
+    }
+    .image-item-boss p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .image-item-boss .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        top: 1px;
+    }
+    h1 {
+        font-size: 24px;
+        top: 5px;
+    }
+}
 
-/* #########################################  IMAGENS BOSS ZOOM  ######################################### */
+/* #########################################  IMAGENS BOSS ZOOM -- PAGINA BOSS -- ######################################### */
 .zoom-container {
     border-radius: 15px;
 }

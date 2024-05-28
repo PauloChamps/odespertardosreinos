@@ -1,3 +1,4 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
 document.addEventListener('DOMContentLoaded', function() {
     var menuToggle = document.querySelector('.menu-toggle');
     var menu = document.querySelector('#menu-h ul');
@@ -15,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!isClickInsideMenu && !isClickOnMenuToggle) {
             menu.classList.remove('show');
         }
+
+        
     });
 });
 
