@@ -141,13 +141,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Centraliza as imagens no contêiner */
-    gap: 3px; /* Espaçamento de 20px entre as imagens */
-    margin-top: 20px; /* Espaçamento superior para afastar do conteúdo anterior */
+    /*gap: 3px; /* Espaçamento de 20px entre as imagens */
+    margin-top: 0px; /* Espaçamento superior para afastar do conteúdo anterior */
 }
 .image-item {
     width: 260px;
     text-align: center;
     border-radius: 15px;
+    margin: 45px;
+    margin-top: 0px;
    /* overflow: hidden; /* Adicionado para evitar overflow ao aplicar zoom */
 }
 .image-item img {
