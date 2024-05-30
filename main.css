@@ -319,8 +319,43 @@ body {
 }
 
 
+/* #########################################  IMAGENS - PAGINA REINOS  ######################################### */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    justify-content: center;
+}
+.grid-container img {
+    width: 100%;
+    height: auto;
+}
+.grid-container a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.zoom-image {
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+.zoom-container:hover .zoom-image {
+    transform: scale(1.07); /* Aplica um zoom ligeiramente menor */
+}
 
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
 
+}
 
 
 
