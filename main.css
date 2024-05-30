@@ -139,8 +139,9 @@ body {
 /* #########################################  IMAGENS RELIQUIAS -- PAGINA HISTORIA -- ######################################### */
 .image-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center; /* Centraliza as imagens no contêiner */
-    gap: 15px; /* Espaçamento de 20px entre as imagens */
+    gap: 3px; /* Espaçamento de 20px entre as imagens */
     margin-top: 20px; /* Espaçamento superior para afastar do conteúdo anterior */
 }
 .image-item {
@@ -184,6 +185,17 @@ body {
 }
 .image-item .btn:hover {
     background-color: #333;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+    .image-item {
+        width: 150px; /* Diminui o tamanho das imagens em telas menores */
+    }
+
+    .image-container {
+        gap: 5px; /* Diminui o espaçamento entre as imagens em telas menores */
+    }
 }
 
 /* #########################################  IMAGENS BOSS -- PAGINA BOSS --  ######################################### */
