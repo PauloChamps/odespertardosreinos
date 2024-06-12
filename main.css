@@ -467,7 +467,7 @@ body {
 }
 .characteristic-box {
     width: 300px;
-    height: 300px;
+    height: 410px;
     background-image: url('Imagens_outras/plano_de_fundo.jpg'); /* Imagem de fundo */
     background-size: cover; /* Ajusta o tamanho da imagem */
     background-position: center; /* Centraliza a imagem */
@@ -492,7 +492,7 @@ body {
 }
 .characteristic-box p {
     font-family: 'Sedan SC';
-    font-size: 14px;
+    font-size: 16px;
     color: #000000;
     margin: 0;
     text-align: left;
@@ -517,4 +517,32 @@ body {
     .characteristic-box p {
         font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+.arrow-container {
+    position: relative;
+    float: left;
+}
+
+.arrow-link {
+    position: absolute;
+    right: 20px; /* Ajuste a posição da seta conforme necessário */
+    top: 375px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #000; /* Cor da seta */
+    cursor: pointer;
 }
