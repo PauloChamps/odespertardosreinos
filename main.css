@@ -538,7 +538,7 @@ body {
 .characteristic-box-boss {
     width: 250px;
     height: 300px;
-    background-image: url('Imagens_outras/fundo08.jpg'); /* Imagem de fundo */
+    background-image: url('Imagens_outras/fundo08.JPG'); /* Imagem de fundo */
     background-size: cover; /* Ajusta o tamanho da imagem */
     background-position: center; /* Centraliza a imagem */
     border: 2px solid #ccc;
