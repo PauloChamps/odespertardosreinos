@@ -22,4 +22,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const overlay = document.getElementById("overlay");
+    const overlayImg = document.getElementById("overlay-img");
+    const zoomables = document.querySelectorAll(".zoomable");
+    const close = document.querySelector(".close");
+
+    zoomables.forEach(img => {
+        img.addEventListener("click", function() {
+            overlay.style.display = "flex";
+            overlayImg.src = this.src;
+        });
+    });
+
+    close.addEventListener("click", function() {
+        overlay.style.display = "none";
+    });
+
+    overlay.addEventListener("click", function(event) {
+        if (event.target !== overlayImg) {
+            overlay.style.display = "none";
+        }
+    });
+});
+
+
+
+
 

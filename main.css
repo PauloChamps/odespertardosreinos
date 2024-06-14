@@ -5,6 +5,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* #########################################  PLANO DE FUNDO  ######################################### */
+body {
+    background-image: url('Imagens_outras/fundo05.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
 
 
 /* #########################################  MENU  ######################################### */
@@ -91,7 +99,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 72px;
+    height: 100px;
     background-color: black;
     color: white;
     padding: 10px;
@@ -118,11 +126,7 @@
 }
 
 
-/* #########################################  PLANO DE FUNDO  ######################################### */
-body {
-    /* Defina uma cor de fundo padrão para o corpo, caso a imagem não seja carregada */
-    background-color: #ffffff;
-}
+
 
 
 /* #########################################  TEXTO -- PAGINA HISTORIA --  ######################################### */
@@ -468,7 +472,7 @@ body {
 .characteristic-box {
     width: 300px;
     height: 410px;
-    background-image: url('Imagens_outras/plano_de_fundo.jpg'); /* Imagem de fundo */
+    background-image: url('Imagens_outras/fundo07.JPG'); /* Imagem de fundo */
     background-size: cover; /* Ajusta o tamanho da imagem */
     background-position: center; /* Centraliza a imagem */
     border: 2px solid #ccc;
@@ -518,6 +522,72 @@ body {
         font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
     }
 }
+/* #########################################  3 QUADRADOS CARACTERISTICAS BOSS  ######################################### */
+.characteristics-grid-boss {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin: 0px auto;
+    max-width: 90%;
+}
+.characteristic-boss {
+    text-align: center;
+}
+.characteristic-box-boss {
+    width: 250px;
+    height: 300px;
+    background-image: url('Imagens_outras/fundo08.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    background-position: center; /* Centraliza a imagem */
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.characteristic-box-boss h2 {
+    font-family: 'Sedan SC', serif;
+    font-size: 40px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+.characteristic-box-boss p {
+    font-family: 'Sedan SC';
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+/* para telas menores */
+@media (max-width: 768px) {
+    .characteristics-grid-boss {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
+        gap: 10px; /* Reduz o espaçamento */
+    }
+    
+    .characteristic-box-boss {
+        width: 100%; /* Ajusta a largura para ocupar toda a coluna */
+        padding: 10px; /* Reduz o padding */
+    }
+    
+    .characteristic-box-boss h2 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+    }
+    
+    .characteristic-box-boss p {
+        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+    }
+}
 
 
 
@@ -527,7 +597,7 @@ body {
 
 
 
-
+/* #########################################  SETA DO LADO DAS IMAGENS DOS PERSONAGENS  ######################################### */
 
 .arrow-container {
     position: relative;
@@ -546,3 +616,46 @@ body {
     border-left: 10px solid #000; /* Cor da seta */
     cursor: pointer;
 }
+
+
+
+
+
+/* #########################################  ZOOM QUANOD CLICAREM NA FOTO  ######################################### */
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay Content */
+.overlay-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
