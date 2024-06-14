@@ -7,61 +7,94 @@
     <link href="../main.css" rel="stylesheet" type="text/css" />
     <link rel="icon" href="../Imagens_outras/icon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>SEREIA SOMBRIA/title>
+    <title>SEREIA SOMBRIA</title>
 </head>
 <body style="background-color:rgb(255, 255, 255)">
     <header>
         <img src="../Imagens_banners/banner despertar dos reinos.jpg" alt="Banner" class="banner" />
     </header>
-    
-    <!--MENU PRINCIPAL-->
-    <center>
-        <nav id="menu-h">
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <ul>
-                <li><a href="../index.html">H O M E</a></li>
-                <li><a href="../historia.html">H I S T Ó R I A</a></li>
-                <li><a href="../reinos.html">R E I N O S</a></li>
-                <li><a href="../bosses.html">B O S S</a></li>
-                <li><a href="../magic.html">C A R T A S - M Á G I C A S</a></li>
-                <li><a href="../loja.html">L O J A</a></li>
-                <li><a href="../help.html">A J U D A</a></li>
-            </ul>
-            <!-- Botão de Busca -->
-            <div class="btn-buscar">
-                <form action="search.php" method="post">
-                    <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                    <input type="search" id="search" name="search">
-                </form>
-            </div>
-        </nav>
-    </center>
-    <script src="../search.js"></script>
+   
+<!--MENU PRINCIPAL-->   
+<center>
+    <nav id="menu-h">
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul>
+            <li><a href="../index.html">H O M E</a></li>
+            <li><a href="../historia.html">H I S T Ó R I A</a></li>
+            <li><a href="../reinos.html">P E R S O N A G E N S</a></li>
+            <li><a href="../bosses.html">B O S S</a></li>
+            <li><a href="../magic.html">C A R T A S - M Á G I C A S</a></li>
+            <li><a href="../loja.html">M E R C A D O R</a></li>
+            <li><a href="../help.html">A J U D A</a></li>
+        </ul>
+       <!-- Botão de Busca -->
+     <div class="btn-buscar">
+            <form action="search.php" method="post">
+                <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
+                <input type="search" id="search" name="search">
+                <!--<button type="submit" class="btn btn-buscar">Buscar Cartas</button>-->
+            </form>
+        </div>
+    </nav>
+</center>
+<script src="../search.js"></script>
 
-    <br/><br/>
+
+
+<br/><br/>   
 <!--BOSS SEREIA SOMBRIA-->
 <div style="clear: both; margin-bottom: 25px;">
     <a class="zoom-container" style="float: left; margin-right: 40px; margin-left: 40px; margin-bottom: 40px; border-radius: 15px; overflow: visible;">
-        <img src="Imagens_personagens/boss/boss_sereia.jpeg" width="350" class="zoom-image">
+        <img src="../Imagens_bosses/boss_sereia02.jpeg" width="750" class="zoom-image">
     </a>
-    <div style="margin-left: 25px; font-size: 18px; text-align: justify; max-width: 1600px;">
-        <br/><h1 style="font-family: 'Vollkorn SC';">S E R E I A&nbsp;&nbsp;S O M B R I A</h1>
-        <br/><p style="font-family: 'Vollkorn SC';">
+    <div class="boss-description">
+        <br/>
+        <h1 style="font-family: 'Sedan SC'; display: flex;justify-content: center;">S E R E I A&nbsp;&nbsp;&nbsp;S O M B R I A</h1>
+        <p style="font-family: 'Sedan SC';">
             A Sereia Sombria é uma criatura de beleza inquietante que habita as profundezas do oceano. Devido a um antigo pacto com as trevas, sua alma foi corrompida por uma sede insaciável de poder e destruição. Seu canto hipnótico seduz os marinheiros incautos para as profundezas, onde suas almas são devoradas em um abraço de trevas.<br/><br/>
             Sua voz sedutora é capaz de enfeitiçar até mesmo os corações mais corajosos, levando marinheiros e navegadores à perdição. Aqueles que sucumbem são arrastados para as profundezas escuras do oceano, onde a sereia os aguarda para consumir suas almas.<br/><br/>
-            Os relatos sobre a Sereia Sombria servem como advertência para aqueles que ousam navegar pelos mares onde ela reina, lembrando-os do perigo mortal que aguarda aqueles que se deixam levar por sua canção sedutora. Enquanto a lua brilhar sobre as águas, a Sereia Sombria permanecerá à espreita, esperando por sua próxima vítima para alimentar sua eterna fome de almas perdidas.       
-        </p>
+            Os relatos sobre a Sereia Sombria servem como advertência para aqueles que ousam navegar pelos mares onde ela reina, lembrando-os do perigo mortal que aguarda aqueles que se deixam levar por sua canção sedutora. Enquanto a lua brilhar sobre as águas, a Sereia Sombria permanecerá à espreita, esperando por sua próxima vítima para alimentar sua eterna fome de almas perdidas.</p>      
+            </div>
+</div>   
+<div class="characteristics-grid-boss">
+    <div class="characteristic-boss">
+        <div class="characteristic-box-boss">
+            <h2>Atributos</h2><br/><br/>
+            <p>HP: 150</p><br/>
+            <p>Vantagem: Monstros<br/><br/>
+               Desvantagem: Elementais, Bruxa dos Pesadelos, Rei dos Caçadores
+            </p>
+        </div>
+    </div>
+    <div class="characteristic-boss">
+        <div class="characteristic-box-boss">
+            <h2>Golpes</h2><br/>
+            <p>Lâmina da Alvorada: <br/>Causa 20 de dano.<br/><br/><br/>
+               Golpe do Despertar: <br/>Causa 30 de dano.<br/><br/><br/>
+               Livro dos Homens: <br/>Causa 40 de dano.</p>
+        </div>
+    </div>
+    <div class="characteristic-boss">
+        <div class="characteristic-box-boss">
+            <h2>Armas</h2><br/>
+            <p>Cetro do Caos Abissal<br/><br/>
+               Este cetro de obsidiana, adornado com runas demoníacas e uma gema negra pulsante no topo. Ele é a fonte do controle do Arquidemônio, manipulando as forças do caos e do inferno.</p>
+        </div>
     </div>
 </div>
+<br/><br/><br/>
 
-<br><br><br>
 
 
-  
-<!-- Rodapé -->
+<footer>
+
+    <!-- Rodapé -->
     <div class="footer">
-        <br/><center>O - D E S P E R T A R - D O S - R E I N O S @ Todos os Direitos Reservados 2024</center>
+        <br/><center>O&nbsp;&nbsp;&nbsp;D E S P E R T A R&nbsp;&nbsp;&nbsp;D O S&nbsp;&nbsp;&nbsp;R E I N O S @ Todos os Direitos Reservados 2024</center>
     </div>
 
+</footer>
 </body>
 </html>
+
+
