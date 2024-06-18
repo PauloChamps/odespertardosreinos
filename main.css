@@ -1175,19 +1175,19 @@ body {
 .banner1{
     background-image: url('../O Despertar dos Reinos/Imagens_outras/news01.jpeg');
     background-position: center;
-    background-size: 100%;
+    background-size: 600px;
     border: 1px solid black;
 }
 .banner2{
     background-image: url('../O Despertar dos Reinos/Imagens_outras/news02.jpeg');
     background-position: center;
-    background-size: 100%;
+    background-size: 600px;
     border: 1px solid black;
 }
 .banner3{
     background-image: url('../O Despertar dos Reinos/Imagens_outras/news03.jpeg');
     background-position: center;
-    background-size: 100%;
+    background-size: 600px;
     border: 1px solid black;
 }
 .banner_title{
