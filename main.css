@@ -1,3 +1,11 @@
+
+/* arrumar o tamanho da tela para celular 576px com @media */
+
+/* organizar código */
+
+
+
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -11,6 +19,84 @@ body {
     background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+/* #########################################  CAMPO DE BUSCA  ######################################### */
+.btn-buscar {
+    float: right; /* Alinha o botão à direita */
+    margin-top: -31px; /* Adiciona um espaçamento superior */
+    margin-right: 20px; /* Adiciona um espaçamento direito */
+}
+/* Ajuste para telas menores de 320px */
+@media (max-width: 320px) {
+    .btn-buscar {
+        float: right; /* Alinha o botão ao centro */
+        margin-top: -33px; /* Adiciona um espaçamento superior */
+        margin-right: 20px; /* Adiciona um espaçamento direito */
+        text-align: right; /* Centraliza o conteúdo */
+    }
+    
+    .btn-buscar input[type="search"] {
+        width: 40%; /* Ajusta a largura do campo de busca */
+        font-size: 14px; /* Ajusta o tamanho da fonte do campo de busca */
+    }
+    
+    .btn-buscar label {
+        font-size: 14px; /* Ajusta o tamanho da fonte do rótulo */
+    }
+}
+@media (min-width: 321px) {
+    .btn-buscar {
+        float: right; /* Alinha o botão ao centro */
+        margin-top: -33px; /* Adiciona um espaçamento superior */
+        margin-right: 20px; /* Adiciona um espaçamento direito */
+        text-align: right; /* Centraliza o conteúdo */
+    }
+    
+    .btn-buscar input[type="search"] {
+        width: 40%; /* Ajusta a largura do campo de busca */
+        font-size: 14px; /* Ajusta o tamanho da fonte do campo de busca */
+    }
+    
+    .btn-buscar label {
+        font-size: 14px; /* Ajusta o tamanho da fonte do rótulo */
+    }
+}
+@media (min-width: 851px) and (max-width: 1023px){
+    .btn-buscar {
+        float: none;  /*Alinha o botão ao centro */
+        margin-top: 0px;  /*Adiciona um espaçamento superior */
+        margin-right: 0px;  /*Adiciona um espaçamento direito */
+        margin-bottom: 10px;
+        text-align: center;  /*Centraliza o conteúdo */
+    }
+    
+    .btn-buscar input[type="search"] {
+        width: 10%;  /*Ajusta a largura do campo de busca */
+        font-size: 14px;  /*Ajusta o tamanho da fonte do campo de busca */
+    }
+    
+    .btn-buscar label {
+        font-size: 14px; /* Ajusta o tamanho da fonte do rótulo */
+    }
+}
+@media (min-width: 1024px) and (max-width: 1590px){
+    .btn-buscar {
+        float: none;  /*Alinha o botão ao centro */
+        margin-top: 0px;  /*Adiciona um espaçamento superior */
+        margin-right: 0px;  /*Adiciona um espaçamento direito */
+        margin-bottom: 10px;
+        text-align: center;  /*Centraliza o conteúdo */
+    }
+    
+    .btn-buscar input[type="search"] {
+        width: 10%;  /*Ajusta a largura do campo de busca */
+        font-size: 14px;  /*Ajusta o tamanho da fonte do campo de busca */
+    }
+    
+    .btn-buscar label {
+        font-size: 14px; /* Ajusta o tamanho da fonte do rótulo */
+    }
 }
 
 
@@ -44,7 +130,6 @@ body {
 #menu-h ul li a:hover {
     background-color: rgb(50, 50, 50); /* 0 0 0 */
 }
-
 /* Esconder o botão do menu por padrão */
 .menu-toggle {
     display: none;
@@ -55,9 +140,111 @@ body {
     padding: 10px;
     cursor: pointer;
 }
+@media (max-width: 320px) {
+    /* Exibir o botão do menu */
+    .menu-toggle {
+        display: block;
+        margin-top: -5px; /* Adiciona um espaçamento superior */
+        margin-left: 20px; /* Adiciona um espaçamento direito */
+    }
+    /* Esconder o menu inicialmente */
+    #menu-h ul {
+        display: none;
+        position: fixed; /* Para manter o menu fixo na tela */
+        top: 0; /* Alinha o menu no topo */
+        left: 0; /* Alinha o menu à esquerda */
+        height: 42%; /* Define a altura do menu para preencher toda a tela */
+        width: 250px; /* Largura da caixa do menu */
+        background-color: #000000; /* Cor de fundo do menu */
+        padding: 20px; /* Espaçamento interno do menu */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+        z-index: 999; /* Para garantir que o menu esteja acima de outros elementos */
+    }
+    /* Exibir o menu quando o botão é clicado */
+    #menu-h ul.show {
+        display: block; /* Altera para exibir o menu */
+    }
+    #menu-h ul li {
+        display: block;
+        text-align: center;
+    }
+    #menu-h ul li a {
+        display: block; /* Ajusta para ocupar toda a largura da caixa do menu */
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+}
 
-/* Estilo para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 375px) {
+    /* Exibir o botão do menu */
+    .menu-toggle {
+        display: block;
+        margin-top: -5px; /* Adiciona um espaçamento superior */
+        margin-left: 20px; /* Adiciona um espaçamento direito */
+    }
+    /* Esconder o menu inicialmente */
+    #menu-h ul {
+        display: none;
+        position: fixed; /* Para manter o menu fixo na tela */
+        top: 0; /* Alinha o menu no topo */
+        left: 0; /* Alinha o menu à esquerda */
+        height: 42%; /* Define a altura do menu para preencher toda a tela */
+        width: 250px; /* Largura da caixa do menu */
+        background-color: #000000; /* Cor de fundo do menu */
+        padding: 20px; /* Espaçamento interno do menu */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+        z-index: 999; /* Para garantir que o menu esteja acima de outros elementos */
+    }
+    /* Exibir o menu quando o botão é clicado */
+    #menu-h ul.show {
+        display: block; /* Altera para exibir o menu */
+    }
+    #menu-h ul li {
+        display: block;
+        text-align: center;
+    }
+    #menu-h ul li a {
+        display: block; /* Ajusta para ocupar toda a largura da caixa do menu */
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+}
+
+@media (max-width: 425px) {
+    /* Exibir o botão do menu */
+    .menu-toggle {
+        display: block;
+        margin-top: -5px; /* Adiciona um espaçamento superior */
+        margin-left: 20px; /* Adiciona um espaçamento direito */
+    }
+    /* Esconder o menu inicialmente */
+    #menu-h ul {
+        display: none;
+        position: fixed; /* Para manter o menu fixo na tela */
+        top: 0; /* Alinha o menu no topo */
+        left: 0; /* Alinha o menu à esquerda */
+        height: 42%; /* Define a altura do menu para preencher toda a tela */
+        width: 250px; /* Largura da caixa do menu */
+        background-color: #000000; /* Cor de fundo do menu */
+        padding: 20px; /* Espaçamento interno do menu */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+        z-index: 999; /* Para garantir que o menu esteja acima de outros elementos */
+    }
+    /* Exibir o menu quando o botão é clicado */
+    #menu-h ul.show {
+        display: block; /* Altera para exibir o menu */
+    }
+    #menu-h ul li {
+        display: block;
+        text-align: center;
+    }
+    #menu-h ul li a {
+        display: block; /* Ajusta para ocupar toda a largura da caixa do menu */
+        padding: 10px;
+        border-bottom: 1px solid #444;
+    }
+}
+@media (max-width: 849px) {
     /* Exibir o botão do menu */
     .menu-toggle {
         display: block;
@@ -102,13 +289,20 @@ body {
     height: 100px;
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 25px;
+    font-size: 18px;
     text-align: center;
     z-index: 9999;
     font-family: 'Sedan SC';
 }
+.footer p{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Sedan SC';
+}
 /* Estilo para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .footer {
         position: static; /* Remove a posição absoluta */
         margin-top: 20px; /* Adiciona um espaçamento superior */
@@ -118,11 +312,22 @@ body {
 
 
 
+
+
 /* #########################################  BANNER  ######################################### */
 .banner {
     max-width: 100%; /* Define a largura máxima como 100% da largura do cabeçalho */
     height: auto; /* Mantém a proporção da imagem */
     display: block; /* Para garantir que a imagem seja exibida como bloco */
+}
+@media (max-width: 375px) {
+    .banner{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    
+    }
+
 }
 
 
@@ -137,6 +342,13 @@ body {
     /*border: 3px solid black;  Borda sólida com 10px de largura e cor preta */
     /*padding: 20px; /* Espaçamento interno */
     text-align: justify; /* Centraliza o texto horizontalmente */
+}
+@media (max-width: 375px) {
+    .centralizado {
+        position: static; /* Remove a posição absoluta */
+        margin-top: 20px; /* Adiciona um espaçamento superior */
+        font-size: 18px;
+    }
 }
 
 
@@ -194,7 +406,7 @@ body {
 }
 
 /* Responsivo para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 375px) {
     .image-item {
         width: 150px; /* Diminui o tamanho das imagens em telas menores */
     }
@@ -215,18 +427,18 @@ body {
     width: 350px;
     text-align: center;
     border-radius: 15px;
-    margin-left: 50px; /* Adiciona margem à esquerda */
-    margin-right: 50px; /* Adiciona margem à direita */
-   /* overflow: hidden; /* Adicionado para evitar overflow ao aplicar zoom */
+    margin-left: 50px; /*  margem à esquerda */
+    margin-right: 50px; /* margem à direita */
+   /* overflow: hidden; /*  evita overflow ao aplicar zoom */
 }
 .image-item-boss img {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    transition: transform 0.3s ease; /* transição suave */
 }
 .image-item-boss img:hover {
-    transform: scale(1.1); /* Aplica o zoom */
+    transform: scale(1.1); /* zoom */
 }
 .image-item-boss h2 {
     margin: 10px 0 5px;
@@ -256,7 +468,103 @@ body {
     background-color: #333;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 374px) {
+    .image-container-boss {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .image-item-boss {
+        flex-basis: calc(50% - 5px); /* Define a largura para ocupar metade da largura do contêiner, subtraindo o espaçamento */
+        margin-bottom: 10px;
+    }
+    .image-item-boss img {
+        width: 100%;
+    }
+    .image-item-boss h2 {
+        font-size: 18px;
+    }
+    .image-item-boss p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .image-item-boss .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        top: 1px;
+    }
+    h1 {
+        font-size: 24px;
+        top: 5px;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    .image-container-boss {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .image-item-boss {
+        flex-basis: calc(50% - 5px); /* Define a largura para ocupar metade da largura do contêiner, subtraindo o espaçamento */
+        margin-bottom: 10px;
+    }
+    .image-item-boss img {
+        width: 100%;
+    }
+    .image-item-boss h2 {
+        font-size: 18px;
+    }
+    .image-item-boss p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .image-item-boss .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        top: 1px;
+    }
+    h1 {
+        font-size: 24px;
+        top: 5px;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .image-container-boss {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .image-item-boss {
+        flex-basis: calc(50% - 5px); /* Define a largura para ocupar metade da largura do contêiner, subtraindo o espaçamento */
+        margin-bottom: 10px;
+    }
+    .image-item-boss img {
+        width: 100%;
+    }
+    .image-item-boss h2 {
+        font-size: 18px;
+    }
+    .image-item-boss p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .image-item-boss .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        top: 1px;
+    }
+    h1 {
+        font-size: 24px;
+        top: 5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
     .image-container-boss {
         display: flex;
         flex-wrap: wrap;
@@ -289,7 +597,7 @@ body {
     }
 }
 
-/* #########################################  IMAGENS BOSS ZOOM -- PAGINA BOSS -- ######################################### */
+/* #########################################  IMAGENS BOSS ZOOM -- PAGINA PERSONAGENS BOSS -- ######################################### */
 .zoom-container {
     border-radius: 15px;
 }
@@ -307,35 +615,130 @@ body {
     margin-right: 40px; /* Margem à direita */
     margin: 40px;
 }
+@media (max-width: 320px) {
+    /* Ajustando o tamanho das imagens */
+    .zoom-container {
+        width: 75%; /* Ajusta a largura da imagem */
+        margin-right: 5%; /* Espaçamento à direita */
+        margin-left: 5%; /* Espaçamento à esquerda */
+        margin-bottom: 10px;
+        display: block;
+        float: none;
+    }
+    .zoom-image {
+        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+        border-radius: 15px; /* Adiciona bordas arredondadas */
+    }
+    .boss-description {
+        clear: both;
+        text-align: center;
+    }
+    /* Ajustando o tamanho do texto */
+    .boss-description h1 {
+        font-size: 18px; /* Tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+    }
+    .boss-description p {
+        font-size: 14px; /* Tamanho da fonte */
+        margin-left: 10px; /* Margem à esquerda */
+        margin-right: 10px; /* Margem à direita */
+        text-align: justify;
+    }
+}
 
-  /* Estilo para telas menores */
+@media (max-width: 375px) {
+    /* Ajustando o tamanho das imagens */
+    .zoom-container {
+        width: 75%; /* Ajusta a largura da imagem */
+        margin-right: 5%; /* Espaçamento à direita */
+        margin-left: 5%; /* Espaçamento à esquerda */
+        margin-bottom: 10px;
+        display: block;
+        float: none;
+    }
+    .zoom-image {
+        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+        border-radius: 15px; /* Adiciona bordas arredondadas */
+    }
+    .boss-description {
+        clear: both;
+        text-align: center;
+    }
+    /* Ajustando o tamanho do texto */
+    .boss-description h1 {
+        font-size: 18px; /* Tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+    }
+    .boss-description p {
+        font-size: 14px; /* Tamanho da fonte */
+        margin-left: 10px; /* Margem à esquerda */
+        margin-right: 10px; /* Margem à direita */
+        text-align: justify;
+    }
+}
+@media (max-width: 425px) {
+    /* Ajustando o tamanho das imagens */
+    .zoom-container {
+        width: 75%; /* Ajusta a largura da imagem */
+        margin-right: 5%; /* Espaçamento à direita */
+        margin-left: 5%; /* Espaçamento à esquerda */
+        margin-bottom: 10px;
+        display: block;
+        float: none;
+    }
+    .zoom-image {
+        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+        border-radius: 15px; /* Adiciona bordas arredondadas */
+    }
+    .boss-description {
+        clear: both;
+        text-align: center;
+    }
+    /* Ajustando o tamanho do texto */
+    .boss-description h1 {
+        font-size: 18px; /* Tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+    }
+    .boss-description p {
+        font-size: 14px; /* Tamanho da fonte */
+        margin-left: 10px; /* Margem à esquerda */
+        margin-right: 10px; /* Margem à direita */
+        text-align: justify;
+    }
+}
 @media (max-width: 768px) {
     /* Ajustando o tamanho das imagens */
-.zoom-container {
-    width: 50%; /* Ajusta a largura da imagem */
-    margin-right: 5%; /* Espaçamento à direita */
-    margin-left: 5%; /* Espaçamento à esquerda */
-    margin-bottom: 40px;
-}
-.zoom-image {
-    width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-    border-radius: 15px; /* Adiciona bordas arredondadas */
-}
-/* Ajustando o tamanho do texto */
-.boss-description h1, .boss-description p {
-    font-size: 14px; /* Tamanho da fonte */
-    margin-left: 10px; /* Margem à esquerda */
-    margin-right: 10px; /* Margem à direita */
-    text-align: justify;
-}
+    .zoom-container {
+        width: 75%; /* Ajusta a largura da imagem */
+        margin-right: 5%; /* Espaçamento à direita */
+        margin-left: 40px; /* Espaçamento à esquerda */
+        margin-bottom: 10px;
+        display: block;
+        float: right;
+    }
+    .zoom-image {
+        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
+        border-radius: 15px; /* Adiciona bordas arredondadas */
+    }
+    .boss-description {
+        clear: both;
+        text-align: center;
+    }
+    /* Ajustando o tamanho do texto */
+    .boss-description h1 {
+        font-size: 18px; /* Tamanho da fonte */
+        text-align: center; /* Centraliza o texto */
+    }
+    .boss-description p {
+        font-size: 14px; /* Tamanho da fonte */
+        margin-left: 10px; /* Margem à esquerda */
+        margin-right: 10px; /* Margem à direita */
+        text-align: justify;
+    }
 }
 
-/* #########################################  CAMPO DE BUSCA  ######################################### */
-.btn-buscar {
-    float: right; /* Alinha o botão à direita */
-    margin-top: -31px; /* Adiciona um espaçamento superior */
-    margin-right: 20px; /* Adiciona um espaçamento direito */
-}
+
+
 
 
 /* #########################################  IMAGENS - PAGINA REINOS  ######################################### */
@@ -365,7 +768,7 @@ body {
     transform: scale(1.07); /* Aplica um zoom ligeiramente menor */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
@@ -503,7 +906,7 @@ body {
     width: 100%;
 }
 /* para telas menores */
-@media (max-width: 768px) {
+@media (max-width: 375px) {
     .characteristics-grid {
         grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
         gap: 10px; /* Reduz o espaçamento */
@@ -569,14 +972,14 @@ body {
     width: 100%;
 }
 /* para telas menores */
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 374px) {
     .characteristics-grid-boss {
         grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
         gap: 10px; /* Reduz o espaçamento */
     }
     
     .characteristic-box-boss {
-        width: 100%; /* Ajusta a largura para ocupar toda a coluna */
+        width: 140px; /* Ajusta a largura para ocupar toda a coluna */
         padding: 10px; /* Reduz o padding */
     }
     
@@ -586,6 +989,67 @@ body {
     
     .characteristic-box-boss p {
         font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        text-align: center;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    .characteristics-grid-boss {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
+        gap: 10px; /* Reduz o espaçamento */
+    }
+    
+    .characteristic-box-boss {
+        width: 150px; /* Ajusta a largura para ocupar toda a coluna */
+        padding: 10px; /* Reduz o padding */
+    }
+    
+    .characteristic-box-boss h2 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+    }
+    
+    .characteristic-box-boss p {
+        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        text-align: center;
+    }
+}
+@media (min-width: 425px)and (max-width: 767px)  {
+    .characteristics-grid-boss {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
+        gap: 10px; /* Reduz o espaçamento */
+    }
+    
+    .characteristic-box-boss {
+        width: 180px; /* Ajusta a largura para ocupar toda a coluna */
+        padding: 10px; /* Reduz o padding */
+    }
+    
+    .characteristic-box-boss h2 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+    }
+    
+    .characteristic-box-boss p {
+        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        text-align: center;
+    }
+}
+@media (min-width: 768px)and (max-width: 1023px)  {
+    .characteristics-grid-boss {
+        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
+        gap: 10px; /* Reduz o espaçamento */
+    }
+    
+    .characteristic-box-boss {
+        width: 250px; /* Ajusta a largura para ocupar toda a coluna */
+        padding: 10px; /* Reduz o padding */
+    }
+    
+    .characteristic-box-boss h2 {
+        font-size: 24px; /* Reduz o tamanho da fonte do título */
+    }
+    
+    .characteristic-box-boss p {
+        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        text-align: center;
     }
 }
 
@@ -658,4 +1122,373 @@ body {
 
 
 
+/* #########################################  CONTEUDOS PAGINA HOME  ######################################### */
 
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../O Despertar dos Reinos/Imagens_outras/banner_news.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.column{
+    flex-direction: column;
+}
+.banner_headline{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_headline h1 {
+    color: white;
+    font-family: 'Sedan SC';
+    font-size: 70px;
+    text-shadow: 0px 1px 1px black;
+    margin: 30px;
+    padding: 0;
+    margin-top: 30px;
+}
+.banner_headline h2 {
+    color: white;
+    font-size: 22px;
+    font-family: 'Sedan SC';
+    margin:30px;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.banner_options{
+    margin-top: 200px;
+    width: 1420px;
+    height: 400px;
+    display: flex;
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+.banner1{
+    background-image: url('../O Despertar dos Reinos/Imagens_outras/news01.jpeg');
+    background-position: center;
+    background-size: 100%;
+    border: 1px solid black;
+}
+.banner2{
+    background-image: url('../O Despertar dos Reinos/Imagens_outras/news02.jpeg');
+    background-position: center;
+    background-size: 100%;
+    border: 1px solid black;
+}
+.banner3{
+    background-image: url('../O Despertar dos Reinos/Imagens_outras/news03.jpeg');
+    background-position: center;
+    background-size: 100%;
+    border: 1px solid black;
+}
+.banner_title{
+    font-size: 30px;
+    font-family: 'Sedan SC';
+}
+.banner_desc{
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Sedan SC';
+}
+.banner_options a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Sedan SC';
+    margin-top: 233px;
+    margin-left: 325px;
+}
+
+#geral{
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+.widget_title{
+    margin-top: 260px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.widget_title_text{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Sedan SC';
+}
+.widget_title_bar{
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    margin-top: 10px;
+}
+.widget_body{
+    font-family: 'Sedan SC';
+    font-size: 21px;
+    text-align: center;
+    margin-top: 60px;
+
+}
+@media (max-width: 320px) {
+    #banner {
+        height: 200px;
+    }
+    .banner_headline h1 {
+        font-size: 40px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .banner_headline h2 {
+        font-size: 16px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .banner_options {
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner1, .banner2, .banner3 {
+        flex: 1;
+        margin-bottom: 10px;
+        background-size: 500px;
+
+    }
+    .banner_options a {
+        margin-top: 130px;
+        margin-left: 100px;
+    }
+    .widget_title {
+        margin-top: 170px;
+    }
+    .widget_title_text {
+        font-size: 30px;
+        margin-top: 810px;
+    }
+    .widget_title_bar {
+        margin-top: 5px;
+    }
+    .widget_body {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    #banner {
+        height: 200px;
+    }
+    .banner_headline h1 {
+        font-size: 40px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .banner_headline h2 {
+        font-size: 16px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .banner_options {
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner1, .banner2, .banner3 {
+        flex: 1;
+        margin-bottom: 10px;
+        background-size: 500px;
+
+    }
+    .banner_options a {
+        margin-top: 130px;
+        margin-left: 100px;
+    }
+    .widget_title {
+        margin-top: 170px;
+    }
+    .widget_title_text {
+        font-size: 30px;
+        margin-top: 810px;
+    }
+    .widget_title_bar {
+        margin-top: 5px;
+    }
+    .widget_body {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    #banner {
+        height: 200px;
+    }
+    .banner_headline h1 {
+        font-size: 40px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .banner_headline h2 {
+        font-size: 16px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .banner_options {
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner1, .banner2, .banner3 {
+        flex: 1;
+        margin-bottom: 10px;
+        background-size: 500px;
+
+    }
+    .banner_options a {
+        margin-top: 130px;
+        margin-left: 100px;
+    }
+    .widget_title {
+        margin-top: 170px;
+    }
+    .widget_title_text {
+        font-size: 30px;
+        margin-top: 810px;
+    }
+    .widget_title_bar {
+        margin-top: 5px;
+    }
+    .widget_body {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    #banner {
+        height: 200px;
+    }
+    .banner_headline h1 {
+        font-size: 40px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .banner_headline h2 {
+        font-size: 16px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .banner_options {
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner1, .banner2, .banner3 {
+        flex: 1;
+        margin-bottom: 10px;
+        background-size: 500px;
+
+    }
+    .banner_options a {
+        margin-top: 130px;
+        margin-left: 100px;
+    }
+    .widget_title {
+        margin-top: 170px;
+    }
+    .widget_title_text {
+        font-size: 30px;
+        margin-top: 810px;
+    }
+    .widget_title_bar {
+        margin-top: 5px;
+    }
+    .widget_body {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1390) {
+    #banner {
+        height: 200px;
+    }
+    .banner_headline h1 {
+        font-size: 40px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .banner_headline h2 {
+        font-size: 16px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .banner_options {
+        margin-top: 10px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner1, .banner2, .banner3 {
+        flex: 1;
+        margin-bottom: 10px;
+        background-size: 500px;
+
+    }
+    .banner_options a {
+        margin-top: 130px;
+        margin-left: 200px;
+    }
+    .widget_title {
+        margin-top: 170px;
+    }
+    .widget_title_text {
+        font-size: 30px;
+        margin-top: 250px;
+    }
+    .widget_title_bar {
+        margin-top: 5px;
+    }
+    .widget_body {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
