@@ -1394,6 +1394,55 @@ body {
         margin-top: 30px;
     }
 }
+@media (min-width: 426px) and (max-width: 767px) {
+    #banner {
+        height: 200px;
+    }
+    .banner_headline h1 {
+        font-size: 40px;
+        margin: 10px;
+        margin-top: 20px;
+    }
+    .banner_headline h2 {
+        font-size: 16px;
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .banner_options {
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .banner1, .banner2, .banner3 {
+        flex: 1;
+        margin-bottom: 10px;
+        background-size: 500px;
+
+    }
+    .banner_options a {
+        margin-top: 130px;
+        margin-left: 100px;
+    }
+    .widget_title {
+        margin-top: 170px;
+    }
+    .widget_title_text {
+        font-size: 30px;
+        margin-top: 810px;
+    }
+    .widget_title_bar {
+        margin-top: 5px;
+    }
+    .widget_body {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
     #banner {
         height: 200px;
