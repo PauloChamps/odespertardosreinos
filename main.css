@@ -779,6 +779,45 @@ body {
 
 }
 
+/* #########################################  IMAGENS - PAGINA REINOS  ######################################### */
+.grid-container-loja {
+    display: flex;
+    flex: 1;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    justify-content: center;
+}
+.grid-container-loja img {
+    width: 100%;
+    height: auto;
+}
+.grid-container-loja a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.zoom-image {
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+.zoom-container:hover .zoom-image {
+    transform: scale(1.07); /* Aplica um zoom ligeiramente menor */
+}
+
+@media (max-width: 375px) {
+    .grid-container-loja {
+        grid-template-columns: 1fr;
+    }
+    .grid-container-loja img {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
 
 
 
@@ -1539,4 +1578,63 @@ body {
         font-size: 16px;
         margin-top: 30px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article{
+    flex: 1;
+    width: 200px;
+    margin: 20px;
+}
+
+article a{
+    text-decoration: none;
+
+}
+
+article .news_data{
+    display: flex;
+}
+
+article .news_thumbnail {
+    margin-top: 0px;
+}
+
+article .news_thumbnail img{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+
+}
+
+article .news_title{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 22px;
+    font-family: 'Sedan SC';
+}
+
+article .news_resume {
+    font-size: 16px;
+    font-family: 'Sedan SC';
+    color: rgb(0, 0, 0);
+    line-height: 20px;
+    margin-bottom: 1px;
+
 }
