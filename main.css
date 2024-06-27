@@ -1303,7 +1303,10 @@ footer {
 }
 .banner1,
 .banner2,
-.banner3 {
+.banner3,
+.banner4,
+.banner5,
+.banner6 {
     flex: 1;
     color: white;
     padding: 20px;
@@ -1311,21 +1314,42 @@ footer {
     margin-right: 20px;
 }
 .banner1{
-    background-image: url('../O Despertar dos Reinos/Imagens_outras/news01.jpeg');
+    background-image: url('./Imagens_outras/new_att.jpeg');
     background-position: center;
     background-size: 500px;
     border: 1px solid black;
     box-shadow:0px 5px 10px #333;
 }
 .banner2{
-    background-image: url('../O Despertar dos Reinos/Imagens_outras/news02.jpeg');
+    background-image: url('./Imagens_outras/loja.jpeg');
     background-position: center;
     background-size: 500px;
     border: 1px solid black;
     box-shadow:0px 5px 10px #333;
 }
 .banner3{
-    background-image: url('../O Despertar dos Reinos/Imagens_outras/news03.jpeg');
+    background-image: url('./Imagens_outras/mercador.jpeg');
+    background-position: center;
+    background-size: 500px;
+    border: 1px solid black;
+    box-shadow:0px 5px 10px #333;
+}
+.banner4{
+    background-image: url('./Imagens_outras/news01.jpeg');
+    background-position: center;
+    background-size: 500px;
+    border: 1px solid black;
+    box-shadow:0px 5px 10px #333;
+}
+.banner5{
+    background-image: url('./Imagens_outras/news02.jpeg');
+    background-position: center;
+    background-size: 500px;
+    border: 1px solid black;
+    box-shadow:0px 5px 10px #333;
+}
+.banner6{
+    background-image: url('./Imagens_outras/news03.jpeg');
     background-position: center;
     background-size: 500px;
     border: 1px solid black;
