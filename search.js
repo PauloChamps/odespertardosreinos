@@ -22,27 +22,35 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const overlay = document.getElementById("overlay");
-    const overlayImg = document.getElementById("overlay-img");
-    const zoomables = document.querySelectorAll(".zoomable");
-    const close = document.querySelector(".close");
+document.addEventListener('DOMContentLoaded', function() {
+    var zoomableImages = document.querySelectorAll('.zoomable');
+    var overlay = document.getElementById('overlay');
+    var overlayImg = document.getElementById('overlay-img');
+    var closeBtn = document.querySelector('.close');
+    var nextButton = document.getElementById('next-button');
+    var prevButton = document.getElementById('prev-button');
+    var currentIndex = 0;
 
-    zoomables.forEach(img => {
-        img.addEventListener("click", function() {
-            overlay.style.display = "flex";
-            overlayImg.src = this.src;
+    zoomableImages.forEach(function(image, index) {
+        image.addEventListener('click', function() {
+            overlay.style.display = 'flex';
+            overlayImg.src = image.src;
+            currentIndex = index;
         });
     });
 
-    close.addEventListener("click", function() {
-        overlay.style.display = "none";
+    closeBtn.addEventListener('click', function() {
+        overlay.style.display = 'none';
     });
 
-    overlay.addEventListener("click", function(event) {
-        if (event.target !== overlayImg) {
-            overlay.style.display = "none";
-        }
+    nextButton.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % zoomableImages.length;
+        overlayImg.src = zoomableImages[currentIndex].src;
+    });
+
+    prevButton.addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + zoomableImages.length) % zoomableImages.length;
+        overlayImg.src = zoomableImages[currentIndex].src;
     });
 });
 

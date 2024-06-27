@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 /* #########################################  BANNER  ######################################### */
@@ -301,7 +302,7 @@ body {
 /* #########################################  RODAPÉ  ######################################### */
 footer {
     background-color: #000;
-    padding: 40px 40px;
+    padding: 40px;
     color: #999;
 }
 .footer--area {
@@ -309,7 +310,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
-    height: 80px;
+    height: auto;
 }
 .footer--item {
     flex: 1;
@@ -317,6 +318,7 @@ footer {
 }
 .footer--item.area1 {
     border-right: 1px solid #999;
+    padding-right: 20px; /* Ajuste de espaçamento */
 }
 .footer--item.area1 h2 {
     font-size: 24px;
@@ -341,6 +343,7 @@ footer {
 .footer-social {
     display: flex;
     justify-content: center; /* Centraliza os ícones dentro do container */
+    margin-top: 20px; /* Espaçamento superior */
 }
 .footer-social a {
     display: flex;
@@ -356,15 +359,87 @@ footer {
 .footer-social a:hover {
     background-color: #000;
 }
+
 .footer-social img {
     height: 15px; /* Ajusta o tamanho das imagens para melhor visualização */
 }
+
 .footer--item.area3 {
     text-align: center;
     border-left:  1px solid #999;
-    height: 112px;
+    padding-left: 20px; /* Ajuste de espaçamento */
+    height: auto; /* Altura automática para ajustar conteúdo */
 }
 
+@media (max-width: 320px) {
+    .footer--area {
+        flex-direction: column; /* Altera para layout de coluna */
+        align-items: center; /* Centraliza itens na horizontal */
+        padding: 20px; /* Reduz o padding para ocupar mais espaço na largura */
+    }
+    .footer--item {
+        flex-basis: 100%; /* Define a largura total para cada item */
+        border: none; /* Remove bordas */
+        padding: 10px 0; /* Ajuste de espaçamento interno */
+        text-align: center; /* Centraliza texto */
+        margin-bottom: 10px; /* Espaçamento inferior entre itens */
+    }
+    .footer--item.area1 {
+        border-right: none; /* Remove a borda direita */
+        padding-right: 0; /* Remove o espaçamento direito */
+        padding-left: 0; /* Remove o espaçamento esquerdo */
+        margin-bottom: 20px; /* Espaçamento inferior maior */
+        
+    }
+    .footer--item.area1 p{
+        font-size: 15px;
+        justify-content: center;
+    }
+    .footer--item.area1 h2 {
+        font-size: 20px; /* Reduz o tamanho da fonte */
+    }
+    .footer--item.area3 {
+        border-left: none; /* Remove a borda esquerda */
+        padding-left: 0; /* Remove o espaçamento esquerdo */
+        padding-bottom: 10px; /* Ajuste de espaçamento inferior */
+    }
+    .footer-social {
+        margin-top: 20px; /* Ajuste de margem superior */
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    /* Estilos específicos para telas entre 321px e 768px */
+    .footer--area {
+        flex-direction: column; /* Alinha os itens verticalmente */
+    }
+    .footer--item {
+        flex-basis: 100%; /* Um item por linha */
+        border: none; /* Remove bordas laterais */
+        padding: 10px 0; /* Ajuste de espaçamento */
+        text-align: center; /* Centraliza o texto */
+    }
+    .footer--item.area1 {
+        border: none; /* Remove a borda */
+        border-right: none; /* Remove a borda direita */
+        padding-right: 0; /* Remove o espaçamento direito */
+        padding-left: 0; /* Remove o espaçamento esquerdo */
+    }
+    .footer--item.area1 h2 {
+        font-size: 20px; /* Tamanho de fonte menor */
+        text-align: center; /* Centraliza o texto */
+    }
+    .footer--item.area3 {
+        border: none;
+        margin-top: 30px;
+        padding-bottom: 40px; /* Ajuste positivo para espaçamento inferior */
+    }
+}
+
+
+@media (min-width: 769px) {
+    /* Estilos específicos para telas maiores ou iguais a 769px */
+}
 
 /* #########################################  TEXTO -- PAGINA HISTORIA --  ######################################### */
 .centralizado {
@@ -453,7 +528,7 @@ footer {
     display: flex;
     justify-content: center; /* Centraliza as imagens no contêiner */
     gap: 5px; /* Espaçamento de 20px entre as imagens */
-    margin-top: 20px; /* Espaçamento superior para afastar do conteúdo anterior */
+    margin-top: 30px; /* Espaçamento superior para afastar do conteúdo anterior */
 }
 .image-item-boss {
     width: 350px;
@@ -627,6 +702,59 @@ footer {
         font-size: 24px;
         top: 5px;
     }
+}
+
+
+/* #########################################  IMAGENS BOSS ZOOM -- BOTAO PROXIMA E ANTERIOR -- ######################################### */
+
+.overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 999;
+}
+.overlay-content {
+    max-width: 80%;
+    max-height: 80%;
+}
+.next-button, .prev-button {
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-family: 'Sedan SC';
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+.next-button {
+    right: 300px;
+}
+.prev-button {
+    left: 300px;
+}
+.next-button:hover, .prev-button:hover {
+    background-color: #333;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* #########################################  IMAGENS BOSS ZOOM -- PAGINA PERSONAGENS BOSS -- ######################################### */
@@ -811,7 +939,7 @@ footer {
 
 }
 
-/* #########################################  IMAGENS - PAGINA REINOS  ######################################### */
+/* #########################################  IMAGENS - PAGINA LOJA ######################################### */
 .grid-container-loja {
     display: flex;
     flex: 1;
@@ -857,6 +985,7 @@ footer {
     background-color:#000000;
     color:#FFF;
     text-transform: uppercase;
+    font-family: 'Sedan SC';
     font-size:12px;
     font-weight:600;
     text-decoration: none;
@@ -864,11 +993,14 @@ footer {
     margin-top:25px;
     border-radius:20px;
 }
+.button-in:hover {
+    background-color:rgb(50, 50, 50);
+}
 .button-in--dark {
     background-color:#000;
 }
 .button-in--dark:hover {
-    background-color:#000000;
+    background-color:#999;
 }
 
 
@@ -1222,21 +1354,25 @@ footer {
     background-position: bottom;
     background-size: cover;
     overflow: hidden;
+    position: relative; /* Adiciona posição relativa para os elementos filhos absolutos */
     
 }
 .banner .sliders{
     width: 100vw;
     height: 100%;
     display: flex;
+    transition: transform 0.5s ease; /* Efeito de transição suave para slides */
     
 }
 .banner .slide{
     flex: 0 0 100vw; /* Cada slide ocupa 100% da largura da viewport */
-    width: 1000px;
     height: 100%;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .banner .slidearea{
     display: flex;
@@ -1258,7 +1394,7 @@ footer {
 }
 .banner a {
     background-color: #000000;
-    display: block;
+    display: inline-block;
     color: white;
     font-family: 'Sedan SC';
     text-transform: uppercase;
@@ -1285,9 +1421,42 @@ footer {
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
 }
 .banner .pointer.active{
     background-color: #ffffff;
+}
+
+@media (max-width: 320px) {
+    .banner {
+        height: calc(50vh - 100px); /* Reduz a altura do banner para telas menores */
+    }
+    .banner h1{
+        text-transform: uppercase;
+        font-family: 'Sedan SC';
+        font-size: 20px;
+    }
+    .banner h2 {
+        text-transform: uppercase;
+        font-family: 'Sedan SC';
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .banner .sliders {
+        height: 100%; /* Mantém a altura dos slides */
+    }
+    .banner .slide {
+        flex: 0 0 320px; /* Cada slide ocupa 320 pixels de largura */
+        width: 320px; /* Largura fixa para telas menores */
+    }
+    .banner .slider-pointers {
+        margin-top: 300px; /* Ajusta a margem superior dos pontos de navegação */
+    }
+    .banner .pointer {
+        width: 10px; /* Reduz o tamanho dos pontos de navegação */
+        height: 10px;
+        margin: 0 5px; /* Espaçamento entre os pontos */
+    }
 }
 
 /* #########################################  3 NOTICIAS*/
@@ -1368,15 +1537,17 @@ footer {
 .banner_options a{
     display: inline-block;
     border: 1px solid white;
-    padding: 5px;
+    padding: 10px 20px;
     color: white;
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: none;
     font-family: 'Sedan SC';
     margin-top: 233px;
-    margin-left: 280px;
-    border-radius: 10px;
+    margin-left: 270px;
+    border-radius: 20px;
+    text-transform: uppercase;
 }
+
 .banner_options a:hover{
     background-color: black;
     color: white;
@@ -1709,17 +1880,7 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
-
 /* #########################################  CONTEUDOS PAGINA MERCADOR  ######################################### */
-
 
 .flex {
     display: flex;
@@ -1760,32 +1921,15 @@ article .news_resume {
     margin-bottom: 1px;
 }
 
-
-
-
-
-
-
 /* #########################################  NOTICIA PAGINA PRINCIPAL  ######################################### */
-
 .default {
     padding-top:50px;
     padding-bottom:50px;
 }
-.default .section-title,
-.default .section-desc {
-    text-align:center;
-    text-transform: uppercase;
-    font-weight: 600;
-}
 .default .section-title {
-    font-size:20px;
-}
-.default .section-desc {
-    font-size:12px;
-    color:#CCC;
-    margin-top:10px;
-    margin-bottom:40px;
+    text-align:center;
+    font-family: 'Sedan SC';
+    font-size:26px;
 }
 .default .section-body {
     max-width:1140px;
@@ -1797,16 +1941,162 @@ article .news_resume {
 .section-aboutus--left {
     flex:1;
 }
+.section-aboutus--left h1 {
+    font-size:26px;
+    font-family: 'Sedan SC';
+}
 .section-aboutus--left p {
-    font-size:14px;
+    font-size:16px;
     line-height:25px;
+    font-family: 'Sedan SC';
+    text-align: justify;
+    margin-right: 15px;
 }
 .section-aboutus--right {
     width:520px;
     text-align:center;
 }
 .section-aboutus--right img {
-    width:480px;
+    width:550px;
     box-shadow:0px 5px 10px #333;
+    margin-left: 30px;
 }
+@media (min-width: 320px) and (max-width: 374px) {
+    .default .section-title {
+        font-size: 25px;
+        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+    }
+    .section-aboutus {
+        flex-direction: column; /* Alterei para column para garantir que os elementos fiquem um abaixo do outro */
+        align-items: center; /* Centralizei os elementos no centro */
+        text-align: center; /* Centralizei o texto */
+        margin-top: -40px;
+    }
+    .section-aboutus--left h1 {
+        font-size: 18px;
+        margin-bottom: 10px; /* Adicionei margem inferior para separar o título do parágrafo */
+        
+    }
+    .section-aboutus--left p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 30px;
+        text-align: justify; /* Adicionei para justificar o texto */
+    }
+    .section-aboutus--right {
+        width: 100%;
+        margin-top: 40px; /* Adicionei margem superior para separar do texto */
+    }
+    .section-aboutus--right img {
+        width: 100%;
+        max-width: 250px;
+        box-shadow: 0px 5px 10px #333;
+        margin: 0 auto; /* Centralizei a imagem */
+    }
+}
+@media (min-width: 375px) and (max-width: 424px){
+    .default .section-title {
+        font-size: 18px;
+        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+    }
+    .default .section-title {
+        font-size: 25px;
+        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+    }
+    .section-aboutus {
+        flex-direction: column; /* Alterei para column para garantir que os elementos fiquem um abaixo do outro */
+        align-items: center; /* Centralizei os elementos no centro */
+        text-align: center; /* Centralizei o texto */
+        margin-top: -40px;
+    }
+    .section-aboutus--left h1 {
+        font-size: 18px;
+        margin-bottom: 10px; /* Adicionei margem inferior para separar o título do parágrafo */
+        
+    }
+    .section-aboutus--left p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 30px;
+        text-align: justify; /* Adicionei para justificar o texto */
+    }
+    .section-aboutus--right {
+        width: 100%;
+        margin-top: 40px; /* Adicionei margem superior para separar do texto */
+    }
+    .section-aboutus--right img {
+        width: 100%;
+        max-width: 320px;
+        box-shadow: 0px 5px 10px #333;
+        margin: 0 auto; /* Centralizei a imagem */
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .default .section-title {
+        font-size: 25px;
+        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+    }
+    .section-aboutus {
+        flex-direction: column; /* Alterei para column para garantir que os elementos fiquem um abaixo do outro */
+        align-items: center; /* Centralizei os elementos no centro */
+        text-align: center; /* Centralizei o texto */
+        margin-top: -40px;
+    }
+    .section-aboutus--left h1 {
+        font-size: 18px;
+        margin-bottom: 10px; /* Adicionei margem inferior para separar o título do parágrafo */
+        
+    }
+    .section-aboutus--left p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 30px;
+        text-align: justify; /* Adicionei para justificar o texto */
+    }
+    .section-aboutus--right {
+        width: 100%;
+        margin-top: 40px; /* Adicionei margem superior para separar do texto */
+    }
+    .section-aboutus--right img {
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0px 5px 10px #333;
+        margin: 0 auto; /* Centralizei a imagem */
+    }
+}
+@media (min-width: 768px) {
+    .default .section-title {
+        font-size: 25px;
+        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+    }
+    .section-aboutus {
+        flex-direction: column; /* Alterei para column para garantir que os elementos fiquem um abaixo do outro */
+        align-items: center; /* Centralizei os elementos no centro */
+        text-align: center; /* Centralizei o texto */
+        margin-top: -40px;
+    }
+    .section-aboutus--left h1 {
+        font-size: 18px;
+        margin-bottom: 10px; /* Adicionei margem inferior para separar o título do parágrafo */
+        
+    }
+    .section-aboutus--left p {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 30px;
+        text-align: justify; /* Adicionei para justificar o texto */
+    }
+    .section-aboutus--right {
+        width: 100%;
+        margin-top: 40px; /* Adicionei margem superior para separar do texto */
+    }
+    .section-aboutus--right img {
+        width: 100%;
+        max-width: 450px;
+        box-shadow: 0px 5px 10px #333;
+        margin: 0 auto; /* Centralizei a imagem */
+    }
+}
+
+
 
