@@ -2162,13 +2162,13 @@ article .news_resume {
     }
     .section-aboutus {
         flex-direction: column; 
-        align-items: center; 
+        align-items: center;
         text-align: center; 
         margin-top: -40px;
     }
     .section-aboutus--left h1 {
         font-size: 18px;
-        margin-bottom: 10px; 
+        margin-bottom: 10px;  
         
     }
     .section-aboutus--left p {
