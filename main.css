@@ -2125,7 +2125,7 @@ article .news_resume {
 @media (min-width: 425px) and (max-width: 767px) {
     .default .section-title {
         font-size: 25px;
-        margin-top: 650px; e
+        margin-top: 650px; 
     }
     .section-aboutus {
         flex-direction: column; 
