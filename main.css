@@ -1,11 +1,4 @@
 
-/* arrumar o tamanho da tela para celular 576px com @media */
-
-/* organizar código */
-
-
-
-
 * {
     margin: 0 auto;
     padding: 0;
@@ -16,9 +9,9 @@
 
 /* #########################################  BANNER  ######################################### */
 .banner_img {
-    max-width: 100%; /* Define a largura máxima como 100% da largura do cabeçalho */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Para garantir que a imagem seja exibida como bloco */
+    max-width: 100%; 
+    height: auto; 
+    display: block; /
 }
 @media (max-width: 375px) {
     .banner_img{
@@ -34,86 +27,86 @@
 /* #########################################  PLANO DE FUNDO  ######################################### */
 body {
     background-image: url('Imagens_outras/fundo05.jpg');
-    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 /* #########################################  CAMPO DE BUSCA  ######################################### */
 .btn-buscar {
-    float: right; /* Alinha o botão à direita */
-    margin-top: -31px; /* Adiciona um espaçamento superior */
-    margin-right: 20px; /* Adiciona um espaçamento direito */
+    float: right; 
+    margin-top: -31px; 
+    margin-right: 20px; 
 }
-/* Ajuste para telas menores de 320px */
+
 @media (max-width: 320px) {
     .btn-buscar {
-        float: right; /* Alinha o botão ao centro */
-        margin-top: -33px; /* Adiciona um espaçamento superior */
-        margin-right: 20px; /* Adiciona um espaçamento direito */
-        text-align: right; /* Centraliza o conteúdo */
+        float: right; 
+        margin-top: -33px; 
+        margin-right: 20px; 
+        text-align: right; 
     }
     
     .btn-buscar input[type="search"] {
-        width: 40%; /* Ajusta a largura do campo de busca */
-        font-size: 14px; /* Ajusta o tamanho da fonte do campo de busca */
+        width: 40%; 
+        font-size: 14px; 
     }
     
     .btn-buscar label {
-        font-size: 14px; /* Ajusta o tamanho da fonte do rótulo */
+        font-size: 14px; 
     }
 }
 @media (min-width: 321px) {
     .btn-buscar {
-        float: right; /* Alinha o botão ao centro */
-        margin-top: -33px; /* Adiciona um espaçamento superior */
-        margin-right: 20px; /* Adiciona um espaçamento direito */
-        text-align: right; /* Centraliza o conteúdo */
+        float: right; 
+        margin-top: -33px; 
+        margin-right: 20px; 
+        text-align: right; 
     }
     
     .btn-buscar input[type="search"] {
-        width: 40%; /* Ajusta a largura do campo de busca */
-        font-size: 14px; /* Ajusta o tamanho da fonte do campo de busca */
+        width: 40%; 
+        font-size: 14px; 
     }
     
     .btn-buscar label {
-        font-size: 14px; /* Ajusta o tamanho da fonte do rótulo */
+        font-size: 14px;
     }
 }
 @media (min-width: 851px) and (max-width: 1023px){
     .btn-buscar {
-        float: none;  /*Alinha o botão ao centro */
-        margin-top: 0px;  /*Adiciona um espaçamento superior */
-        margin-right: 0px;  /*Adiciona um espaçamento direito */
+        float: none;  
+        margin-top: 0px;  
+        margin-right: 0px;  
         margin-bottom: 10px;
-        text-align: center;  /*Centraliza o conteúdo */
+        text-align: center; 
     }
     
     .btn-buscar input[type="search"] {
-        width: 10%;  /*Ajusta a largura do campo de busca */
-        font-size: 14px;  /*Ajusta o tamanho da fonte do campo de busca */
+        width: 10%;  
+        font-size: 14px;  
     }
     
     .btn-buscar label {
-        font-size: 14px; /* Ajusta o tamanho da fonte do rótulo */
+        font-size: 14px; 
     }
 }
 @media (min-width: 1024px) and (max-width: 1590px){
     .btn-buscar {
-        float: none;  /*Alinha o botão ao centro */
-        margin-top: 0px;  /*Adiciona um espaçamento superior */
-        margin-right: 0px;  /*Adiciona um espaçamento direito */
+        float: none;  
+        margin-top: 0px; 
+        margin-right: 0px;  
         margin-bottom: 10px;
-        text-align: center;  /*Centraliza o conteúdo */
+        text-align: center;  
     }
     
     .btn-buscar input[type="search"] {
-        width: 10%;  /*Ajusta a largura do campo de busca */
-        font-size: 14px;  /*Ajusta o tamanho da fonte do campo de busca */
+        width: 10%;  
+        font-size: 14px;   
     }
     
     .btn-buscar label {
-        font-size: 14px; /* Ajusta o tamanho da fonte do rótulo */
+        font-size: 14px; 
     }
 }
 
@@ -122,13 +115,12 @@ body {
 /* #########################################  MENU  ######################################### */
 #menu-h {
     background-color: rgb(0, 0, 0);
-    overflow: hidden; /*overflow: auto;*/
+    overflow: hidden;
 }
 #menu-h ul {
     max-width: 1000px;
     list-style: none;
     padding: 0;
-    /*white-space: nowrap; /* Impede a quebra de linha */
     margin: 0;
     display: flex;
     flex-wrap: nowrap;
@@ -148,7 +140,6 @@ body {
 #menu-h ul li a:hover {
     background-color: rgb(50, 50, 50); /* 0 0 0 */
 }
-/* Esconder o botão do menu por padrão */
 .menu-toggle {
     display: none;
     background-color: rgb(0, 0, 0);
@@ -159,139 +150,137 @@ body {
     cursor: pointer;
 }
 @media (max-width: 320px) {
-    /* Exibir o botão do menu */
     .menu-toggle {
         display: block;
-        margin-top: -5px; /* Adiciona um espaçamento superior */
-        margin-left: 20px; /* Adiciona um espaçamento direito */
+        margin-top: -5px; 
+        margin-left: 20px; 
     }
-    /* Esconder o menu inicialmente */
     #menu-h ul {
         display: none;
-        position: fixed; /* Para manter o menu fixo na tela */
-        top: 0; /* Alinha o menu no topo */
-        left: 0; /* Alinha o menu à esquerda */
-        height: 42%; /* Define a altura do menu para preencher toda a tela */
-        width: 250px; /* Largura da caixa do menu */
-        background-color: #000000; /* Cor de fundo do menu */
-        padding: 20px; /* Espaçamento interno do menu */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
-        z-index: 999; /* Para garantir que o menu esteja acima de outros elementos */
+        position: fixed;
+        top: 0; 
+        left: 0; 
+        height: 41%; 
+        width: 250px; 
+        background-color: #000000;
+        padding: 20px; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);   
+        z-index: 999; 
     }
-    /* Exibir o menu quando o botão é clicado */
+    
     #menu-h ul.show {
-        display: block; /* Altera para exibir o menu */
+        display: block; 
     }
     #menu-h ul li {
         display: block;
         text-align: center;
     }
     #menu-h ul li a {
-        display: block; /* Ajusta para ocupar toda a largura da caixa do menu */
+        display: block; 
         padding: 10px;
         border-bottom: 1px solid #444;
     }
 }
 
 @media (max-width: 375px) {
-    /* Exibir o botão do menu */
+
     .menu-toggle {
         display: block;
-        margin-top: -5px; /* Adiciona um espaçamento superior */
-        margin-left: 20px; /* Adiciona um espaçamento direito */
+        margin-top: -5px; 
+        margin-left: 20px;
     }
-    /* Esconder o menu inicialmente */
+   
     #menu-h ul {
         display: none;
-        position: fixed; /* Para manter o menu fixo na tela */
-        top: 0; /* Alinha o menu no topo */
-        left: 0; /* Alinha o menu à esquerda */
-        height: 42%; /* Define a altura do menu para preencher toda a tela */
-        width: 250px; /* Largura da caixa do menu */
-        background-color: #000000; /* Cor de fundo do menu */
-        padding: 20px; /* Espaçamento interno do menu */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
-        z-index: 999; /* Para garantir que o menu esteja acima de outros elementos */
+        position: fixed;
+        top: 0; 
+        left: 0; 
+        height: 42%;
+        width: 250px; 
+        background-color: #000000; 
+        padding: 20px; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+        z-index: 999; 
     }
-    /* Exibir o menu quando o botão é clicado */
+    
     #menu-h ul.show {
-        display: block; /* Altera para exibir o menu */
+        display: block; 
     }
     #menu-h ul li {
         display: block;
         text-align: center;
     }
     #menu-h ul li a {
-        display: block; /* Ajusta para ocupar toda a largura da caixa do menu */
+        display: block;
         padding: 10px;
         border-bottom: 1px solid #444;
     }
 }
 
 @media (max-width: 425px) {
-    /* Exibir o botão do menu */
+   
     .menu-toggle {
         display: block;
-        margin-top: -5px; /* Adiciona um espaçamento superior */
-        margin-left: 20px; /* Adiciona um espaçamento direito */
+        margin-top: -5px; 
+        margin-left: 20px; 
     }
-    /* Esconder o menu inicialmente */
+    
     #menu-h ul {
         display: none;
-        position: fixed; /* Para manter o menu fixo na tela */
-        top: 0; /* Alinha o menu no topo */
-        left: 0; /* Alinha o menu à esquerda */
-        height: 42%; /* Define a altura do menu para preencher toda a tela */
-        width: 250px; /* Largura da caixa do menu */
-        background-color: #000000; /* Cor de fundo do menu */
-        padding: 20px; /* Espaçamento interno do menu */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
-        z-index: 999; /* Para garantir que o menu esteja acima de outros elementos */
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        height: 42%; 
+        width: 250px; 
+        background-color: #000000; 
+        padding: 20px; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+        z-index: 999; 
     }
-    /* Exibir o menu quando o botão é clicado */
+    
     #menu-h ul.show {
-        display: block; /* Altera para exibir o menu */
+        display: block; 
     }
     #menu-h ul li {
         display: block;
         text-align: center;
     }
     #menu-h ul li a {
-        display: block; /* Ajusta para ocupar toda a largura da caixa do menu */
+        display: block;
         padding: 10px;
         border-bottom: 1px solid #444;
     }
 }
 @media (max-width: 849px) {
-    /* Exibir o botão do menu */
+
     .menu-toggle {
         display: block;
-        margin-top: -5px; /* Adiciona um espaçamento superior */
-        margin-left: 20px; /* Adiciona um espaçamento direito */
+        margin-top: -5px; 
+        margin-left: 20px; 
     }
-    /* Esconder o menu inicialmente */
+
     #menu-h ul {
         display: none;
-        position: fixed; /* Para manter o menu fixo na tela */
-        top: 0; /* Alinha o menu no topo */
-        left: 0; /* Alinha o menu à esquerda */
-        height: 42%; /* Define a altura do menu para preencher toda a tela */
-        width: 250px; /* Largura da caixa do menu */
-        background-color: #000000; /* Cor de fundo do menu */
-        padding: 20px; /* Espaçamento interno do menu */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
-        z-index: 999; /* Para garantir que o menu esteja acima de outros elementos */
+        position: fixed;
+        top: 0;
+        left: 0; 
+        height: 42%; 
+        width: 250px; 
+        background-color: black; 
+        padding: 20px; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+        z-index: 999; 
     }
-    /* Exibir o menu quando o botão é clicado */
+    
     #menu-h ul.show {
-        display: block; /* Altera para exibir o menu */
+        display: block; 
     }
     #menu-h ul li {
         display: block;
         text-align: center;
     }
     #menu-h ul li a {
-        display: block; /* Ajusta para ocupar toda a largura da caixa do menu */
+        display: block;
         padding: 10px;
         border-bottom: 1px solid #444;
     }
@@ -309,7 +298,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    flex-wrap: wrap; 
     height: auto;
 }
 .footer--item {
@@ -318,7 +307,7 @@ footer {
 }
 .footer--item.area1 {
     border-right: 1px solid #999;
-    padding-right: 20px; /* Ajuste de espaçamento */
+    padding-right: 20px; 
 }
 .footer--item.area1 h2 {
     font-size: 24px;
@@ -342,8 +331,8 @@ footer {
 }
 .footer-social {
     display: flex;
-    justify-content: center; /* Centraliza os ícones dentro do container */
-    margin-top: 20px; /* Espaçamento superior */
+    justify-content: center; 
+    margin-top: 20px; 
 }
 .footer-social a {
     display: flex;
@@ -361,34 +350,33 @@ footer {
 }
 
 .footer-social img {
-    height: 15px; /* Ajusta o tamanho das imagens para melhor visualização */
+    height: 15px; 
 }
 
 .footer--item.area3 {
     text-align: center;
     border-left:  1px solid #999;
-    padding-left: 20px; /* Ajuste de espaçamento */
-    height: auto; /* Altura automática para ajustar conteúdo */
+    padding-left: 20px; 
+    height: auto; 
 }
 
 @media (max-width: 320px) {
     .footer--area {
-        flex-direction: column; /* Altera para layout de coluna */
-        align-items: center; /* Centraliza itens na horizontal */
-        padding: 20px; /* Reduz o padding para ocupar mais espaço na largura */
+        flex-direction: column; 
+        align-items: center; 
     }
     .footer--item {
-        flex-basis: 100%; /* Define a largura total para cada item */
-        border: none; /* Remove bordas */
-        padding: 10px 0; /* Ajuste de espaçamento interno */
-        text-align: center; /* Centraliza texto */
-        margin-bottom: 10px; /* Espaçamento inferior entre itens */
+        flex-basis: 100%; 
+        border: none; 
+        padding: 10px 0; 
+        text-align: center; 
+        margin-bottom: 10px; 
     }
     .footer--item.area1 {
-        border-right: none; /* Remove a borda direita */
-        padding-right: 0; /* Remove o espaçamento direito */
-        padding-left: 0; /* Remove o espaçamento esquerdo */
-        margin-bottom: 20px; /* Espaçamento inferior maior */
+        border-right: none; 
+        padding-right: 0; 
+        padding-left: 0; 
+        margin-bottom: 20px; 
         
     }
     .footer--item.area1 p{
@@ -396,64 +384,58 @@ footer {
         justify-content: center;
     }
     .footer--item.area1 h2 {
-        font-size: 20px; /* Reduz o tamanho da fonte */
+        font-size: 20px; 
     }
     .footer--item.area3 {
-        border-left: none; /* Remove a borda esquerda */
-        padding-left: 0; /* Remove o espaçamento esquerdo */
-        padding-bottom: 10px; /* Ajuste de espaçamento inferior */
+        border-left: none; 
+        padding-left: 0; 
+        padding-bottom: 10px; 
     }
     .footer-social {
-        margin-top: 20px; /* Ajuste de margem superior */
+        margin-top: 20px; 
     }
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
-    /* Estilos específicos para telas entre 321px e 768px */
+
     .footer--area {
-        flex-direction: column; /* Alinha os itens verticalmente */
+        flex-direction: column; 
     }
     .footer--item {
-        flex-basis: 100%; /* Um item por linha */
-        border: none; /* Remove bordas laterais */
-        padding: 10px 0; /* Ajuste de espaçamento */
-        text-align: center; /* Centraliza o texto */
+        flex-basis: 100%; 
+        border: none; 
+        padding: 10px 0; 
+        text-align: center; 
     }
     .footer--item.area1 {
-        border: none; /* Remove a borda */
-        border-right: none; /* Remove a borda direita */
-        padding-right: 0; /* Remove o espaçamento direito */
-        padding-left: 0; /* Remove o espaçamento esquerdo */
+        border: none; 
+        border-right: none; 
+        padding-right: 0; 
+        padding-left: 0; 
     }
     .footer--item.area1 h2 {
-        font-size: 20px; /* Tamanho de fonte menor */
-        text-align: center; /* Centraliza o texto */
+        font-size: 20px; 
+        text-align: center; 
     }
     .footer--item.area3 {
         border: none;
         margin-top: 30px;
-        padding-bottom: 40px; /* Ajuste positivo para espaçamento inferior */
+        padding-bottom: 40px; 
     }
 }
 
 
-@media (min-width: 769px) {
-    /* Estilos específicos para telas maiores ou iguais a 769px */
-}
-
 /* #########################################  TEXTO -- PAGINA HISTORIA --  ######################################### */
 .centralizado {
-    width: 80%; /* Defina a largura desejada */
-    margin: 0 auto; /* Margens automáticas para centralizar */
-    font-size: 25px; /* Tamanho da fonte */
-    /*border: 3px solid black;  Borda sólida com 10px de largura e cor preta */
-    /*padding: 20px; /* Espaçamento interno */
-    text-align: justify; /* Centraliza o texto horizontalmente */
+    width: 80%; 
+    margin: 0 auto; 
+    font-size: 25px; 
+    text-align: justify; 
 }
 @media (max-width: 375px) {
     .centralizado {
-        position: static; /* Remove a posição absoluta */
-        margin-top: 20px; /* Adiciona um espaçamento superior */
+        position: static; 
+        margin-top: 20px; 
         font-size: 18px;
     }
 }
@@ -463,9 +445,8 @@ footer {
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza as imagens no contêiner */
-    /*gap: 3px; /* Espaçamento de 20px entre as imagens */
-    margin-top: 0px; /* Espaçamento superior para afastar do conteúdo anterior */
+    justify-content: center;
+    margin-top: 0px; 
 }
 .image-item {
     width: 260px;
@@ -473,16 +454,16 @@ footer {
     border-radius: 15px;
     margin: 45px;
     margin-top: 0px;
-   /* overflow: hidden; /* Adicionado para evitar overflow ao aplicar zoom */
+   
 }
 .image-item img {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    transition: transform 0.3s ease; 
 }
 .image-item img:hover {
-    transform: scale(1.1); /* Aplica o zoom */
+    transform: scale(1.1); 
 }
 .image-item h2 {
     margin: 10px 0 5px;
@@ -504,48 +485,48 @@ footer {
     font-size: 16px;
     border-radius: 20px;
     cursor: pointer;
-    margin-top: 10px; /* Espaçamento acima do botão */
+    margin-top: 10px; 
     position: relative;
-    top: 20px; /* Ajuste a posição vertical do botão */
+    top: 20px; 
 }
 .image-item .btn:hover {
     background-color: #333;
 }
 
-/* Responsivo para telas menores */
+
 @media (max-width: 375px) {
     .image-item {
-        width: 150px; /* Diminui o tamanho das imagens em telas menores */
+        width: 150px;  
     }
 
     .image-container {
-        gap: 5px; /* Diminui o espaçamento entre as imagens em telas menores */
+        gap: 5px; 
     }
 }
 
 /* #########################################  IMAGENS BOSS -- PAGINA BOSS --  ######################################### */
 .image-container-boss {
     display: flex;
-    justify-content: center; /* Centraliza as imagens no contêiner */
-    gap: 5px; /* Espaçamento de 20px entre as imagens */
-    margin-top: 30px; /* Espaçamento superior para afastar do conteúdo anterior */
+    justify-content: center; 
+    gap: 5px; 
+    margin-top: 30px; 
 }
 .image-item-boss {
     width: 350px;
     text-align: center;
     border-radius: 15px;
-    margin-left: 50px; /*  margem à esquerda */
-    margin-right: 50px; /* margem à direita */
-   /* overflow: hidden; /*  evita overflow ao aplicar zoom */
+    margin-left: 50px;
+    margin-right: 50px;
+   
 }
 .image-item-boss img {
     width: 100%;
     height: auto;
     border-radius: 15px;
-    transition: transform 0.3s ease; /* transição suave */
+    transition: transform 0.3s ease; 
 }
 .image-item-boss img:hover {
-    transform: scale(1.1); /* zoom */
+    transform: scale(1.1); 
 }
 .image-item-boss h2 {
     margin: 10px 0 5px;
@@ -567,9 +548,9 @@ footer {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
-    margin-top: 10px; /* Espaçamento acima do botão */
+    margin-top: 10px; 
     position: relative;
-    top: 5px; /* Ajuste a posição vertical do botão */
+    top: 5px; 
 }
 .image-item-boss .btn:hover {
     background-color: #333;
@@ -584,7 +565,7 @@ footer {
         margin-top: 10px;
     }
     .image-item-boss {
-        flex-basis: calc(50% - 5px); /* Define a largura para ocupar metade da largura do contêiner, subtraindo o espaçamento */
+        flex-basis: calc(50% - 5px);
         margin-bottom: 10px;
     }
     .image-item-boss img {
@@ -616,7 +597,7 @@ footer {
         margin-top: 10px;
     }
     .image-item-boss {
-        flex-basis: calc(50% - 5px); /* Define a largura para ocupar metade da largura do contêiner, subtraindo o espaçamento */
+        flex-basis: calc(50% - 5px); 
         margin-bottom: 10px;
     }
     .image-item-boss img {
@@ -648,7 +629,7 @@ footer {
         margin-top: 10px;
     }
     .image-item-boss {
-        flex-basis: calc(50% - 5px); /* Define a largura para ocupar metade da largura do contêiner, subtraindo o espaçamento */
+        flex-basis: calc(50% - 5px); 
         margin-bottom: 10px;
     }
     .image-item-boss img {
@@ -680,7 +661,7 @@ footer {
         margin-top: 10px;
     }
     .image-item-boss {
-        flex-basis: calc(50% - 5px); /* Define a largura para ocupar metade da largura do contêiner, subtraindo o espaçamento */
+        flex-basis: calc(50% - 5px); 
         margin-bottom: 10px;
     }
     .image-item-boss img {
@@ -763,136 +744,136 @@ footer {
 }
 .zoom-image {
     border-radius: 15px;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    transition: transform 0.3s ease; 
 }
 .zoom-container:hover .zoom-image {
-    transform: scale(1.15); /* Aplica um zoom ligeiramente menor */
+    transform: scale(1.15); 
 }
 
 .boss-description p{
     font-size: 20px;
     text-align: justify;
-    margin-right: 40px; /* Margem à direita */
+    margin-right: 40px; 
     margin: 40px;
 }
 @media (max-width: 320px) {
-    /* Ajustando o tamanho das imagens */
+   
     .zoom-container {
-        width: 75%; /* Ajusta a largura da imagem */
-        margin-right: 5%; /* Espaçamento à direita */
-        margin-left: 5%; /* Espaçamento à esquerda */
+        width: 75%; 
+        margin-right: 5%; 
+        margin-left: 5%; 
         margin-bottom: 10px;
         display: block;
         float: none;
     }
     .zoom-image {
-        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-        border-radius: 15px; /* Adiciona bordas arredondadas */
+        width: 100%; 
+        border-radius: 15px; 
     }
     .boss-description {
         clear: both;
         text-align: center;
     }
-    /* Ajustando o tamanho do texto */
+   
     .boss-description h1 {
-        font-size: 18px; /* Tamanho da fonte */
-        text-align: center; /* Centraliza o texto */
+        font-size: 18px; 
+        text-align: center; 
     }
     .boss-description p {
-        font-size: 14px; /* Tamanho da fonte */
-        margin-left: 10px; /* Margem à esquerda */
-        margin-right: 10px; /* Margem à direita */
+        font-size: 14px; 
+        margin-left: 10px; 
+        margin-right: 10px; 
         text-align: justify;
     }
 }
 
 @media (max-width: 375px) {
-    /* Ajustando o tamanho das imagens */
+    
     .zoom-container {
-        width: 75%; /* Ajusta a largura da imagem */
-        margin-right: 5%; /* Espaçamento à direita */
-        margin-left: 5%; /* Espaçamento à esquerda */
+        width: 75%; 
+        margin-right: 5%; 
+        margin-left: 5%; 
         margin-bottom: 10px;
         display: block;
         float: none;
     }
     .zoom-image {
-        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-        border-radius: 15px; /* Adiciona bordas arredondadas */
+        width: 100%; 
+        border-radius: 15px; 
     }
     .boss-description {
         clear: both;
         text-align: center;
     }
-    /* Ajustando o tamanho do texto */
+   
     .boss-description h1 {
-        font-size: 18px; /* Tamanho da fonte */
-        text-align: center; /* Centraliza o texto */
+        font-size: 18px; 
+        text-align: center; 
     }
     .boss-description p {
-        font-size: 14px; /* Tamanho da fonte */
-        margin-left: 10px; /* Margem à esquerda */
-        margin-right: 10px; /* Margem à direita */
+        font-size: 14px; 
+        margin-left: 10px; 
+        margin-right: 10px; 
         text-align: justify;
     }
 }
 @media (max-width: 425px) {
-    /* Ajustando o tamanho das imagens */
+   
     .zoom-container {
-        width: 75%; /* Ajusta a largura da imagem */
-        margin-right: 5%; /* Espaçamento à direita */
-        margin-left: 5%; /* Espaçamento à esquerda */
+        width: 75%; 
+        margin-right: 5%; 
+        margin-left: 5%; 
         margin-bottom: 10px;
         display: block;
         float: none;
     }
     .zoom-image {
-        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-        border-radius: 15px; /* Adiciona bordas arredondadas */
+        width: 100%; 
+        border-radius: 15px; 
     }
     .boss-description {
         clear: both;
         text-align: center;
     }
-    /* Ajustando o tamanho do texto */
+  
     .boss-description h1 {
-        font-size: 18px; /* Tamanho da fonte */
-        text-align: center; /* Centraliza o texto */
+        font-size: 18px; 
+        text-align: center; 
     }
     .boss-description p {
-        font-size: 14px; /* Tamanho da fonte */
-        margin-left: 10px; /* Margem à esquerda */
-        margin-right: 10px; /* Margem à direita */
+        font-size: 14px; 
+        margin-left: 10px; 
+        margin-right: 10px; 
         text-align: justify;
     }
 }
 @media (max-width: 768px) {
-    /* Ajustando o tamanho das imagens */
+    
     .zoom-container {
-        width: 75%; /* Ajusta a largura da imagem */
-        margin-right: 5%; /* Espaçamento à direita */
-        margin-left: 40px; /* Espaçamento à esquerda */
+        width: 75%; 
+        margin-right: 5%; 
+        margin-left: 40px; 
         margin-bottom: 10px;
         display: block;
         float: right;
     }
     .zoom-image {
-        width: 100%; /* Garante que a imagem ocupe toda a largura do contêiner */
-        border-radius: 15px; /* Adiciona bordas arredondadas */
+        width: 100%; 
+        border-radius: 15px; 
     }
     .boss-description {
         clear: both;
         text-align: center;
     }
-    /* Ajustando o tamanho do texto */
+    
     .boss-description h1 {
-        font-size: 18px; /* Tamanho da fonte */
-        text-align: center; /* Centraliza o texto */
+        font-size: 18px; 
+        text-align: center; 
     }
     .boss-description p {
-        font-size: 14px; /* Tamanho da fonte */
-        margin-left: 10px; /* Margem à esquerda */
-        margin-right: 10px; /* Margem à direita */
+        font-size: 14px; 
+        margin-left: 10px; 
+        margin-right: 10px; 
         text-align: justify;
     }
 }
@@ -922,10 +903,10 @@ footer {
 }
 .zoom-image {
     border-radius: 15px;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    transition: transform 0.3s ease; 
 }
 .zoom-container:hover .zoom-image {
-    transform: scale(1.07); /* Aplica um zoom ligeiramente menor */
+    transform: scale(1.07); /
 }
 
 @media (max-width: 375px) {
@@ -939,7 +920,7 @@ footer {
 
 }
 
-/* #########################################  IMAGENS - PAGINA LOJA ######################################### */
+/* #########################################  IMAGENS - PAGINA LOJA - PERSONAGENS ######################################### */
 .grid-container-loja {
     display: flex;
     flex: 1;
@@ -961,13 +942,13 @@ footer {
 }
 .zoom-image {
     border-radius: 15px;
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    transition: transform 0.3s ease; 
 }
 .zoom-container:hover .zoom-image {
-    transform: scale(1.07); /* Aplica um zoom ligeiramente menor */
+    transform: scale(1.07); 
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
     .grid-container-loja {
         grid-template-columns: 1fr;
     }
@@ -975,6 +956,14 @@ footer {
         max-width: 90%;
         margin: 0 auto;
     }
+}
+@media (min-width: 375px) and (max-width: 424px){
+
+}
+@media (min-width: 425px) and (max-width: 767px) {
+
+}
+@media (min-width: 768px) and (max-width: 1000px){
 
 }
 
@@ -1096,9 +1085,9 @@ footer {
 .characteristic-box {
     width: 300px;
     height: 410px;
-    background-image: url('Imagens_outras/fundo07.JPG'); /* Imagem de fundo */
-    background-size: cover; /* Ajusta o tamanho da imagem */
-    background-position: center; /* Centraliza a imagem */
+    background-image: url('Imagens_outras/fundo07.JPG'); 
+    background-size: cover;
+    background-position: center; 
     border: 2px solid #ccc;
     border-radius: 15px;
     display: flex;
@@ -1129,21 +1118,21 @@ footer {
 /* para telas menores */
 @media (max-width: 375px) {
     .characteristics-grid {
-        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
-        gap: 10px; /* Reduz o espaçamento */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
     }
     
     .characteristic-box {
-        width: 100%; /* Ajusta a largura para ocupar toda a coluna */
-        padding: 10px; /* Reduz o padding */
+        width: 100%;  
+        padding: 10px; 
     }
     
     .characteristic-box h2 {
-        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        font-size: 24px; 
     }
     
     .characteristic-box p {
-        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        font-size: 12px; 
     }
 }
 /* #########################################  3 QUADRADOS CARACTERISTICAS BOSS  ######################################### */
@@ -1162,9 +1151,9 @@ footer {
 .characteristic-box-boss {
     width: 250px;
     height: 300px;
-    background-image: url('Imagens_outras/fundo08.JPG'); /* Imagem de fundo */
-    background-size: cover; /* Ajusta o tamanho da imagem */
-    background-position: center; /* Centraliza a imagem */
+    background-image: url('Imagens_outras/fundo08.JPG'); 
+    background-size: cover; 
+    background-position: center; 
     border: 2px solid #ccc;
     border-radius: 15px;
     display: flex;
@@ -1192,84 +1181,84 @@ footer {
     text-align: left;
     width: 100%;
 }
-/* para telas menores */
+
 @media (min-width: 320px) and (max-width: 374px) {
     .characteristics-grid-boss {
-        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
-        gap: 10px; /* Reduz o espaçamento */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
     }
     
     .characteristic-box-boss {
-        width: 140px; /* Ajusta a largura para ocupar toda a coluna */
-        padding: 10px; /* Reduz o padding */
+        width: 140px; 
+        padding: 10px; 
     }
     
     .characteristic-box-boss h2 {
-        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        font-size: 24px; 
     }
     
     .characteristic-box-boss p {
-        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        font-size: 12px; 
         text-align: center;
     }
 }
 @media (min-width: 375px) and (max-width: 424px) {
     .characteristics-grid-boss {
-        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
-        gap: 10px; /* Reduz o espaçamento */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
     }
     
     .characteristic-box-boss {
-        width: 150px; /* Ajusta a largura para ocupar toda a coluna */
-        padding: 10px; /* Reduz o padding */
+        width: 150px; 
+        padding: 10px; 
     }
     
     .characteristic-box-boss h2 {
-        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        font-size: 24px; 
     }
     
     .characteristic-box-boss p {
-        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        font-size: 12px; 
         text-align: center;
     }
 }
 @media (min-width: 425px)and (max-width: 767px)  {
     .characteristics-grid-boss {
-        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
-        gap: 10px; /* Reduz o espaçamento */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
     }
     
     .characteristic-box-boss {
-        width: 180px; /* Ajusta a largura para ocupar toda a coluna */
-        padding: 10px; /* Reduz o padding */
+        width: 180px; 
+        padding: 10px; 
     }
     
     .characteristic-box-boss h2 {
-        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        font-size: 24px; 
     }
     
     .characteristic-box-boss p {
-        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        font-size: 12px; 
         text-align: center;
     }
 }
 @media (min-width: 768px)and (max-width: 1023px)  {
     .characteristics-grid-boss {
-        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
-        gap: 10px; /* Reduz o espaçamento */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
     }
     
     .characteristic-box-boss {
-        width: 250px; /* Ajusta a largura para ocupar toda a coluna */
-        padding: 10px; /* Reduz o padding */
+        width: 250px; 
+        padding: 10px; 
     }
     
     .characteristic-box-boss h2 {
-        font-size: 24px; /* Reduz o tamanho da fonte do título */
+        font-size: 24px; 
     }
     
     .characteristic-box-boss p {
-        font-size: 12px; /* Reduz o tamanho da fonte do parágrafo */
+        font-size: 12px; 
         text-align: center;
     }
 }
@@ -1291,14 +1280,14 @@ footer {
 
 .arrow-link {
     position: absolute;
-    right: 20px; /* Ajuste a posição da seta conforme necessário */
+    right: 20px; 
     top: 375px;
     transform: translateY(-50%);
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    border-left: 10px solid #000; /* Cor da seta */
+    border-left: 10px solid #000; 
     cursor: pointer;
 }
 
@@ -1354,18 +1343,18 @@ footer {
     background-position: bottom;
     background-size: cover;
     overflow: hidden;
-    position: relative; /* Adiciona posição relativa para os elementos filhos absolutos */
+    position: relative; 
     
 }
 .banner .sliders{
     width: 100vw;
     height: 100%;
     display: flex;
-    transition: transform 0.5s ease; /* Efeito de transição suave para slides */
+    transition: transform 0.5s ease; 
     
 }
 .banner .slide{
-    flex: 0 0 100vw; /* Cada slide ocupa 100% da largura da viewport */
+    flex: 0 0 100vw; 
     height: 100%;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1421,7 +1410,7 @@ footer {
     margin-left: 5px;
     margin-right: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Efeito de transição suave */
+    transition: background-color 0.3s ease; 
 }
 .banner .pointer.active{
     background-color: #ffffff;
@@ -1429,7 +1418,7 @@ footer {
 
 @media (max-width: 320px) {
     .banner {
-        height: calc(50vh - 100px); /* Reduz a altura do banner para telas menores */
+        height: calc(50vh - 100px); 
     }
     .banner h1{
         text-transform: uppercase;
@@ -1443,22 +1432,33 @@ footer {
         margin-top: 20px;
     }
     .banner .sliders {
-        height: 100%; /* Mantém a altura dos slides */
+        height: 100%; 
     }
     .banner .slide {
-        flex: 0 0 320px; /* Cada slide ocupa 320 pixels de largura */
-        width: 320px; /* Largura fixa para telas menores */
+        flex: 0 0 320px; 
+        width: 320px; 
     }
     .banner .slider-pointers {
-        margin-top: 300px; /* Ajusta a margem superior dos pontos de navegação */
+        margin-top: 300px; 
     }
     .banner .pointer {
-        width: 10px; /* Reduz o tamanho dos pontos de navegação */
+        width: 10px; 
         height: 10px;
-        margin: 0 5px; /* Espaçamento entre os pontos */
+        margin: 0 5px; 
     }
 }
-
+@media (min-width: 375px) and (max-width: 424px){
+    .banner h1{
+        text-align: center;
+        font-size: 40px;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .banner h1{
+        text-align: center;
+        font-size: 50px;
+    }
+}
 /* #########################################  3 NOTICIAS*/
 
 .column{
@@ -1552,8 +1552,20 @@ footer {
     background-color: black;
     color: white;
 }
+@media (max-width: 320px){
 
-/* #########################################  BANNER, SLIDE*/
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+    
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    
+}
+@media (min-width: 768px) and (max-width: 1000px){}
+
+
+/* #########################################  */
 #geral{
     display: flex;
     justify-content: center;
@@ -1614,12 +1626,18 @@ footer {
         background-size: 500px;
 
     }
+    .banner4, .banner5, .banner6 {
+        flex: 1;
+        margin-bottom: 10px;
+        background-size: 500px;
+
+    }
     .banner_options a {
         margin-top: 130px;
         margin-left: 100px;
     }
     .widget_title {
-        margin-top: 170px;
+        margin-top: -800px;
     }
     .widget_title_text {
         font-size: 30px;
@@ -1630,7 +1648,7 @@ footer {
     }
     .widget_body {
         font-size: 16px;
-        margin-top: 30px;
+        margin-top: 0px;
     }
 }
 
@@ -1880,11 +1898,12 @@ footer {
     }
 }
 
-/* #########################################  CONTEUDOS PAGINA MERCADOR  ######################################### */
+/* #########################################  CONTEUDOS PAGINA LOJA  ######################################### */
 
 .flex {
     display: flex;
     flex-wrap: wrap;
+
 }
 article{
     flex: 1;
@@ -1921,6 +1940,76 @@ article .news_resume {
     margin-bottom: 1px;
 }
 
+@media (max-width: 374px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden; 
+    }
+    article {
+        width: 100%;
+        margin: 10px 0;
+    }
+    article .news_thumbnail img {
+        width: 100%;
+    }
+    article .news_title {
+        font-size: 18px;
+    }
+    article .news_resume {
+        display: none;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px){
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    article {
+        width: 100%;
+        margin: 10px 0;
+    }
+    article .news_title {
+        font-size: 20px;
+    }
+    article .news_resume {
+        display: none;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    article {
+        width: 100%;
+        margin: 10px 0;
+    }
+    article .news_title {
+        font-size: 22px;
+    }
+    article .news_resume {
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px){
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    article {
+        width: 100%;
+        margin: 10px 0;
+    }
+    article .news_title {
+        font-size: 22px;
+    }
+    article .news_resume {
+        display: none;
+    }
+}
+
+
 /* #########################################  NOTICIA PAGINA PRINCIPAL  ######################################### */
 .default {
     padding-top:50px;
@@ -1937,9 +2026,11 @@ article .news_resume {
 }
 .section-aboutus {
     display:flex;
+    
 }
 .section-aboutus--left {
     flex:1;
+    
 }
 .section-aboutus--left h1 {
     font-size:26px;
@@ -1961,142 +2052,168 @@ article .news_resume {
     box-shadow:0px 5px 10px #333;
     margin-left: 30px;
 }
-@media (min-width: 320px) and (max-width: 374px) {
+@media (max-width: 374px) {
     .default .section-title {
         font-size: 25px;
-        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+        margin-top: 650px; 
     }
     .section-aboutus {
-        flex-direction: column; /* Alterei para column para garantir que os elementos fiquem um abaixo do outro */
-        align-items: center; /* Centralizei os elementos no centro */
-        text-align: center; /* Centralizei o texto */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
         margin-top: -40px;
     }
     .section-aboutus--left h1 {
         font-size: 18px;
-        margin-bottom: 10px; /* Adicionei margem inferior para separar o título do parágrafo */
+        margin-bottom: 10px;
         
     }
     .section-aboutus--left p {
         font-size: 14px;
         line-height: 20px;
         margin: 30px;
-        text-align: justify; /* Adicionei para justificar o texto */
+        text-align: justify;
     }
     .section-aboutus--right {
         width: 100%;
-        margin-top: 40px; /* Adicionei margem superior para separar do texto */
+        margin-top: 40px; 
     }
     .section-aboutus--right img {
         width: 100%;
         max-width: 250px;
         box-shadow: 0px 5px 10px #333;
-        margin: 0 auto; /* Centralizei a imagem */
+        margin: 0 auto; 
     }
 }
 @media (min-width: 375px) and (max-width: 424px){
     .default .section-title {
         font-size: 18px;
-        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+        margin-top: 650px;  
     }
     .default .section-title {
         font-size: 25px;
-        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+        margin-top: 650px; 
     }
     .section-aboutus {
-        flex-direction: column; /* Alterei para column para garantir que os elementos fiquem um abaixo do outro */
-        align-items: center; /* Centralizei os elementos no centro */
-        text-align: center; /* Centralizei o texto */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
         margin-top: -40px;
     }
     .section-aboutus--left h1 {
         font-size: 18px;
-        margin-bottom: 10px; /* Adicionei margem inferior para separar o título do parágrafo */
+        margin-bottom: 10px; 
         
     }
     .section-aboutus--left p {
         font-size: 14px;
         line-height: 20px;
         margin: 30px;
-        text-align: justify; /* Adicionei para justificar o texto */
+        text-align: justify; 
     }
     .section-aboutus--right {
         width: 100%;
-        margin-top: 40px; /* Adicionei margem superior para separar do texto */
+        margin-top: 40px; 
     }
     .section-aboutus--right img {
         width: 100%;
         max-width: 320px;
         box-shadow: 0px 5px 10px #333;
-        margin: 0 auto; /* Centralizei a imagem */
+        margin: 0 auto; 
     }
 }
 @media (min-width: 425px) and (max-width: 767px) {
     .default .section-title {
         font-size: 25px;
-        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+        margin-top: 650px; e
     }
     .section-aboutus {
-        flex-direction: column; /* Alterei para column para garantir que os elementos fiquem um abaixo do outro */
-        align-items: center; /* Centralizei os elementos no centro */
-        text-align: center; /* Centralizei o texto */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
         margin-top: -40px;
     }
     .section-aboutus--left h1 {
         font-size: 18px;
-        margin-bottom: 10px; /* Adicionei margem inferior para separar o título do parágrafo */
+        margin-bottom: 10px; 
         
     }
     .section-aboutus--left p {
         font-size: 14px;
         line-height: 20px;
         margin: 30px;
-        text-align: justify; /* Adicionei para justificar o texto */
+        text-align: justify; 
     }
     .section-aboutus--right {
         width: 100%;
-        margin-top: 40px; /* Adicionei margem superior para separar do texto */
+        margin-top: 40px; 
     }
     .section-aboutus--right img {
         width: 100%;
         max-width: 400px;
         box-shadow: 0px 5px 10px #333;
-        margin: 0 auto; /* Centralizei a imagem */
+        margin: 0 auto; 
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1000px){
     .default .section-title {
         font-size: 25px;
-        margin-top: 650px; /* Ajustei o valor do margin-top para evitar que o título fique muito abaixo */
+        margin-top: 650px; 
     }
     .section-aboutus {
-        flex-direction: column; /* Alterei para column para garantir que os elementos fiquem um abaixo do outro */
-        align-items: center; /* Centralizei os elementos no centro */
-        text-align: center; /* Centralizei o texto */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
         margin-top: -40px;
     }
     .section-aboutus--left h1 {
         font-size: 18px;
-        margin-bottom: 10px; /* Adicionei margem inferior para separar o título do parágrafo */
+        margin-bottom: 10px; 
         
     }
     .section-aboutus--left p {
         font-size: 14px;
         line-height: 20px;
         margin: 30px;
-        text-align: justify; /* Adicionei para justificar o texto */
+        text-align: justify; 
     }
     .section-aboutus--right {
         width: 100%;
-        margin-top: 40px; /* Adicionei margem superior para separar do texto */
+        margin-top: 40px; 
     }
     .section-aboutus--right img {
         width: 100%;
         max-width: 450px;
         box-shadow: 0px 5px 10px #333;
-        margin: 0 auto; /* Centralizei a imagem */
+        margin: 0 auto; 
     }
 }
 
+
+
+
+
+
+
+/* ANOTAÇÕES*/
+
+
+/* organizar código */
+
+
+
+/*Paginas para ficarem responsivas
+
+HOME- ok
+MERCADOR - OK
+LOJA - ok
+
+@media (max-width: 374px) {}
+@media (min-width: 375px) and (max-width: 424px){}
+@media (min-width: 425px) and (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 1000px){}
+
+
+*/
 
 
