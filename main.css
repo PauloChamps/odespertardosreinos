@@ -81,12 +81,10 @@ body {
         margin-bottom: 10px;
         text-align: center; 
     }
-    
     .btn-buscar input[type="search"] {
         width: 10%;  
         font-size: 14px;  
     }
-    
     .btn-buscar label {
         font-size: 14px; 
     }
@@ -99,18 +97,14 @@ body {
         margin-bottom: 10px;
         text-align: center;  
     }
-    
     .btn-buscar input[type="search"] {
         width: 10%;  
         font-size: 14px;   
     }
-    
     .btn-buscar label {
         font-size: 14px; 
     }
 }
-
-
 
 /* #########################################  MENU  ######################################### */
 #menu-h {
@@ -167,7 +161,6 @@ body {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);   
         z-index: 999; 
     }
-    
     #menu-h ul.show {
         display: block; 
     }
@@ -181,7 +174,6 @@ body {
         border-bottom: 1px solid #444;
     }
 }
-
 @media (max-width: 375px) {
 
     .menu-toggle {
@@ -189,7 +181,6 @@ body {
         margin-top: -5px; 
         margin-left: 20px;
     }
-   
     #menu-h ul {
         display: none;
         position: fixed;
@@ -202,7 +193,6 @@ body {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
         z-index: 999; 
     }
-    
     #menu-h ul.show {
         display: block; 
     }
@@ -216,15 +206,12 @@ body {
         border-bottom: 1px solid #444;
     }
 }
-
 @media (max-width: 425px) {
-   
     .menu-toggle {
         display: block;
         margin-top: -5px; 
         margin-left: 20px; 
     }
-    
     #menu-h ul {
         display: none;
         position: fixed; 
@@ -237,7 +224,6 @@ body {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
         z-index: 999; 
     }
-    
     #menu-h ul.show {
         display: block; 
     }
@@ -258,7 +244,6 @@ body {
         margin-top: -5px; 
         margin-left: 20px; 
     }
-
     #menu-h ul {
         display: none;
         position: fixed;
@@ -271,7 +256,6 @@ body {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
         z-index: 999; 
     }
-    
     #menu-h ul.show {
         display: block; 
     }
@@ -285,9 +269,6 @@ body {
         border-bottom: 1px solid #444;
     }
 }
-
-
-
 /* #########################################  RODAPÉ  ######################################### */
 footer {
     background-color: #000;
@@ -569,7 +550,7 @@ footer {
         margin-bottom: 10px;
     }
     .image-item-boss img {
-        width: 100%;
+        width: 200px;
     }
     .image-item-boss h2 {
         font-size: 18px;
@@ -909,13 +890,22 @@ footer {
     transform: scale(1.07); /
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
     .grid-container img {
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
+    }
+@media (min-width: 375px) and (max-width: 424px){
+
+    }
+@media (min-width: 425px) and (max-width: 767px) {
+    
+    }
+@media (min-width: 768px) and (max-width: 1000px){
+    
     }
 
 }
@@ -1062,7 +1052,51 @@ footer {
     top: 250px;
 }
 
+/* #########################################  FOTOS PERSONAGENS  ######################################### */
 
+.personagens {
+    clear: both;
+    margin-bottom: 25px;
+    position: relative; 
+}
+.personagens .photo {
+    float: left;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    position: relative; 
+    overflow: hidden; 
+    border-radius: 25px; 
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5); 
+    transition: filter 0.3s ease-in-out; 
+    margin-top: 140px;
+}
+.personagens img {
+    width: 650px;
+    transition: filter 0.3s ease-in-out; 
+    display: block; 
+}
+.personagens .photoinfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Sedan SC';
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+    border-radius: 25px; 
+}
+.personagens .text-block {
+    width: 45%; 
+    margin: 10px;
+}
 
 
 
@@ -1273,21 +1307,39 @@ footer {
 
 /* #########################################  SETA DO LADO DAS IMAGENS DOS PERSONAGENS  ######################################### */
 
-.arrow-container {
+.arrow-container-right {
     position: relative;
     float: left;
 }
 
-.arrow-link {
+.arrow-link-right {
     position: absolute;
-    right: 20px; 
-    top: 375px;
+    right: -240px; 
+    top: 46px;
     transform: translateY(-50%);
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid #000; 
+    cursor: pointer;
+}
+
+.arrow-container-left {
+    position: relative;
+    float: left;
+}
+
+.arrow-link-left {
+    position: absolute;
+    right: 1000px; 
+    top: 415px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #000; 
     cursor: pointer;
 }
 
@@ -1459,7 +1511,7 @@ footer {
         font-size: 50px;
     }
 }
-/* #########################################  3 NOTICIAS*/
+/* #########################################  3 NOTICIAS HOME*/
 
 .column{
     flex-direction: column;
@@ -1472,10 +1524,8 @@ footer {
 }
 .banner1,
 .banner2,
-.banner3,
-.banner4,
-.banner5,
-.banner6 {
+.banner3
+ {
     flex: 1;
     color: white;
     padding: 20px;
@@ -1498,27 +1548,6 @@ footer {
 }
 .banner3{
     background-image: url('./Imagens_outras/mercador.jpeg');
-    background-position: center;
-    background-size: 500px;
-    border: 1px solid black;
-    box-shadow:0px 5px 10px #333;
-}
-.banner4{
-    background-image: url('./Imagens_outras/news01.jpeg');
-    background-position: center;
-    background-size: 500px;
-    border: 1px solid black;
-    box-shadow:0px 5px 10px #333;
-}
-.banner5{
-    background-image: url('./Imagens_outras/news02.jpeg');
-    background-position: center;
-    background-size: 500px;
-    border: 1px solid black;
-    box-shadow:0px 5px 10px #333;
-}
-.banner6{
-    background-image: url('./Imagens_outras/news03.jpeg');
     background-position: center;
     background-size: 500px;
     border: 1px solid black;
@@ -1564,6 +1593,160 @@ footer {
 }
 @media (min-width: 768px) and (max-width: 1000px){}
 
+/* #########################################  3 NOTICIAS PAGINA ATUALIZAÇÃO*/
+
+.column2{
+    flex-direction: column;
+}
+.banner_options2{
+    margin-top: 40px;
+    width: 1420px;
+    height: 400px;
+    display: flex;
+}
+.banner4,
+.banner5,
+.banner6 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.banner4{
+    background-image: url('./Imagens_outras/news01.jpeg');
+    background-position: center;
+    background-size: 500px;
+    border: 1px solid black;
+    box-shadow:0px 5px 10px #333;
+}
+.banner5{
+    background-image: url('./Imagens_outras/news02.jpeg');
+    background-position: center;
+    background-size: 500px;
+    border: 1px solid black;
+    box-shadow:0px 5px 10px #333;
+}
+.banner6{
+    background-image: url('./Imagens_outras/news03.jpeg');
+    background-position: center;
+    background-size: 500px;
+    border: 1px solid black;
+    box-shadow:0px 5px 10px #333;
+}
+.banner_title2{
+    font-size: 30px;
+    font-family: 'Sedan SC';
+}
+.banner_desc2{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Sedan SC';
+}
+.banner_options2 a{
+    display: inline-block;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Sedan SC';
+    margin-top: 233px;
+    margin-left: 270px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.banner_options2 a:hover{
+    background-color: black;
+    color: white;
+}
+@media (max-width: 320px) {
+    .banner_options2 {
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner4,
+    .banner5,
+    .banner6 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .banner_title2 {
+        font-size: 20px;
+    }
+    .banner_options2 a{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .banner_options2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner4,
+    .banner5,
+    .banner6 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .banner_title2 {
+        font-size: 22px;
+    }
+    .banner_options2 a{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .banner_options2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner4,
+    .banner5,
+    .banner6 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .banner_title2 {
+        font-size: 24px;
+    }
+    .banner_options2 a{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .banner_options2 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner4,
+    .banner5,
+    .banner6 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .banner_title2 {
+        font-size: 26px;
+    }
+    .banner_options2 a{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* #########################################  */
 #geral{
@@ -1898,7 +2081,7 @@ footer {
     }
 }
 
-/* #########################################  CONTEUDOS PAGINA LOJA  ######################################### */
+/* #########################################  PAGINA LOJA  ######################################### */
 
 .flex {
     display: flex;
@@ -2204,9 +2387,27 @@ article .news_resume {
 
 /*Paginas para ficarem responsivas
 
-HOME- ok
-MERCADOR - OK
-LOJA - ok
+HOME - OK
+ |__Atualização - OK
+ |__Mercador - OK
+ |__Loja - OK
+HISTÓRIA - OK      
+ |__Reliquia Coroa - OK
+ |__Reliquia Espada - OK
+ |__Reliquia Olho - OK
+ |__Reliquia Lagrima - OK
+REINOS - 
+ |__Reino Solária - OK
+ |__Reino Arboria - OK
+ |__
+ |__
+LOJA - 
+BOSS - OK
+CARTAS-MAGICAS -
+AJUDA - 
+
+
+
 
 @media (max-width: 374px) {}
 @media (min-width: 375px) and (max-width: 424px){}
