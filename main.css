@@ -329,18 +329,15 @@ footer {
 .footer-social a:hover {
     background-color: #000;
 }
-
 .footer-social img {
     height: 15px; 
 }
-
 .footer--item.area3 {
     text-align: center;
-    border-left:  1px solid #999;
+    border
     padding-left: 20px; 
     height: auto; 
 }
-
 @media (max-width: 320px) {
     .footer--area {
         flex-direction: column; 
@@ -376,7 +373,6 @@ footer {
         margin-top: 20px; 
     }
 }
-
 @media (min-width: 321px) and (max-width: 768px) {
 
     .footer--area {
@@ -404,8 +400,6 @@ footer {
         padding-bottom: 40px; 
     }
 }
-
-
 /* #########################################  TEXTO -- PAGINA HISTORIA --  ######################################### */
 .centralizado {
     width: 80%; 
@@ -420,8 +414,6 @@ footer {
         font-size: 18px;
     }
 }
-
-
 /* #########################################  IMAGENS RELIQUIAS -- PAGINA HISTORIA -- ######################################### */
 .image-container {
     display: flex;
@@ -435,7 +427,6 @@ footer {
     border-radius: 15px;
     margin: 45px;
     margin-top: 0px;
-   
 }
 .image-item img {
     width: 100%;
@@ -473,8 +464,6 @@ footer {
 .image-item .btn:hover {
     background-color: #333;
 }
-
-
 @media (max-width: 375px) {
     .image-item {
         width: 150px;  
@@ -484,7 +473,6 @@ footer {
         gap: 5px; 
     }
 }
-
 /* #########################################  IMAGENS BOSS -- PAGINA BOSS --  ######################################### */
 .image-container-boss {
     display: flex;
@@ -498,7 +486,6 @@ footer {
     border-radius: 15px;
     margin-left: 50px;
     margin-right: 50px;
-   
 }
 .image-item-boss img {
     width: 100%;
@@ -536,7 +523,6 @@ footer {
 .image-item-boss .btn:hover {
     background-color: #333;
 }
-
 @media (min-width: 320px) and (max-width: 374px) {
     .image-container-boss {
         display: flex;
@@ -719,7 +705,7 @@ footer {
     cursor: pointer;
 }
 
-/* #########################################  IMAGENS BOSS ZOOM -- PAGINA PERSONAGENS BOSS -- ######################################### */
+/* #########################################  IMAGENS BOSS ZOOM -- TEXTO PAGINA PERSONAGENS BOSS -- ######################################### */
 .zoom-container {
     border-radius: 15px;
 }
@@ -730,15 +716,21 @@ footer {
 .zoom-container:hover .zoom-image {
     transform: scale(1.15); 
 }
-
+.boss-description h1 {
+    font-family: 'Sedan SC'; 
+    font-size: 40px;
+    text-align: left; 
+    width: 100%; 
+    margin: 0;
+}
 .boss-description p{
     font-size: 20px;
     text-align: justify;
     margin-right: 40px; 
     margin: 40px;
+    font-family: 'Sedan SC';
 }
-@media (max-width: 320px) {
-   
+@media (max-width: 374px) {
     .zoom-container {
         width: 75%; 
         margin-right: 5%; 
@@ -753,11 +745,10 @@ footer {
     }
     .boss-description {
         clear: both;
-        text-align: center;
+        justify-content: center;
     }
-   
     .boss-description h1 {
-        font-size: 18px; 
+        font-size: 40px;
         text-align: center; 
     }
     .boss-description p {
@@ -767,9 +758,7 @@ footer {
         text-align: justify;
     }
 }
-
-@media (max-width: 375px) {
-    
+@media (min-width: 375px) and (max-width: 424px) {
     .zoom-container {
         width: 75%; 
         margin-right: 5%; 
@@ -784,11 +773,10 @@ footer {
     }
     .boss-description {
         clear: both;
-        text-align: center;
+        justify-content: center;
     }
-   
     .boss-description h1 {
-        font-size: 18px; 
+        font-size: 40px;
         text-align: center; 
     }
     .boss-description p {
@@ -798,8 +786,7 @@ footer {
         text-align: justify;
     }
 }
-@media (max-width: 425px) {
-   
+@media (min-width: 425px) and (max-width: 767px) {
     .zoom-container {
         width: 75%; 
         margin-right: 5%; 
@@ -814,11 +801,10 @@ footer {
     }
     .boss-description {
         clear: both;
-        text-align: center;
+        justify-content: center;
     }
-  
     .boss-description h1 {
-        font-size: 18px; 
+        font-size: 40px;
         text-align: center; 
     }
     .boss-description p {
@@ -828,15 +814,14 @@ footer {
         text-align: justify;
     }
 }
-@media (max-width: 768px) {
-    
+@media (min-width: 768px) and (max-width: 1000px) {
     .zoom-container {
         width: 75%; 
         margin-right: 5%; 
-        margin-left: 40px; 
+        margin-left: 5%; 
         margin-bottom: 10px;
         display: block;
-        float: right;
+        float: none;
     }
     .zoom-image {
         width: 100%; 
@@ -844,11 +829,10 @@ footer {
     }
     .boss-description {
         clear: both;
-        text-align: center;
+        justify-content: center;
     }
-    
     .boss-description h1 {
-        font-size: 18px; 
+        font-size: 40px;
         text-align: center; 
     }
     .boss-description p {
@@ -858,11 +842,6 @@ footer {
         text-align: justify;
     }
 }
-
-
-
-
-
 /* #########################################  IMAGENS - PAGINA REINOS  ######################################### */
 .grid-container {
     display: grid;
@@ -889,27 +868,34 @@ footer {
 .zoom-container:hover .zoom-image {
     transform: scale(1.07); /
 }
-
 @media (max-width: 374px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
     .grid-container img {
-        max-width: 100%;
-        margin: 0 auto;
+        width: 100%; 
+        height: auto;
+        margin: 0 20px;
     }
-@media (min-width: 375px) and (max-width: 424px){
-
-    }
-@media (min-width: 425px) and (max-width: 767px) {
-    
-    }
-@media (min-width: 768px) and (max-width: 1000px){
-    
-    }
-
 }
-
+@media (min-width: 375px) and (max-width: 424px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+        margin: 0 10px;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); 
+        margin: 0 12px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 15px;
+    }
+}
 /* #########################################  IMAGENS - PAGINA LOJA - PERSONAGENS ######################################### */
 .grid-container-loja {
     display: flex;
@@ -1052,8 +1038,10 @@ footer {
     top: 250px;
 }
 
-/* #########################################  FOTOS PERSONAGENS  ######################################### */
 
+
+
+/* #########################################  FOTOS PERSONAGENS  ######################################### */
 .personagens {
     clear: both;
     margin-bottom: 25px;
@@ -1067,7 +1055,7 @@ footer {
     position: relative; 
     overflow: hidden; 
     border-radius: 25px; 
-    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5); 
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); 
     transition: filter 0.3s ease-in-out; 
     margin-top: 140px;
 }
@@ -1076,33 +1064,42 @@ footer {
     transition: filter 0.3s ease-in-out; 
     display: block; 
 }
-.personagens .photoinfo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-family: 'Sedan SC';
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    opacity: 0; 
-    transition: opacity 0.3s ease-in-out; 
-    border-radius: 25px; 
+@media (max-width: 374px) {
+    .personagens .photo {
+        margin-top: 50px;
+        margin-left: 55px;
+    }
+    .personagens img {
+        width: 220px;
+    }
 }
-.personagens .text-block {
-    width: 45%; 
-    margin: 10px;
+@media (min-width: 375px) and (max-width: 424px) {
+    .personagens .photo {
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .personagens img {
+        width: 270px;
+    }
 }
-
-
-
-
-
-
+@media (min-width: 425px) and (max-width: 767px) {
+    .personagens .photo {
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .personagens img {
+        width: 300px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .personagens .photo {
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+    .personagens img {
+        width: 400px;
+    }
+}
 /* #########################################  8 QUADRADOS CARACTERISTICAS PERSONAGENS  ######################################### */
 .characteristics-grid {
     display: grid;
@@ -1122,16 +1119,15 @@ footer {
     background-image: url('Imagens_outras/fundo07.JPG'); 
     background-size: cover;
     background-position: center; 
-    border: 2px solid #ccc;
     border-radius: 15px;
+    border: 2px solid #ccc;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); 
     position: relative;
 }
-
 .characteristic-box h2 {
     font-family: 'Sedan SC', serif;
     font-size: 40px;
@@ -1143,30 +1139,71 @@ footer {
 }
 .characteristic-box p {
     font-family: 'Sedan SC';
-    font-size: 16px;
+    font-size: 15px;
     color: #000000;
     margin: 0;
     text-align: left;
     width: 100%;
 }
-/* para telas menores */
 @media (max-width: 375px) {
     .characteristics-grid {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(1, 1fr); 
         gap: 10px; 
     }
-    
     .characteristic-box {
         width: 100%;  
-        padding: 10px; 
     }
-    
     .characteristic-box h2 {
-        font-size: 24px; 
+        font-size: 30px; 
     }
-    
     .characteristic-box p {
-        font-size: 12px; 
+        font-size: 15px; 
+    }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    .characteristics-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 15px; 
+    }
+    .characteristic-box {
+        width: 280px;
+    }
+    .characteristic-box h2 {
+        font-size: 28px; 
+    }
+    .characteristic-box p {
+        font-size: 14px; 
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .characteristics-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
+    }
+    .characteristic-box {
+        width: 350px;
+    }
+    .characteristic-box h2 {
+        font-size: 32px; 
+    }
+    .characteristic-box p {
+        font-size: 16px; 
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .characteristics-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+    }
+    .characteristic-box {
+        width: 300px;
+        gap: none;
+    }
+    .characteristic-box h2 {
+        font-size: 36px; 
+    }
+    .characteristic-box p {
+        font-size: 16px; 
     }
 }
 /* #########################################  3 QUADRADOS CARACTERISTICAS BOSS  ######################################### */
@@ -1296,25 +1333,14 @@ footer {
         text-align: center;
     }
 }
-
-
-
-
-
-
-
-
-
 /* #########################################  SETA DO LADO DAS IMAGENS DOS PERSONAGENS  ######################################### */
-
 .arrow-container-right {
     position: relative;
     float: left;
 }
-
 .arrow-link-right {
     position: absolute;
-    right: -240px; 
+    right: -450px; 
     top: 46px;
     transform: translateY(-50%);
     width: 0;
@@ -1324,15 +1350,13 @@ footer {
     border-left: 10px solid #000; 
     cursor: pointer;
 }
-
 .arrow-container-left {
     position: relative;
     float: left;
 }
-
 .arrow-link-left {
     position: absolute;
-    right: 1000px; 
+    right: 1180px; 
     top: 415px;
     transform: translateY(-50%);
     width: 0;
@@ -1342,11 +1366,46 @@ footer {
     border-right: 10px solid #000; 
     cursor: pointer;
 }
-
-
-
-
-
+@media (max-width: 374px){
+    .arrow-link-right {
+        right: 20px; 
+        top: 130px;
+    }
+    .arrow-link-left {
+        left: 35px; 
+        top: 262px;
+    }
+}
+@media (min-width: 375px) and (max-width: 424px) {
+    .arrow-link-right {
+        right: 20px; 
+        top: 150px;
+    }
+    .arrow-link-left {
+        left: 40px; 
+        top: 292px;
+    }
+}
+@media (min-width: 425px) and (max-width: 767px){
+    .arrow-link-right {
+        right: 20px; 
+        top: 170px;
+    }
+    .arrow-link-left {
+        left: 40px; 
+        top: 320px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px){
+    .arrow-link-right {
+        right: 10px; 
+        top: 220px;
+    }
+    .arrow-link-left {
+        left: 170px; 
+        top: 431px;
+    }
+}
 /* #########################################  ZOOM QUANOD CLICAREM NA FOTO  ######################################### */
 
 /* Overlay */
