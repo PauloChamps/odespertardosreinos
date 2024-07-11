@@ -58,3 +58,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+//CLICAR FORA DA IMAGEM E FECHAR - LOJA PERSONAGENS
+function openOverlay(element) {
+  var overlay = document.getElementById("overlay");
+  var overlayImg = document.getElementById("overlay-img");
+
+  overlay.style.display = "block";
+  overlayImg.src = element.src;
+}
+
+function closeOverlay(event) {
+  var overlay = document.getElementById("overlay");
+  if (event.target == overlay || event.target.className == 'close') {
+    overlay.style.display = "none";
+  }
+}

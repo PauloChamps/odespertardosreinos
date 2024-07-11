@@ -269,136 +269,7 @@ body {
         border-bottom: 1px solid #444;
     }
 }
-/* #########################################  RODAPÉ  ######################################### */
-footer {
-    background-color: #000;
-    padding: 40px;
-    color: #999;
-}
-.footer--area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
-    height: auto;
-}
-.footer--item {
-    flex: 1;
-    padding: 10px;
-}
-.footer--item.area1 {
-    border-right: 1px solid #999;
-    padding-right: 20px; 
-}
-.footer--item.area1 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-family: 'Sedan SC';
-}
-.footer--item.area1 p {
-    font-size: 18px;
-    line-height: 1.5;
-    font-family: 'Sedan SC';
-}
-.footer--item.area2 {
-    text-align: center;
-    color: #999;
-    line-height: 1.5;
-    font-size: 18px;
-    font-family: 'Sedan SC';
-}
-.footer--item.area2 p {
-    margin: 5px 0;
-}
-.footer-social {
-    display: flex;
-    justify-content: center; 
-    margin-top: 20px; 
-}
-.footer-social a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    background-color: #333;
-    border-radius: 13px;
-    margin-right: 15px;
-    transition: background-color 0.3s;
-}
-.footer-social a:hover {
-    background-color: #000;
-}
-.footer-social img {
-    height: 15px; 
-}
-.footer--item.area3 {
-    text-align: center;
-    padding-left: 20px; 
-    height: auto; 
-}
-@media (max-width: 320px) {
-    .footer--area {
-        flex-direction: column; 
-        align-items: center; 
-    }
-    .footer--item {
-        flex-basis: 100%; 
-        border: none; 
-        padding: 10px 0; 
-        text-align: center; 
-        margin-bottom: 10px; 
-    }
-    .footer--item.area1 {
-        border-right: none; 
-        padding-right: 0; 
-        padding-left: 0; 
-        margin-bottom: 20px; 
-        
-    }
-    .footer--item.area1 p{
-        font-size: 15px;
-        justify-content: center;
-    }
-    .footer--item.area1 h2 {
-        font-size: 20px; 
-    }
-    .footer--item.area3 {
-        border-left: none; 
-        padding-left: 0; 
-        padding-bottom: 10px; 
-    }
-    .footer-social {
-        margin-top: 20px; 
-    }
-}
-@media (min-width: 321px) and (max-width: 768px) {
 
-    .footer--area {
-        flex-direction: column; 
-    }
-    .footer--item {
-        flex-basis: 100%; 
-        border: none; 
-        padding: 10px 0; 
-        text-align: center; 
-    }
-    .footer--item.area1 {
-        border: none; 
-        border-right: none; 
-        padding-right: 0; 
-        padding-left: 0; 
-    }
-    .footer--item.area1 h2 {
-        font-size: 20px; 
-        text-align: center; 
-    }
-    .footer--item.area3 {
-        border: none;
-        margin-top: 30px;
-        padding-bottom: 40px; 
-    }
-}
 /* #########################################  TEXTO -- PAGINA HISTORIA --  ######################################### */
 .centralizado {
     width: 80%; 
@@ -2434,6 +2305,102 @@ article .news_resume {
 
 
 
+/* #########################################  PRODUTOS LOJA PERSONAGENS  ######################################### */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+.product-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+.product-item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+.product-item h3, .product-item p {
+    margin: 10px 0;
+    font-family: 'Sedan SC';
+    font-size: 18px;
+    line-height: 24px;
+  } 
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0 4px;
+  }
+.pagination a.active {
+    background-color: #333;
+    color: white;
+  }
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+  }
+.product-item .icon {
+    vertical-align: middle;
+    width: 25px; 
+    height: 20px; 
+    margin-right: 8px; 
+}  
+.product-item .price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    padding: 5px 30px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Altera para 2 colunas */
+        gap: 10px; /* Reduz o espaçamento entre os itens */
+    }
+
+    .product-item {
+        padding: 10px; /* Reduz o padding dos itens */
+    }
+
+    .product-item h3, .product-item p {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        line-height: 20px; /* Ajusta o espaçamento entre linhas */
+    }
+
+    .product-item .price-container {
+        padding: 5px 15px; /* Reduz o padding do container de preço */
+        width: 150px; /* Reduz a largura do container de preço */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ANOTAÇÕES*/
@@ -2476,3 +2443,133 @@ AJUDA -
 */
 
 
+/* #########################################  RODAPÉ  ######################################### */
+footer {
+    background-color: #000;
+    padding: 40px;
+    color: #999;
+}
+.footer--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    height: auto;
+}
+.footer--item {
+    flex: 1;
+    padding: 10px;
+}
+.footer--item.area1 {
+    border-right: 1px solid #999;
+    padding-right: 20px; 
+}
+.footer--item.area1 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Sedan SC';
+}
+.footer--item.area1 p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Sedan SC';
+}
+.footer--item.area2 {
+    text-align: center;
+    color: #999;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Sedan SC';
+}
+.footer--item.area2 p {
+    margin: 5px 0;
+}
+.footer-social {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+.footer-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 13px;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+}
+.footer-social a:hover {
+    background-color: #000;
+}
+.footer-social img {
+    height: 15px; 
+}
+.footer--item.area3 {
+    text-align: center;
+    padding-left: 20px; 
+    height: auto; 
+}
+@media (max-width: 320px) {
+    .footer--area {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .footer--item {
+        flex-basis: 100%; 
+        border: none; 
+        padding: 10px 0; 
+        text-align: center; 
+        margin-bottom: 10px; 
+    }
+    .footer--item.area1 {
+        border-right: none; 
+        padding-right: 0; 
+        padding-left: 0; 
+        margin-bottom: 20px; 
+        
+    }
+    .footer--item.area1 p{
+        font-size: 15px;
+        justify-content: center;
+    }
+    .footer--item.area1 h2 {
+        font-size: 20px; 
+    }
+    .footer--item.area3 {
+        border-left: none; 
+        padding-left: 0; 
+        padding-bottom: 10px; 
+    }
+    .footer-social {
+        margin-top: 20px; 
+    }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+
+    .footer--area {
+        flex-direction: column; 
+    }
+    .footer--item {
+        flex-basis: 100%; 
+        border: none; 
+        padding: 10px 0; 
+        text-align: center; 
+    }
+    .footer--item.area1 {
+        border: none; 
+        border-right: none; 
+        padding-right: 0; 
+        padding-left: 0; 
+    }
+    .footer--item.area1 h2 {
+        font-size: 20px; 
+        text-align: center; 
+    }
+    .footer--item.area3 {
+        border: none;
+        margin-top: 30px;
+        padding-bottom: 40px; 
+    }
+}
