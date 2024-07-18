@@ -349,6 +349,7 @@ body {
     justify-content: center; 
     gap: 5px; 
     margin-top: 30px; 
+    
 }
 .image-item-boss {
     width: 350px;
@@ -356,6 +357,7 @@ body {
     border-radius: 15px;
     margin-left: 50px;
     margin-right: 50px;
+    
 }
 .image-item-boss img {
     width: 100%;
@@ -370,10 +372,20 @@ body {
     margin: 10px 0 5px;
     font-size: 30px;
 }
+.image-item-boss h3 {
+    font-size: 22px;
+    font-family: 'Sedan SC';
+    
+}
 .image-item-boss p {
     margin: 0;
     font-size: 17px;
     line-height: 20px;
+    font-family: 'Sedan SC';
+    border-bottom-left-radius: 15px;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    padding-bottom: 10px;
 }
 .image-item-boss .btn {
     background-color: black;
@@ -2371,16 +2383,13 @@ article .news_resume {
         grid-template-columns: repeat(2, 1fr); /* Altera para 2 colunas */
         gap: 10px; /* Reduz o espaçamento entre os itens */
     }
-
     .product-item {
         padding: 10px; /* Reduz o padding dos itens */
     }
-
     .product-item h3, .product-item p {
         font-size: 16px; /* Reduz o tamanho da fonte */
         line-height: 20px; /* Ajusta o espaçamento entre linhas */
     }
-
     .product-item .price-container {
         padding: 5px 15px; /* Reduz o padding do container de preço */
         width: 150px; /* Reduz a largura do container de preço */
