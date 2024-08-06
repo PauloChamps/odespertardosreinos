@@ -217,6 +217,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(nextSlide, 7000);
 
-    goToSlide(0);
 });
 
+
+
+
+
+// CALCULADORA
+let currentTotal = 3000; // Valor inicial
+let currentInput = "";
+let operator = null;
+
+function appendNumber(number) {
+    currentInput += number;
+    updateDisplay(currentInput);
+}
+
+function setOperator(op) {
+    if (currentInput !== "") {
+        calculate();
+    }
+    operator = op;
+    currentTotal = parseInt(document.getElementById('display').value); // Atualiza o total atual
+    currentInput = "";
+}
+
+function calculate() {
+    if (currentInput === "") return;
+
+    let inputNumber = parseInt(currentInput);
+    if (operator === "+") {
+        currentTotal += inputNumber;
+    } else if (operator === "-") {
+        currentTotal -= inputNumber;
+    }
+
+    currentInput = "";
+    operator = null;
+    updateDisplay(currentTotal);
+}
+
+function resetCalculator() {
+    currentTotal = 3000; // Reseta para o valor inicial
+    currentInput = "";
+    operator = null;
+    updateDisplay(currentTotal);
+}
+
+function updateDisplay(value) {
+    const display = document.getElementById('display');
+    display.value = value;
+}
+
+
+
+
+//IMAGEM AO CHEGAR NO 0 NA CALCULADORA

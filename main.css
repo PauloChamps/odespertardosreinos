@@ -2442,19 +2442,19 @@ article .news_resume {
 
 @media only screen and (max-width: 767px) {
     .product-grid {
-        grid-template-columns: repeat(2, 1fr); /* Altera para 2 colunas */
-        gap: 10px; /* Reduz o espaçamento entre os itens */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
     }
     .product-item {
-        padding: 10px; /* Reduz o padding dos itens */
+        padding: 10px; 
     }
     .product-item h3, .product-item p {
-        font-size: 16px; /* Reduz o tamanho da fonte */
-        line-height: 20px; /* Ajusta o espaçamento entre linhas */
+        font-size: 16px; 
+        line-height: 20px; 
     }
     .product-item .price-container {
-        padding: 5px 15px; /* Reduz o padding do container de preço */
-        width: 150px; /* Reduz a largura do container de preço */
+        padding: 5px 15px; 
+        width: 150px; 
     }
 }
 
@@ -2519,68 +2519,75 @@ footer {
     background-color: #000;
     padding: 40px;
     color: #999;
+    font-family: 'Sedan SC', sans-serif;
 }
+
 .footer--area {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap; 
-    height: auto;
+    gap: 20px;
 }
+
 .footer--item {
     flex: 1;
-    padding: 10px;
+    padding: 20px;
+    background-color: #000000; 
+    border-radius: 10px;
 }
-.footer--item.area1 {
-    border-right: 1px solid #999;
-    padding-right: 20px; 
-}
-.footer--item.area1 h2 {
+
+
+.footer--item h2 {
     font-size: 24px;
-    margin-bottom: 10px;
-    font-family: 'Sedan SC';
+    margin-bottom: 15px;
+    color: #fff; 
 }
-.footer--item.area1 p {
+
+.footer--item p {
     font-size: 18px;
-    line-height: 1.5;
-    font-family: 'Sedan SC';
+    line-height: 1.4;
+    color: #ccc; 
 }
+
 .footer--item.area2 {
     text-align: center;
-    color: #999;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: #ccc;
     font-size: 18px;
-    font-family: 'Sedan SC';
+    margin-right: 60px;
 }
+
 .footer--item.area2 p {
-    margin: 5px 0;
+    margin: 10px 0;
 }
+
 .footer-social {
     display: flex;
     justify-content: center; 
+    gap: 15px;
     margin-top: 20px; 
 }
+
 .footer-social a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25px;
-    height: 25px;
+    width: 40px; 
+    height: 40px;
     background-color: #333;
-    border-radius: 13px;
-    margin-right: 15px;
-    transition: background-color 0.3s;
+    border-radius: 50%; 
+    transition: background-color 0.3s, transform 0.3s; 
 }
+
 .footer-social a:hover {
     background-color: #000;
+    transform: scale(1.1); 
 }
+
 .footer-social img {
-    height: 15px; 
-}
-.footer--item.area3 {
-    text-align: center;
-    padding-left: 20px; 
-    height: auto; 
+    width: 20px; 
+    height: 20px;
 }
 @media (max-width: 320px) {
     .footer--area {
@@ -2671,4 +2678,57 @@ footer {
     border-radius: 5px;
     border: 1px solid #333;
     font-family: 'Sedan SC';
+}
+/* #########################################  CALCULADORA  ######################################### */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url('Imagens_outras/fundo01.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 25px;
+    width: 300px; 
+    
+}
+.calculator input[type="button"] {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 15px;
+}
+.calculator input[type="text"] {
+    font-size: 24px;
+    width: 230px;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+ 
+}
+.calculator input:hover {
+    background-color: #999;
+    color: #ffffff;
+}
+
+
+
+
+/* ######################################### IMAGEM AO CHEGAR NO 0 CALCULADORA  ######################################### */
+.hidden {
+    display: none;
+}
+
+#zeroImage {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#zeroImage img {
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 500px; /* Ajuste conforme necessário */
 }

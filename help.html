@@ -42,100 +42,39 @@
 
 
     <!--CALCULADORA-->
-        <center><form name="calculator" >
-        &nbsp;&nbsp;Pontuação<br>
-        &nbsp;&nbsp;<input type="textfield" name="ans" value="">&nbsp;<input type="reset" value="Limpar"><BR><br>
-        &nbsp;&nbsp;<input type="button" value="1" onClick="document.calculator.ans.value+='1'">
-        &nbsp;&nbsp;<input type="button" value="2" onClick="document.calculator.ans.value+='2'">
-        &nbsp;&nbsp;<input type="button" value="3" onClick="document.calculator.ans.value+='3'"><BR>
-        &nbsp;&nbsp;<input type="button" value="4" onClick="document.calculator.ans.value+='4'">
-        &nbsp;&nbsp;<input type="button" value="5" onClick="document.calculator.ans.value+='5'">
-        &nbsp;&nbsp;<input type="button" value="6" onClick="document.calculator.ans.value+='6'"><BR>
-        &nbsp;&nbsp;<input type="button" value="7" onClick="document.calculator.ans.value+='7'">
-        &nbsp;&nbsp;<input type="button" value="8" onClick="document.calculator.ans.value+='8'">
-        &nbsp;&nbsp;<input type="button" value="9" onClick="document.calculator.ans.value+='9'"><BR>
-        &nbsp;&nbsp;<input type="button" value="-" onClick="document.calculator.ans.value+='-'">
-        &nbsp;&nbsp;&nbsp;<input type="button" value="0" onClick="document.calculator.ans.value+='0'">
-        &nbsp;&nbsp;<input type="button" value="+" onClick="document.calculator.ans.value+='+'"><BR>
-        <input type="button" value="*" onClick="document.calculator.ans.value+='*'">
-        <input type="button" value="/" onClick="document.calculator.ans.value+='/'">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
-   </form></center>
+        <center>
+            <div class="calculator">
+                <h1>Calculadora de Pontos</h1>
+                <input type="text" id="display" value="3000" readonly>
+                <div>
+                    <input type="button" value="1" onclick="appendNumber(1)">
+                    <input type="button" value="2" onclick="appendNumber(2)">
+                    <input type="button" value="3" onclick="appendNumber(3)">
+                    <input type="button" value="+" onclick="setOperator('+')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="appendNumber(4)">
+                    <input type="button" value="5" onclick="appendNumber(5)">
+                    <input type="button" value="6" onclick="appendNumber(6)">
+                    <input type="button" value="-" onclick="setOperator('-')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="appendNumber(7)">
+                    <input type="button" value="8" onclick="appendNumber(8)">
+                    <input type="button" value="9" onclick="appendNumber(9)">
+                    <input type="button" value="=" onclick="calculate()">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="appendNumber(0)">
+                    <input type="button" value="XX" class="reset-button" onclick="resetCalculator()">
+                </div>
+            </div>
+        </center>
 
+        <div id="zeroImage" class="hidden">
+            <img src="Imagens_outras/fundo04.jpg" alt="Imagem quando resultado é 0">
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
- <br>
-        <h1>CRIAÇÃO</h1><br>
-        <hr>
-     <HR>
-        <BR>         
-<center><h2>TABELA HP</h2></center><br><br>
-<br><br><br><br><br><BR><BR><BR>
-
-
-<table border="2" style="left: 400px; top: 13850px; position: absolute" width="600" height="100">
-    <tr align="center"></tr>
-    <tr>
-        <th></th>
-        <th>HP 150</th>
-        <th>HP 130</th>
-        <th>HP 120</th>
-        <th>HP 100</th>
-        <th>HP 90</th>
-    </tr>
-    <tr>
-        <th>GOLPE 1</th>
-        <th>20</th>
-        <th>15</th>
-        <th>10</th>
-        <th>10</th>
-        <th>5</th>
-    </tr>
-    <tr>
-        <th>GOLPE 2</th>
-        <th>30</th>
-        <th>25</th>
-        <th>20</th>
-        <th>20</th>
-        <th>20</th>
-    </tr>
-    <tr>
-        <th>GOLPE ESPECIAL</th>
-        <th>50</th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
-        <th>-</th>
-    </tr>
-</table>
-<br>
--->
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<br><br><br>
 
 
   
