@@ -1,0 +1,427 @@
+[
+    {
+        "nome": "Aparição da Alvorada",
+        "imagem": "Imagens_cartas_magicas/apariçao_da_alvorada.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Híbridos",
+        "dano": "-15 de HP (somente em Monstro)"
+    },
+    {
+        "nome": "Armadura Heróica",
+        "imagem": "Imagens_cartas_magicas/armadura_heroica.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Humanos",
+        "dano": "-15 de HP (somente em Monstro)"
+    },
+    {
+        "nome": "Aura Ancestral",
+        "imagem": "Imagens_cartas_magicas/aura_ancestral.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Híbridos",
+        "vida": "+20 de HP"
+    },
+    {
+        "nome": "Aura de Cura",
+        "imagem": "Imagens_cartas_magicas/aura_de_cura.jpeg",
+        "tipo": "M.V",
+        "vida": "+5 de HP"
+    },
+    {
+        "nome": "Benção da Anulação",
+        "imagem": "Imagens_cartas_magicas/bençao_da_anulaçao.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "destruição": "Destrua uma carta mágica em campo."
+    },
+    {
+        "nome": "Barganha de Gênio",
+        "imagem": "Imagens_cartas_magicas/braganha_de_genio.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "sorte": "Comprar 3 Cartas"
+    },
+    {
+        "nome": "Cálice Sagrado",
+        "imagem": "Imagens_cartas_magicas/calice_sagrado.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "vida": "+20 de HP"
+    },
+    {
+        "nome": "Chama da Dualidade",
+        "imagem": "Imagens_cartas_magicas/chama_da_dualidade.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Híbridos",
+        "vida": "+20 de HP"
+    },
+    {
+        "nome": "Chama Eterna",
+        "imagem": "Imagens_cartas_magicas/chama_eterna.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Elementais",
+        "dano": "-5 de HP (somente em Monstro)"
+    },
+    {
+        "nome": "Chamando Reforços",
+        "imagem": "Imagens_cartas_magicas/chamando_reforços.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Monstros",
+        "G+": "Golpe Adicional"
+    },
+    {
+        "nome": "Colapso Temporal",
+        "imagem": "Imagens_cartas_magicas/colapso_temporal.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "destruição": "Destrua uma carta mágica do tipo Elemental em campo."
+    },
+    {
+        "nome": "Colina dos Ventos",
+        "imagem": "Imagens_cartas_magicas/colina_dos_ventos.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Elementais",
+        "mundo": "+10 de HP (somente em Elementais)"
+    },
+    {
+        "nome": "Conexão Espiritual",
+        "imagem": "Imagens_cartas_magicas/conexao_espiritual.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "ressurreição": "2 Personagens"
+    },
+    {
+        "nome": "Contrato de Comércio",
+        "imagem": "Imagens_cartas_magicas/contrato_de_comercio.jpeg",
+        "tipo": "M.V",
+        "carta": "Mágica",
+        "sorte": "Comprar 3 Cartas"
+    },
+    {
+        "nome": "Convocando a Aliança",
+        "imagem": "Imagens_cartas_magicas/convocando_a_aliança.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Humanos",
+        "vida": "+10 de HP"
+    },
+    {
+        "nome": "Coração da Tempestade",
+        "imagem": "Imagens_cartas_magicas/coração_da_tempestade.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Elementais",
+        "vida": "+10 de HP"
+    },
+    {
+        "nome": "Coração de Batalha",
+        "imagem": "Imagens_cartas_magicas/coração_de_batalha.jpeg",
+        "tipo": "M.V",
+        "carta": "Mágica",
+        "dano": "+15 de Ataque no Segundo Golpe"
+    },
+    {
+        "nome": "Corrupção Abissal",
+        "imagem": "Imagens_cartas_magicas/corrupção_abissal.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Monstros",
+        "dano": "-5 de HP (Somente Humanos)"
+    },
+    {
+        "nome": "Deserto Ardente",
+        "imagem": "Imagens_cartas_magicas/deserto_ardente.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Humanos",
+        "mundo": "+10 de HP (somente em Humanos)"
+    },
+    {
+        "nome": "Despertar do Submundo",
+        "imagem": "Imagens_cartas_magicas/despertar_do_submundo.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "sorte": "Virar uma Carta do Inimigo"
+    },
+    {
+        "nome": "Elixir da Vida",
+        "imagem": "Imagens_cartas_magicas/elixir_da_vida.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "vida": "+10 de HP"
+    },
+    {
+        "nome": "Escudo de Cura",
+        "imagem": "Imagens_cartas_magicas/escuro_de_cura.jpeg",
+        "tipo": "M.V",
+        "carta": "Mágica",
+        "vida": "Concede HP"
+    },
+    {
+        "nome": "Estratégia Tática",
+        "imagem": "Imagens_cartas_magicas/estrategia_tatica.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Humanos",
+        "dano": "+5 em Aumento de todos Atributos"
+    },
+    {
+        "nome": "Expurgo Arcano",
+        "imagem": "Imagens_cartas_magicas/expurgo_arcano.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "destruição": "Destrua 1 Carta Mágica (Somente Monstros)"
+    },
+    {
+        "nome": "Favor Divino",
+        "imagem": "Imagens_cartas_magicas/favor_divino.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "sorte": "Comprar 1 Carta"
+    },
+    {
+        "nome": "Floresta Encantada",
+        "imagem": "Imagens_cartas_magicas/floresta_encantada.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Híbridos",
+        "mundo": "+10 de HP (somente em Híbridos)",
+        "Ex": "carta ex"
+    },
+    {
+        "nome": "Força Serpentina",
+        "imagem": "Imagens_cartas_magicas/força_serpentina.jpeg",
+        "tipo": "M.V",
+        "carta": "Mágica",
+        "dano": "+15 de Ataque no Primeiro Golpe"
+    },
+    {
+        "nome": "Fúria Berserker",
+        "imagem": "Imagens_cartas_magicas/furia_berserker.jpeg",
+        "tipo": "M.V",
+        "carta": "Mágica",
+        "dano": "+10 de Ataque no Segundo Golpe"
+    },
+    {
+        "nome": "Fúria Cósmica",
+        "imagem": "Imagens_cartas_magicas/furia_cosmica.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "destruição": "Destrua 1 Carta Mágica (Somente em Humanos)"
+    },
+    {
+        "nome": "Fúria Primordial",
+        "imagem": "Imagens_cartas_magicas/furia_primordial.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Monstros",
+        "dano": "+10 em Aumento de todos Atributos"
+    },
+    {
+        "nome": "Futuras Promessas",
+        "imagem": "Imagens_cartas_magicas/futuras_promessas.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Híbridos",
+        "G+": "Golpe Adicional"
+    },
+    {
+        "nome": "Graça do Comerciante",
+        "imagem": "Imagens_cartas_magicas/graça do comerciante.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Sorte",
+        "descricao": "Comprar 5 Cartas"
+    },
+    {
+        "nome": "Grito Sombrio",
+        "imagem": "Imagens_cartas_magicas/grito_sombrio.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Híbridos",
+        "atributo": "Vida",
+        "descricao": "+10 de HP"
+    },
+    {
+        "nome": "Herança do Conhecimento",
+        "imagem": "Imagens_cartas_magicas/herança_do_conhecimento.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Humanos",
+        "atributo": "Sorte",
+        "descricao": "Compre 2 Cartas"
+    },
+    {
+        "nome": "Invocação Arcana",
+        "imagem": "Imagens_cartas_magicas/incovaçao_arcana.jpeg",
+        "tipo": "M.V",
+        "carta": "Mágica",
+        "atributo": "Dano",
+        "descricao": "+10 de Ataque no Primeiro Golpe"
+    },
+    {
+        "nome": "Inspiração Heróica",
+        "imagem": "Imagens_cartas_magicas/inspiração_heroica.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Humanos",
+        "atributo": "Vida",
+        "descricao": "+20 de HP"
+    },
+    {
+        "nome": "Ligação Espiritual",
+        "imagem": "Imagens_cartas_magicas/ligação_espiritual.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Híbridos",
+        "atributo": "Vida",
+        "descricao": "+5 de HP"
+    },
+    {
+        "nome": "Livro dos Homens",
+        "imagem": "Imagens_cartas_magicas/livro_dos_homens.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Humanos",
+        "atributo": "G+",
+        "descricao": "Golpe Adicional"
+    },
+    {
+        "nome": "Luz Divina",
+        "imagem": "Imagens_cartas_magicas/lux_divina.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Ressurreição",
+        "descricao": "Ressucita 2 Personagens"
+    },
+    {
+        "nome": "Luz Celestial",
+        "imagem": "Imagens_cartas_magicas/luz_celestial.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Elementais",
+        "atributo": "G+",
+        "descricao": "Golpe Adicional"
+    },
+    {
+        "nome": "Maldição da Noite Eterna",
+        "imagem": "Imagens_cartas_magicas/maldição_da_noite_eterna.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Monstros",
+        "atributo": "Vida",
+        "descricao": "+20 de HP"
+    },
+    {
+        "nome": "Pântano das Almas",
+        "imagem": "Imagens_cartas_magicas/pantano_das_almas.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Monstros",
+        "atributo": "Mundo",
+        "descricao": "+10 de HP (somente em Monstros)"
+    },
+    {
+        "nome": "Poção da Vida",
+        "imagem": "Imagens_cartas_magicas/poçao_da_vida.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Vida",
+        "descricao": "+40 de HP"
+    },
+    {
+        "nome": "Renascer da Fênix",
+        "imagem": "Imagens_cartas_magicas/renascer_da_fenix.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Ressurreição",
+        "descricao": "Ressucite 1 Personagem"
+    },
+    {
+        "nome": "Ressurreição Arcana",
+        "imagem": "Imagens_cartas_magicas/ressurreiçao_arcana.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Ressurreição",
+        "descricao": "Ressucite 1 Carta Mágica"
+    },
+    {
+        "nome": "Rocha Sólida",
+        "imagem": "Imagens_cartas_magicas/rocha_solida.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Elementais",
+        "atributo": "Dano",
+        "descricao": "+10 em Aumento de todos Atributos"
+    },
+    {
+        "nome": "Ruptura Dimensional",
+        "imagem": "Imagens_cartas_magicas/ruptura_dimensional.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Sorte",
+        "descricao": "Escolha 1 Carta Adversário"
+    },
+    {
+        "nome": "Sacrifício Renovador",
+        "imagem": "Imagens_cartas_magicas/sacrifício_renovador.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Destruição",
+        "descricao": "Destrua 1 Carta"
+    },
+    {
+        "nome": "Sussuros do Abismo",
+        "imagem": "Imagens_cartas_magicas/sussurros_do_abismo.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Monstros",
+        "atributo": "Vida",
+        "descricao": "+30 de HP"
+    },
+    {
+        "nome": "Tempestade Elmental",
+        "imagem": "Imagens_cartas_magicas/tempestade_elemental.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Elementais",
+        "atributo": "Vida",
+        "descricao": "+20 de HP"
+    },
+    {
+        "nome": "Tremor da Terra",
+        "imagem": "Imagens_cartas_magicas/tremor_da_terra.jpeg",
+        "tipo": "U.V",
+        "exclusiva": "Monstros",
+        "atributo": "Dano",
+        "descricao": "-15 de HP (Somente em Humanos)"
+    },
+    {
+        "nome": "Troca da Morte",
+        "imagem": "Imagens_cartas_magicas/troca_da_morte.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Dano",
+        "descricao": "Escolha 1 Carta Para Atacar"
+    },
+    {
+        "nome": "Véu da Invisibilidade",
+        "imagem": "Imagens_cartas_magicas/veu_da_invisibilidade.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Bloqueio",
+        "descricao": "Escolha 1 Carta"
+    },
+    {
+        "nome": "Véu dos Elementos",
+        "imagem": "Imagens_cartas_magicas/veu_dos_elementos.jpeg",
+        "tipo": "M.V",
+        "exclusiva": "Elementais",
+        "atributo": "Dano",
+        "descricao": "-15 de HP (Somente em Híbridos)"
+    },
+    {
+        "nome": "Virus do Caos",
+        "imagem": "Imagens_cartas_magicas/virus_do_caos.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Destruição",
+        "descricao": "Destrua 1 Carta Mágica (somente em Híbridos)"
+    },
+    {
+        "nome": "Visão Antecipada",
+        "imagem": "Imagens_cartas_magicas/visao_antecipada.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Sorte",
+        "descricao": "Revele Cartas"
+    },
+    {
+        "nome": "Vórtice Temporal",
+        "imagem": "Imagens_cartas_magicas/vortice_temporal.jpeg",
+        "tipo": "U.V",
+        "carta": "Mágica",
+        "atributo": "Destruição",
+        "descricao": "Destrua 1 Carta Mágica (somente em Híbridos)"
+    }
+]

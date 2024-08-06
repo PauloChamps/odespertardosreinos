@@ -42,85 +42,500 @@
  <br><br>
 
 
-<!--IMAGENS PERSONAGENS BOSS-->
-<div class="image-container-boss">
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_arquidemonio.jpeg" alt="Arquidemônio" class="zoomable">
+<!-- Filtro -->
+<div class="filter-bar">
+    <label for="filter-select">Filtrar por:</label>
+    <select id="filter-select">
+        <option value="">Todas A-Z</option>
+        <option value="tipo-uv">Cartas U.V</option>
+        <option value="tipo-mv">Cartas M.V</option>
+        <option value="carta-humanos">Mágicas Humanos</option>
+        <option value="carta-hibridos">Mágicas Híbridos</option>
+        <option value="carta-monstros">Mágicas Monstros</option>
+        <option value="carta-elementais">Mágicas Elementais</option>
+        <option value="carta-destruicao">Mágicas Destruição</option>
+        <option value="carta-dano">Mágicas Dano</option>
+        <option value="carta-vida">Mágicas Vida</option>
+        <option value="carta-sorte">Mágicas Sorte</option>
+        <option value="carta-bloqueio">Mágicas Bloqueio</option>
+        <option value="carta-ressurreicao">Mágicas Ressurreição</option>
+        <option value="carta-mundos">Mágicas Mundos</option>
+        <option value="carta-gplus">Mágicas G+</option>
+        <option value="carta-ex">Mágicas Ex</option>
+    </select>
+</div>
+
+    <!-- Container de Itens -->
+    <div id="items-container"></div>
+
+
+<!--CARTAS MAGICAS PAGINA 1-->
+<div class="image-container-magic">
+    <div class="image-item-magic" data-tipo="U.V" data-carta="Híbridos" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/apariçao_da_alvorada.jpeg" alt="Aparição da Alvorada" class="zoomable">
         <br/>
         <br/>
-        <h3>Garra da Noite</h3>
+        <h3>Aparição da Alvorada</h3>
         <br/>
-        <p>Tipo: M.V<br/><br/>Aumento de Ataque: (G1+10)(G2+10)</p><br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Híbridos<br/><br/>Dano: -15 de HP (somente em Monstro)</p><br/>
     </div>
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_bruxa.jpeg" alt="Bruxa dos Pesadelos" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Bruxa dos Pesadelos</h1>
+    <div class="image-item-magic" data-tipo="U.V" data-carta="Humanos" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/armadura_heroica.jpeg" alt="Armadura Heróica" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Armadura Heróica</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Humanos<br/><br/>Dano: -15 de HP (somente em Monstro)</p><br/>
     </div>
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_caçadores.jpeg" alt="Rei dos Caçadores" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Rei dos Caçadores</h1>
+    <div class="image-item-magic" data-tipo="U.V" data-carta="Híbridos" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/aura_ancestral.jpeg" alt="Aura Ancestral" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Aura Ancestral</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Híbridos<br/><br/>Vida: +20 de HP</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="M.V" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/aura_de_cura.jpeg" alt="Aura de Cura" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Aura de Cura</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Carta: Mágica<br/><br/>Vida: +5 de HP</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta7="Destruição">
+        <img src="Imagens_cartas_magicas/bençao_da_anulaçao.jpeg" alt="Benção da Anulação" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Benção da Anulação</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Destruição: Destrua uma carta mágica em campo.</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta4="Sorte">
+        <img src="Imagens_cartas_magicas/braganha_de_genio.jpeg" alt="Barganha de Gênio" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Barganha de Gênio</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Sorte: Comprar 3 Cartas</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="U.V" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/calice_sagrado.jpeg" alt="Cálice Sagrado" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Cálice Sagrado</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Vida: +20 de HP</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta="Híbridos" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/chama_da_dualidade.jpeg" alt="Chama da Dualidade" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Chama da Dualidade</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Híbridos<br/><br/>Vida: +20 de HP</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Elementais" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/chama_eterna.jpeg" alt="Rei dos Gigantes" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Chama Eterna</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Elementais<br/><br/>Dano: -5 de HP (somente em Monstro)</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Monstros" data-carta9="G+">
+        <img src="Imagens_cartas_magicas/chamando_reforços.jpeg" alt="Chamando Reforços" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Chamando Reforços</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Monstros<br/><br/>G+: Golpe Adicional</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta7="Destruição" >
+        <img src="Imagens_cartas_magicas/colapso_temporal.jpeg" alt="Colapso Temporal" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Colapso Temporal</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Destruição: Destrua uma carta mágica do tipo Elemental em campo.</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Elementais" data-carta8="Mundos" data-carta10="Ex">
+        <img src="Imagens_cartas_magicas/colina_dos_ventos.jpeg" alt="Colina dos Ventos" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Colina dos Ventos</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Elementais<br/><br/>Mundo: +10 de HP (somente em Elementais)</p><br/>
+    </div>  
+    <div class="image-item-magic"data-tipo="U.V" data-carta6="Ressurreição">
+        <img src="Imagens_cartas_magicas/conexao_espiritual.jpeg" alt="Conexão Espiritual" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Conexão Espiritual</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Ressurreição: 2 Personagens</p><br/>
+    </div>
+    <div class="image-item-magic"data-tipo="U.V" data-carta4="Sorte">
+        <img src="Imagens_cartas_magicas/contrato_de_comercio.jpeg" alt="Contrato de Comércio" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Contrato de Comércio</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Sorte: Comprar 3 Cartas</p><br/>
+    </div> 
+    <div class="image-item-magic"data-tipo="U.V" data-carta="Humanos" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/convocando_a_aliança.jpeg" alt="Convocando a Aliança" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Convocando a Aliança</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Humanos<br/><br/>Vida: +10 de HP</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Elementais" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/coração_da_tempestade.jpeg" alt="Coração da Tempestade" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Coração da Tempestade</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Elementais<br/><br/>Vida: +10 de HP</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/coração_de_batalha.jpeg" alt="Coração de Batalha" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Coração de Batalha</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Carta: Mágica<br/><br/>Dano: +15 de Ataque no Segundo Golpe</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta="Monstros" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/corrupção_abissal.jpeg" alt="Corrupção Abissal" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Corrupção Abissal</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Monstros<br/><br/>Dano: -5 de HP (Somente Humanos)</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Humanos" data-carta8="Mundos" data-carta10="Ex">
+        <img src="Imagens_cartas_magicas/deserto_ardente.jpeg" alt="Deserto Ardente" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Deserto Ardente</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Humanos<br/><br/>Mundo: +10 de HP (somente em Humanos)</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta4="Sorte">
+        <img src="Imagens_cartas_magicas/despertar_do_submundo.jpeg" alt="Despertar do Submundo" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Despertar do Submundo</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Sorte: Virar uma Carta do Inimigo</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/elixir_da_vida.jpeg" alt="Elixir da Vida" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Elixir da Vida</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Vida: +10 de HP</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="M.V" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/escuro_de_cura.jpeg" alt="Escudo de Cura" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Escudo de Cura</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Carta: Mágica<br/><br/>Vida: Concede HP</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Humanos" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/estrategia_tatica.jpeg" alt="Estratégia Tática" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Estratégia Tática</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Humanos<br/><br/>Dano: +5 em Aumento de todos Atributos</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta7="Destruição">
+        <img src="Imagens_cartas_magicas/expurgo_arcano.jpeg" alt="Expurgo Arcano" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Expurgo Arcano</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Destruição: Destrua 1 Carta Mágica (Somente Monstros)</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="U.V" data-carta4="Sorte">
+        <img src="Imagens_cartas_magicas/favor_divino.jpeg" alt="Favor Divino" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Favor Divino</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Sorte: Comprar 1 Carta</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Híbridos" data-carta8="Mundos" data-carta10="Ex">
+        <img src="Imagens_cartas_magicas/floresta_encantada.jpeg" alt="Floresta Encantada" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Floresta Encantada</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Híbridos<br/><br/>Mundo: +10 de HP (somente em Híbridos)</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/força_serpentina.jpeg" alt="Força Serpentina" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Força Serpentina</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Carta: Mágica<br/><br/>Dano: +15 de Ataque no Primeiro Golpe</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="M.V" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/furia_berserker.jpeg" alt="Fúria Berserker" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Fúria Berserker</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Carta: Mágica<br/><br/>Dano: +10 de Ataque no Segundo Golpe</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta7="Destruição">
+        <img src="Imagens_cartas_magicas/furia_cosmica.jpeg" alt="Fúria Cósmica" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Fúria Cósmica</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Destruição: +Destrua 1 Carta Mágica (Somente em Humanos)</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Monstros" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/furia_primordial.jpeg" alt="Fúria Primordial" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Fúria Primordial</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Monstros<br/><br/>Dano: +10 em Aumento de todos Atributos</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Híbridos" data-carta9="G+">
+        <img src="Imagens_cartas_magicas/futuras_promessas.jpeg" alt="Futuras Promessas" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Futuras Promessas</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Híbridos<br/><br/>G+: Golpe Adicional</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta4="Sorte">
+        <img src="Imagens_cartas_magicas/graça do comerciante.jpeg" alt="Graça do Comerciante" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Graça do Comerciante</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Sorte: Comprar 5 Cartas</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta="Híbridos" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/grito_sombrio.jpeg" alt="Grito Sombrio" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Grito Sombrio</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Híbridos<br/><br/>Vida: +10 de HP</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="U.V" data-carta="Humanos" data-carta4="Sorte">
+        <img src="Imagens_cartas_magicas/herança_do_conhecimento.jpeg" alt="Herança do Conhecimento" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Herança do Conhecimento</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Humanos<br/><br/>Sorte: Compre 2 Cartas</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/incovaçao_arcana.jpeg" alt="Invocação Arcana" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Invocação Arcana</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Carta: Mágica<br/><br/>Dano: +10 de Ataque no Primeiro Golpe </p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V"  data-carta="Humanos" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/inspiração_heroica.jpeg" alt="Inspiração Heróica" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Inspiração Heróica</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Humanos<br/><br/>Vida: +20 de HP</p><br/>
+    </div>  
+    <div class="image-item-magic"data-tipo="U.V" data-carta="Híbridos" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/ligação_espiritual.jpeg" alt="Ligação Espiritual" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Ligação Espiritual</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Híbridos<br/><br/>Vida: +5 de HP</p><br/>
+    </div>
+    <div class="image-item-magic"data-tipo="M.V" data-carta="Humanos" data-carta9="G+">
+        <img src="Imagens_cartas_magicas/livro_dos_homens.jpeg" alt="Livro dos Homens" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Livro dos Homens</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Humanos<br/><br/>G+: Golpe Adicional</p><br/>
+    </div>
+    <div class="image-item-magic"data-tipo="U.V" data-carta6="Ressurreição">
+        <img src="Imagens_cartas_magicas/lux_divina.jpeg" alt="Luz Divina" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Luz Divina</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Ressurreição: Ressucita 2 Personagens</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Elementais" data-carta9="G+">
+        <img src="Imagens_cartas_magicas/luz_celestial.jpeg" alt="Luz Celestial" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Luz Celestial</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Elementais<br/><br/>G+: Golpe Adicional</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Monstros" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/maldição_da_noite_eterna.jpeg" alt="Maldição da Noite Eterna" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Maldição da Noite Eterna</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Monstros<br/><br/>Vida: +20 de HP</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Monstros" data-carta8="Mundos" data-carta10="Ex">
+        <img src="Imagens_cartas_magicas/pantano_das_almas.jpeg" alt="Pântano das Almas" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Pântano das Almas</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Monstros<br/><br/>Mundo: +10 de HP (somente em Monstros)</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="U.V" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/poçao_da_vida.jpeg" alt="Poção da Vida" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Poção da Vida</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Vida: +40 de HP</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta6="Ressurreição">
+        <img src="Imagens_cartas_magicas/renascer_da_fenix.jpeg" alt="Renascer da Fênix" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Renascer da Fênix</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Ressurreição: Ressucite 1 Personagem</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta6="Ressurreição">
+        <img src="Imagens_cartas_magicas/ressurreiçao_arcana.jpeg" alt="Ressurreição Arcana" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Ressurreição Arcana</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Ressurreição: Ressucite 1 Carta Mágica</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Elementais" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/rocha_solida.jpeg" alt="Rocha Sólida" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Rocha Sólida</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Elementais<br/><br/>Dano: +10 em Aumento de todos Atributos</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta4="Sorte">
+        <img src="Imagens_cartas_magicas/ruptura_dimensional.jpeg" alt="Ruptura Dimensional" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Ruptura Dimensional</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Sorte: Escolha 1 Carta Adversário</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta7="Destruição">
+        <img src="Imagens_cartas_magicas/sacrificio_renovador.jpeg" alt="Sacrifício Renovador" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Sacrifício Renovador</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Destruição: Destrua 1 Carta </p><br/>
+    </div>  
+    <div class="image-item-magic"data-tipo="M.V" data-carta="Monstros" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/sussurros_do_abismo.jpeg" alt="Sussuros do Abismo" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Sussuros do Abismo</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Monstros<br/><br/>Vida: +30 de HP</p><br/>
+    </div>
+    <div class="image-item-magic"data-tipo="M.V" data-carta="Elementais" data-carta3="Vida">
+        <img src="Imagens_cartas_magicas/tempestade_elemental.jpeg" alt="Tempestade Elmental" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Tempestade Elmental</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Elementais<br/><br/>Vida: +20 de HP</p><br/>
+    </div>
+    <div class="image-item-magic"data-tipo="U.V" data-carta="Monstros" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/tremor_da_terra.jpeg" alt="Tremor da Terra" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Tremor da Terra</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Exclusiva: Monstros<br/><br/>Dano: -15 de HP (Somente em Humanos)</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="U.V" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/troca da morte.jpeg" alt="Troca da Morte" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Troca da Morte</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Dano: Escolha 1 Carta Para Atacar</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta5="Bloqueio">
+        <img src="Imagens_cartas_magicas/veu_da_invisibilidade.jpeg" alt="Véu da Invisibilidade" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Véu da Invisibilidade</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Bloqueio: Escolha 1 Carta </p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="M.V" data-carta="Elementais" data-carta2="Dano">
+        <img src="Imagens_cartas_magicas/veu_dos_elementos.jpeg" alt="Véu dos Elementos" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Véu dos Elementos</h3>
+        <br/>
+        <p>Tipo: M.V<br/><br/>Exclusiva: Elementais<br/><br/>Dano: -15 de HP (Somente em Híbridos)</p><br/>
+    </div>  
+    <div class="image-item-magic" data-tipo="U.V" data-carta7="Destruição">
+        <img src="Imagens_cartas_magicas/virus_do_caos.jpeg" alt="Virus do Cao" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Virus do Caos</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Destruição: Destrua 1 Carta Mágica (somente em Híbridos)</p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta4="Sorte">
+        <img src="Imagens_cartas_magicas/visao_antecipada.jpeg" alt="Visão Antecipada" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Visão Antecipada</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Sorte: Revele Cartas </p><br/>
+    </div>
+    <div class="image-item-magic" data-tipo="U.V" data-carta7="Destruição">
+        <img src="Imagens_cartas_magicas/vortice_temporal.jpeg" alt="Vórtice Temporal" class="zoomable">
+        <br/>
+        <br/>
+        <h3>Vórtice Temporal</h3>
+        <br/>
+        <p>Tipo: U.V<br/><br/>Carta: Mágica<br/><br/>Destruição: Destrua 1 Carta Mágica (somente em Híbridos)</p><br/>
     </div>  
 </div>
 
-<div class="image-container-boss">
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_colosso.jpeg" alt="Colosso de Pedra" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Colosso de Pedra</h1>
-    </div>
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_dragao.jpeg" alt="Dragão Ancião" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Dragão Ancião</h1>
-    </div>
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_elemental.jpeg" alt="Elemental Primordial" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Elemental Primordial</h1>
-    </div>  
-</div>
 
-<div class="image-container-boss">
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_grifo.jpeg" alt="Grifo Alfa" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Grifo Alfa</h1>
-    </div>
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_lich.jpeg" alt="Lich" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Lich</h1>
-    </div>
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_reigigantes.jpeg" alt="Rei dos Gigantes" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Rei dos Gigantes</h1>
-    </div>  
-</div>
-
-<div class="image-container-boss">
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_grifo.jpeg" alt="Grifo Alfa" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Grifo Alfa</h1>
-    </div>
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_lich.jpeg" alt="Lich" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Lich</h1>
-    </div>
-    <div class="image-item-boss">
-        <img src="Imagens_personagens/boss/boss_reigigantes.jpeg" alt="Rei dos Gigantes" class="zoomable">
-        <br/><br/><h1 style="font-family: 'Sedan SC' ">Rei dos Gigantes</h1>
-    </div>  
-</div>
 
 <br/>
 <br/>
 <br/>
 
 
-</div>
-<div class="pagination">
-  <a href="#" class="active">1</a>
-  <a href="./loja_itens_boss2.html">2</a>
-  <a href="./loja_itens_boss3.html">3</a>
-  <a href="./loja_itens_boss4.html">4</a>
-  <a href="./loja_itens_boss5.html">5</a>
-  <a href="./loja_itens_boss2.html">&raquo;</a>
-</div>
 
 
 <!-- Overlay -->
@@ -154,6 +569,7 @@
         </div>
     </div>
 </footer>
+
 
 </body>
 </html>

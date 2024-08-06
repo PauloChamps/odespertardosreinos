@@ -343,6 +343,66 @@ body {
         gap: 5px; 
     }
 }
+
+/* #########################################  IMAGENS CARTAS MAGICAS -- PAGINA CARTAS MAGICAS --  ######################################### */
+.image-container-magic {
+    display: flex;
+    justify-content: center; 
+    gap: 5px; 
+    margin-top: 30px; 
+    flex-wrap: wrap;
+    
+}
+.image-item-magic {
+    width: 350px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.image-item-magic img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease; 
+}
+.image-item-magic img:hover {
+    transform: scale(1.1); 
+}
+.image-item-magic h2 {
+    margin: 10px 0 5px;
+    font-size: 30px;
+}
+.image-item-magic h3 {
+    font-size: 22px;
+    font-family: 'Sedan SC';
+    
+}
+.image-item-magic p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 20px;
+    font-family: 'Sedan SC';
+}
+.image-item-magic .btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 10px; 
+    position: relative;
+    top: 5px; 
+}
+.image-item-magic .btn:hover {
+    background-color: #333;
+}
 /* #########################################  IMAGENS BOSS -- PAGINA BOSS --  ######################################### */
 .image-container-boss {
     display: flex;
@@ -382,10 +442,6 @@ body {
     font-size: 17px;
     line-height: 20px;
     font-family: 'Sedan SC';
-    border-bottom-left-radius: 15px;
-    border-bottom: 1px solid #333;
-    border-left: 1px solid #333;
-    padding-bottom: 10px;
 }
 .image-item-boss .btn {
     background-color: black;
@@ -1355,6 +1411,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.banner .slide-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
 }
 .banner .slidearea{
     display: flex;
@@ -2581,4 +2643,32 @@ footer {
         margin-top: 30px;
         padding-bottom: 40px; 
     }
+}
+
+
+
+
+/* #########################################  BARRA FILTRAGEM  ######################################### */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    margin-top: -45px;
+    margin-left: 20px;
+}
+
+.filter-bar label {
+    font-family: 'Sedan SC';
+    margin-right: 5px;
+}
+
+.filter-bar select,
+.filter-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    font-family: 'Sedan SC';
 }
