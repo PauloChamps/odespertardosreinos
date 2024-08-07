@@ -2606,6 +2606,7 @@ footer {
         padding-right: 0; 
         padding-left: 0; 
         margin-bottom: 20px; 
+        margin-left: -5px;
         
     }
     .footer--item.area1 p{
@@ -2615,13 +2616,22 @@ footer {
     .footer--item.area1 h2 {
         font-size: 20px; 
     }
-    .footer--item.area3 {
-        border-left: none; 
-        padding-left: 0; 
-        padding-bottom: 10px; 
+
+    .footer--item.area2 {
+        margin-left: 40px;
+    }
+    .footer--item.area2 p{
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
     }
     .footer-social {
-        margin-top: 20px; 
+        margin-top: 0;
+        margin-left: -10px;
+    }
+    .footer-social:hover {
+        background-color: #000;
+        transform: scale(1.1); 
     }
 }
 @media (min-width: 321px) and (max-width: 768px) {
@@ -2719,16 +2729,3 @@ footer {
 
 
 /* ######################################### IMAGEM AO CHEGAR NO 0 CALCULADORA  ######################################### */
-.hidden {
-    display: none;
-}
-
-#zeroImage {
-    text-align: center;
-    margin-top: 20px;
-}
-
-#zeroImage img {
-    width: 100%; /* Ajuste conforme necessário */
-    max-width: 500px; /* Ajuste conforme necessário */
-}
