@@ -2537,7 +2537,6 @@ footer {
     border-radius: 10px;
 }
 
-
 .footer--item h2 {
     font-size: 24px;
     margin-bottom: 15px;
@@ -2550,23 +2549,31 @@ footer {
     color: #ccc; 
 }
 
+.footer--item.area1 img{
+    margin-top: -15px;
+    margin-left: 50px;
+}
+
 .footer--item.area2 {
     text-align: center;
-    line-height: 1.6;
+    line-height: 0.5;
     color: #ccc;
     font-size: 18px;
     margin-right: 60px;
+    margin-top: 35px;
 }
 
-.footer--item.area2 p {
-    margin: 10px 0;
+
+.footer--item.area3 {
+    margin-top: 40px; 
+    
 }
 
 .footer-social {
     display: flex;
     justify-content: center; 
     gap: 15px;
-    margin-top: 20px; 
+    
 }
 
 .footer-social a {
