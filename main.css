@@ -1399,7 +1399,7 @@ body {
     width: 100vw;
     height: 100%;
     display: flex;
-    transition: transform 0.5s ease; 
+    transition: transform 2s ease; 
     
 }
 .banner .slide{
@@ -1418,6 +1418,25 @@ body {
     display: block;
     margin: 0 auto; 
 }
+
+.banner .slide:nth-child(1) {
+    background-image: url('./Imagens_banners/navio01.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .slide:nth-child(2) {
+    background-image: url('./Imagens_banners/loja01.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .slide:nth-child(3) {
+    background-image: url('./Imagens_banners/heroi01.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 .banner .slidearea{
     display: flex;
     flex-direction: column;
@@ -1541,6 +1560,9 @@ body {
     background-size: 500px;
     border: 1px solid black;
     box-shadow:0px 5px 10px #333;
+}
+.banner1:hover {
+    background-image: url('./Imagens_outras/naviogif.gif');
 }
 .banner2{
     background-image: url('./Imagens_outras/loja.jpeg');
@@ -2748,4 +2770,28 @@ footer {
     height: 800PX;
     border-radius: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+
+
+
+
+/* Container dos ícones sociais */
+.social-icons {
+    position: absolute; 
+    top: 30px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+}
+.social-icons img {
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s;
+}
+.social-icons img:hover {
+    transform: scale(1.2); 
 }
