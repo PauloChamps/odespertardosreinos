@@ -997,6 +997,7 @@ body {
     transition: filter 0.3s ease-in-out; 
     margin-top: 140px;
 }
+
 .personagens img {
     width: 650px;
     transition: filter 0.3s ease-in-out; 
@@ -1399,7 +1400,7 @@ body {
     width: 100vw;
     height: 100%;
     display: flex;
-    transition: transform 2s ease; 
+    transition: transform 4s ease; 
     
 }
 .banner .slide{
@@ -1539,7 +1540,7 @@ body {
     flex-direction: column;
 }
 .banner_options{
-    margin-top: 40px;
+    margin-top: 50px;
     width: 1420px;
     height: 400px;
     display: flex;
@@ -1561,26 +1562,24 @@ body {
     border: 1px solid black;
     box-shadow:0px 5px 10px #333;
 }
-.banner1:hover {
-    background-image: url('./Imagens_outras/naviogif.gif');
-}
 .banner2{
-    background-image: url('./Imagens_outras/loja.jpeg');
-    background-position: center;
-    background-size: 500px;
-    border: 1px solid black;
-    box-shadow:0px 5px 10px #333;
-}
-.banner3{
     background-image: url('./Imagens_outras/mercador.jpeg');
     background-position: center;
     background-size: 500px;
     border: 1px solid black;
     box-shadow:0px 5px 10px #333;
 }
+.banner3{
+    background-image: url('./Imagens_outras/calc.webp');
+    background-position: center;
+    background-size: 500px;
+    border: 1px solid black;
+    box-shadow:0px 5px 10px #333;
+}
 .banner_title{
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Sedan SC';
+    text-shadow: 1px solid rgb(255, 255, 255);
 }
 .banner_desc{
     font-size: 14px;
@@ -1596,7 +1595,7 @@ body {
     font-size: 12px;
     text-decoration: none;
     font-family: 'Sedan SC';
-    margin-top: 233px;
+    margin-top: 220px;
     margin-left: 270px;
     border-radius: 20px;
     text-transform: uppercase;
@@ -1606,17 +1605,24 @@ body {
     background-color: black;
     color: white;
 }
-@media (max-width: 320px){
-
+@media (max-width: 768px) {
+    .banner_options {
+        padding: 10px; 
+        gap: 15px; 
+    }
+    .banner1,
+    .banner2,
+    .banner3 {
+        width: 100%; 
+        max-width: 350px;
+    }
+    .banner_options a {
+        padding: 8px 15px; 
+        font-size: 12px; 
+    }
 }
 
-@media (min-width: 375px) and (max-width: 424px){
-    
-}
-@media (min-width: 425px) and (max-width: 767px) {
-    
-}
-@media (min-width: 768px) and (max-width: 1000px){}
+
 
 /* #########################################  3 NOTICIAS PAGINA ATUALIZAÇÃO*/
 
@@ -1708,7 +1714,6 @@ body {
         margin-right: auto;
     }
 }
-
 @media (min-width: 375px) and (max-width: 424px) {
     .banner_options2 {
         width: 100%;
@@ -1751,7 +1756,7 @@ body {
         margin-right: auto;
     }
 }
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px){
     .banner_options2 {
         width: 100%;
         height: auto;
@@ -2216,8 +2221,6 @@ article .news_resume {
         display: none;
     }
 }
-
-
 /* #########################################  NOTICIA PAGINA PRINCIPAL  ######################################### */
 .default {
     padding-top:50px;
@@ -2234,11 +2237,9 @@ article .news_resume {
 }
 .section-aboutus {
     display:flex;
-    
 }
 .section-aboutus--left {
     flex:1;
-    
 }
 .section-aboutus--left h1 {
     font-size:26px;
@@ -2274,7 +2275,6 @@ article .news_resume {
     .section-aboutus--left h1 {
         font-size: 18px;
         margin-bottom: 10px;
-        
     }
     .section-aboutus--left p {
         font-size: 14px;
@@ -2311,7 +2311,6 @@ article .news_resume {
     .section-aboutus--left h1 {
         font-size: 18px;
         margin-bottom: 10px; 
-        
     }
     .section-aboutus--left p {
         font-size: 14px;
@@ -2377,7 +2376,6 @@ article .news_resume {
     .section-aboutus--left h1 {
         font-size: 18px;
         margin-bottom: 10px;  
-        
     }
     .section-aboutus--left p {
         font-size: 14px;
@@ -2396,11 +2394,6 @@ article .news_resume {
         margin: 0 auto; 
     }
 }
-
-
-
-
-
 /* #########################################  PRODUTOS LOJA PERSONAGENS  ######################################### */
 
 .product-grid {
@@ -2460,8 +2453,6 @@ article .news_resume {
     border-radius: 5px;
     width: 200px;
 }
-
-
 @media only screen and (max-width: 767px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr); 
@@ -2479,63 +2470,6 @@ article .news_resume {
         width: 150px; 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ANOTAÇÕES*/
-
-
-/* organizar código */
-
-
-
-/*Paginas para ficarem responsivas
-
-HOME - OK
- |__Atualização - OK
- |__Mercador - OK
- |__Loja - OK
-HISTÓRIA - OK      
- |__Reliquia Coroa - OK
- |__Reliquia Espada - OK
- |__Reliquia Olho - OK
- |__Reliquia Lagrima - OK
-REINOS - 
- |__Reino Solária - OK
- |__Reino Arboria - OK
- |__
- |__
-LOJA - 
-BOSS - OK
-CARTAS-MAGICAS -
-AJUDA - 
-
-
-
-
-@media (max-width: 374px) {}
-@media (min-width: 375px) and (max-width: 424px){}
-@media (min-width: 425px) and (max-width: 767px) {}
-@media (min-width: 768px) and (max-width: 1000px){}
-
-
-*/
-
-
 /* #########################################  RODAPÉ  ######################################### */
 footer {
     background-color: #000;
@@ -2543,7 +2477,6 @@ footer {
     color: #999;
     font-family: 'Sedan SC', sans-serif;
 }
-
 .footer--area {
     display: flex;
     justify-content: space-between;
@@ -2551,31 +2484,26 @@ footer {
     flex-wrap: wrap; 
     gap: 20px;
 }
-
 .footer--item {
     flex: 1;
     padding: 20px;
     background-color: #000000; 
     border-radius: 10px;
 }
-
 .footer--item h2 {
     font-size: 24px;
     margin-bottom: 15px;
     color: #fff; 
 }
-
 .footer--item p {
     font-size: 18px;
     line-height: 1.4;
     color: #ccc; 
 }
-
 .footer--item.area1 img{
     margin-top: -15px;
     margin-left: 50px;
 }
-
 .footer--item.area2 {
     text-align: center;
     line-height: 0.5;
@@ -2584,20 +2512,14 @@ footer {
     margin-right: 60px;
     margin-top: 35px;
 }
-
-
 .footer--item.area3 {
     margin-top: 40px; 
-    
 }
-
 .footer-social {
     display: flex;
     justify-content: center; 
     gap: 15px;
-    
 }
-
 .footer-social a {
     display: flex;
     justify-content: center;
@@ -2608,15 +2530,21 @@ footer {
     border-radius: 50%; 
     transition: background-color 0.3s, transform 0.3s; 
 }
-
 .footer-social a:hover {
     background-color: #000;
     transform: scale(1.1); 
 }
-
 .footer-social img {
     width: 20px; 
     height: 20px;
+}
+.section-aboutus--right iframe {
+    width: 100%;
+    max-width: 560px; 
+    height: auto; 
+    aspect-ratio: 16 / 9; 
+    box-shadow: 0px 5px 10px #333; 
+    margin: 0 auto; 
 }
 @media (max-width: 320px) {
     .footer--area {
@@ -2630,13 +2558,18 @@ footer {
         text-align: center; 
         margin-bottom: 10px; 
     }
+    .footer--item.area1, .footer--item.area2 {
+        text-align: center; 
+        margin-left: 0;
+        margin-right: 0; 
+        padding: 10px; 
+    }
     .footer--item.area1 {
         border-right: none; 
         padding-right: 0; 
         padding-left: 0; 
         margin-bottom: 20px; 
         margin-left: -5px;
-        
     }
     .footer--item.area1 p{
         font-size: 15px;
@@ -2645,7 +2578,6 @@ footer {
     .footer--item.area1 h2 {
         font-size: 20px; 
     }
-
     .footer--item.area2 {
         margin-left: 40px;
     }
@@ -2654,9 +2586,13 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    .footer--item.area3 {
+        margin-left: 40px; 
+    }
     .footer-social {
         margin-top: 0;
         margin-left: -10px;
+        justify-content: center;
     }
     .footer-social:hover {
         background-color: #000;
@@ -2664,9 +2600,10 @@ footer {
     }
 }
 @media (min-width: 321px) and (max-width: 768px) {
-
     .footer--area {
-        flex-direction: column; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
     .footer--item {
         flex-basis: 100%; 
@@ -2674,26 +2611,42 @@ footer {
         padding: 10px 0; 
         text-align: center; 
     }
-    .footer--item.area1 {
-        border: none; 
-        border-right: none; 
-        padding-right: 0; 
-        padding-left: 0; 
+    .footer--item.area1, .footer--item.area2 {
+        text-align: center;
+        margin-left: 0; 
+        margin-right: 0; 
+        padding: 10px 0 ;
+    }
+    .footer--item.area1 img{
+        margin-right: 30px;
     }
     .footer--item.area1 h2 {
         font-size: 20px; 
         text-align: center; 
+        justify-content: center;
     }
     .footer--item.area3 {
         border: none;
-        margin-top: 30px;
         padding-bottom: 40px; 
     }
+    .footer-social {
+        margin-left: 0;
+        justify-content: center;
+    }
 }
+@media (min-width: 768px) {
+    .footer--area {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer--item {
+        text-align: center;
+    }
+    .footer-social {
+        justify-content: center;
+    }
 
-
-
-
+}
 /* #########################################  BARRA FILTRAGEM  ######################################### */
 .filter-bar {
     display: flex;
@@ -2705,12 +2658,10 @@ footer {
     margin-top: -45px;
     margin-left: 20px;
 }
-
 .filter-bar label {
     font-family: 'Sedan SC';
     margin-right: 5px;
 }
-
 .filter-bar select,
 .filter-bar input {
     padding: 5px;
@@ -2730,7 +2681,6 @@ footer {
     padding: 20px;
     border-radius: 25px;
     width: 300px; 
-    
 }
 .calculator input[type="button"] {
     width: 50px;
@@ -2747,16 +2697,11 @@ footer {
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 15px;
- 
 }
 .calculator input:hover {
     background-color: #999;
     color: #ffffff;
 }
-
-
-
-
 /* ######################################### IMAGEM PAGINA AJUDA VANTAGENS  ######################################### */
 .vantagens {
     display: flex;
@@ -2764,7 +2709,6 @@ footer {
     align-items: center;
     height: 100vh; 
 }
-
 .vantagens img {
     
     height: 800PX;
@@ -2778,8 +2722,7 @@ footer {
 
 
 
-
-/* Container dos ícones sociais */
+/* ######################################### ícones sociais  ######################################### */
 .social-icons {
     position: absolute; 
     top: 30px;
@@ -2795,3 +2738,41 @@ footer {
 .social-icons img:hover {
     transform: scale(1.2); 
 }
+@media (max-width: 767px) {
+    .social-icons {
+        position: fixed; 
+        top: 10px;
+        right: 10px;
+        gap: 8px; 
+    }
+
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+}
+@media (max-width: 1023px) {
+    .social-icons {
+        top: 20px; 
+        right: 20px;
+        gap: 10px; 
+    }
+
+    .social-icons img {
+        width: 35px; 
+        height: 35px;
+    }
+}
+
+
+/* ######################################### FORMULARIO LOGIN  ######################################### */
+
+
+
+
+
+
+
+
+
+
