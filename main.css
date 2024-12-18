@@ -1750,27 +1750,7 @@ body {
     }
     .banner_title2 {
         font-size: 24px;
-    }
-    .banner_options2 a{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media (min-width: 768px){
-    .banner_options2 {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-    .banner4,
-    .banner5,
-    .banner6 {
-        width: 100%;
-        margin: 10px 0;
-    }
-    .banner_title2 {
-        font-size: 26px;
+        margin-top: 500px;
     }
     .banner_options2 a{
         margin-left: auto;
