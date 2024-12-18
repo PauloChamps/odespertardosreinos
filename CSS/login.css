@@ -1,0 +1,64 @@
+body {
+    background-image: url('../Imagens_outras/fundo05.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.areaform {
+    margin-top: -300px;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Sedan SC';
+}
+.gray {
+    color: #999999;
+}
+.padding {
+    padding: 20px;
+}
+.logo {
+    width: 200px;
+    height: auto;
+}
+.remember {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+
+
+
+
+.social-icons {
+    position: absolute; 
+    top: 30px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+}
+.social-icons img {
+    width: 40px; 
+    height: 40px;
+    transition: transform 0.3s;
+}
+.social-icons img:hover {
+    transform: scale(1.2); 
+}
+
+
+
+
+
+
+
+
+
+
+
