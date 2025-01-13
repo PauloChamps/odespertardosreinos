@@ -84,22 +84,16 @@ function closeOverlay(event) {
 document.addEventListener('DOMContentLoaded', function() {
     const filterSelect = document.getElementById('filter-select');
     const itemsContainer = document.getElementById('items-container');
-
     filterSelect.addEventListener('change', function() {
         const selectedValue = this.value;
         filterItems(selectedValue);
     });
-
-
     function filterItems(filterType) {
         const items = document.querySelectorAll('.image-item-magic');
         items.forEach(item => {
             let shouldDisplay = true;
-
             // Reset display
             item.style.display = 'block';
-
-
             switch (filterType) {
                 case 'nome-asc':
                     sortItems('asc');
@@ -158,81 +152,33 @@ document.addEventListener('DOMContentLoaded', function() {
                     shouldDisplay = true;
                     break;
             }
-
             item.style.display = shouldDisplay ? 'block' : 'none';
         });
     }
-
     function sortItems(order) {
         const items = Array.from(document.querySelectorAll('.image-item-magic'));
         items.sort((a, b) => {
             const nameA = a.querySelector('h3').textContent.toUpperCase();
             const nameB = b.querySelector('h3').textContent.toUpperCase();
-
             if (order === 'asc') {
                 return nameA.localeCompare(nameB);
             } else {
                 return nameB.localeCompare(nameA);
             }
         });
-
         items.forEach(item => itemsContainer.appendChild(item));
     }
 });
-
-
-
-
-
-// SLIDER PAGINA HOME
-
-document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.banner .slide');
-    const pointers = document.querySelectorAll('.banner .pointer');
-    let currentSlide = 0;
-
-    function goToSlide(slideIndex) {
-        document.querySelector('.banner .sliders').style.transform = `translateX(-${slideIndex * 100}vw)`;
-        pointers.forEach((pointer, index) => {
-            pointer.classList.toggle('active', index === slideIndex);
-        });
-        currentSlide = slideIndex;
-    }
-
-    function nextSlide() {
-        const nextIndex = (currentSlide + 1) % slides.length;
-        goToSlide(nextIndex);
-    }
-
-    function prevSlide() {
-        const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
-        goToSlide(prevIndex);
-    }
-
-    pointers.forEach((pointer, index) => {
-        pointer.addEventListener('click', () => {
-            goToSlide(index);
-        });
-    });
-
-    setInterval(nextSlide, 7000);
-
-});
-
-
-
 
 
 // CALCULADORA
 let currentTotal = 3000; // Valor inicial
 let currentInput = "";
 let operator = null;
-
 function appendNumber(number) {
     currentInput += number;
     updateDisplay(currentInput);
 }
-
 function setOperator(op) {
     if (currentInput !== "") {
         calculate();
@@ -241,7 +187,6 @@ function setOperator(op) {
     currentTotal = parseInt(document.getElementById('display').value); // Atualiza o total atual
     currentInput = "";
 }
-
 function calculate() {
     if (currentInput === "") return;
 
@@ -256,14 +201,12 @@ function calculate() {
     operator = null;
     updateDisplay(currentTotal);
 }
-
 function resetCalculator() {
     currentTotal = 3000; // Reseta para o valor inicial
     currentInput = "";
     operator = null;
     updateDisplay(currentTotal);
 }
-
 function updateDisplay(value) {
     const display = document.getElementById('display');
     display.value = value;
@@ -272,4 +215,24 @@ function updateDisplay(value) {
 
 
 
-//IMAGEM AO CHEGAR NO 0 NA CALCULADORA
+
+
+
+
+
+
+
+
+
+
+
+// Configura o primeiro item como ativo
+document.addEventListener("DOMContentLoaded", () => {
+    const carouselInner = document.querySelector(".carousel-inner");
+    const firstItem = document.querySelector(".carousel-item");
+
+    // Garante que o primeiro item esteja visível
+    if (carouselInner && firstItem) {
+        carouselInner.scrollLeft = firstItem.offsetLeft;
+    }
+});
