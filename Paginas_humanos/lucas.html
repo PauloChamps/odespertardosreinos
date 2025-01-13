@@ -1,188 +1,311 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../main.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="../Imagens_outras/icon.ico" type="image/x-icon">
+    <link rel="icon" href="../Imagens_outras/ico.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>LUCAS</title>
+    <title>L U C A S</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
      crossorigin="anonymous"></script>
+     <style>
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+     </style>
 </head>
-<body style="background-color:rgb(255, 255, 255)">
-    <header>
-        <img src="../Imagens_banners/banner01.jpg"  class="banner_img"  />
-        <!-- Botão de Entrar 
-        <a href="login.html" class="btn btn-login">Entrar</a>
-         Botão de Cadastre-se 
-        <a href="cadastro.html" class="btn btn-cadastrar">Cadastre-se</a>-->
-    
-        <!-- Ícones de redes sociais -->
-        <div class="social-icons">
-            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
-            <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
-            <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
-        </div>
-    </header>
-   
-<!--MENU PRINCIPAL-->
-<center>
-    <nav id="menu-h">
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-        <ul>
-            <li><a href="../index.html">H O M E</a></li>
-            <li><a href="../historia.html">H I S T Ó R I A</a></li>
-            <li><a href="../reinos.html">R E I N O S</a></li>
-            <li><a href="../bosses.html">B O S S</a></li>
-            <li><a href="../magic.html">C A R T A S - M Á G I C A S</a></li>
-            <li><a href="../loja.html">L O J A</a></li>
-            <li><a href="../help.html">A J U D A</a></li>
-        </ul>
-       <!-- Botão de Busca -->
-     <div class="btn-buscar">
-            <form action="search.php" method="post">
-                <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                <input type="search" id="search" name="search">
-                <!--<button type="submit" class="btn btn-buscar">Buscar Cartas</button>-->
-            </form>
-        </div>
-    </nav>
-</center>
-<script src="../search.js"></script>
+<body>
+<header>
+    <div class="social-icons" >
+        <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
+        <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
+        <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
+    </div>
+</header>
 
+<!-- Menu Principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container" >
+        <!-- Botão de hambúrguer -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
- 
-<!--HUMANO LUCAS-->
-    <div class="personagens">
-        <div class="photo">
-            <img src="../Imagens_personagens/humanos/humano_lucas02.jpeg" alt="Lucas">
-        </div>
-    </div>
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../Imagens_outras/006.png" alt="Logo" style="width: 80px; height: auto;">
+        </a>
 
+        <!-- Links do menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" >
+                <!-- Links -->
+                <li class="nav-item"><a class="nav-link" href="../index.html">H O M E</a></li>
+                <li class="nav-item"><a class="nav-link" href="../historia.html">H I S T Ó R I A</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">E P I S Ó D I O S</a></li>
+                <li class="nav-item"><a class="nav-link" href="../personagens.html">P E R S O N A G E N S</a></li>
+                <li class="nav-item"><a class="nav-link" href="../itens.html">I T E N S</a></li>
+                <li class="nav-item"><a class="nav-link" href="../galeria.html">G A L E R I A</a></li>
+                <li class="nav-item"><a class="nav-link" href="../tcg_game.html">T C G - G A M E</a></li>
+                <li class="nav-item"><a class="nav-link" href="../sobre.html">S O B R E</a></li>
+            </ul>
+        </div>
+        <!-- Ícones sociais -->
+        <div class="social-icons d-none d-lg-flex">
+            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0"><img src="../Imagens_outras/insta2.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@ODespertardosReinos"><img src="../Imagens_outras/you2.png" alt="YouTube"></a>
+            <a href="https://br.pinterest.com/odespertardosreinos/"><img src="../Imagens_outras/pint2.png" alt="Pinterest"></a>
+        </div>
+    </div>
+</nav>
 
-<!-- Seta Direita -->
-    <div class="arrow-container-right">
-        <a href="./marcus.html" class="arrow-link-right"></a>
-    </div>
-    
-<!-- Seta Esquerda -->
-    <div class="arrow-container-let">
-        <a href="./isabella.html" class="arrow-link-left"></a>
-    </div>
-
-    <div class="boss-description">
-        <br/>
-        <h1>L U C A S</h1>
-        <p> Nos salões sagrados do Templo da Justiça, em Solária, erguia-se a figura imponente de Lucas, um paladino humano cujo juramento de combater o mal ecoava como um trovão nos corredores sagrados. Desde jovem, Lucas fora treinado nas artes da guerra e da fé, preparando-se para enfrentar as trevas que ameaçavam a paz e a harmonia de seu reino. <br/><br/>
-            Dotado de uma determinação inabalável e uma fé inquebrantável, Lucas dedicava sua vida a proteger os inocentes e a punir os malfeitores que ousavam desafiar a ordem divina. Com sua espada sagrada em punho e sua armadura reluzente como a luz do sol, ele marchava para o campo de batalha, pronto para enfrentar qualquer desafio que o destino lhe reservasse. <br/><br/>
-            No entanto, o juramento de Lucas não se limitava apenas às batalhas travadas com aço e sangue. Ele também era um defensor dos oprimidos e dos desamparados, uma voz de justiça em um mundo dominado pela tirania e pela injustiça. Com sua presença imponente e sua voz firme, ele confrontava os corruptos e os cruéis, exigindo que prestassem contas por seus atos vis. <br/><br/>
-            Em suas jornadas pelo reino, Lucas enfrentava uma variedade de desafios, desde bandidos e saqueadores até criaturas das trevas e cultos malignos. Mas com sua coragem inabalável e sua fé fervorosa, ele nunca recuava diante do perigo, sua determinação apenas aumentando a cada obstáculo superado. <br/><br/>
-            Para aqueles que o conheciam, Lucas era mais do que um simples paladino; ele era um símbolo de esperança e de justiça, uma luz brilhante em um mundo mergulhado na escuridão. E enquanto houvesse mal a combater e inocentes a proteger, Lucas estaria lá, pronto para enfrentar os horrores do mundo com sua coragem, sua fé e sua determinação inabalável. <br/><br/></p>
-    </div>
-
-<br/>
-<br/>
-<br/>
-
-<div class="characteristics-grid">
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>atributos<hr></h2><br/><br/>
-            <p>HP: <strong>100</strong></p><br/>
-            <p>Vantagem: Monstros<br/><br/>
-               Desvantagem: Elementais, Bruxa dos Pesadelos, Rei dos Caçadores
-            </p>
+<!-- HUMANO LUCAS -->
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col text-center">
+            <h1 class="mb-4" style="font-family: 'Sedan SC';">L U C A S</h1>
         </div>
     </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>golpes<hr></h2><br/>
-            <p>Corte da Vangarda: Um golpe rápido e preciso, executado na vanguarda do combate, cortando com determinação e habilidade.<br/>Causa <strong>10</strong> de dano.<br/><br/><br/>
-               Martelo da Justiça: Um golpe poderoso e imponente, desferido com a força da justiça e da retidão, capaz de esmagar a resistência dos adversários.<br/>Causa <strong>15</strong> de dano.<br/><br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aparência<hr></h2><br/>
-            <p>Altura: 1,85 metros<br/><br/>
-               Peso: 90 kg<br/><br/>
-               Cabelos: Loiro curto e claro <br/><br/>
-               Olhos: Castanhos claros <br/><br/>
-               Traje: Armadura brilhante de aço, adornada com símbolos sagrados e uma capa preta de tecido nobre<br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>personalidade<hr></h2><br/>
-            <p>Qualidades: Honesto, corajoso, altruísta<br/><br/>
-                Defeitos: Rígido em suas convicções, tende ao julgamento severo, excessivamente confiante<br/><br/>
-                Habilidades Sociais: Inspirador, líder carismático, capaz de motivar e unir seus aliados</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>habilidades<hr></h2><br/>
-            <p>Armas: Espada longa e escudo sagrado<br/><br/>
-                Táticas de Combate: Especialista em defesa e proteção do grupo, habilidoso em combate corpo a corpo<br/><br/>
-                Outras Habilidades: Capacidade de detectar o mal, imunidade a efeitos negativos de magias de encantamento</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>equipamentos<hr></h2><br/>
-            <p>Arma Principal: Espada da Luz, uma lâmina abençoada que irradia energia divina, capaz de purificar o mal<br/><br/>
-               Escudo Sagrado: Feito de aço resistente e adornado com runas de proteção, amplifica as defesas do usuário<br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aliados<hr></h2><br/>
-            <p> Elena: Clériga humana, especialista em cura e proteção divina<br/><br/>
-                Isabella: Ranger habilidosa em caça e rastreamento, valiosa em emboscadas e reconhecimento<br/><br/>
-                Aiden: Guerreiro humano, líder nato em combate e estratégia militar</p><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>inimigos<hr></h2><br/>
-            <p>Bruxa dos Pesadelos: Uma feiticeira que se alimenta dos medos e pesadelos dos mortais, manipulando ilusões para torturar suas vítimas antes de drenar sua energia vital.<br/><br/>
-               Rei dos Caçadores: Um humano transformado em um monstro bestial, caçando humanos e criaturas inocentes para satisfazer sua fome insaciável por carne.</p>
+    <div class="row align-items-center mt-4">
+        <div class="col-12 text-center">
+            <img src="../Imagens_personagens/humanos/humano_lucas02.jpeg" class="img-fluid rounded shadow" alt="Guerreira forte da natureza defensora personagem rpg">
         </div>
     </div>
 </div>
 
 
 
-
-
-<br/>
-<br/>
-<br/>
-
-<!--Rodapé -->
-<footer>
-    <div class="footer--area">
-        <div class="footer--item area1">
-            <img src="./Imagens_outras/006.png"/>
-        </div>
-        <div class="footer--item area2">
-            <p>© 2024 Todos os Direitos Reservados</p>
-            <p>Mail: suporte@odespertardosreinos.com.br</p>
-            <p>Tel: +55 11 99105-8957</p>
-        </div>
-        <div class="footer--item area3">
-            <div class="footer-social">
-                <a href=""><img src="./Imagens_outras/00facebook.png" target="_blank"/></a>
-                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="./Imagens_outras/00insta.png"/></a>
-                <a href="https://www.tiktok.com/@o_despertar_dos_reinos" target="_blank"><img src="./Imagens_outras/00tiktok.png"/></a>
-                <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="./Imagens_outras/00youtube.png"/></a>
-                <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank"><img src="./Imagens_outras/00pinterest.png"/></a>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC';">
+                Nos salões sagrados do Templo da Justiça, em Solária, erguia-se a figura imponente de Lucas, um paladino humano cujo juramento de combater o mal ecoava como um trovão nos corredores sagrados. Desde jovem, Lucas fora treinado nas artes da guerra e da fé, preparando-se para enfrentar as trevas que ameaçavam a paz e a harmonia de seu reino.
+                <br><br>
+                Dotado de uma determinação inabalável e uma fé inquebrantável, Lucas dedicava sua vida a proteger os inocentes e a punir os malfeitores que ousavam desafiar a ordem divina. Com sua espada sagrada em punho e sua armadura reluzente como a luz do sol, ele marchava para o campo de batalha, pronto para enfrentar qualquer desafio que o destino lhe reservasse. 
+                <br><br>
+                No entanto, o juramento de Lucas não se limitava apenas às batalhas travadas com aço e sangue. Ele também era um defensor dos oprimidos e dos desamparados, uma voz de justiça em um mundo dominado pela tirania e pela injustiça. Com sua presença imponente e sua voz firme, ele confrontava os corruptos e os cruéis, exigindo que prestassem contas por seus atos vis.
+                <br><br>
+                Em suas jornadas pelo reino, Lucas enfrentava uma variedade de desafios, desde bandidos e saqueadores até criaturas das trevas e cultos malignos. Mas com sua coragem inabalável e sua fé fervorosa, ele nunca recuava diante do perigo, sua determinação apenas aumentando a cada obstáculo superado.
+                <br><br>
+                Para aqueles que o conheciam, Lucas era mais do que um simples paladino; ele era um símbolo de esperança e de justiça, uma luz brilhante em um mundo mergulhado na escuridão. E enquanto houvesse mal a combater e inocentes a proteger, Lucas estaria lá, pronto para enfrentar os horrores do mundo com sua coragem, sua fé e sua determinação inabalável.
+                <br><br>
+                </p><br/>
         </div>
     </div>
-</footer>
+</div>
 
+
+
+<div class="characteristics-container">
+        <div class="characteristics-grid">
+            <div class="characteristic-box">
+                <h2>Atributos</h2><br/>
+                <p>Força (FOR): Refere-se ao poder físico e a capacidade de realizar tarefas que exigem força bruta, como combate corpo a corpo e resistência a danos. <center><strong>1/5</strong></p></center><br/>
+                <p>Destreza (DES): Envolve agilidade, reflexos rápidos e precisão, sendo importante para ataques à distância e furtividade. <center><strong>4/5</strong></p></center><br/>
+                <p>Carisma (CAR): Reflete a habilidade de interagir socialmente, influenciar outros e liderar com persuasão ou intimidação. <center><strong>1/5</strong></p></center><br/>
+                <p>Inteligência (INT): Relaciona-se ao raciocínio, conhecimento e habilidades mágicas ou estratégicas. <center><strong>2/5</strong></p></center><br/>
+                <p>Vigor (VIG): Representa a saúde, resistência física e capacidade de suportar condições adversas. <center><strong>2/5</strong></p></center>
+            </div>
+            <div class="characteristic-box">
+                <h2>Golpes</h2><br/>
+                <p style="font-size: 18px;">Aura de Proteção</p><p>Descrição: O juramento de Lucas emana como uma aura sagrada, protegendo seus aliados próximos. Enquanto a aura estiver ativa, seus aliados recebem resistência a dano e vantagens em testes contra medo.<br/><br/></p>
+                <p style="font-size: 18px;">Golpe da Justiça Divina</p><p>Descrição: Lucas invoca o poder sagrado de sua fé para desferir um ataque devastador que causa dano extra a inimigos malignos. O golpe brilha com luz divina, intimidando os oponentes.<br/><br/></p>
+                <p style="font-size: 18px;">Cura Redentora</p><p>Descrição: Lucas canaliza o poder divino para curar feridas e purificar doenças ou venenos em um aliado. Seu toque carrega uma sensação de conforto e esperança.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Aparência</h2><br/>
+                <p>Altura: 1,90 metros</p><br/>
+                <p>Peso: 95 kg</p><br/>
+                <p>Cabelos: Castanho claro, curto e bem cuidado, frequentemente visível sob o elmo de paladino.</p><br/>
+                <p>Olhos: Azuis profundos, com um brilho sereno que reflete sua ligação com a luz divina.</p><br/>
+                <p>Cor da Pele: Clara, com uma tonalidade dourada que reflete o poder divino que emana dele.</p><br/>
+                <p>Postura: Postura ereta e digna, sempre imponente, refletindo seu papel como paladino sagrado. Sua presença inspira respeito e confiança.</p><br/>
+                <p>Características Faciais: Traços fortes e marcantes, com um semblante sério, mas honroso. Seu rosto é geralmente limpo e imaculado, sem barba, mantendo uma aparência nobre e bem cuidada.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Personalidade</h2><br/>
+                <p>Lucas é um homem de grande virtude, com um forte senso de justiça e honra. Sua fé e devoção são inabaláveis, e ele acredita que está em uma missão divina para trazer equilíbrio ao mundo. Lucas é uma figura calma e respeitável, mas também possui uma determinação feroz quando se trata de proteger os inocentes e derrotar o mal.<br/><br/>
+                    Embora pareça implacável e sério em sua busca, ele também é compassivo e generoso. Sua bondade e sinceridade atraem aqueles ao seu redor, e ele é respeitado por seus aliados e temido por seus inimigos. No entanto, Lucas carrega um peso pesado em seu coração, pois sabe que sua missão é interminável e que sacrifícios são inevitáveis. Sua lealdade aos deuses e seu código moral o tornam um líder nato, mas também alguém que constantemente luta contra suas próprias dúvidas e inseguranças.
+                </p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Habilidades</h2><br/>
+                <p style="font-size: 18px;">Espada Divina </p><p> Lucas empunha uma espada mágica, imbuída com a luz divina. A espada brilha intensamente e é capaz de cortar até os inimigos mais imortais e poderosos. Ela é eficaz contra as forças do mal, causando danos significativos a criaturas das trevas e necromantes.</p><br/>
+                <p style="font-size: 18px;">Banimento das Sombras </p><p>Lucas pode invocar o poder divino para banir criaturas das sombras, como demônios, mortos-vivos e espectros. Essa habilidade cria uma onda de luz purificadora que afasta os inimigos do mal.</p><br/>
+                <p style="font-size: 18px;">Proteção Sagrada: </p><p> Ele pode criar um escudo sagrado ao redor de si ou de seus aliados, proporcionando proteção contra ataques físicos e mágicos. Esse escudo é particularmente eficaz contra magias das trevas.</p><br/>
+            </div>
+            <div class="characteristic-box">
+                <h2>Equipamentos</h2><br/>
+                <p style="font-size: 18px;">Espada Divina "Lâmina da Justiça"</p><p> Uma espada longa e brilhante, infundida com o poder da luz divina. A lâmina irradia uma luz suave e quente, capaz de cortar qualquer mal.</p><br/>
+                <p style="font-size: 18px;">Escudo Sagrado</p><p>Um escudo circular, gravado com símbolos divinos e revestido de prata. Ele é usado para se proteger e também para proteger seus aliados, refletindo ataques mágicos das forças das trevas. </p><br/>
+                <p style="font-size: 18px;">Armadura de Paladino</p><p>Uma armadura pesada de platina que brilha com a luz dos deuses. Ela é extremamente resistente, fornecendo proteção contra ataques físicos e mágicos. A armadura também é adornada com símbolos religiosos. </p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Curiosidades</h2><br/>
+                <p style="font-size: 18px;">Juramento de Lealdade</p><p>Lucas fez um juramento solene perante os deuses da luz, comprometendo-se a combater o mal até o fim de seus dias. Seu juramento é sua maior força, mas também sua maior responsabilidade.</p><br/><br/>
+                <p style="font-size: 18px;">Relacionamento com os Deuses</p><p>Lucas acredita ter sido escolhido pelos deuses para ser seu emissário no mundo mortal, uma crença que o guia em sua missão. Ele busca sempre se manter digno de sua bênção divina.</p><br/><br/>
+                <p style="font-size: 18px;">Conflito Interno</p><p>Apesar de sua fé inabalável, Lucas às vezes se questiona sobre o que é verdadeiramente justo. Ele tem uma natureza introspectiva e, muitas vezes, luta para encontrar o equilíbrio entre a misericórdia e a punição, especialmente quando se trata de inimigos que uma vez foram humanos.
+            </p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Reputação</h2><br/>
+                <p>Lucas é um paladino humano de Solária, treinado desde jovem nas artes da guerra e da fé. Com uma determinação inquebrantável e uma espada sagrada em mãos, ele luta para proteger os inocentes e punir o mal, seja enfrentando batalhas sangrentas ou confrontando a tirania e a injustiça. Sua armadura brilhante reflete a luz da justiça que carrega em seu coração, e sua coragem o torna uma luz de esperança para os oprimidos.<br/><br/>
+                    Em suas jornadas, Lucas enfrenta desde bandidos a criaturas das trevas, jamais recuando diante do perigo. Sua presença inspira os que precisam de proteção e aterroriza os corruptos que desafiam a ordem divina. Mais do que um guerreiro, ele é um símbolo de fé e justiça, disposto a enfrentar qualquer horror para defender a paz de Solária.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Carrossel para dispositivos móveis -->
+        <div id="characteristicsCarousel" class="carousel slide d-md-none" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="characteristic-box">
+                        <h2>Atributos</h2><br/>
+                        <p>Força (FOR): Refere-se ao poder físico e a capacidade de realizar tarefas que exigem força bruta, como combate corpo a corpo e resistência a danos. <center><strong>1/5</strong></p></center><br/>
+                        <p>Destreza (DES): Envolve agilidade, reflexos rápidos e precisão, sendo importante para ataques à distância e furtividade. <center><strong>3/5</strong></p></center><br/>
+                        <p>Carisma (CAR): Reflete a habilidade de interagir socialmente, influenciar outros e liderar com persuasão ou intimidação. <center><strong>2/5</strong></p></center><br/>
+                        <p>Inteligência (INT): Relaciona-se ao raciocínio, conhecimento e habilidades mágicas ou estratégicas. <center><strong>2/5</strong></p></center><br/>
+                        <p>Vigor (VIG): Representa a saúde, resistência física e capacidade de suportar condições adversas. <center><strong>2/5</strong></p></center>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Golpes</h2><br/>
+                        <p style="font-size: 18px;">Cura da Terra Viva</p><p>Descrição: Emily canaliza a energia vital dos bosques e rios ao seu redor para curar a si mesma ou um aliado. A cura é mais eficaz em ambientes naturais.<br/><br/></p>
+                        <p style="font-size: 18px;">Chamado das Criaturas Selvagens</p><p>Descrição: Com um chamado harmonioso, Emily convoca animais próximos para ajudá-la em combate. Os animais distraem e atacam os inimigos ou criam uma oportunidade para fuga.<br/><br/></p>
+                        <p style="font-size: 18px;">Vinculação Elemental</p><p>Descrição: Emily conecta-se com um dos elementos naturais ao seu redor (terra, água, ou ar), ganhando poderes temporários baseados no elemento escolhido.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Aparência</h2><br/>
+                        <p>Altura: 1,70 metros</p><br/>
+                        <p>Peso: 65 kg</p><br/>
+                        <p>Cabelos: Castanho claro, com fios que lembram a cor das folhas de outono. Seu cabelo é frequentemente amarrado em tranças ou preso para facilitar a movimentação.</p><br/>
+                        <p>Olhos: Verdes, com um brilho intenso que reflete sua conexão com a terra e a vida ao seu redor.</p><br/>
+                        <p>Traje: Armadura leve de couro reforçado com placas de metal</p><br/>
+                        <p>Postura: Sua postura é ereta e orgulhosa, como uma árvore sólida que não se curva ao vento. Ela carrega uma aura de serenidade, mas com uma presença imponente.</p><br/>
+                        <p>Características Faciais: Emily possui feições delicadas e harmoniosas, com uma expressão serena e confiável.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Personalidade</h2><br/>
+                        <p>Emily é calma, serena e determinada. Ela é apaixonada pela natureza e por todas as criaturas que a habitam, mas também é ferozmente protetora e não hesita em lutar para preservar o equilíbrio do mundo natural. Apesar de seu temperamento pacífico, ela não tolera a destruição gratuita ou o desrespeito pelas terras sagradas que jurou proteger.<br/><br/>
+                            Ela tem uma sabedoria tranquila que vem de anos de convivência com a natureza e um profundo respeito pelas forças vitais da terra. Emily também é compassiva e sempre busca ensinar aos outros a importância de viver em harmonia com o ambiente, sem exploração excessiva ou destruição. Sua determinação em proteger a natureza é inabalável, e ela pode ser feroz quando confrontada com aqueles que prejudicam a terra ou suas criaturas.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Habilidades</h2><br/>
+                        <p style="font-size: 18px;">Comando Animal </p><p> Ela possui a habilidade de se comunicar com animais e até mesmo controlá-los em batalha. Desde lobos ferozes a aves velozes, Emily pode convocar animais para ajudá-la, seja para atacar, espionar ou defender.</p><br/>
+                        <p style="font-size: 18px;">Raízes da Terra </p><p> Emily pode convocar raízes e vinhas da terra para se erguerem do solo, aprisionando inimigos ou criando obstáculos durante as batalhas. Ela também pode usar esta habilidade para se mover rapidamente por terrenos naturais.</p><br/>
+                        <p style="font-size: 18px;">Proteção Natural</p><p> Emily pode lançar um feitiço de proteção sobre a terra e as criaturas, criando um escudo mágico que as defende de ataques inimigos. Esse escudo é fortalecido quando ela está em áreas naturais, como florestas ou campos.</p><br/>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Equipamentos</h2><br/>
+                        <p style="font-size: 18px;">Espada Verdejante</p><p>Uma espada mágica feita de um metal raro, com lâmina que brilha com uma tonalidade esverdeada. Ela é capaz de cortar qualquer material, mas sua verdadeira força é quando é usada para proteger a natureza.</p><br/>
+                        <p style="font-size: 18px;">Anel da Mãe Natureza </p><p>Um anel mágico que permite a Emily sentir a energia da terra ao seu redor. Ele também a conecta com a essência das árvores e plantas, ajudando-a a curar ou invocar forças naturais. </p><br/>
+                        <p style="font-size: 18px;">Amuleto da Flora Ancestral </p><p>Um amuleto que contém uma semente mágica capaz de crescer e criar raízes que curam e protegem, podendo ser usado tanto em combate quanto para regeneração. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Curiosidades</h2><br/>
+                        <p style="font-size: 18px;">Vínculo com o Mundo Natural </p><p>Emily possui uma afinidade especial com as árvores mais antigas, que a tratam como uma protetora. As árvores, por vezes, comunicam-se com ela de maneira silenciosa, transmitindo mensagens sobre a saúde do ambiente.</p><br/><br/>
+                        <p style="font-size: 18px;">Defensora do Equilíbrio</p><p>Emily acredita firmemente que a natureza deve ser respeitada e que nem sempre a violência é a solução. Ela é mais propensa a tentar resolver conflitos através do diálogo e da persuasão antes de recorrer à batalha.</p><br/><br/>
+                        <p style="font-size: 18px;">Ajudante de Animais Feridos</p><p>Emily possui a habilidade de curar animais feridos, usando suas habilidades de magia natural para restaurar a saúde das criaturas de sua terra.
+                    </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Reputação</h2><br/>
+                        <p>Emily é uma guardiana da natureza em Solária, com uma profunda conexão com os bosques e a vida selvagem. Desde pequena, ela se dedicou a proteger a harmonia natural, lutando contra a exploração e a destruição ambiental. Com vasto conhecimento de plantas medicinais e habilidades de sobrevivência, ela guia e protege os viajantes, além de defender animais e plantas dos caçadores. Sua reputação é marcada por sua dedicação incansável e por ser uma voz dos indefesos, uma força imbatível na defesa da terra e seus habitantes. Para muitos, Emily é a protetora da vida e uma verdadeira força da natureza.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <br/>
+        <br/>
+
+<!-- ADS GOOGLE -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4434635049222289"
+data-ad-slot="1596018270"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+
+
+<br/>
+<br/>
+
+<!-- RODAPÉ -->
+        <footer class="bg-dark text-light py-5">
+        <div class="container">
+        <div class="row justify-content-center text-center text-md-left align-items-center">
+  
+        <!-- Logo -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-left logo-container">
+            <img src="../Imagens_outras/006.png" alt="Logo" class="img-fluid">
+        </div>
+  
+        <!-- Informações de Contato -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-center">
+          <p>© 2024 Todos os Direitos Reservados</p>
+          <p>Mail: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
+          <p>Tel: <a href="tel:+5511991058957" class="text-light">+55 11 99105-8957</a></p>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end footer-social">
+          <a href="" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
+          </a>
+          <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
+          </a>
+          <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="../search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,151 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../main.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="../Imagens_outras/icon.ico" type="image/x-icon">
+    <link rel="icon" href="../Imagens_outras/ico.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>ISABELLA</title>
+    <title>I S A B E L L A</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
      crossorigin="anonymous"></script>
+     <style>
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+     </style>
 </head>
-<body style="background-color:rgb(255, 255, 255)">
-    <header>
-        <img src="../Imagens_banners/banner01.jpg"  class="banner_img"  />
-        <!-- Botão de Entrar 
-        <a href="login.html" class="btn btn-login">Entrar</a>
-         Botão de Cadastre-se 
-        <a href="cadastro.html" class="btn btn-cadastrar">Cadastre-se</a>-->
-    
-        <!-- Ícones de redes sociais -->
-        <div class="social-icons">
-            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
-            <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
-            <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
-        </div>
-    </header>
-   
-<!--MENU PRINCIPAL-->
-<center>
-    <nav id="menu-h">
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-        <ul>
-            <li><a href="../index.html">H O M E</a></li>
-            <li><a href="../historia.html">H I S T Ó R I A</a></li>
-            <li><a href="../reinos.html">R E I N O S</a></li>
-            <li><a href="../bosses.html">B O S S</a></li>
-            <li><a href="../magic.html">C A R T A S - M Á G I C A S</a></li>
-            <li><a href="../loja.html">L O J A</a></li>
-            <li><a href="../help.html">A J U D A</a></li>
-        </ul>
-       <!-- Botão de Busca -->
-     <div class="btn-buscar">
-            <form action="search.php" method="post">
-                <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                <input type="search" id="search" name="search">
-                <!--<button type="submit" class="btn btn-buscar">Buscar Cartas</button>-->
-            </form>
-        </div>
-    </nav>
-</center>
-<script src="../search.js"></script>
+<body>
+<header>
+    <div class="social-icons" >
+        <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
+        <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
+        <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
+    </div>
+</header>
 
+<!-- Menu Principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container" >
+        <!-- Botão de hambúrguer -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  
-<!--HUMANO ISABELLA-->
-    <div class="personagens">
-        <div class="photo">
-            <img src="../Imagens_personagens/humanos/humano_isabella02.jpeg" alt="Isabella">
-        </div>
-    </div>
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../Imagens_outras/006.png" alt="Logo" style="width: 80px; height: auto;">
+        </a>
 
-<!-- Seta Direita -->
-        <div class="arrow-container-right">
-            <a href="./lucas.html" class="arrow-link-right"></a>
+        <!-- Links do menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" >
+                <!-- Links -->
+                <li class="nav-item"><a class="nav-link" href="../index.html">H O M E</a></li>
+                <li class="nav-item"><a class="nav-link" href="../historia.html">H I S T Ó R I A</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">E P I S Ó D I O S</a></li>
+                <li class="nav-item"><a class="nav-link" href="../personagens.html">P E R S O N A G E N S</a></li>
+                <li class="nav-item"><a class="nav-link" href="../itens.html">I T E N S</a></li>
+                <li class="nav-item"><a class="nav-link" href="../galeria.html">G A L E R I A</a></li>
+                <li class="nav-item"><a class="nav-link" href="../tcg_game.html">T C G - G A M E</a></li>
+                <li class="nav-item"><a class="nav-link" href="../sobre.html">S O B R E</a></li>
+            </ul>
         </div>
-    
-<!-- Seta Esquerda -->
-        <div class="arrow-container-let">
-            <a href="./emily.html" class="arrow-link-left"></a>
+        <!-- Ícones sociais -->
+        <div class="social-icons d-none d-lg-flex">
+            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0"><img src="../Imagens_outras/insta2.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@ODespertardosReinos"><img src="../Imagens_outras/you2.png" alt="YouTube"></a>
+            <a href="https://br.pinterest.com/odespertardosreinos/"><img src="../Imagens_outras/pint2.png" alt="Pinterest"></a>
         </div>
+    </div>
+</nav>
 
-    <div class="boss-description">
-        <br/>
-        <h1>I S A B E L L A</h1>
-        <p> Nas vastas planícies e desertos do Reino de Solária, uma figura solitária percorria os horizontes, sua presença tão sutil quanto o sussurro do vento. Seu nome era Isabella, uma ranger humana cujas habilidades em caçar e rastrear eram tão lendárias quanto os desertos que ela chamava de lar. <br/><br/>
-            Desde jovem, Isabella demonstrava uma afinidade incomum com a natureza e uma habilidade inata em ler os sinais e os rastros deixados pelas criaturas que habitavam as terras áridas de Solária. Treinada pelos melhores caçadores e rastreadores da região, ela rapidamente se tornou uma mestra na arte da caça e da sobrevivência. <br/><br/>
-            Com seu arco em punho e sua fiel companheira, uma águia de olhos aguçados chamada Aurora, Isabella percorria os confins do deserto em busca de suas presas. Seus movimentos eram graciosos e silenciosos, seus sentidos aguçados captavam os menores detalhes do ambiente ao seu redor, e sua determinação era inabalável. <br/><br/>
-            No entanto, Isabella não caçava apenas por esporte ou por necessidade; ela também era uma guardiã das terras selvagens de Solária, protegendo os inocentes e os desamparados dos perigos que espreitavam nas sombras. Com sua habilidade em rastrear e caçar, ela era uma força a ser temida por aqueles que ameaçavam a paz e a segurança das terras que ela jurara proteger. <br/><br/>
-            Em suas jornadas solitárias, Isabella enfrentava uma variedade de desafios, desde criaturas selvagens até bandidos e saqueadores que ousavam atravessar seu caminho. Mas com sua coragem inabalável e sua destreza mortal, ela sempre emergia vitoriosa, sua determinação renovada a cada vitória conquistada. <br/><br/>
-            Para aqueles que a conheciam, Isabella era mais do que uma simples caçadora; ela era uma guardiã das terras selvagens, uma protetora dos fracos e oprimidos, uma força da natureza que não podia ser contida. E enquanto houvesse perigos a enfrentar e injustiças a corrigir, Isabella estaria lá, pronta para defender as terras que tanto amava com sua vida e sua honra. <br/><br/></p>
-            </div>
-
-<div class="characteristics-grid">
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>atributos<hr></h2><br/><br/>
-            <p>HP: <strong>120</strong></p><br/>
-            <p>Vantagem: Monstros<br/><br/>
-               Desvantagem: Elementais, Bruxa dos Pesadelos, Rei dos Caçadores
-            </p>
+<!-- HUMANO ISABELLA -->
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col text-center">
+            <h1 class="mb-4" style="font-family: 'Sedan SC';">I S A B E L L A</h1>
         </div>
     </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>golpes<hr></h2><br/>
-            <p>Flecha da Liberdade: Uma flecha impulsionada pela ideia de liberdade, atingindo o alvo com precisão e força, proporcionando uma sensação de libertação.<br/>Causa <strong>10</strong> de dano.<br/><br/><br/>
-               Força da Natureza: Utiliza o poder da natureza para canalizar uma força imponente, capaz de causar impactos poderosos e transformadores no campo de batalha.<br/>Causa <strong>20</strong> de dano.<br/><br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aparência<hr></h2><br/>
-            <p>Altura: 1,75 metros<br/><br/>
-               Peso: 70 kg<br/><br/>
-               Cabelos: Castanhos claros, longos e trançados<br/><br/>
-               Olhos: Azuis e serenos<br/><br/>
-               Traje: Roupa de caça resistente, camuflada para se fundir com o ambiente natural<br/><br/>
-        
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>personalidade<hr></h2><br/>
-            <p>Qualidades: Determinada, observadora, corajosa<br/><br/>
-                Defeitos: Independente em excesso, reservada, tende a agir impulsivamente<br/><br/>
-                Habilidades Sociais: Comunica-se bem com a natureza, mas tem dificuldade em se abrir com estranhos</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>habilidades<hr></h2><br/>
-            <p>Armas: Arco longo e adaga de caça<br/><br/>
-                Táticas de Combate: Especialista em ataques à distância, utiliza o terreno ao seu favor para emboscar inimigos<br/><br/>
-                Outras Habilidades: Rastreamento avançado, habilidades de sobrevivência na natureza</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>equipamentos<hr></h2><br/>
-            <p>Arma Principal: Arco da Floresta, feito com madeira élfica e corda de sinew, proporciona maior precisão e alcance<br/><br/>
-                Amuletos: Utilizadas como arma secundária ou para combate corpo a corpo<br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aliados<hr></h2><br/>
-            <p> Rebecca: uma assassina humana treinada nas sombras para eliminar alvos com precisão letal.<br/><br/>
-                Marcus: um ladrão humano astuto que rouba dos ricos para sobreviver.<br/><br/>
-                Lucas: um paladino humano juramentado a combater o mal em todas as suas formas.</p><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>inimigos<hr></h2><br/>
-            <p>Bruxa dos Pesadelos: Uma feiticeira que se alimenta dos medos e pesadelos dos mortais, manipulando ilusões para torturar suas vítimas antes de drenar sua energia vital.<br/><br/>
-               Rei dos Caçadores: Um humano transformado em um monstro bestial, caçando humanos e criaturas inocentes para satisfazer sua fome insaciável por carne.</p>
+    <div class="row align-items-center mt-4">
+        <div class="col-12 text-center">
+            <img src="../Imagens_personagens/humanos/humano_isabella02.jpeg" class="img-fluid rounded shadow" alt="Guerreira forte da natureza defensora personagem rpg">
         </div>
     </div>
 </div>
@@ -153,33 +82,229 @@
 
 
 
-
-<br/>
-<br/>
-<br/>
-
-<!--Rodapé -->
-<footer>
-    <div class="footer--area">
-        <div class="footer--item area1">
-            <img src="./Imagens_outras/006.png"/>
-        </div>
-        <div class="footer--item area2">
-            <p>© 2024 Todos os Direitos Reservados</p>
-            <p>Mail: suporte@odespertardosreinos.com.br</p>
-            <p>Tel: +55 11 99105-8957</p>
-        </div>
-        <div class="footer--item area3">
-            <div class="footer-social">
-                <a href=""><img src="./Imagens_outras/00facebook.png" target="_blank"/></a>
-                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="./Imagens_outras/00insta.png"/></a>
-                <a href="https://www.tiktok.com/@o_despertar_dos_reinos" target="_blank"><img src="./Imagens_outras/00tiktok.png"/></a>
-                <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="./Imagens_outras/00youtube.png"/></a>
-                <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank"><img src="./Imagens_outras/00pinterest.png"/></a>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC';">
+                Nas vastas planícies e desertos do Reino de Solária, uma figura solitária percorria os horizontes, sua presença tão sutil quanto o sussurro do vento. Seu nome era Isabella, uma ranger humana cujas habilidades em caçar e rastrear eram tão lendárias quanto os desertos que ela chamava de lar.
+                <br><br>
+                Desde jovem, Isabella demonstrava uma afinidade incomum com a natureza e uma habilidade inata em ler os sinais e os rastros deixados pelas criaturas que habitavam as terras áridas de Solária. Treinada pelos melhores caçadores e rastreadores da região, ela rapidamente se tornou uma mestra na arte da caça e da sobrevivência.
+                <br><br>
+                Com seu arco em punho e sua fiel companheira, uma águia de olhos aguçados chamada Aurora, Isabella percorria os confins do deserto em busca de suas presas. Seus movimentos eram graciosos e silenciosos, seus sentidos aguçados captavam os menores detalhes do ambiente ao seu redor, e sua determinação era inabalável.
+                <br><br>
+                No entanto, Isabella não caçava apenas por esporte ou por necessidade; ela também era uma guardiã das terras selvagens de Solária, protegendo os inocentes e os desamparados dos perigos que espreitavam nas sombras. Com sua habilidade em rastrear e caçar, ela era uma força a ser temida por aqueles que ameaçavam a paz e a segurança das terras que ela jurara proteger.
+                <br><br>
+                Em suas jornadas solitárias, Isabella enfrentava uma variedade de desafios, desde criaturas selvagens até bandidos e saqueadores que ousavam atravessar seu caminho. Mas com sua coragem inabalável e sua destreza mortal, ela sempre emergia vitoriosa, sua determinação renovada a cada vitória conquistada.
+                <br><br>
+                Para aqueles que a conheciam, Isabella era mais do que uma simples caçadora; ela era uma guardiã das terras selvagens, uma protetora dos fracos e oprimidos, uma força da natureza que não podia ser contida. E enquanto houvesse perigos a enfrentar e injustiças a corrigir, Isabella estaria lá, pronta para defender as terras que tanto amava com sua vida e sua honra. 
+            </p><br/><br/><br/>
         </div>
     </div>
-</footer>
+</div>
 
+
+
+<div class="characteristics-container">
+        <div class="characteristics-grid">
+            <div class="characteristic-box">
+                <h2>Atributos</h2><br/>
+                <p>Força (FOR): Refere-se ao poder físico e a capacidade de realizar tarefas que exigem força bruta, como combate corpo a corpo e resistência a danos. <center><strong>1/5</strong></p></center><br/>
+                <p>Destreza (DES): Envolve agilidade, reflexos rápidos e precisão, sendo importante para ataques à distância e furtividade. <center><strong>4/5</strong></p></center><br/>
+                <p>Carisma (CAR): Reflete a habilidade de interagir socialmente, influenciar outros e liderar com persuasão ou intimidação. <center><strong>1/5</strong></p></center><br/>
+                <p>Inteligência (INT): Relaciona-se ao raciocínio, conhecimento e habilidades mágicas ou estratégicas. <center><strong>2/5</strong></p></center><br/>
+                <p>Vigor (VIG): Representa a saúde, resistência física e capacidade de suportar condições adversas. <center><strong>2/5</strong></p></center>
+            </div>
+            <div class="characteristic-box">
+                <h2>Golpes</h2><br/>
+                <p style="font-size: 18px;">Tiro Preciso</p><p>Descrição: Isabella combina seu treinamento impecável com sua visão aguçada para desferir um disparo certeiro que atinge pontos vitais do alvo.<br/><br/></p>
+                <p style="font-size: 18px;">Rastreadora do Deserto</p><p>Descrição: Isabella utiliza seu conhecimento das planícies e do deserto para identificar rastros, emboscadas ou pontos fracos no terreno. Essa habilidade também permite prever os movimentos do inimigo.<br/><br/></p>
+                <p style="font-size: 18px;">Emboscada Silenciosa</p><p>Descrição: Oculta pelas dunas ou pela sombra da noite, Isabella prepara um ataque surpresa, causando dano devastador ao alvo e reduzindo sua capacidade de reagir.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Aparência</h2><br/>
+                <p>Altura: 1,68 metros</p><br/>
+                <p>Peso: 65 kg</p><br/>
+                <p>Cabelos: Castanho claro.</p><br/>
+                <p>Olhos: Azuis</p><br/>
+                <p>Cor da Pele: Morena clara, com uma leve tonalidade bronzeada devido à exposição constante ao sol durante suas longas jornadas ao ar livre.</p><br/>
+                <p>Postura: Ágil e flexível, Isabella se move com a leveza de uma felina, sempre alerta e pronta para reagir.</p><br/>
+                <p>Características Faciais: Ela tem traços finos, com um olhar focado e sério. Seu rosto tem uma expressão determinada, mas ao mesmo tempo suave, refletindo sua natureza calma, mas focada.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Personalidade</h2><br/>
+                <p>Isabella é uma pessoa introspectiva e reservada, preferindo a companhia dos animais e a tranquilidade da natureza à agitação da civilização. Ela é calma, focada e estrategista, sempre avaliando seu ambiente e seus alvos antes de tomar qualquer ação. Seu vínculo com a natureza é profundo, e ela respeita todas as formas de vida, vendo-se como uma protetora do equilíbrio natural.<br/><br/>
+                   Apesar de sua natureza solitária, Isabella é extremamente leal a seus amigos e aliados. Ela é direta, honesta e, embora não fale muito, suas palavras têm peso. Ela odeia a injustiça e é feroz quando se trata de proteger os inocentes, especialmente os animais e a natureza. Sua independência e habilidade de sobrevivência fazem dela uma figura admirada, mas ela evita ser o centro das atenções.
+                </p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Habilidades</h2><br/>
+                <p style="font-size: 18px;">Mestre Arqueira </p><p> Ela possui a habilidade de se comunicar com animais e até mesmo controlá-los em batalha. Desde lobos ferozes a aves velozes, Emily pode convocar animais para ajudá-la, seja para atacar, espionar ou defender.</p><br/>
+                <p style="font-size: 18px;">Rastreamento </p><p>Sua habilidade em rastrear presas e inimigos é incomparável. Ela pode identificar sinais sutis, como pegadas ou alterações no ambiente, e seguir um alvo com grande habilidade, mesmo em terrenos complicados.</p><br/>
+                <p style="font-size: 18px;">Camuflagem: </p><p> Isabella é uma especialista em se camuflar em qualquer ambiente, seja em florestas densas ou em campos abertos. Ela pode se esconder facilmente, tornando-se invisível para inimigos despreparados.</p><br/>
+            </div>
+            <div class="characteristic-box">
+                <h2>Equipamentos</h2><br/>
+                <p style="font-size: 18px;">Arco Longo de Eldarwood: </p><p>Um arco longo feito de madeira negra e reforçado com tendões de animais selvagens, projetado para disparos rápidos e precisos. É uma extensão de sua própria força e destreza.</p><br/>
+                <p style="font-size: 18px;">Adaga de Caça </p><p>Uma adaga curva de lâmina fina, ideal para combate corpo a corpo ou como ferramenta para esfolar e cortar carne de animais. </p><br/>
+                <p style="font-size: 18px;">Flechas Encantadas </p><p>Um conjunto de flechas especiais, cada uma com propriedades elementares, como fogo, gelo ou veneno. Isabella carrega um aljava que pode armazenar diferentes tipos de flechas para diferentes situações. </p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Curiosidades</h2><br/>
+                <p style="font-size: 18px;">Conexão com Animais </p><p>Isabella tem uma amiga especial, uma águia chamada Aeris, que a acompanha em suas viagens. Aeris a ajuda a vigiar áreas distantes e a encontrar presas.</p><br/><br/>
+                <p style="font-size: 18px;">Lenda Local</p><p>É dito que Isabella foi treinada por um mestre ranger misterioso que viveu nas montanhas distantes de Eldarwood. Alguns acreditam que ela possui habilidades além das naturais, adquiridas de uma antiga linhagem de rangers lendários.</p><br/><br/>
+                <p style="font-size: 18px;">Estilo de Vida Nômade</p><p>Isabella não tem um lar fixo, pois viaja constantemente por diversas regiões. Seu estilo de vida nômade é uma escolha, pois ela sente que é mais útil à natureza quando está em movimento.
+            </p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Reputação</h2><br/>
+                <p>Isabella é uma caçadora e protetora das terras selvagens de Solária. Com habilidades excepcionais de rastreamento e caça, ela é uma guardião solitária, vivendo nos desertos e planícies vastas, acompanhada de sua águia Aurora. Desde jovem, Isabella se destacou em ler os rastros das criaturas e sobreviver nas condições áridas de seu reino. Seu arco certeiro e habilidades imbatíveis a tornam uma força temida e respeitada, sendo uma defensora dos inocentes e uma ameaça para aqueles que ousam ameaçar a paz de Solária. Sua reputação a torna uma figura lendária, reverenciada como uma guardiana das terras selvagens e uma protetora incansável dos indefesos.</p>
+            </div>
+        </div>
+    
+        <!-- Carrossel para dispositivos móveis -->
+        <div id="characteristicsCarousel" class="carousel slide d-md-none" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="characteristic-box">
+                        <h2>Atributos</h2><br/>
+                        <p>Força (FOR): Refere-se ao poder físico e a capacidade de realizar tarefas que exigem força bruta, como combate corpo a corpo e resistência a danos. <center><strong>1/5</strong></p></center><br/>
+                        <p>Destreza (DES): Envolve agilidade, reflexos rápidos e precisão, sendo importante para ataques à distância e furtividade. <center><strong>4/5</strong></p></center><br/>
+                        <p>Carisma (CAR): Reflete a habilidade de interagir socialmente, influenciar outros e liderar com persuasão ou intimidação. <center><strong>1/5</strong></p></center><br/>
+                        <p>Inteligência (INT): Relaciona-se ao raciocínio, conhecimento e habilidades mágicas ou estratégicas. <center><strong>2/5</strong></p></center><br/>
+                        <p>Vigor (VIG): Representa a saúde, resistência física e capacidade de suportar condições adversas. <center><strong>2/5</strong></p></center>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Golpes</h2><br/>
+                        <p style="font-size: 18px;">Tiro Preciso</p><p>Descrição: Isabella combina seu treinamento impecável com sua visão aguçada para desferir um disparo certeiro que atinge pontos vitais do alvo.<br/><br/></p>
+                        <p style="font-size: 18px;">Rastreadora do Deserto</p><p>Descrição: Isabella utiliza seu conhecimento das planícies e do deserto para identificar rastros, emboscadas ou pontos fracos no terreno. Essa habilidade também permite prever os movimentos do inimigo.<br/><br/></p>
+                        <p style="font-size: 18px;">Emboscada Silenciosa</p><p>Descrição: Oculta pelas dunas ou pela sombra da noite, Isabella prepara um ataque surpresa, causando dano devastador ao alvo e reduzindo sua capacidade de reagir.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Aparência</h2><br/>
+                        <p>Altura: 1,68 metros</p><br/>
+                        <p>Peso: 65 kg</p><br/>
+                        <p>Cabelos: Castanho claro.</p><br/>
+                        <p>Olhos: Azuis</p><br/>
+                        <p>Cor da Pele: Morena clara, com uma leve tonalidade bronzeada devido à exposição constante ao sol durante suas longas jornadas ao ar livre.</p><br/>
+                        <p>Postura: Ágil e flexível, Isabella se move com a leveza de uma felina, sempre alerta e pronta para reagir.</p><br/>
+                        <p>Características Faciais: Ela tem traços finos, com um olhar focado e sério. Seu rosto tem uma expressão determinada, mas ao mesmo tempo suave, refletindo sua natureza calma, mas focada.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Personalidade</h2><br/>
+                        <p>Isabella é uma pessoa introspectiva e reservada, preferindo a companhia dos animais e a tranquilidade da natureza à agitação da civilização. Ela é calma, focada e estrategista, sempre avaliando seu ambiente e seus alvos antes de tomar qualquer ação. Seu vínculo com a natureza é profundo, e ela respeita todas as formas de vida, vendo-se como uma protetora do equilíbrio natural.<br/><br/>
+                           Apesar de sua natureza solitária, Isabella é extremamente leal a seus amigos e aliados. Ela é direta, honesta e, embora não fale muito, suas palavras têm peso. Ela odeia a injustiça e é feroz quando se trata de proteger os inocentes, especialmente os animais e a natureza. Sua independência e habilidade de sobrevivência fazem dela uma figura admirada, mas ela evita ser o centro das atenções.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Habilidades</h2><br/>
+                        <p style="font-size: 18px;">Mestre Arqueira </p><p> Ela possui a habilidade de se comunicar com animais e até mesmo controlá-los em batalha. Desde lobos ferozes a aves velozes, Emily pode convocar animais para ajudá-la, seja para atacar, espionar ou defender.</p><br/>
+                        <p style="font-size: 18px;">Rastreamento </p><p>Sua habilidade em rastrear presas e inimigos é incomparável. Ela pode identificar sinais sutis, como pegadas ou alterações no ambiente, e seguir um alvo com grande habilidade, mesmo em terrenos complicados.</p><br/>
+                        <p style="font-size: 18px;">Camuflagem: </p><p> Isabella é uma especialista em se camuflar em qualquer ambiente, seja em florestas densas ou em campos abertos. Ela pode se esconder facilmente, tornando-se invisível para inimigos despreparados.</p><br/>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Equipamentos</h2><br/>
+                        <p style="font-size: 18px;">Arco Longo de Eldarwood: </p><p>Um arco longo feito de madeira negra e reforçado com tendões de animais selvagens, projetado para disparos rápidos e precisos. É uma extensão de sua própria força e destreza.</p><br/>
+                        <p style="font-size: 18px;">Adaga de Caça </p><p>Uma adaga curva de lâmina fina, ideal para combate corpo a corpo ou como ferramenta para esfolar e cortar carne de animais. </p><br/>
+                        <p style="font-size: 18px;">Flechas Encantadas </p><p>Um conjunto de flechas especiais, cada uma com propriedades elementares, como fogo, gelo ou veneno. Isabella carrega um aljava que pode armazenar diferentes tipos de flechas para diferentes situações. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Curiosidades</h2><br/>
+                        <p style="font-size: 18px;">Conexão com Animais </p><p>Isabella tem uma amiga especial, uma águia chamada Aeris, que a acompanha em suas viagens. Aeris a ajuda a vigiar áreas distantes e a encontrar presas.</p><br/><br/>
+                        <p style="font-size: 18px;">Lenda Local</p><p>É dito que Isabella foi treinada por um mestre ranger misterioso que viveu nas montanhas distantes de Eldarwood. Alguns acreditam que ela possui habilidades além das naturais, adquiridas de uma antiga linhagem de rangers lendários.</p><br/><br/>
+                        <p style="font-size: 18px;">Estilo de Vida Nômade</p><p>Isabella não tem um lar fixo, pois viaja constantemente por diversas regiões. Seu estilo de vida nômade é uma escolha, pois ela sente que é mais útil à natureza quando está em movimento.
+                    </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Reputação</h2><br/>
+                        <p>Isabella é uma caçadora e protetora das terras selvagens de Solária. Com habilidades excepcionais de rastreamento e caça, ela é uma guardião solitária, vivendo nos desertos e planícies vastas, acompanhada de sua águia Aurora. Desde jovem, Isabella se destacou em ler os rastros das criaturas e sobreviver nas condições áridas de seu reino. Seu arco certeiro e habilidades imbatíveis a tornam uma força temida e respeitada, sendo uma defensora dos inocentes e uma ameaça para aqueles que ousam ameaçar a paz de Solária. Sua reputação a torna uma figura lendária, reverenciada como uma guardiana das terras selvagens e uma protetora incansável dos indefesos.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <br/>
+        <br/>
+
+<!-- ADS GOOGLE -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4434635049222289"
+data-ad-slot="1596018270"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+
+
+<br/>
+<br/>
+
+<!-- RODAPÉ -->
+        <footer class="bg-dark text-light py-5">
+        <div class="container">
+        <div class="row justify-content-center text-center text-md-left align-items-center">
+  
+        <!-- Logo -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-left logo-container">
+            <img src="../Imagens_outras/006.png" alt="Logo" class="img-fluid">
+        </div>
+  
+        <!-- Informações de Contato -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-center">
+          <p>© 2024 Todos os Direitos Reservados</p>
+          <p>Mail: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
+          <p>Tel: <a href="tel:+5511991058957" class="text-light">+55 11 99105-8957</a></p>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end footer-social">
+          <a href="" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
+          </a>
+          <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
+          </a>
+          <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="../search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

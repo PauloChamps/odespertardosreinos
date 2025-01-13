@@ -1,196 +1,309 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../main.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="../Imagens_outras/icon.ico" type="image/x-icon">
+    <link rel="icon" href="../Imagens_outras/ico.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>EMILY</title>
+    <title>E M I L Y</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
      crossorigin="anonymous"></script>
+     <style>
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+     </style>
 </head>
-<body style="background-color:rgb(255, 255, 255)">
-    <header>
-        <img src="../Imagens_banners/banner01.jpg"  class="banner_img"  />
-        <!-- Botão de Entrar 
-        <a href="login.html" class="btn btn-login">Entrar</a>
-         Botão de Cadastre-se 
-        <a href="cadastro.html" class="btn btn-cadastrar">Cadastre-se</a>-->
-    
-        <!-- Ícones de redes sociais -->
-        <div class="social-icons">
-            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
-            <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
-            <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
-        </div>
-    </header>
-    
-<!--MENU PRINCIPAL-->
-<center>
-    <nav id="menu-h">
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-        <ul>
-            <li><a href="../index.html">H O M E</a></li>
-            <li><a href="../historia.html">H I S T Ó R I A</a></li>
-            <li><a href="../reinos.html">R E I N O S</a></li>
-            <li><a href="../bosses.html">B O S S</a></li>
-            <li><a href="../magic.html">C A R T A S - M Á G I C A S</a></li>
-            <li><a href="../loja.html">L O J A</a></li>
-            <li><a href="../help.html">A J U D A</a></li>
-        </ul>
-       <!-- Botão de Busca -->
-     <div class="btn-buscar">
-            <form action="search.php" method="post">
-                <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                <input type="search" id="search" name="search">
-                <!--<button type="submit" class="btn btn-buscar">Buscar Cartas</button>-->
-            </form>
-        </div>
-    </nav>
-</center>
-<script src="../search.js"></script>
+<body>
+<header>
+    <div class="social-icons" >
+        <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
+        <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
+        <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
+    </div>
+</header>
 
-  
-<!--HUMANO EMILY-->
-    <div class="personagens">
-        <div class="photo">
-            <img src="../Imagens_personagens/humanos/humano_emily02.jpeg" alt="Emily">
-        </div>
-    </div>
+<!-- Menu Principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container" >
+        <!-- Botão de hambúrguer -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-- Seta pDireita -->
-    <div class="arrow-container-right">
-        <a href="./isabella.html" class="arrow-link-right"></a>
-    </div>
-    
-<!-- Seta Esquerda -->
-    <div class="arrow-container-let">
-        <a href="./elena.html" class="arrow-link-left"></a>
-    </div>
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../Imagens_outras/006.png" alt="Logo" style="width: 80px; height: auto;">
+        </a>
 
+        <!-- Links do menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" >
+                <!-- Links -->
+                <li class="nav-item"><a class="nav-link" href="../index.html">H O M E</a></li>
+                <li class="nav-item"><a class="nav-link" href="../historia.html">H I S T Ó R I A</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">E P I S Ó D I O S</a></li>
+                <li class="nav-item"><a class="nav-link" href="../personagens.html">P E R S O N A G E N S</a></li>
+                <li class="nav-item"><a class="nav-link" href="../itens.html">I T E N S</a></li>
+                <li class="nav-item"><a class="nav-link" href="../galeria.html">G A L E R I A</a></li>
+                <li class="nav-item"><a class="nav-link" href="../tcg_game.html">T C G - G A M E</a></li>
+                <li class="nav-item"><a class="nav-link" href="../sobre.html">S O B R E</a></li>
+            </ul>
+        </div>
+        <!-- Ícones sociais -->
+        <div class="social-icons d-none d-lg-flex">
+            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0"><img src="../Imagens_outras/insta2.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@ODespertardosReinos"><img src="../Imagens_outras/you2.png" alt="YouTube"></a>
+            <a href="https://br.pinterest.com/odespertardosreinos/"><img src="../Imagens_outras/pint2.png" alt="Pinterest"></a>
+        </div>
+    </div>
+</nav>
 
-    <div class="boss-description">
-        <br/>
-        <h1>E M I L Y</h1>
-        <p> Nos bosques antigos e nas margens dos rios sinuosos de Solária, caminhava Emily, uma jovem humana cujo coração pulsava em sintonia com as batidas da natureza. Desde criança, ela fora envolvida pela beleza e pela magia do mundo natural, encontrando paz e inspiração entre as árvores antigas e os animais selvagens que chamava de amigos. <BR/><BR/>
-            Com uma conexão profunda com a terra e todas as suas criaturas, Emily dedicava sua vida a proteger a natureza e a preservar a harmonia delicada que existia entre todas as formas de vida. Ela era uma defensora incansável dos bosques e das florestas de Solária, lutando contra a exploração desenfreada e a destruição do meio ambiente. <BR/><BR/>
-            Com seu conhecimento dos segredos da natureza e suas habilidades de sobrevivência aprendidas com os sábios das florestas, Emily se tornou uma guia para aqueles que buscavam se reconectar com o mundo natural. Ela ensinava sobre as plantas medicinais e os segredos das ervas, guiava os viajantes perdidos de volta ao caminho certo e protegia os animais indefesos dos caçadores cruéis. <BR/><BR/>
-            No entanto, a vida de Emily como guardiã da natureza não era fácil, e ela enfrentava muitos desafios em seu caminho. Ela tinha que lidar com a ganância dos exploradores e a indiferença daqueles que viam a natureza como nada mais do que um recurso a ser explorado e consumido. <BR/><BR/>
-            Mas apesar dos obstáculos que enfrentava, Emily nunca vacilava em sua missão de proteger a natureza e suas criaturas. Ela era uma voz para os sem voz, uma defensora dos indefesos, e uma força da natureza que não podia ser contida. <BR/><BR/>
-            Para aqueles que a conheciam, Emily era mais do que uma simples humana; ela era uma guardiã da terra, uma protetora dos fracos e uma voz para os que não podiam falar por si mesmos. E enquanto houvesse vida a ser protegida e natureza a ser preservada, Emily estaria lá, pronta para lutar com toda sua força pela beleza e pela magia do mundo natural. <BR/><BR/></P>
-    </div>
-
-
-<div class="characteristics-grid">
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>atributos<hr></h2><br/><br/>
-            <p>HP: <strong>100</strong></p><br/>
-            <p>Vantagem: Monstros<br/><br/>
-               Desvantagem: Elementais, Bruxa dos Pesadelos, Rei dos Caçadores
-            </p>
+<!-- HUMANO EMILY -->
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col text-center">
+            <h1 class="mb-4" style="font-family: 'Sedan SC';">E M I L Y</h1>
         </div>
     </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>golpes<hr></h2><br/>
-            <p>Punho da Determinação: Um golpe robusto carregado com determinação, desferindo um impacto direto e firme contra o oponente. <br/>Causa <strong>10</strong> de dano.<br/><br/><br/>
-               Investida Selvagem: Uma carga veloz e feroz que lança o lutador contra seu adversário com força brutal, causando um impacto significativo.<br/>Causa <strong>15</strong> de dano.<br/><br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aparência<hr></h2><br/>
-            <p>Altura: 1,65 metros<br/><br/>
-               Peso: 55 kg<br/><br/>
-               Cabelos: Loiros e longos, frequentemente decorados com flores<br/><br/>
-               Olhos: Verdes como a floresta<br/><br/>
-               Traje: Armadura dourada feita de materiais naturais
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>personalidade<hr></h2><br/>
-            <p>Qualidades: Gentil, protetora, empática<br/><br/>
-               Defeitos: Ingênua, emocional, por vezes hesitante<br/><br/>
-               Habilidades Sociais: Excelente em criar alianças, muito querida por aqueles que protege</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>habilidades<hr></h2><br/>
-            <p>Armas: Arco e flecha, adagas de osso<br/><br/>
-               Táticas de Combate: Especialista em emboscadas e combate à distância, usa o ambiente a seu favor<br/><br/>
-               Outras Habilidades: Capacidade de se comunicar com animais, conhecimento profundo de ervas medicinais e venenos</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>equipamentos<hr></h2><br/>
-            <p>Arma Principal: Arco da Guardiã, feito de madeira encantada que aumenta a precisão e o poder de suas flechas<br/><br/>
-                Flechas: Aljava com flechas variadas, incluindo flechas venenosas e explosivas<br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aliados<hr></h2><br/>
-            <p>Paul: Um exímio arqueiro que protege os limites da floresta.<br/><br/>
-               Iris: Uma guerreira do deserto hábil com o arco e flecha, protegendo as caravanas de mercadores.<br/><br/>
-               Kiera: uma meio-elfa guerreira arqueira que luta para encontrar seu lugar em um mundo dividido.</p><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>inimigos<hr></h2><br/>
-            <p>Aracna: a Aranha Gigante - Uma aranha gigante com veneno mortal e habilidades de tecelagem de teias.<br/><br/>
-               Bruxa dos Pesadelos: Uma feiticeira que se alimenta dos medos e pesadelos dos mortais, manipulando ilusões para torturar suas vítimas antes de drenar sua energia vital.
-            </p>
+    <div class="row align-items-center mt-4">
+        <div class="col-12 text-center">
+            <img src="../Imagens_personagens/humanos/humano_emily02.jpeg" class="img-fluid rounded shadow" alt="Guerreira forte da natureza defensora personagem rpg">
         </div>
     </div>
 </div>
 
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
-     crossorigin="anonymous"></script>
-<!-- 03 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-4434635049222289"
-     data-ad-slot="1596018270"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
-<br/>
-<br/>
-<br/>
 
-<!--Rodapé -->
-<footer>
-    <div class="footer--area">
-        <div class="footer--item area1">
-            <img src="./Imagens_outras/006.png"/>
-        </div>
-        <div class="footer--item area2">
-            <p>© 2024 Todos os Direitos Reservados</p>
-            <p>Mail: suporte@odespertardosreinos.com.br</p>
-            <p>Tel: +55 11 99105-8957</p>
-        </div>
-        <div class="footer--item area3">
-            <div class="footer-social">
-                <a href=""><img src="./Imagens_outras/00facebook.png" target="_blank"/></a>
-                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="./Imagens_outras/00insta.png"/></a>
-                <a href="https://www.tiktok.com/@o_despertar_dos_reinos" target="_blank"><img src="./Imagens_outras/00tiktok.png"/></a>
-                <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="./Imagens_outras/00youtube.png"/></a>
-                <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank"><img src="./Imagens_outras/00pinterest.png"/></a>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC';">
+                Nos bosques antigos e nas margens dos rios sinuosos de Solária, caminhava Emily, uma jovem humana cujo coração pulsava em sintonia com as batidas da natureza. Desde criança, ela fora envolvida pela beleza e pela magia do mundo natural, encontrando paz e inspiração entre as árvores antigas e os animais selvagens que chamava de amigos.
+                <br><br>
+                Com uma conexão profunda com a terra e todas as suas criaturas, Emily dedicava sua vida a proteger a natureza e a preservar a harmonia delicada que existia entre todas as formas de vida. Ela era uma defensora incansável dos bosques e das florestas de Solária, lutando contra a exploração desenfreada e a destruição do meio ambiente.
+                <br><br>
+                Com seu conhecimento dos segredos da natureza e suas habilidades de sobrevivência aprendidas com os sábios das florestas, Emily se tornou uma guia para aqueles que buscavam se reconectar com o mundo natural. Ela ensinava sobre as plantas medicinais e os segredos das ervas, guiava os viajantes perdidos de volta ao caminho certo e protegia os animais indefesos dos caçadores cruéis.
+                <br><br>
+                No entanto, a vida de Emily como guardiã da natureza não era fácil, e ela enfrentava muitos desafios em seu caminho. Ela tinha que lidar com a ganância dos exploradores e a indiferença daqueles que viam a natureza como nada mais do que um recurso a ser explorado e consumido.
+                <br><br>
+                Mas apesar dos obstáculos que enfrentava, Emily nunca vacilava em sua missão de proteger a natureza e suas criaturas. Ela era uma voz para os sem voz, uma defensora dos indefesos, e uma força da natureza que não podia ser contida.
+                <br><br>
+                Para aqueles que a conheciam, Emily era mais do que uma simples humana; ela era uma guardiã da terra, uma protetora dos fracos e uma voz para os que não podiam falar por si mesmos. E enquanto houvesse vida a ser protegida e natureza a ser preservada, Emily estaria lá, pronta para lutar com toda sua força pela beleza e pela magia do mundo natural. 
+            </p><br/><br/><br/>
         </div>
     </div>
-</footer>
+</div>
 
+
+<div class="characteristics-container">
+        <div class="characteristics-grid">
+            <div class="characteristic-box">
+                <h2>Atributos</h2><br/>
+                <p>Força (FOR): Refere-se ao poder físico e a capacidade de realizar tarefas que exigem força bruta, como combate corpo a corpo e resistência a danos. <center><strong>1/5</strong></p></center><br/>
+                <p>Destreza (DES): Envolve agilidade, reflexos rápidos e precisão, sendo importante para ataques à distância e furtividade. <center><strong>3/5</strong></p></center><br/>
+                <p>Carisma (CAR): Reflete a habilidade de interagir socialmente, influenciar outros e liderar com persuasão ou intimidação. <center><strong>2/5</strong></p></center><br/>
+                <p>Inteligência (INT): Relaciona-se ao raciocínio, conhecimento e habilidades mágicas ou estratégicas. <center><strong>2/5</strong></p></center><br/>
+                <p>Vigor (VIG): Representa a saúde, resistência física e capacidade de suportar condições adversas. <center><strong>2/5</strong></p></center>
+            </div>
+            <div class="characteristic-box">
+                <h2>Golpes</h2><br/>
+                <p style="font-size: 18px;">Cura da Terra Viva</p><p>Descrição: Emily canaliza a energia vital dos bosques e rios ao seu redor para curar a si mesma ou um aliado. A cura é mais eficaz em ambientes naturais.<br/><br/></p>
+                <p style="font-size: 18px;">Chamado das Criaturas Selvagens</p><p>Descrição: Com um chamado harmonioso, Emily convoca animais próximos para ajudá-la em combate. Os animais distraem e atacam os inimigos ou criam uma oportunidade para fuga.<br/><br/></p>
+                <p style="font-size: 18px;">Vinculação Elemental</p><p>Descrição: Emily conecta-se com um dos elementos naturais ao seu redor (terra, água, ou ar), ganhando poderes temporários baseados no elemento escolhido.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Aparência</h2><br/>
+                <p>Altura: 1,70 metros</p><br/>
+                <p>Peso: 65 kg</p><br/>
+                <p>Cabelos: Castanho claro, com fios que lembram a cor das folhas de outono. Seu cabelo é frequentemente amarrado em tranças ou preso para facilitar a movimentação.</p><br/>
+                <p>Olhos: Verdes, com um brilho intenso que reflete sua conexão com a terra e a vida ao seu redor.</p><br/>
+                <p>Traje: Armadura leve de couro reforçado com placas de metal</p><br/>
+                <p>Postura: Sua postura é ereta e orgulhosa, como uma árvore sólida que não se curva ao vento. Ela carrega uma aura de serenidade, mas com uma presença imponente.</p><br/>
+                <p>Características Faciais: Emily possui feições delicadas e harmoniosas, com uma expressão serena e confiável.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Personalidade</h2><br/>
+                <p>Emily é calma, serena e determinada. Ela é apaixonada pela natureza e por todas as criaturas que a habitam, mas também é ferozmente protetora e não hesita em lutar para preservar o equilíbrio do mundo natural. Apesar de seu temperamento pacífico, ela não tolera a destruição gratuita ou o desrespeito pelas terras sagradas que jurou proteger.<br/><br/>
+                    Ela tem uma sabedoria tranquila que vem de anos de convivência com a natureza e um profundo respeito pelas forças vitais da terra. Emily também é compassiva e sempre busca ensinar aos outros a importância de viver em harmonia com o ambiente, sem exploração excessiva ou destruição. Sua determinação em proteger a natureza é inabalável, e ela pode ser feroz quando confrontada com aqueles que prejudicam a terra ou suas criaturas.
+                </p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Habilidades</h2><br/>
+                <p style="font-size: 18px;">Comando Animal </p><p> Ela possui a habilidade de se comunicar com animais e até mesmo controlá-los em batalha. Desde lobos ferozes a aves velozes, Emily pode convocar animais para ajudá-la, seja para atacar, espionar ou defender.</p><br/>
+                <p style="font-size: 18px;">Raízes da Terra </p><p> Emily pode convocar raízes e vinhas da terra para se erguerem do solo, aprisionando inimigos ou criando obstáculos durante as batalhas. Ela também pode usar esta habilidade para se mover rapidamente por terrenos naturais.</p><br/>
+                <p style="font-size: 18px;">Proteção Natural</p><p> Emily pode lançar um feitiço de proteção sobre a terra e as criaturas, criando um escudo mágico que as defende de ataques inimigos. Esse escudo é fortalecido quando ela está em áreas naturais, como florestas ou campos.</p><br/>
+            </div>
+            <div class="characteristic-box">
+                <h2>Equipamentos</h2><br/>
+                <p style="font-size: 18px;">Espada Verdejante</p><p>Uma espada mágica feita de um metal raro, com lâmina que brilha com uma tonalidade esverdeada. Ela é capaz de cortar qualquer material, mas sua verdadeira força é quando é usada para proteger a natureza.</p><br/>
+                <p style="font-size: 18px;">Anel da Mãe Natureza </p><p>Um anel mágico que permite a Emily sentir a energia da terra ao seu redor. Ele também a conecta com a essência das árvores e plantas, ajudando-a a curar ou invocar forças naturais. </p><br/>
+                <p style="font-size: 18px;">Amuleto da Flora Ancestral </p><p>Um amuleto que contém uma semente mágica capaz de crescer e criar raízes que curam e protegem, podendo ser usado tanto em combate quanto para regeneração. </p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Curiosidades</h2><br/>
+                <p style="font-size: 18px;">Vínculo com o Mundo Natural </p><p>Emily possui uma afinidade especial com as árvores mais antigas, que a tratam como uma protetora. As árvores, por vezes, comunicam-se com ela de maneira silenciosa, transmitindo mensagens sobre a saúde do ambiente.</p><br/><br/>
+                <p style="font-size: 18px;">Defensora do Equilíbrio</p><p>Emily acredita firmemente que a natureza deve ser respeitada e que nem sempre a violência é a solução. Ela é mais propensa a tentar resolver conflitos através do diálogo e da persuasão antes de recorrer à batalha.</p><br/><br/>
+                <p style="font-size: 18px;">Ajudante de Animais Feridos</p><p>Emily possui a habilidade de curar animais feridos, usando suas habilidades de magia natural para restaurar a saúde das criaturas de sua terra.
+            </p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Reputação</h2><br/>
+                <p>Emily é uma guardiana da natureza em Solária, com uma profunda conexão com os bosques e a vida selvagem. Desde pequena, ela se dedicou a proteger a harmonia natural, lutando contra a exploração e a destruição ambiental. Com vasto conhecimento de plantas medicinais e habilidades de sobrevivência, ela guia e protege os viajantes, além de defender animais e plantas dos caçadores. Sua reputação é marcada por sua dedicação incansável e por ser uma voz dos indefesos, uma força imbatível na defesa da terra e seus habitantes. Para muitos, Emily é a protetora da vida e uma verdadeira força da natureza.</p>
+            </div>
+        </div>
+    
+        <!-- Carrossel para dispositivos móveis -->
+        <div id="characteristicsCarousel" class="carousel slide d-md-none" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="characteristic-box">
+                        <h2>Atributos</h2><br/>
+                        <p>Força (FOR): Refere-se ao poder físico e a capacidade de realizar tarefas que exigem força bruta, como combate corpo a corpo e resistência a danos. <center><strong>1/5</strong></p></center><br/>
+                        <p>Destreza (DES): Envolve agilidade, reflexos rápidos e precisão, sendo importante para ataques à distância e furtividade. <center><strong>3/5</strong></p></center><br/>
+                        <p>Carisma (CAR): Reflete a habilidade de interagir socialmente, influenciar outros e liderar com persuasão ou intimidação. <center><strong>2/5</strong></p></center><br/>
+                        <p>Inteligência (INT): Relaciona-se ao raciocínio, conhecimento e habilidades mágicas ou estratégicas. <center><strong>2/5</strong></p></center><br/>
+                        <p>Vigor (VIG): Representa a saúde, resistência física e capacidade de suportar condições adversas. <center><strong>2/5</strong></p></center>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Golpes</h2><br/>
+                        <p style="font-size: 18px;">Cura da Terra Viva</p><p>Descrição: Emily canaliza a energia vital dos bosques e rios ao seu redor para curar a si mesma ou um aliado. A cura é mais eficaz em ambientes naturais.<br/><br/></p>
+                        <p style="font-size: 18px;">Chamado das Criaturas Selvagens</p><p>Descrição: Com um chamado harmonioso, Emily convoca animais próximos para ajudá-la em combate. Os animais distraem e atacam os inimigos ou criam uma oportunidade para fuga.<br/><br/></p>
+                        <p style="font-size: 18px;">Vinculação Elemental</p><p>Descrição: Emily conecta-se com um dos elementos naturais ao seu redor (terra, água, ou ar), ganhando poderes temporários baseados no elemento escolhido.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Aparência</h2><br/>
+                        <p>Altura: 1,70 metros</p><br/>
+                        <p>Peso: 65 kg</p><br/>
+                        <p>Cabelos: Castanho claro, com fios que lembram a cor das folhas de outono. Seu cabelo é frequentemente amarrado em tranças ou preso para facilitar a movimentação.</p><br/>
+                        <p>Olhos: Verdes, com um brilho intenso que reflete sua conexão com a terra e a vida ao seu redor.</p><br/>
+                        <p>Traje: Armadura leve de couro reforçado com placas de metal</p><br/>
+                        <p>Postura: Sua postura é ereta e orgulhosa, como uma árvore sólida que não se curva ao vento. Ela carrega uma aura de serenidade, mas com uma presença imponente.</p><br/>
+                        <p>Características Faciais: Emily possui feições delicadas e harmoniosas, com uma expressão serena e confiável.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Personalidade</h2><br/>
+                        <p>Emily é calma, serena e determinada. Ela é apaixonada pela natureza e por todas as criaturas que a habitam, mas também é ferozmente protetora e não hesita em lutar para preservar o equilíbrio do mundo natural. Apesar de seu temperamento pacífico, ela não tolera a destruição gratuita ou o desrespeito pelas terras sagradas que jurou proteger.<br/><br/>
+                            Ela tem uma sabedoria tranquila que vem de anos de convivência com a natureza e um profundo respeito pelas forças vitais da terra. Emily também é compassiva e sempre busca ensinar aos outros a importância de viver em harmonia com o ambiente, sem exploração excessiva ou destruição. Sua determinação em proteger a natureza é inabalável, e ela pode ser feroz quando confrontada com aqueles que prejudicam a terra ou suas criaturas.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Habilidades</h2><br/>
+                        <p style="font-size: 18px;">Comando Animal </p><p> Ela possui a habilidade de se comunicar com animais e até mesmo controlá-los em batalha. Desde lobos ferozes a aves velozes, Emily pode convocar animais para ajudá-la, seja para atacar, espionar ou defender.</p><br/>
+                        <p style="font-size: 18px;">Raízes da Terra </p><p> Emily pode convocar raízes e vinhas da terra para se erguerem do solo, aprisionando inimigos ou criando obstáculos durante as batalhas. Ela também pode usar esta habilidade para se mover rapidamente por terrenos naturais.</p><br/>
+                        <p style="font-size: 18px;">Proteção Natural</p><p> Emily pode lançar um feitiço de proteção sobre a terra e as criaturas, criando um escudo mágico que as defende de ataques inimigos. Esse escudo é fortalecido quando ela está em áreas naturais, como florestas ou campos.</p><br/>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Equipamentos</h2><br/>
+                        <p style="font-size: 18px;">Espada Verdejante</p><p>Uma espada mágica feita de um metal raro, com lâmina que brilha com uma tonalidade esverdeada. Ela é capaz de cortar qualquer material, mas sua verdadeira força é quando é usada para proteger a natureza.</p><br/>
+                        <p style="font-size: 18px;">Anel da Mãe Natureza </p><p>Um anel mágico que permite a Emily sentir a energia da terra ao seu redor. Ele também a conecta com a essência das árvores e plantas, ajudando-a a curar ou invocar forças naturais. </p><br/>
+                        <p style="font-size: 18px;">Amuleto da Flora Ancestral </p><p>Um amuleto que contém uma semente mágica capaz de crescer e criar raízes que curam e protegem, podendo ser usado tanto em combate quanto para regeneração. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Curiosidades</h2><br/>
+                        <p style="font-size: 18px;">Vínculo com o Mundo Natural </p><p>Emily possui uma afinidade especial com as árvores mais antigas, que a tratam como uma protetora. As árvores, por vezes, comunicam-se com ela de maneira silenciosa, transmitindo mensagens sobre a saúde do ambiente.</p><br/><br/>
+                        <p style="font-size: 18px;">Defensora do Equilíbrio</p><p>Emily acredita firmemente que a natureza deve ser respeitada e que nem sempre a violência é a solução. Ela é mais propensa a tentar resolver conflitos através do diálogo e da persuasão antes de recorrer à batalha.</p><br/><br/>
+                        <p style="font-size: 18px;">Ajudante de Animais Feridos</p><p>Emily possui a habilidade de curar animais feridos, usando suas habilidades de magia natural para restaurar a saúde das criaturas de sua terra.
+                    </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Reputação</h2><br/>
+                        <p>Emily é uma guardiana da natureza em Solária, com uma profunda conexão com os bosques e a vida selvagem. Desde pequena, ela se dedicou a proteger a harmonia natural, lutando contra a exploração e a destruição ambiental. Com vasto conhecimento de plantas medicinais e habilidades de sobrevivência, ela guia e protege os viajantes, além de defender animais e plantas dos caçadores. Sua reputação é marcada por sua dedicação incansável e por ser uma voz dos indefesos, uma força imbatível na defesa da terra e seus habitantes. Para muitos, Emily é a protetora da vida e uma verdadeira força da natureza.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <br/>
+        <br/>
+
+<!-- ADS GOOGLE -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4434635049222289"
+data-ad-slot="1596018270"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+
+
+<br/>
+<br/>
+
+<!-- RODAPÉ -->
+        <footer class="bg-dark text-light py-5">
+        <div class="container">
+        <div class="row justify-content-center text-center text-md-left align-items-center">
+  
+        <!-- Logo -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-left logo-container">
+            <img src="../Imagens_outras/006.png" alt="Logo" class="img-fluid">
+        </div>
+  
+        <!-- Informações de Contato -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-center">
+          <p>© 2024 Todos os Direitos Reservados</p>
+          <p>Mail: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
+          <p>Tel: <a href="tel:+5511991058957" class="text-light">+55 11 99105-8957</a></p>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end footer-social">
+          <a href="" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
+          </a>
+          <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
+          </a>
+          <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="../search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
