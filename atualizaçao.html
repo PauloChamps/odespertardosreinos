@@ -1,70 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="Imagens_outras/icon.ico" type="image/x-icon">
+    <link rel="icon" href="Imagens_outras/ico.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>H I S T Ó R I A</title>
+    <title>A T U A L I Z A Ç Ã O</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
      crossorigin="anonymous"></script>
-
-
 </head>
-    <body style="background-color:rgb(255, 255, 255)">
-        <header>
-            <img src="Imagens_banners/banner01.jpg"  class="banner_img"  />
-            <!-- Botão de Entrar 
-            <a href="login.html" class="btn btn-login">Entrar</a>
-             Botão de Cadastre-se 
-            <a href="cadastro.html" class="btn btn-cadastrar">Cadastre-se</a>-->
-        
-            <!-- Ícones de redes sociais -->
-            <div class="social-icons">
-                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="Imagens_outras/insta2.png"/></a>
-                <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="Imagens_outras/you2.png"/></a>
-                <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="Imagens_outras/pint2.png"/></a>
-            </div>
-        </header>
-    
-<!--MENU PRINCIPAL-->
-<center>
-    <nav id="menu-h">
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-        <ul>
-            <li><a href="index.html">H O M E</a></li>
-            <li><a href="historia.html">H I S T Ó R I A</a></li>
-            <li><a href="reinos.html">R E I N O S</a></li>
-            <li><a href="bosses.html">B O S S</a></li>
-            <li><a href="magic.html">C A R T A S - M Á G I C A S</a></li>
-            <li><a href="loja.html">L O J A</a></li>
-            <li><a href="help.html">A J U D A</a></li>
-        </ul>
-       <!-- Botão de Busca -->
-     <div class="btn-buscar">
-            <form action="search.php" method="post">
-                <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                <input type="search" id="search" name="search">
-                <!--<button type="submit" class="btn btn-buscar">Buscar Cartas</button>-->
-            </form>
-        </div>
-    </nav>
-</center>
-<script src="search.js"></script>
+<body>
+<header>
+    <div class="social-icons" >
+        <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="Imagens_outras/insta2.png"/></a>
+        <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="Imagens_outras/you2.png"/></a>
+        <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="Imagens_outras/pint2.png"/></a>
+    </div>
+</header>
 
-<br/><br/><br/><br/>
-<section id="geral">
-    <div class="container">
-    
-        <aside>
-            <div class="widget">
-                <div class="widget_title">
-                    <div class="widget_title_text">Próxima Atualização...Uma era Pirata!!!</div>
-                </div>
-                <div class="widget_body">
-                    Caros Aventureiros,<br/><br/>
+<!-- Menu Principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container" >
+        <!-- Botão de hambúrguer -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="Imagens_outras/006.png" alt="Logo" style="width: 80px; height: auto;">
+        </a>
+
+        <!-- Links do menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" >
+                <!-- Links -->
+                <li class="nav-item"><a class="nav-link" href="index.html">H O M E</a></li>
+                <li class="nav-item"><a class="nav-link" href="historia.html">H I S T Ó R I A</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">E P I S Ó D I O S</a></li>
+                <li class="nav-item"><a class="nav-link" href="personagens.html">P E R S O N A G E N S</a></li>
+                <li class="nav-item"><a class="nav-link" href="itens.html">I T E N S</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">G A L E R I A</a></li>
+                <li class="nav-item"><a class="nav-link" href="tcg_game.html">T C G - G A M E</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.html">S O B R E</a></li>
+            </ul>
+        </div>
+        <!-- Ícones sociais -->
+        <div class="social-icons d-none d-lg-flex">
+            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0"><img src="Imagens_outras/insta2.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@ODespertardosReinos"><img src="Imagens_outras/you2.png" alt="YouTube"></a>
+            <a href="https://br.pinterest.com/odespertardosreinos/"><img src="Imagens_outras/pint2.png" alt="Pinterest"></a>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-5">
+    <h1 class="text-center mb-4" style="font-family: 'Sedan SC';">Nova Atualização</h1></div>
+
+
+<br/><br/>
+<!-- Texto da história -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC';">
+                Caros Aventureiros,<br/><br/>
                     É com grande entusiasmo que anunciamos uma nova era de emocionantes desafios e oportunidades em nosso amado jogo! Nosso mundo virtual está prestes a receber uma atualização extraordinária, trazendo consigo uma panóplia de novidades que prometem transformar sua experiência de jogo de maneiras inéditas e empolgantes.<br/><br/>
                     Em meio aos raios do sol e as sombras da noite, preparem-se para explorar novas terras vastas e misteriosas, repletas de segredos por descobrir e perigos a enfrentar. Nossa equipe dedicada trabalhou incansavelmente para enriquecer o universo do jogo, desde a adição de novos personagens carismáticos até a expansão de novas armas de batalha que farão seus olhos brilharem.<br/><br/>
                     Mas não para por aí! Com esta atualização, introduziremos eventos sazonais emocionantes, desafios para todos os níveis de habilidade e um sistema de progressão mais profundo que permitirá a personalização completa de sua jornada. Este é apenas o começo de uma jornada épica que está prestes a começar, e mal podemos esperar para compartilhar cada novo momento com você.<br/><br/>
@@ -72,12 +76,11 @@
                     Fiquem atentos às nossas redes e ao nosso site para mais detalhes sobre o lançamento da atualização. Juntos, vamos abrir as portas para um novo capítulo de aventuras e descobertas!<br/><br/>
                     Que os ventos da mudança soprem a seu favor, e que cada passo em nosso mundo virtual seja uma lembrança inesquecível!<br/><br/>
                     Atenciosamente,<br/>
-                    Paulo Campos
-                </div>
-            </div>
-        </aside>
-    </div>        
-</section>
+                    Paulo Campos</p></div>
+    </div>
+</div>
+
+
 
 <section>
     <div class="container column2">
@@ -85,50 +88,65 @@
         <div class="banner4">
             <div class="banner_title2">Novos Inimigos</div>
             <div class="banner_desc2">Em Breve!!!</div>
-            <a href="./Imagens_outras/news01.jpeg">Em Breve...</a>
     </div>
         <div class="banner5">
             <div class="banner_title2">Novos Aliados</div>
             <div class="banner_desc2">Em Breve!!!</div>
-            <a href="./Imagens_outras/news02.jpeg">Em Breve...</a>
         </div>
         <div class="banner6">
             <div class="banner_title2">Novos Poderes</div>
             <div class="banner_desc2">Em Breve!!!</div>
-            <a href="./Imagens_outras/news03.jpeg">Em Breve...</a>
         </div>
     </div>
     </div>
 
 </section>
 
-<br/>
+
 <br/>
 <br/>
 
-<!--Rodapé -->
-<footer>
-    <div class="footer--area">
-        <div class="footer--item area1">
-            <img src="./Imagens_outras/006.png"/>
+<!-- RODAPÉ -->
+        <footer class="bg-dark text-light py-5">
+        <div class="container">
+        <div class="row justify-content-center text-center text-md-left align-items-center">
+  
+        <!-- Logo -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-left logo-container">
+            <img src="./Imagens_outras/006.png" alt="Logo" class="img-fluid">
         </div>
-        <div class="footer--item area2">
-            <p>© 2024 Todos os Direitos Reservados</p>
-            <p>Mail: suporte@odespertardosreinos.com.br</p>
-            <p>Tel: +55 11 99105-8957</p>
+  
+        <!-- Informações de Contato -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-center">
+          <p>© 2024 Todos os Direitos Reservados</p>
+          <p>Mail: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
+          <p>Tel: <a href="tel:+5511991058957" class="text-light">+55 11 99105-8957</a></p>
         </div>
-        <div class="footer--item area3">
-            <div class="footer-social">
-                <a href=""><img src="./Imagens_outras/00facebook.png" target="_blank"/></a>
-                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="./Imagens_outras/00insta.png"/></a>
-                <a href="https://www.tiktok.com/@o_despertar_dos_reinos" target="_blank"><img src="./Imagens_outras/00tiktok.png"/></a>
-                <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="./Imagens_outras/00youtube.png"/></a>
-                <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank"><img src="./Imagens_outras/00pinterest.png"/></a>
-            </div>
+  
+        <!-- Redes Sociais -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end footer-social">
+          <a href="" class="mx-2" target="_blank">
+            <img src="./Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
+            <img src="./Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
+            <img src="./Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
+          </a>
+          <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
+            <img src="./Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
+          </a>
+          <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
+            <img src="./Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
+          </a>
         </div>
+      </div>
     </div>
-</footer>
+  </footer>
 
+
+<script src="search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-    

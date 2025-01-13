@@ -1,206 +1,323 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="main.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="imagens_outras/ico.ico" type="image/x-icon">
+    <link rel="icon" href="Imagens_outras/ico.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
     <title>H O M E</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
      crossorigin="anonymous"></script>
 </head>
-<body style="background-color:rgb(255, 255, 255)">
+<body>
 <header>
-    <img src="Imagens_banners/banner01.jpg"  class="banner_img"  />
-    <!-- Botão de Entrar 
-    <a href="login.html" class="btn btn-login">Entrar</a>
-     Botão de Cadastre-se 
-    <a href="cadastro.html" class="btn btn-cadastrar">Cadastre-se</a>-->
-
-    <!-- Ícones de redes sociais -->
-    <div class="social-icons">
+    <div class="social-icons" >
         <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="Imagens_outras/insta2.png"/></a>
         <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="Imagens_outras/you2.png"/></a>
         <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="Imagens_outras/pint2.png"/></a>
     </div>
 </header>
 
-<!--MENU PRINCIPAL-->
-    <center>
-        <nav id="menu-h">
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <ul>
-                <li><a href="index.html">H O M E</a></li>
-                <li><a href="historia.html">H I S T Ó R I A</a></li>
-                <li><a href="reinos.html">R E I N O S</a></li>
-                <li><a href="bosses.html">B O S S</a></li>
-                <li><a href="magic.html">C A R T A S - M Á G I C A S</a></li>
-                <li><a href="loja.html">L O J A</a></li>
-                <li><a href="help.html">A J U D A</a></li>
+<!-- Menu Principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container" >
+        <!-- Botão de hambúrguer -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="Imagens_outras/006.png" alt="Logo" style="width: 80px; height: auto;">
+        </a>
+
+        <!-- Links do menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="language-switcher">
+                <a href="?lang=pt" class="flag" style=" text-decoration: none;">
+                  <img src="Imagens_outras/bandeira_br.png" style="height: 20px; padding-left: 30px;" />
+                </a>
+                <a href="?lang=en" class="flag" style=" text-decoration: none;">
+                  <img src="Imagens_outras/bandeira_en.png" style="height: 20px; padding-left: 10px;"  />
+                </a>
+              </div>
+            <ul class="navbar-nav mx-auto" >
+                <!-- Links -->
+                <li class="nav-item"><a class="nav-link"  href="index.html" data-i18n="home">H O M E</a></li>
+                <li class="nav-item"><a class="nav-link"  href="historia.html" data-i18n="history">H I S T Ó R I A</a></li>
+                <li class="nav-item"><a class="nav-link" data-i18n="episodes" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">E P I S Ó D I O S</a></li>
+                <li class="nav-item"><a class="nav-link" data-i18n="characters" href="personagens.html">P E R S O N A G E N S</a></li>
+                <li class="nav-item"><a class="nav-link" data-i18n="items" href="itens.html">I T E N S</a></li>
+                <li class="nav-item"><a class="nav-link" data-i18n="gallery" href="galeria.html">G A L E R I A</a></li>
+                <li class="nav-item"><a class="nav-link" data-i18n="tcg_game" href="tcg_game.html">T C G - G A M E</a></li>
+                <li class="nav-item"><a class="nav-link" data-i18n="about" href="sobre.html">S O B R E</a></li>
             </ul>
-<!-- Botão de Busca -->
-         <div class="btn-buscar">
-                <form action="search.php" method="post">
-                    <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                    <input type="search" id="search" name="search">
-                </form>
-            </div>
-        </nav>
-    </center>
-    <script src="search.js"></script>
+        </div>
+        <!-- Ícones sociais -->
+        <div class="social-icons d-none d-lg-flex">
+            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0"><img src="Imagens_outras/insta2.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/@ODespertardosReinos"><img src="Imagens_outras/you2.png" alt="YouTube"></a>
+            <a href="https://br.pinterest.com/odespertardosreinos/"><img src="Imagens_outras/pint2.png" alt="Pinterest"></a>
+        </div>
 
+    </div>
+</nav>
 
-<!-- 3 Slides -->
-    <section class="banner">
-        <div class="sliders">
-            <div class="slide">
-                <div class="slidearea">
-                    <h1>Próxima Atualização<br/></h1>
-                    <h2>Em breve...</h2>
-                    <a href="atualizaçao.html" class="button-in">Saiba Mais...</a>
-                </div>    
+<!-- BANNER -->
+<section>
+    <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Imagens_banners/01.jpg" class="d-block w-100" alt="Banner 1">
             </div>
-            <div class="slide">
-                <div class="slidearea">
-                    <h1>Confira Nossa Loja!!!<br/></h1>
-                    <h2>Os melhores personagens, estão aqui!!!</h2>
-                    <a href="loja.html">Saiba Mais...</a>
-                </div> 
+            <div class="carousel-item">
+                <img src="Imagens_banners/02.jpg" class="d-block w-100" alt="Banner 2">
             </div>
-            <div class="slide">
-                <div class="slidearea">
-                    <h1>Aiden<br/></h1>
-                    <h2>um verdadeiro Herói</h2>
-                    <a href="Paginas_humanos/aiden.html">Saiba Mais...</a>
-                </div> 
+            <div class="carousel-item">
+                <img src="Imagens_banners/03.jpg" class="d-block w-100" alt="Banner 3">
             </div>
         </div>
-        <div class="slider-pointers">
-            <div class="pointer active"></div>
-            <div class="pointer"></div>
-            <div class="pointer"></div>
-        </div>
-    </section>
-    
-
-<!-- 3 Noticias -->
-    <section>
-        <div class="container column">
-        <div class="banner_options">
-            <div class="banner1">
-                <div class="banner_title">Nova Atualização</div>
-                <div class="banner_desc">Novos Personagens a Caminho</div>
-                <a href="atualizaçao.html">Veja mais...</a>
-        </div>
-            <div class="banner2">
-                <div class="banner_title">Malachai</div>
-                <div class="banner_desc">Conheça nosso Mercador!!!</div>
-                <a href="mercador.html">Veja mais...</a>
-            </div>
-            <div class="banner3">
-                <div class="banner_title">Calculadora</div>
-                <div class="banner_desc">Utilize nossa Calculadora na hora do seu jogo!!!</div>
-                <a href="calculadora.html">Veja mais...</a>
-            </div>
-        </div>
-        </div>
-    </section>
-    
+        <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
 
 
 
-<!-- Noticia e Video -->
-    <section class="default light">
-        <div class="section-title">Sobre Nós</div><br/><br/>
-        <div class="section-body">
-            <div class="section-aboutus">
-                <div class="section-aboutus--left">
-                    <p>Bem-vindo ao nosso jogo! Mergulhe em uma experiência única e emocionante que combina diversão e desafio em cada nível. Nossa equipe dedicada colocou todo o carinho e criatividade para criar um mundo envolvente para você explorar. Prepare-se para muitas aventuras e surpresas!</p>
-                    <br/>
-                    <h1>Siga-nos nas Redes Sociais</h1><br/>
-                    <p>Não perca nenhuma atualização sobre o nosso jogo! Siga-nos nas redes sociais para ficar por dentro das últimas novidades, dicas exclusivas e muito mais.<br/<br/>
-                       YouTube: Inscreva-se em nosso canal no YouTube para assistir a vídeos exclusivos, trailers, e gameplays emocionantes. Clique no vídeo ao lado e junte-se à nossa comunidade!</p>
-                    <a href="https://www.youtube.com/@ODespertardosReinos" class="button-in" target="_blank">Inscreva-se</a> 
+  <!-- NOTÍCIAS -->
+<div class="container my-5">
+    <h2 class="text-center mb-4 noticias-titulo" style="font-family: 'Sedan SC'; font-size: 35px;padding: 2px 20px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px;">Novidades</h2>
+    <div class="row g-4">
+        <!-- Notícia 1 -->
+        <div class="col-12 noticias-item">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <div class="mb-3 mb-md-0">
+                    <h5 class="noticias-subtitulo" style="font-family: 'Sedan SC'; font-size: 21px;">Lançamento do Episódio: Kael - A Origem do Mago!</h5><br/>
+                    <p class="noticias-texto" style="font-family: 'Sedan SC'; font-size: 17px;">Prepare-se para uma nova jornada! O mais recente episódio de O Despertar dos Reinos acaba de ser lançado no nosso canal do YouTube. Neste episódio, novos mistérios são revelados e nossos heróis enfrentam desafios ainda maiores. A história se intensifica enquanto segredos são desvendados e o destino dos reinos fica ainda mais incerto. Não perca esse capítulo emocionante da nossa saga! Assista agora e acompanhe cada momento dessa aventura épica.</p><br/>
+                    <a href="https://www.youtube.com/watch?v=3AmoUBmnDjk"  style="display: inline-block; padding: 5px 10px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px;">Saiba Mais</a>
                 </div>
-                <div class="section-aboutus--right">
-                    <iframe 
-                        class="responsive-video" 
-                        src="https://www.youtube.com/embed/UWpNv8tDESo" 
-                        title="Trailer O Despertar dos Reinos" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
+                <div class="ms-auto text-center">
+                    <img src="Imagens_personagens/mago_kael.jpg" alt="Notícia 1" class="img-fluid" style="max-width: 350px; height: auto; object-fit: cover;border-radius: 5px;">
+                </div>
+            </div><hr>
+        </div>
+
+        <!-- Notícia 2 -->
+        <div class="col-12 noticias-item">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <div class="mb-3 mb-md-0">
+                    <h5 class="noticias-subtitulo" style="font-family: 'Sedan SC'; font-size: 21px;">Aventuras à Vista: Sessão de RPG de O Despertar dos Reinos!</h5><br/>
+                    <p class="noticias-texto" style="font-family: 'Sedan SC'; font-size: 17px;">"Uma nova jornada está prestes a começar! Estamos preparando uma sessão de RPG totalmente dedicada ao universo de O Despertar dos Reinos, onde você poderá viver em primeira mão as aventuras dos heróis que você já conhece. Em breve, os dados vão rolar e você poderá embarcar nessa jornada épica ao lado dos personagens que já conquistaram seu coração. Fique atento, pois em breve mais detalhes sobre essa experiência única serão revelados!"</p><br/>
+                    <a href="#"  style="display: inline-block; padding: 5px 10px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px;">Saiba Mais</a>
+                </div>
+                <div class="ms-auto text-center">
+                    <img src="Imagens_galeria/05.jpeg" alt="Notícia 2" class="img-fluid" style="max-width: 350px; height: auto; object-fit: cover;border-radius: 5px">
+                </div>
+            </div><hr>
+        </div>
+
+        <!-- Notícia 3 -->
+        <div class="col-12 noticias-item">
+            <div class="d-flex flex-column flex-md-row align-items-center">
+                <div class="mb-3 mb-md-0">
+                    <h5 class="noticias-subtitulo" style="font-family: 'Sedan SC'; font-size: 21px;">Em Breve: O Despertar dos Reinos – A HQ!</h5><br/>
+                    <p class="noticias-texto" style="font-family: 'Sedan SC'; font-size: 17px;">"Prepare-se para uma nova experiência visual e imersiva! A HQ de O Despertar dos Reinos está chegando, trazendo os momentos mais épicos da nossa saga em forma de quadrinhos. Com ilustrações vibrantes e uma narrativa que vai te prender do início ao fim, essa HQ vai expandir ainda mais o universo dos Reinos. Fique ligado, porque em breve você poderá acompanhar as aventuras de nossos heróis de uma maneira totalmente nova e empolgante. Não perca!"</p><br/>
+                    <a href="#"  style="display: inline-block; padding: 5px 10px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px;">Saiba Mais</a>
+
+                </div>
+                <div class="ms-auto text-center">
+                    <img src="Imagens_galeria/04.jpeg" alt="Notícia 3" class="img-fluid" style="max-width: 350px; height: auto; object-fit: cover;border-radius: 5px">
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+
+
+    <!-- GRID DE IMAGENS -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4"  style="font-family: 'Sedan SC'; font-size: 35px;padding: 2px 20px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px;">Nossa Galeria</h2>
+        <div class="row g-3">
+            <div class="col-6 col-md-4">
+                <a href="galeria.html"><img src="Imagens_galeria/01.jpeg" alt="Galeria 1" class="img-fluid" style="border-radius: 5px"></a>
+            </div>
+            <div class="col-6 col-md-4">
+                <a href="galeria.html"><img src="Imagens_galeria/02.jpeg" alt="Galeria 2" class="img-fluid" style="border-radius: 5px"></a>
+            </div>
+            <div class="col-6 col-md-4">
+                <a href="galeria.html"><img src="Imagens_galeria/03.jpeg" alt="Galeria 3" class="img-fluid" style="border-radius: 5px"></a>
+            </div>
+        </div>
+    </div>
+
+<!-- SOBRE NÓS -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4" style="font-family: 'Sedan SC'; font-size: 35px;padding: 2px 20px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px;">Sobre Nós</h2>
+        <p style="font-family: 'Sedan SC';  font-size: 18px;"><br/>Bem-vindo ao universo de O Despertar dos Reinos!
+            Aqui, histórias ganham vida em uma jornada épica repleta de aventura, mistério e magia. Em nosso jogo de RPG, você será transportado para um mundo fantástico, onde reinos diversos, personagens poderosos e desafios emocionantes aguardam por você. Nossa missão é criar uma experiência imersiva que o envolva em cada detalhe, seja nas batalhas intensas ou nas escolhas que definem o destino do seu personagem.
+            <br/><br/>
+            Além disso, em breve, você poderá viver a emoção de nosso jogo de cartas TCG (Trading Card Game), desenvolvido para oferecer uma experiência estratégica única. Com cartas poderosas, habilidades mágicas e personagens incríveis, você poderá construir seu próprio deck e desafiar outros jogadores em batalhas eletrizantes. O mundo dos Reinos está prestes a se expandir, e os jogadores terão a oportunidade de vivenciar essa nova forma de interação com o universo do jogo.
+            <br/><br/>
+            No coração de tudo isso, está nossa série no YouTube, onde trazemos os bastidores, personagens, aventuras e histórias épicas de nosso mundo. Cada episódio é cuidadosamente planejado para levar você mais fundo no universo de O Despertar dos Reinos, com narrativas envolventes, visuais deslumbrantes e personagens fascinantes. Inscreva-se no nosso canal e não perca nenhum momento dessa jornada única.
+            <br/><br/>
+            Somos uma equipe de criadores apaixonados, e cada aspecto desse projeto é feito com o objetivo de oferecer a você uma experiência inesquecível. Estamos muito empolgados por tê-lo conosco nessa jornada e esperamos que, através das nossas histórias, você também encontre inspiração e conexão. Seu feedback é fundamental para nosso crescimento, por isso, queremos que você faça parte dessa caminhada, nos ajudando a tornar tudo ainda melhor.
+            
+        </p>
+      </div>
+
+
+<!-- Vídeo -->
+        <div class="row my-5">
+            <div class="col-12" style="max-width: 1320px; margin: 0 auto;">
+                <h3 class="text-center mb-4" style="font-family: 'Sedan SC'; font-size: 35px;padding: 2px 20px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px;">Trailer da Série</h3>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/UWpNv8tDESo" title="Trailer do Jogo" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+   <!-- REDES SOCIAIS -->
+<div class="container my-5">
+    <h2 class="text-center mb-4" style="font-family: 'Sedan SC'; font-size: 35px;padding: 2px 20px; background-color: #000000; color: white; text-decoration: none; border-radius: 5px;">Siga-nos nas Redes Sociais</h2>
+    <p style="font-family: 'Sedan SC'; font-size: 18px;">Não perca nenhuma atualização sobre a nossa série no YouTube! Acompanhe-nos nas redes sociais para conteúdos exclusivos, cenas de bastidores, 
+        curiosidades, dicas e muito mais. Queremos que você esteja por dentro de tudo o que acontece nos bastidores e tenha acesso a materiais que só 
+        quem nos segue pode conferir.</p>
+            
+        <!-- YouTube -->
+        <div class="mb-4">
+            <p style="font-family: 'Sedan SC'; font-size: 18px;">
+                <img src="Imagens_outras/you01.png" alt="YouTube" style="width: 30px; height: 30px; margin-right: 10px;">
+                <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank" style="text-decoration: none; color: inherit;">
+                    <strong>YouTube:</strong>
+                </a>
+                Inscreva-se em nosso canal para acompanhar episódios incríveis, trailers emocionantes e conteúdos extras.
+            </p>
+        </div>
+
+        <!-- Instagram -->
+        <div class="mb-4">
+            <p style="font-family: 'Sedan SC'; font-size: 18px;">
+                <img src="Imagens_outras/inst01.png" alt="Instagram" style="width: 30px; height: 30px; margin-right: 10px;">
+                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank" style="text-decoration: none; color: inherit;">
+                    <strong>Instagram:</strong>
+                </a>
+                Siga-nos no Instagram para imagens exclusivas, artes conceituais e atualizações sobre os próximos episódios.
+            </p>
+        </div>
+
+        <!-- Pinterest -->
+        <div class="mb-4">
+            <p style="font-family: 'Sedan SC'; font-size: 18px;">
+                <img src="Imagens_outras/pint01.png" alt="Pinterest" style="width: 30px; height: 30px; margin-right: 10px;">
+                <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <strong>Pinterest:</strong>
+                </a>
+                Descubra imagens exclusivas, artes conceituais e atualizações sobre os próximos episódios.
+            </p>
+        </div>
+
+        <!-- TikTok -->
+        <div class="mb-4">
+            <p style="font-family: 'Sedan SC'; font-size: 18px;">
+                <img src="Imagens_outras/tik01.png" alt="TikTok" style="width: 30px; height: 30px; margin-right: 10px;">
+                <a href="https://www.tiktok.com/@o_despertar_dos_reinos" target="_blank" style="text-decoration: none; color: inherit;">
+                    <strong>TikTok:</strong>
+                </a>
+                Explore nossos clipes dinâmicos com os melhores momentos da série.
+            </p>
+        </div>
+
+        <!-- Facebook -->
+        <div class="mb-4">
+            <p style="font-family: 'Sedan SC'; font-size: 18px;">
+                <img src="Imagens_outras/face01.png" alt="Facebook" style="width: 30px; height: 30px; margin-right: 10px;">
+                <a href="https://www.facebook.com" target="_blank" style="text-decoration: none; color: inherit;">
+                    <strong>Facebook:</strong>
+                </a>
+                Curta nossa página no Facebook para atualizações diárias, vídeos, eventos ao vivo e muito mais. Conecte-se com outros fãs e compartilhe seu entusiasmo sobre a série.
+            </p>
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
  
-
-<br/>
-<br/>
-<br/>
-
-    <!--Rodapé -->
-    <footer>
-        <div class="footer--area">
-            <div class="footer--item area1">
-                <img src="./Imagens_outras/006.png"/>
-            </div>
-            <div class="footer--item area2">
-                <p>© 2024 Todos os Direitos Reservados</p>
-                <p>Mail: suporte@odespertardosreinos.com.br</p>
-                <p>Tel: +55 11 99105-8957</p>
-            </div>
-            <div class="footer--item area3">
-                <div class="footer-social">
-                    <a href=""><img src="./Imagens_outras/00facebook.png" target="_blank"/></a>
-                    <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="./Imagens_outras/00insta.png"/></a>
-                    <a href="https://www.tiktok.com/@o_despertar_dos_reinos" target="_blank"><img src="./Imagens_outras/00tiktok.png"/></a>
-                    <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="./Imagens_outras/00youtube.png"/></a>
-                    <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank"><img src="./Imagens_outras/00pinterest.png"/></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <br/>
+    <br/>
     
+    <!-- RODAPÉ -->
+            <footer class="bg-dark text-light py-5">
+            <div class="container">
+            <div class="row justify-content-center text-center text-md-left align-items-center">
+      
+            <!-- Logo -->
+            <div class="col-md-4 mb-4 mb-md-0 text-md-left logo-container">
+                <img src="./Imagens_outras/006.png" alt="Logo" class="img-fluid">
+            </div>
+      
+            <!-- Informações de Contato -->
+            <div class="col-md-4 mb-4 mb-md-0 text-md-center">
+              <p>© 2024 Todos os Direitos Reservados</p>
+              <p>Mail: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
+              <p>Tel: <a href="tel:+5511991058957" class="text-light">+55 11 99105-8957</a></p>
+            </div>
+      
+            <!-- Redes Sociais -->
+            <div class="col-md-4 d-flex justify-content-center justify-content-md-end footer-social">
+              <a href="" class="mx-2" target="_blank">
+                <img src="./Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
+              </a>
+              <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
+                <img src="./Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
+              </a>
+              <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
+                <img src="./Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
+              </a>
+              <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
+                <img src="./Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
+              </a>
+              <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
+                <img src="./Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+
+    <script src="search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Obter o idioma da URL ou definir 'pt' como padrão
+        const userLang = new URLSearchParams(window.location.search).get('lang') || 'pt';
+      
+        // Carregar o arquivo JSON correspondente
+        fetch(`lang-${userLang}.json`)
+          .then(response => response.json())
+          .then(translations => {
+            // Atualizar o conteúdo com base nas traduções
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+              const key = el.getAttribute("data-i18n");
+              el.textContent = translations[key];
+            });
+          })
+          .catch(error => console.error('Erro ao carregar traduções:', error));
+      </script>
     </body>
     </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

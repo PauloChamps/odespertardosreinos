@@ -6,24 +6,6 @@
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
-
-/* #########################################  BANNER  ######################################### */
-.banner_img {
-    max-width: 100%; 
-    height: auto; 
-    display: block; /
-}
-@media (max-width: 375px) {
-    .banner_img{
-        max-width: 100%;
-        height: auto;
-        display: block;
-    
-    }
-
-}
-
-
 /* #########################################  PLANO DE FUNDO  ######################################### */
 body {
     background-image: url('Imagens_outras/fundo05.jpg');
@@ -105,245 +87,6 @@ body {
         font-size: 14px; 
     }
 }
-
-/* #########################################  MENU  ######################################### */
-#menu-h {
-    background-color: rgb(0, 0, 0);
-    overflow: hidden;
-}
-#menu-h ul {
-    max-width: 1000px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-#menu-h ul li {
-    display: inline-block;
-}
-#menu-h ul li a {
-    color: #FFF;
-    font-family: 'Vollkorn';
-    padding: 12px;
-    display: block;
-    text-decoration: none;
-    transition: background .4s;
-}
-#menu-h ul li a:hover {
-    background-color: rgb(50, 50, 50); /* 0 0 0 */
-}
-.menu-toggle {
-    display: none;
-    background-color: rgb(0, 0, 0);
-    border: none;
-    color: white;
-    font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-}
-@media (max-width: 320px) {
-    .menu-toggle {
-        display: block;
-        margin-top: -5px; 
-        margin-left: 20px; 
-    }
-    #menu-h ul {
-        display: none;
-        position: fixed;
-        top: 0; 
-        left: 0; 
-        height: 41%; 
-        width: 250px; 
-        background-color: #000000;
-        padding: 20px; 
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);   
-        z-index: 999; 
-    }
-    #menu-h ul.show {
-        display: block; 
-    }
-    #menu-h ul li {
-        display: block;
-        text-align: center;
-    }
-    #menu-h ul li a {
-        display: block; 
-        padding: 10px;
-        border-bottom: 1px solid #444;
-    }
-}
-@media (max-width: 375px) {
-
-    .menu-toggle {
-        display: block;
-        margin-top: -5px; 
-        margin-left: 20px;
-    }
-    #menu-h ul {
-        display: none;
-        position: fixed;
-        top: 0; 
-        left: 0; 
-        height: 42%;
-        width: 250px; 
-        background-color: #000000; 
-        padding: 20px; 
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-        z-index: 999; 
-    }
-    #menu-h ul.show {
-        display: block; 
-    }
-    #menu-h ul li {
-        display: block;
-        text-align: center;
-    }
-    #menu-h ul li a {
-        display: block;
-        padding: 10px;
-        border-bottom: 1px solid #444;
-    }
-}
-@media (max-width: 425px) {
-    .menu-toggle {
-        display: block;
-        margin-top: -5px; 
-        margin-left: 20px; 
-    }
-    #menu-h ul {
-        display: none;
-        position: fixed; 
-        top: 0; 
-        left: 0; 
-        height: 42%; 
-        width: 250px; 
-        background-color: #000000; 
-        padding: 20px; 
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-        z-index: 999; 
-    }
-    #menu-h ul.show {
-        display: block; 
-    }
-    #menu-h ul li {
-        display: block;
-        text-align: center;
-    }
-    #menu-h ul li a {
-        display: block;
-        padding: 10px;
-        border-bottom: 1px solid #444;
-    }
-}
-@media (max-width: 849px) {
-
-    .menu-toggle {
-        display: block;
-        margin-top: -5px; 
-        margin-left: 20px; 
-    }
-    #menu-h ul {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0; 
-        height: 42%; 
-        width: 250px; 
-        background-color: black; 
-        padding: 20px; 
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
-        z-index: 999; 
-    }
-    #menu-h ul.show {
-        display: block; 
-    }
-    #menu-h ul li {
-        display: block;
-        text-align: center;
-    }
-    #menu-h ul li a {
-        display: block;
-        padding: 10px;
-        border-bottom: 1px solid #444;
-    }
-}
-
-/* #########################################  TEXTO -- PAGINA HISTORIA --  ######################################### */
-.centralizado {
-    width: 80%; 
-    margin: 0 auto; 
-    font-size: 25px; 
-    text-align: justify; 
-}
-@media (max-width: 375px) {
-    .centralizado {
-        position: static; 
-        margin-top: 20px; 
-        font-size: 18px;
-    }
-}
-/* #########################################  IMAGENS RELIQUIAS -- PAGINA HISTORIA -- ######################################### */
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 0px; 
-}
-.image-item {
-    width: 260px;
-    text-align: center;
-    border-radius: 15px;
-    margin: 45px;
-    margin-top: 0px;
-}
-.image-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-    transition: transform 0.3s ease; 
-}
-.image-item img:hover {
-    transform: scale(1.1); 
-}
-.image-item h2 {
-    margin: 10px 0 5px;
-    font-size: 20px;
-}
-.image-item p {
-    margin: 0;
-    font-size: 17px;
-    line-height: 20px;
-}
-.image-item .btn {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 10px; 
-    position: relative;
-    top: 20px; 
-}
-.image-item .btn:hover {
-    background-color: #333;
-}
-@media (max-width: 375px) {
-    .image-item {
-        width: 150px;  
-    }
-
-    .image-container {
-        gap: 5px; 
-    }
-}
-
 /* #########################################  IMAGENS CARTAS MAGICAS -- PAGINA CARTAS MAGICAS --  ######################################### */
 .image-container-magic {
     display: flex;
@@ -589,10 +332,7 @@ body {
         top: 5px;
     }
 }
-
-
 /* #########################################  IMAGENS BOSS ZOOM -- BOTAO PROXIMA E ANTERIOR -- ######################################### */
-
 .overlay {
     position: fixed;
     display: flex;
@@ -641,144 +381,6 @@ body {
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
-}
-
-/* #########################################  IMAGENS BOSS ZOOM -- TEXTO PAGINA PERSONAGENS BOSS -- ######################################### */
-.zoom-container {
-    border-radius: 15px;
-}
-.zoom-image {
-    border-radius: 15px;
-    transition: transform 0.3s ease; 
-}
-.zoom-container:hover .zoom-image {
-    transform: scale(1.15); 
-}
-.boss-description h1 {
-    font-family: 'Sedan SC'; 
-    font-size: 40px;
-    text-align: left; 
-    width: 100%; 
-    margin: 0;
-}
-.boss-description p{
-    font-size: 20px;
-    text-align: justify;
-    margin-right: 40px; 
-    margin: 40px;
-    font-family: 'Sedan SC';
-}
-@media (max-width: 374px) {
-    .zoom-container {
-        width: 75%; 
-        margin-right: 5%; 
-        margin-left: 5%; 
-        margin-bottom: 10px;
-        display: block;
-        float: none;
-    }
-    .zoom-image {
-        width: 100%; 
-        border-radius: 15px; 
-    }
-    .boss-description {
-        clear: both;
-        justify-content: center;
-    }
-    .boss-description h1 {
-        font-size: 40px;
-        text-align: center; 
-    }
-    .boss-description p {
-        font-size: 14px; 
-        margin-left: 10px; 
-        margin-right: 10px; 
-        text-align: justify;
-    }
-}
-@media (min-width: 375px) and (max-width: 424px) {
-    .zoom-container {
-        width: 75%; 
-        margin-right: 5%; 
-        margin-left: 5%; 
-        margin-bottom: 10px;
-        display: block;
-        float: none;
-    }
-    .zoom-image {
-        width: 100%; 
-        border-radius: 15px; 
-    }
-    .boss-description {
-        clear: both;
-        justify-content: center;
-    }
-    .boss-description h1 {
-        font-size: 40px;
-        text-align: center; 
-    }
-    .boss-description p {
-        font-size: 14px; 
-        margin-left: 10px; 
-        margin-right: 10px; 
-        text-align: justify;
-    }
-}
-@media (min-width: 425px) and (max-width: 767px) {
-    .zoom-container {
-        width: 75%; 
-        margin-right: 5%; 
-        margin-left: 5%; 
-        margin-bottom: 10px;
-        display: block;
-        float: none;
-    }
-    .zoom-image {
-        width: 100%; 
-        border-radius: 15px; 
-    }
-    .boss-description {
-        clear: both;
-        justify-content: center;
-    }
-    .boss-description h1 {
-        font-size: 40px;
-        text-align: center; 
-    }
-    .boss-description p {
-        font-size: 14px; 
-        margin-left: 10px; 
-        margin-right: 10px; 
-        text-align: justify;
-    }
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-    .zoom-container {
-        width: 75%; 
-        margin-right: 5%; 
-        margin-left: 5%; 
-        margin-bottom: 10px;
-        display: block;
-        float: none;
-    }
-    .zoom-image {
-        width: 100%; 
-        border-radius: 15px; 
-    }
-    .boss-description {
-        clear: both;
-        justify-content: center;
-    }
-    .boss-description h1 {
-        font-size: 40px;
-        text-align: center; 
-    }
-    .boss-description p {
-        font-size: 14px; 
-        margin-left: 10px; 
-        margin-right: 10px; 
-        text-align: justify;
-    }
 }
 /* #########################################  IMAGENS - PAGINA REINOS  ######################################### */
 .grid-container {
@@ -871,15 +473,6 @@ body {
         margin: 0 auto;
     }
 }
-@media (min-width: 375px) and (max-width: 424px){
-
-}
-@media (min-width: 425px) and (max-width: 767px) {
-
-}
-@media (min-width: 768px) and (max-width: 1000px){
-
-}
 
 
 /* #########################################  BOTAO INDEX  ######################################### */
@@ -948,7 +541,7 @@ body {
 
 
 
-  /* Estilos para os botões */
+  /* Estilos para os botões 
   .btn {
     background-color: white;
     color: black;
@@ -966,7 +559,7 @@ body {
 .btn:hover {
     background-color: #f0f0f0;
 }
-/* Estilos para posicionar os botões */
+/* Estilos para posicionar os botões 
 .btn-login {
     right: 190px;
     top: 250px;
@@ -974,12 +567,24 @@ body {
 .btn-cadastrar {
     right: 50px;
     top: 250px;
-}
+}*/
 
 
 
 
 /* #########################################  FOTOS PERSONAGENS  ######################################### */
+.photo img {
+    border-radius: 25px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo img:hover {
+    transform: scale(1.05);
+}
+
+
+
 .personagens {
     clear: both;
     margin-bottom: 25px;
@@ -1039,112 +644,7 @@ body {
         width: 400px;
     }
 }
-/* #########################################  8 QUADRADOS CARACTERISTICAS PERSONAGENS  ######################################### */
-.characteristics-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    margin: 0px auto;
-    max-width: 90%;
-}
-.characteristic {
-    text-align: center;
-}
-.characteristic-box {
-    width: 300px;
-    height: 410px;
-    background-image: url('Imagens_outras/fundo07.JPG'); 
-    background-size: cover;
-    background-position: center; 
-    border-radius: 15px;
-    border: 2px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); 
-    position: relative;
-}
-.characteristic-box h2 {
-    font-family: 'Sedan SC', serif;
-    font-size: 40px;
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 100%;
-}
-.characteristic-box p {
-    font-family: 'Sedan SC';
-    font-size: 15px;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-    width: 100%;
-}
-@media (max-width: 375px) {
-    .characteristics-grid {
-        grid-template-columns: repeat(1, 1fr); 
-        gap: 10px; 
-    }
-    .characteristic-box {
-        width: 100%;  
-    }
-    .characteristic-box h2 {
-        font-size: 30px; 
-    }
-    .characteristic-box p {
-        font-size: 15px; 
-    }
-}
-@media (min-width: 375px) and (max-width: 424px) {
-    .characteristics-grid {
-        grid-template-columns: repeat(1, 1fr); 
-        gap: 15px; 
-    }
-    .characteristic-box {
-        width: 280px;
-    }
-    .characteristic-box h2 {
-        font-size: 28px; 
-    }
-    .characteristic-box p {
-        font-size: 14px; 
-    }
-}
-@media (min-width: 425px) and (max-width: 767px) {
-    .characteristics-grid {
-        grid-template-columns: repeat(1, 1fr); 
-        gap: 20px; 
-    }
-    .characteristic-box {
-        width: 350px;
-    }
-    .characteristic-box h2 {
-        font-size: 32px; 
-    }
-    .characteristic-box p {
-        font-size: 16px; 
-    }
-}
-@media (min-width: 768px) and (max-width: 1000px) {
-    .characteristics-grid {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 20px; 
-    }
-    .characteristic-box {
-        width: 300px;
-        gap: none;
-    }
-    .characteristic-box h2 {
-        font-size: 36px; 
-    }
-    .characteristic-box p {
-        font-size: 16px; 
-    }
-}
+
 /* #########################################  3 QUADRADOS CARACTERISTICAS BOSS  ######################################### */
 .characteristics-grid-boss {
     display: grid;
@@ -1384,156 +884,6 @@ body {
 
 /* #########################################  CONTEUDOS PAGINA HOME  ######################################### */
 
-
-/* #########################################  BANNER, SLIDE*/
-.banner {
-    height: calc(80vh - 100px);
-    display: flex;
-    justify-content: center;
-    background-position: bottom;
-    background-size: cover;
-    overflow: hidden;
-    position: relative; 
-    
-}
-.banner .sliders{
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    transition: transform 4s ease; 
-    
-}
-.banner .slide{
-    flex: 0 0 100vw; 
-    height: 100%;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner .slide-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto; 
-}
-
-.banner .slide:nth-child(1) {
-    background-image: url('./Imagens_banners/navio01.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.banner .slide:nth-child(2) {
-    background-image: url('./Imagens_banners/loja01.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.banner .slide:nth-child(3) {
-    background-image: url('./Imagens_banners/heroi01.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.banner .slidearea{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
-    color: white;
-}
-.banner h1{
-    text-transform: uppercase;
-    font-family: 'Sedan SC';
-    font-size: 50px;
-}
-.banner h2 {
-    text-transform: uppercase;
-    font-family: 'Sedan SC';
-    margin-top: 20px;
-}
-.banner a {
-    background-color: #000000;
-    display: inline-block;
-    color: white;
-    font-family: 'Sedan SC';
-    text-transform: uppercase;
-    font-size: 12px;
-    text-decoration: none;
-    padding:10px 30px ;
-    margin-top: 30px;
-    border-radius: 20px;
-}
-.banner .slider-pointers{
-    width: 100vw;
-    height: 20px;
-    position: absolute;
-    margin-top: 530px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner .pointer{
-    width: 15px;
-    height: 15px;
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    margin-left: 5px;
-    margin-right: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
-}
-.banner .pointer.active{
-    background-color: #ffffff;
-}
-
-@media (max-width: 320px) {
-    .banner {
-        height: calc(50vh - 100px); 
-    }
-    .banner h1{
-        text-transform: uppercase;
-        font-family: 'Sedan SC';
-        font-size: 20px;
-    }
-    .banner h2 {
-        text-transform: uppercase;
-        font-family: 'Sedan SC';
-        font-size: 13px;
-        margin-top: 20px;
-    }
-    .banner .sliders {
-        height: 100%; 
-    }
-    .banner .slide {
-        flex: 0 0 320px; 
-        width: 320px; 
-    }
-    .banner .slider-pointers {
-        margin-top: 300px; 
-    }
-    .banner .pointer {
-        width: 10px; 
-        height: 10px;
-        margin: 0 5px; 
-    }
-}
-@media (min-width: 375px) and (max-width: 424px){
-    .banner h1{
-        text-align: center;
-        font-size: 40px;
-    }
-}
-@media (min-width: 425px) and (max-width: 767px) {
-    .banner h1{
-        text-align: center;
-        font-size: 50px;
-    }
-}
 /* #########################################  3 NOTICIAS HOME*/
 
 .column{
@@ -1621,143 +971,6 @@ body {
         font-size: 12px; 
     }
 }
-
-
-
-/* #########################################  3 NOTICIAS PAGINA ATUALIZAÇÃO*/
-
-.column2{
-    flex-direction: column;
-}
-.banner_options2{
-    margin-top: 40px;
-    width: 1420px;
-    height: 400px;
-    display: flex;
-}
-.banner4,
-.banner5,
-.banner6 {
-    flex: 1;
-    color: white;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.banner4{
-    background-image: url('./Imagens_outras/news01.jpeg');
-    background-position: center;
-    background-size: 500px;
-    border: 1px solid black;
-    box-shadow:0px 5px 10px #333;
-}
-.banner5{
-    background-image: url('./Imagens_outras/news02.jpeg');
-    background-position: center;
-    background-size: 500px;
-    border: 1px solid black;
-    box-shadow:0px 5px 10px #333;
-}
-.banner6{
-    background-image: url('./Imagens_outras/news03.jpeg');
-    background-position: center;
-    background-size: 500px;
-    border: 1px solid black;
-    box-shadow:0px 5px 10px #333;
-}
-.banner_title2{
-    font-size: 30px;
-    font-family: 'Sedan SC';
-}
-.banner_desc2{
-    font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: 'Sedan SC';
-}
-.banner_options2 a{
-    display: inline-block;
-    border: 1px solid white;
-    padding: 10px 20px;
-    color: white;
-    font-size: 12px;
-    text-decoration: none;
-    font-family: 'Sedan SC';
-    margin-top: 233px;
-    margin-left: 270px;
-    border-radius: 20px;
-    text-transform: uppercase;
-}
-
-.banner_options2 a:hover{
-    background-color: black;
-    color: white;
-}
-@media (max-width: 320px) {
-    .banner_options2 {
-        width: 300px;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-    .banner4,
-    .banner5,
-    .banner6 {
-        width: 100%;
-        margin: 10px 0;
-    }
-    .banner_title2 {
-        font-size: 20px;
-    }
-    .banner_options2 a{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media (min-width: 375px) and (max-width: 424px) {
-    .banner_options2 {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-    .banner4,
-    .banner5,
-    .banner6 {
-        width: 100%;
-        margin: 10px 0;
-    }
-    .banner_title2 {
-        font-size: 22px;
-    }
-    .banner_options2 a{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media (min-width: 425px) and (max-width: 767px) {
-    .banner_options2 {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-    }
-    .banner4,
-    .banner5,
-    .banner6 {
-        width: 100%;
-        margin: 10px 0;
-    }
-    .banner_title2 {
-        font-size: 24px;
-        margin-top: 500px;
-    }
-    .banner_options2 a{
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 /* #########################################  */
 #geral{
     display: flex;
@@ -1788,307 +1001,6 @@ body {
     text-align: center;
     margin-top: 60px;
 
-}
-@media (max-width: 320px) {
-    #banner {
-        height: 200px;
-    }
-    .banner_headline h1 {
-        font-size: 40px;
-        margin: 10px;
-        margin-top: 20px;
-    }
-    .banner_headline h2 {
-        font-size: 16px;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .banner_options {
-        margin-top: 10px;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .banner1, .banner2, .banner3 {
-        flex: 1;
-        margin-bottom: 10px;
-        background-size: 500px;
-
-    }
-    .banner4, .banner5, .banner6 {
-        flex: 1;
-        margin-bottom: 10px;
-        background-size: 500px;
-
-    }
-    .banner_options a {
-        margin-top: 130px;
-        margin-left: 100px;
-    }
-    .widget_title {
-        margin-top: -800px;
-    }
-    .widget_title_text {
-        font-size: 30px;
-        margin-top: 810px;
-    }
-    .widget_title_bar {
-        margin-top: 5px;
-    }
-    .widget_body {
-        font-size: 16px;
-        margin-top: 0px;
-    }
-}
-
-@media (min-width: 321px) and (max-width: 375px) {
-    #banner {
-        height: 200px;
-    }
-    .banner_headline h1 {
-        font-size: 40px;
-        margin: 10px;
-        margin-top: 20px;
-    }
-    .banner_headline h2 {
-        font-size: 16px;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .banner_options {
-        margin-top: 10px;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .banner1, .banner2, .banner3 {
-        flex: 1;
-        margin-bottom: 10px;
-        background-size: 500px;
-
-    }
-    .banner_options a {
-        margin-top: 130px;
-        margin-left: 100px;
-    }
-    .widget_title {
-        margin-top: 170px;
-    }
-    .widget_title_text {
-        font-size: 30px;
-        margin-top: 810px;
-    }
-    .widget_title_bar {
-        margin-top: 5px;
-    }
-    .widget_body {
-        font-size: 16px;
-        margin-top: 30px;
-    }
-}
-
-@media (min-width: 376px) and (max-width: 425px) {
-    #banner {
-        height: 200px;
-    }
-    .banner_headline h1 {
-        font-size: 40px;
-        margin: 10px;
-        margin-top: 20px;
-    }
-    .banner_headline h2 {
-        font-size: 16px;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .banner_options {
-        margin-top: 10px;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .banner1, .banner2, .banner3 {
-        flex: 1;
-        margin-bottom: 10px;
-        background-size: 500px;
-
-    }
-    .banner_options a {
-        margin-top: 130px;
-        margin-left: 100px;
-    }
-    .widget_title {
-        margin-top: 170px;
-    }
-    .widget_title_text {
-        font-size: 30px;
-        margin-top: 810px;
-    }
-    .widget_title_bar {
-        margin-top: 5px;
-    }
-    .widget_body {
-        font-size: 16px;
-        margin-top: 30px;
-    }
-}
-@media (min-width: 426px) and (max-width: 767px) {
-    #banner {
-        height: 200px;
-    }
-    .banner_headline h1 {
-        font-size: 40px;
-        margin: 10px;
-        margin-top: 20px;
-    }
-    .banner_headline h2 {
-        font-size: 16px;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .banner_options {
-        margin-top: 10px;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .banner1, .banner2, .banner3 {
-        flex: 1;
-        margin-bottom: 10px;
-        background-size: 500px;
-
-    }
-    .banner_options a {
-        margin-top: 130px;
-        margin-left: 100px;
-    }
-    .widget_title {
-        margin-top: 170px;
-    }
-    .widget_title_text {
-        font-size: 30px;
-        margin-top: 810px;
-    }
-    .widget_title_bar {
-        margin-top: 5px;
-    }
-    .widget_body {
-        font-size: 16px;
-        margin-top: 30px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-    #banner {
-        height: 200px;
-    }
-    .banner_headline h1 {
-        font-size: 40px;
-        margin: 10px;
-        margin-top: 20px;
-    }
-    .banner_headline h2 {
-        font-size: 16px;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .banner_options {
-        margin-top: 10px;
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .banner1, .banner2, .banner3 {
-        flex: 1;
-        margin-bottom: 10px;
-        background-size: 500px;
-
-    }
-    .banner_options a {
-        margin-top: 130px;
-        margin-left: 100px;
-    }
-    .widget_title {
-        margin-top: 170px;
-    }
-    .widget_title_text {
-        font-size: 30px;
-        margin-top: 810px;
-    }
-    .widget_title_bar {
-        margin-top: 5px;
-    }
-    .widget_body {
-        font-size: 16px;
-        margin-top: 30px;
-    }
-}
-@media (min-width: 1024px) and (max-width: 1390) {
-    #banner {
-        height: 200px;
-    }
-    .banner_headline h1 {
-        font-size: 40px;
-        margin: 10px;
-        margin-top: 20px;
-    }
-    .banner_headline h2 {
-        font-size: 16px;
-        margin: 10px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    .banner_options {
-        margin-top: 10px;
-        width: 500px;
-        display: flex;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .banner1, .banner2, .banner3 {
-        flex: 1;
-        margin-bottom: 10px;
-        background-size: 500px;
-
-    }
-    .banner_options a {
-        margin-top: 130px;
-        margin-left: 200px;
-    }
-    .widget_title {
-        margin-top: 170px;
-    }
-    .widget_title_text {
-        font-size: 30px;
-        margin-top: 250px;
-    }
-    .widget_title_bar {
-        margin-top: 5px;
-    }
-    .widget_body {
-        font-size: 16px;
-        margin-top: 30px;
-    }
 }
 
 /* #########################################  PAGINA LOJA  ######################################### */
@@ -2450,183 +1362,6 @@ article .news_resume {
         width: 150px; 
     }
 }
-/* #########################################  RODAPÉ  ######################################### */
-footer {
-    background-color: #000;
-    padding: 40px;
-    color: #999;
-    font-family: 'Sedan SC', sans-serif;
-}
-.footer--area {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap; 
-    gap: 20px;
-}
-.footer--item {
-    flex: 1;
-    padding: 20px;
-    background-color: #000000; 
-    border-radius: 10px;
-}
-.footer--item h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #fff; 
-}
-.footer--item p {
-    font-size: 18px;
-    line-height: 1.4;
-    color: #ccc; 
-}
-.footer--item.area1 img{
-    margin-top: -15px;
-    margin-left: 50px;
-}
-.footer--item.area2 {
-    text-align: center;
-    line-height: 0.5;
-    color: #ccc;
-    font-size: 18px;
-    margin-right: 60px;
-    margin-top: 35px;
-}
-.footer--item.area3 {
-    margin-top: 40px; 
-}
-.footer-social {
-    display: flex;
-    justify-content: center; 
-    gap: 15px;
-}
-.footer-social a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px; 
-    height: 40px;
-    background-color: #333;
-    border-radius: 50%; 
-    transition: background-color 0.3s, transform 0.3s; 
-}
-.footer-social a:hover {
-    background-color: #000;
-    transform: scale(1.1); 
-}
-.footer-social img {
-    width: 20px; 
-    height: 20px;
-}
-.section-aboutus--right iframe {
-    width: 100%;
-    max-width: 560px; 
-    height: auto; 
-    aspect-ratio: 16 / 9; 
-    box-shadow: 0px 5px 10px #333; 
-    margin: 0 auto; 
-}
-@media (max-width: 320px) {
-    .footer--area {
-        flex-direction: column; 
-        align-items: center; 
-    }
-    .footer--item {
-        flex-basis: 100%; 
-        border: none; 
-        padding: 10px 0; 
-        text-align: center; 
-        margin-bottom: 10px; 
-    }
-    .footer--item.area1, .footer--item.area2 {
-        text-align: center; 
-        margin-left: 0;
-        margin-right: 0; 
-        padding: 10px; 
-    }
-    .footer--item.area1 {
-        border-right: none; 
-        padding-right: 0; 
-        padding-left: 0; 
-        margin-bottom: 20px; 
-        margin-left: -5px;
-    }
-    .footer--item.area1 p{
-        font-size: 15px;
-        justify-content: center;
-    }
-    .footer--item.area1 h2 {
-        font-size: 20px; 
-    }
-    .footer--item.area2 {
-        margin-left: 40px;
-    }
-    .footer--item.area2 p{
-        font-size: 14px;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer--item.area3 {
-        margin-left: 40px; 
-    }
-    .footer-social {
-        margin-top: 0;
-        margin-left: -10px;
-        justify-content: center;
-    }
-    .footer-social:hover {
-        background-color: #000;
-        transform: scale(1.1); 
-    }
-}
-@media (min-width: 321px) and (max-width: 768px) {
-    .footer--area {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .footer--item {
-        flex-basis: 100%; 
-        border: none; 
-        padding: 10px 0; 
-        text-align: center; 
-    }
-    .footer--item.area1, .footer--item.area2 {
-        text-align: center;
-        margin-left: 0; 
-        margin-right: 0; 
-        padding: 10px 0 ;
-    }
-    .footer--item.area1 img{
-        margin-right: 30px;
-    }
-    .footer--item.area1 h2 {
-        font-size: 20px; 
-        text-align: center; 
-        justify-content: center;
-    }
-    .footer--item.area3 {
-        border: none;
-        padding-bottom: 40px; 
-    }
-    .footer-social {
-        margin-left: 0;
-        justify-content: center;
-    }
-}
-@media (min-width: 768px) {
-    .footer--area {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .footer--item {
-        text-align: center;
-    }
-    .footer-social {
-        justify-content: center;
-    }
-
-}
 /* #########################################  BARRA FILTRAGEM  ######################################### */
 .filter-bar {
     display: flex;
@@ -2702,55 +1437,594 @@ footer {
 
 
 
-/* ######################################### ícones sociais  ######################################### */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #########################################  3 NOTICIAS PAGINA ATUALIZAÇÃO ######################################### */
+.column2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.banner_options2 {
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+.banner4 {
+    background-image: url('Imagens_outras/news01.jpeg');
+}
+.banner5 {
+    background-image: url('Imagens_outras/news02.jpeg');
+}
+.banner6 {
+    background-image: url('Imagens_outras/news03.jpeg');
+}
+.banner4,
+.banner5,
+.banner6 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    height: 300px; 
+    background-size: cover; 
+    background-position: center;
+    border: 1px solid black;
+    width: 300px;
+}
+.banner_title2 {
+    font-size: 36px; 
+    font-family: 'Sedan SC'; 
+    color: white; 
+    text-align: center; 
+    margin-bottom: 20px; 
+    text-shadow: 2px 2px 5px black; 
+}
+.banner_desc2 {
+    font-size: 18px; 
+    font-family: 'Sedan SC', serif;
+    color: white; 
+    text-align: center; 
+    margin-top: 170px; 
+    text-shadow: 1px 1px 3px black; 
+}
+@media (max-width: 767px) {
+    .banner_options2 {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .banner4,
+    .banner5,
+    .banner6 {
+        width: 90%; 
+        margin: 10px 0; 
+    }
+    .banner_title2 {
+        font-size: 18px; 
+    }
+    .banner_options2 a {
+        margin: 10px auto; 
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner_options2 {
+        justify-content: center; 
+    }
+    .banner4,
+    .banner5,
+    .banner6 {
+        width: 30%; 
+        margin: 15px; 
+    }
+    .banner_title2 {
+        font-size: 24px; 
+    }
+}
+/* #########################################  RODAPÉ  ######################################### */
+footer {
+    background-color: #000 !important;
+    color: white;
+    font-family: 'Sedan SC', sans-serif;
+    padding: 40px 0;
+    
+  }
+  footer.bg-dark {
+    background-color: #000 !important; 
+    color: white; 
+}
+  .footer-social {
+    display: flex;
+    gap: 10px;
+  }
+  .logo-container {
+    margin-left: -80px;
+  }
+  .footer-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #000; 
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+  }
+  .footer-social a:hover {
+    transform: scale(1.1);
+    background-color: #333; 
+  }
+  .footer-social img {
+    width: 25px;
+    height: 25px;
+  }
+  p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  @media (max-width: 767px) {
+    .footer-social {
+      margin-top: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .footer-social a {
+      margin: 5px;
+    }
+    .logo-container {
+        margin-left: 0;
+      }
+  }
+  @media (min-width: 768px) {
+    .footer-social {
+      justify-content: flex-end;
+    }
+  }
+
+ /* #########################################  MENU  ######################################### */
+ .navbar {
+    background-color: #000 !important; 
+    color: white !important;
+}
+.navbar.navbar-dark {
+    background-color: #000 !important;
+    color: white !important;
+}
+ .navbar .container {
+    padding-left: 0;
+}
+.navbar-brand {
+    margin-left: -120px; 
+    padding-left: 10px; 
+    display: flex; 
+    align-items: center; 
+}
+.navbar-nav .nav-link {
+    color: #FFF;
+    font-family: 'Sedan SC';
+    padding: 10px;
+    margin: 0 18px; 
+    text-transform: uppercase;
+    transition: background-color 0.4s;
+}
+.navbar-nav .nav-link:hover {
+    background-color: rgb(50, 50, 50);
+}
+.navbar-toggler {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin-left: 14px; 
+}
+@media (max-width: 992px) { 
+    .navbar-brand {
+        margin-left: 150px; 
+        margin-right: auto; 
+        padding-left: 10px;
+    }
+    .navbar-collapse .navbar-nav {
+        width: 100%;
+    }
+    .navbar-collapse .navbar-nav .nav-item {
+        width: 100%; 
+    }
+    .navbar-collapse .navbar-nav .nav-link {
+        color: #FFF;
+        font-family: 'Sedan SC';
+        padding: 10px;
+        transition: background-color 0.4s;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        display: block; 
+        width: 100%;
+    }
+    .navbar-collapse .navbar-nav .nav-item:last-child .nav-link {
+        border-bottom: none; 
+    }
+    .navbar-collapse .navbar-nav .nav-link:hover {
+        background-color: rgb(50, 50, 50);
+    }
+} 
+/* ######################################### ícones sociais MENU ######################################### */
 .social-icons {
-    position: absolute; 
+    position: absolute;
     top: 30px;
     right: 30px;
     display: flex;
     gap: 15px;
 }
 .social-icons img {
-    width: 40px; 
+    width: 40px;
     height: 40px;
     transition: transform 0.3s;
 }
 .social-icons img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     .social-icons {
-        position: fixed; 
-        top: 10px;
-        right: 10px;
-        gap: 8px; 
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        z-index: 10;
     }
-
+        .social-icons a {
+            margin-left: 5px; 
+            margin-right: 5px; 
+        }
     .social-icons img {
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
+    }
+    .navbar-toggler {
+        left: 10px;
+        z-index: 20;
     }
 }
-@media (max-width: 1023px) {
-    .social-icons {
-        top: 20px; 
-        right: 20px;
+/* ######################################### NOTICIAS HOME  ######################################### */
+.noticias-titulo {
+    font-size: 35px;
+}
+.noticias-subtitulo {
+    font-size: 22px;
+   
+}
+.noticias-botao {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px; 
+    align-self: flex-start; 
+}
+.noticias-texto {
+    font-family: 'Sedan SC';
+    font-size: 17px;
+    padding: 0 0px;
+    margin: 0;
+    text-align: left;
+}
+.noticias-item img {
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.noticias-subtitulo,
+.noticias-botao {
+    text-align: left;
+}
+@media (max-width: 768px) {
+    .noticias-titulo {
+        font-size: 28px;
+        text-align: center; 
+    }
+    .noticias-subtitulo,
+    .noticias-botao {
+        text-align: center; 
+    }
+    .noticias-subtitulo {
+        font-size: 20px;
+        text-align: center;
+    }
+    .noticias-texto {
+        text-align: center; 
+        margin: 0 auto;
+    }
+}
+    .noticias-item {
+        text-align: center; 
+        padding: 0 15px; 
+    }
+    .noticias-item img {
+        max-width: 100%; 
+        margin-bottom: 15px; 
+    }
+    /* #########################################  PAGINA HISTORIA --  ######################################### */
+    .centralizado {
+        text-align: justify;
+        line-height: 1.8;
+        font-size: 17px;
+        margin: 0 auto;
+        width: 80%; 
+    }
+    .spacer {
+        margin: 3rem 0;
+    }
+    p + p {
+        margin-top: 1.5rem;
+    }
+    .titulo-centralizado {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Sedan SC', serif;
+        font-weight: bold;
+        word-wrap: break-word; 
+        word-break: break-word; 
+        overflow-wrap: break-word; 
+}
+@media (max-width: 768px) {
+.titulo-centralizado {
+    font-size: 28px; 
+}
+}
+@media (max-width: 576px) {
+.titulo-centralizado {
+    font-size: 22px; 
+}
+}
+.custom-image {
+    width: 300px; 
+    height: auto; 
+    margin: 0 auto;
+}
+.img-container {
+    width: 80%; 
+    height: 250px; 
+    overflow: hidden; 
+    margin: 0 auto; 
+    position: relative;
+}
+.img-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center; 
+}
+/* #########################################  PAGINA GALERIA CLICAR NA FOTO E AMPLIAR ######################################### */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    padding-top: 10%; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* #########################################  PAGINA PERSONAGEN ######################################### */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1; 
+}
+.card-body p {
+    margin-bottom: 1rem;
+    font-family: 'Sedan SC';
+}
+.card-body h5{
+    margin-bottom: 1rem;
+    font-family: 'Sedan SC';
+}
+.card-body .btn {
+    margin-top: 1rem; 
+    align-self: center;
+    width: 80%; 
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Sedan SC';
+    box-shadow: none;
+}
+.card-body .btn:hover {
+    background-color: #333;
+    
+}
+/* #########################################  PAGINA PERSONAGEN ######################################### */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    height: 100%; 
+}
+
+.gallery-item img {
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); 
+}
+/* #########################################  8 QUADRADOS CARACTERISTICAS PERSONAGENS  ######################################### */
+
+.characteristics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center;
+    align-items: center;
+    margin: 0px auto;
+    max-width: 90%;
+}
+.characteristic {
+    text-align: center;
+}
+.characteristic-box {
+    width: 300px;
+    height: 800px;
+    background-image: url('Imagens_outras/fundo07.JPG'); 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); 
+}
+.characteristic-box h2 {
+    font-family: 'Sedan SC', serif;
+    font-size: 40px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+}
+.characteristic-box p {
+    font-family: 'Sedan SC';
+    font-size: 15px;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; 
+}
+@media (max-width: 768px) {
+    .characteristics-grid {
+        display: none;
+    }
+    #characteristicsCarousel {
+        display: block;
+    }
+}
+@media (max-width: 375px) {
+    .characteristics-grid {
+        grid-template-columns: repeat(1, 1fr); 
         gap: 10px; 
     }
-
-    .social-icons img {
-        width: 35px; 
-        height: 35px;
+    .characteristic-box {
+        width: 100%;  
+    }
+    .characteristic-box h2 {
+        font-size: 30px; 
+    }
+    .characteristic-box p {
+        font-size: 15px; 
     }
 }
-
-
-/* ######################################### FORMULARIO LOGIN  ######################################### */
-
-
-
-
-
+@media (min-width: 375px) and (max-width: 424px) {
+    .characteristics-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 15px; 
+    }
+    .characteristic-box {
+        width: 280px;
+    }
+    .characteristic-box h2 {
+        font-size: 28px; 
+    }
+    .characteristic-box p {
+        font-size: 14px; 
+    }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+    .characteristics-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 20px; 
+    }
+    .characteristic-box {
+        width: 350px;
+    }
+    .characteristic-box h2 {
+        font-size: 32px; 
+    }
+    .characteristic-box p {
+        font-size: 16px; 
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .characteristics-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+    }
+    .characteristic-box {
+        width: 300px;
+        gap: none;
+    }
+    .characteristic-box h2 {
+        font-size: 36px; 
+    }
+    .characteristic-box p {
+        font-size: 16px; 
+    }
+}
 
 
 
