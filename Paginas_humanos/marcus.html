@@ -1,186 +1,310 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../main.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="../Imagens_outras/icon.ico" type="image/x-icon">
+    <link rel="icon" href="../Imagens_outras/ico.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>MARCUS</title>
+    <title>M A R C U S</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb"/>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
      crossorigin="anonymous"></script>
+     <style>
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+     </style>
 </head>
-<body style="background-color:rgb(255, 255, 255)">
-    <header>
-        <img src="../Imagens_banners/banner01.jpg"  class="banner_img"  />
-        <!-- Botão de Entrar 
-        <a href="login.html" class="btn btn-login">Entrar</a>
-         Botão de Cadastre-se 
-        <a href="cadastro.html" class="btn btn-cadastrar">Cadastre-se</a>-->
-    
-        <!-- Ícones de redes sociais -->
-        <div class="social-icons">
-            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
-            <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
-            <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
-        </div>
-    </header>
-    
-    <!--MENU PRINCIPAL-->
-    <center>
-        <nav id="menu-h">
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            <ul>
-                <li><a href="../index.html">H O M E</a></li>
-                <li><a href="../historia.html">H I S T Ó R I A</a></li>
-                <li><a href="../reinos.html">R E I N O S</a></li>
-                <li><a href="../bosses.html">B O S S</a></li>
-                <li><a href="../magic.html">C A R T A S - M Á G I C A S</a></li>
-                <li><a href="../loja.html">L O J A</a></li>
-                <li><a href="../help.html">A J U D A</a></li>
+<body>
+<header>
+    <div class="social-icons" >
+        <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
+        <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
+        <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
+    </div>
+</header>
+
+<!-- Menu Principal -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container" >
+        <!-- Botão de hambúrguer -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="../index.html">
+            <img src="../Imagens_outras/006.png" alt="Logo" style="width: 80px; height: auto;">
+        </a>
+
+        <!-- Links do menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" >
+                <!-- Links -->
+                <li class="nav-item"><a class="nav-link"  href="../index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link"  href="../historia.html">HISTÓRIA</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">EPISÓDIOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">HQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="../rpg.html">RPG</a></li>
+                <li class="nav-item"><a class="nav-link" href="../personagens.html">PERSONAGENS</a></li>
+                <li class="nav-item"><a class="nav-link" href="../itens.html">ITENS</a></li>
+                <li class="nav-item"><a class="nav-link" href="../tcg_game.html">TCG - GAME</a></li>
+                <li class="nav-item"><a class="nav-link" href="../galeria.html">GALERIA</a></li>
+                <li class="nav-item"><a class="nav-link" href="../sobre.html">SOBRE</a></li>
             </ul>
-            <!-- Botão de Busca -->
-            <div class="btn-buscar">
-                <form action="search.php" method="post">
-                    <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                    <input type="search" id="search" name="search">
-                </form>
-            </div>
-        </nav>
-    </center>
-    <script src="../search.js"></script>
+        </div>
+        <!-- Ícones sociais -->
+        <div class="social-icons d-none d-lg-flex">
+            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png" alt="Logo Instagram"></a>
+            <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png" alt="Logo YouTube"></a>
+            <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png" alt="Logo Pinterest"></a>
+        </div>
+    </div>
+</nav>
 
-
- 
-<!--HUMANO MARCUS-->
-    <div class="personagens">
-        <div class="photo">
-            <img src="../Imagens_personagens/humanos/humano_marcus02.jpeg" alt="Marcus">
+<!-- HUMANO MARCUS -->
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col text-center">
+            <h1 class="mb-4" style="font-family: 'Sedan SC';">M A R C U S</h1>
         </div>
     </div>
-
-
-<!-- Seta Direita -->
-    <div class="arrow-container-right">
-        <a href="./nathan.html" class="arrow-link-right"></a>
-    </div>
-    
-<!-- Seta Esquerda -->
-    <div class="arrow-container-let">
-        <a href="./lucas.html" class="arrow-link-left"></a>
-    </div>
-
-    <div class="boss-description">
-        <br/>
-        <h1>M A R C U S</h1>
-        <p> Entre as vielas escuras e becos sombrios da cidade de Solária, habitava Marcus, um habilidoso ladrão humano cuja destreza e astúcia eram tão lendárias quanto infames. Crescendo nas ruas áridas da cidade, Marcus aprendeu desde cedo que, para sobreviver, era preciso ser mais esperto do que os que estavam ao seu redor. <br/><br/>
-            Com um senso de audácia inabalável e uma agilidade felina, Marcus dominava a arte do furto como poucos. Ele roubava dos ricos e poderosos, deslizando pelas sombras da noite e desaparecendo como uma miragem na escuridão. Seus alvos eram escolhidos com cuidado, seus movimentos eram precisos, e seu rosto era desconhecido para aqueles que caíam sob seu olhar perspicaz. <br/><br/>
-            No entanto, por trás da máscara de astúcia e bravura, Marcus carregava o peso de uma vida marcada pela adversidade e pela injustiça. Órfão desde tenra idade, ele aprendera desde cedo que o mundo não era justo e que, para sobreviver, era preciso estar disposto a lutar e a se adaptar às circunstâncias. <br/><br/>
-            Apesar de sua reputação como um ladrão impiedoso, Marcus não era movido apenas pela ganância ou pela ambição desenfreada. Ele roubava não apenas para enriquecer, mas também para sobreviver, para alimentar os que estavam ao seu redor e para garantir um futuro melhor para si mesmo. <br/><br/>
-            No entanto, a vida de um ladrão nas ruas de Solária era perigosa e incerta, e Marcus sabia que cada roubo poderia ser seu último. Ele enfrentava desafios diários, desde guardas implacáveis até rivais invejosos que desejavam sua queda. <br/><br/>
-            Mesmo assim, Marcus nunca perdeu sua determinação ou seu senso de humor. Ele enfrentava cada desafio com bravura e sagacidade, confiante em suas habilidades e na força de sua vontade. <br/><br/>
-            Para muitos, Marcus era apenas um criminoso sem escrúpulos, um ladrão que merecia ser punido pela lei. Mas para aqueles que o conheciam de verdade, ele era muito mais do que isso. Ele era um sobrevivente, um lutador, e, acima de tudo, um humano que se recusava a desistir, não importava o quão sombrias fossem as circunstâncias. <br/><br/></p>
-    </div>
-
-
-<div class="characteristics-grid">
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>atributos<hr></h2><br/><br/>
-            <p>HP: <strong>90</strong></p><br/>
-            <p>Vantagem: Monstros<br/><br/>
-               Desvantagem: Elementais, Bruxa dos Pesadelos, Rei dos Caçadores
-            </p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>golpes<hr></h2><br/>
-            <p>Facada Mortal: Um golpe direto e letal, executado com precisão mortal para causar um dano significativo ao oponente.<br/>Causa <strong>5</strong> de dano.<br/><br/><br/>
-               Investida Pesada: Uma carga poderosa e robusta, realizada com força intensa para impactar o adversário com vigor e determinação.<br/>Causa <strong>20</strong> de dano.<br/><br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aparência<hr></h2><br/>
-            <p>Altura: 1,78 metros<br/><br/>
-               Peso: 80 kg<br/><br/>
-               Cabelos: Pretos, curtos e desarrumados<br/><br/>
-               Olhos: Cinzentos e penetrantes<br/><br/>
-               Traje: Roupas rasgadas e leves, adaptadas para se misturar nas multidões
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>personalidade<hr></h2><br/>
-            <p>Qualidades: Astuto, rápido, engenhoso<br/><br/>
-               Defeitos: Desconfiado, sarcástico, egoísta<br/><br/>
-               Habilidades Sociais: Capaz de se misturar facilmente em qualquer ambiente, mestre em enganar e persuadir</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>habilidades<hr></h2><br/>
-            <p>Armas: Adagas duplas, arco curto<br/><br/>
-               Táticas de Combate: Especialista em ataques rápidos e silenciosos, utiliza o ambiente para se esconder e surpreender os inimigos<br/><br/>
-               Outras Habilidades: Perícia em arrombamento de fechaduras, desarmamento de armadilhas e furtividade</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>equipamentos<hr></h2><br/>
-            <p>Arma Principal: Adagas da Sombra, afiadas e encantadas para causar mais dano quando usadas furtivamente<br/><br/>
-               Explosivos: Pequenos explosivos de fumaça para distração e fuga<br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aliados<hr></h2><br/>
-            <p>Oliver: um bardo humano cujas músicas inspiram aliados e atordoam inimigos.<br/><br/>
-               Isadora: Uma mestra na arte do assassinato, treinada nas sombras das ruas.<br/><br/>
-               Alastair: Um mercenário habilidoso que caça criminosos e monstros por dinheiro.</p><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>inimigos<hr></h2><br/>
-            <p>Zaahra: a Medusa Petrificante - Uma medusa com um olhar petrificante, capaz de transformar aqueles que a encaram em pedra.<br/><br/>
-               Bruxa dos Pesadelos: Uma feiticeira que se alimenta dos medos e pesadelos dos mortais, manipulando ilusões para torturar suas vítimas antes de drenar sua energia vital.
-            </p>
+    <div class="row align-items-center mt-4">
+        <div class="col-12 text-center">
+            <img src="../Imagens_personagens/humanos/humano_marcus02.jpeg" class="img-fluid rounded shadow" alt="Guerreira forte da natureza defensora personagem rpg">
         </div>
     </div>
 </div>
 
 
 
-
-<br/>
-<br/>
-<br/>
-
-<!--Rodapé -->
-<footer>
-    <div class="footer--area">
-        <div class="footer--item area1">
-            <img src="./Imagens_outras/006.png"/>
-        </div>
-        <div class="footer--item area2">
-            <p>© 2024 Todos os Direitos Reservados</p>
-            <p>Mail: suporte@odespertardosreinos.com.br</p>
-            <p>Tel: +55 11 99105-8957</p>
-        </div>
-        <div class="footer--item area3">
-            <div class="footer-social">
-                <a href=""><img src="./Imagens_outras/00facebook.png" target="_blank"/></a>
-                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="./Imagens_outras/00insta.png"/></a>
-                <a href="https://www.tiktok.com/@o_despertar_dos_reinos" target="_blank"><img src="./Imagens_outras/00tiktok.png"/></a>
-                <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="./Imagens_outras/00youtube.png"/></a>
-                <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank"><img src="./Imagens_outras/00pinterest.png"/></a>
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC';">
+                Entre as vielas escuras e becos sombrios da cidade de Solária, habitava Marcus, um habilidoso ladrão humano cuja destreza e astúcia eram tão lendárias quanto infames. Crescendo nas ruas áridas da cidade, Marcus aprendeu desde cedo que, para sobreviver, era preciso ser mais esperto do que os que estavam ao seu redor.
+                <br><br>
+                Com um senso de audácia inabalável e uma agilidade felina, Marcus dominava a arte do furto como poucos. Ele roubava dos ricos e poderosos, deslizando pelas sombras da noite e desaparecendo como uma miragem na escuridão. Seus alvos eram escolhidos com cuidado, seus movimentos eram precisos, e seu rosto era desconhecido para aqueles que caíam sob seu olhar perspicaz. 
+                <br><br>
+                No entanto, por trás da máscara de astúcia e bravura, Marcus carregava o peso de uma vida marcada pela adversidade e pela injustiça. Órfão desde tenra idade, ele aprendera desde cedo que o mundo não era justo e que, para sobreviver, era preciso estar disposto a lutar e a se adaptar às circunstâncias.
+                <br><br>
+                Apesar de sua reputação como um ladrão impiedoso, Marcus não era movido apenas pela ganância ou pela ambição desenfreada. Ele roubava não apenas para enriquecer, mas também para sobreviver, para alimentar os que estavam ao seu redor e para garantir um futuro melhor para si mesmo.
+                <br><br>
+                No entanto, a vida de um ladrão nas ruas de Solária era perigosa e incerta, e Marcus sabia que cada roubo poderia ser seu último. Ele enfrentava desafios diários, desde guardas implacáveis até rivais invejosos que desejavam sua queda. 
+                <br><br>
+                Mesmo assim, Marcus nunca perdeu sua determinação ou seu senso de humor. Ele enfrentava cada desafio com bravura e sagacidade, confiante em suas habilidades e na força de sua vontade.
+                <br><br>
+                Para muitos, Marcus era apenas um criminoso sem escrúpulos, um ladrão que merecia ser punido pela lei. Mas para aqueles que o conheciam de verdade, ele era muito mais do que isso. Ele era um sobrevivente, um lutador, e, acima de tudo, um humano que se recusava a desistir, não importava o quão sombrias fossem as circunstâncias.
+            </p><br/><br/><br/>
         </div>
     </div>
-</footer>
+</div>
 
+
+
+<div class="characteristics-container">
+        <div class="characteristics-grid">
+            <div class="characteristic-box">
+                <h2>Atributos</h2><br/>
+                <p>Força (FOR): Refere-se ao poder físico e a capacidade de realizar tarefas que exigem força bruta, como combate corpo a corpo e resistência a danos. <center><strong>2/11 - Discípulo</strong></p></center><br/>
+                <p>Destreza (DES): Envolve agilidade, reflexos rápidos e precisão, sendo importante para ataques à distância e furtividade. <center><strong>4/11 - Veterano</strong></p></center><br/>
+                <p>Carisma (CAR): Reflete a habilidade de interagir socialmente, influenciar outros e liderar com persuasão ou intimidação. <center><strong>4/11 - Veterano</strong></p></center><br/>
+                <p>Inteligência (INT): Relaciona-se ao raciocínio, conhecimento e habilidades mágicas ou estratégicas. <center><strong>2/11 - Discípulo</strong></p></center><br/>
+                <p>Resistência (RES): Representa a saúde, resistência física e capacidade de suportar condições adversas. <center><strong>2/11 - Discípulo</strong></p></center>
+            </div>
+            <div class="characteristic-box">
+                <h2>Golpes</h2><br/>
+                <p style="font-size: 18px;">Ataque Furtivo</p><p>Marcus aproveita o elemento surpresa para desferir um ataque devastador em um inimigo desprevenido, atingindo pontos vitais com precisão cirúrgica.<br/><br/></p>
+                <p style="font-size: 18px;">Mãos Ligeiras</p><p>Com dedos rápidos e olhos atentos, Marcus é mestre em roubar ou manipular objetos sem ser notado. Ele também pode desarmar armadilhas ou abrir fechaduras com facilidade.<br/><br/></p>
+                <p style="font-size: 18px;">Fumaça Evasiva</p><p>Quando encurralado, Marcus lança uma bomba de fumaça, obscurecendo a visão dos inimigos e permitindo que ele escape ou reposicione-se para um ataque estratégico.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Aparência</h2><br/>
+                <p>Altura: 1,90 metros</p><br/>
+                <p>Peso: 95 kg</p><br/>
+                <p>Cabelos: Castanho escuro, curto e bagunçado, normalmente coberto por um capuz ou bandana quando em ação</p><br/>
+                <p>Olhos: Castanhos escuros, com um brilho astuto que reflete sua inteligência e astúcia</p><br/>
+                <p>Cor da Pele: Morena, com marcas de sol devido ao tempo que passa nas ruas e em seus roubos</p><br/>
+                <p>Postura: Ágil e sempre atento, com uma postura relaxada, mas pronta para a ação a qualquer momento. Sempre vigilante ao ambiente ao seu redor.</p><br/>
+                <p>Características Faciais: Seu rosto é afilado, com um olhar penetrante que transmite inteligência, astúcia e uma ponta de desconfiança. Seus lábios são curvados em um sorriso sarcástico.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Personalidade</h2><br/>
+                <p>Marcus é pragmático, astuto e tem uma visão bem formada do mundo ao seu redor. Ele acredita que as regras sociais foram feitas para beneficiar os ricos e poderosos, e que ele, como um homem do povo, tem o direito de “redistribuir” essa riqueza de acordo com seu próprio código moral. Sua lealdade é limitada, e ele costuma manter uma distância emocional de outros, pois sabe que no mundo em que vive, ninguém é confiável por completo.<br/><br/>
+                    Apesar de sua natureza egoísta, Marcus tem um código de honra próprio: ele nunca rouba de pessoas que não merecem e, sempre que possível, ajuda os mais necessitados com o que “conquista”. Seu espírito aventureiro e sua habilidade em escapar de qualquer situação difícil o tornam uma figura carismática e, em alguns momentos, até heróica aos olhos dos mais pobres.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Habilidades</h2><br/>
+                <p style="font-size: 18px;">Furtividade</p><p>Marcus é um mestre do silêncio e da invisibilidade. Ele pode se mover nas sombras, evitando ser detectado por guardas e câmeras. Sua habilidade em se esconder é praticamente incomparável.</p><br/>
+                <p style="font-size: 18px;">Escalada e Acesso</p><p>Marcus pode escalar paredes, saltar entre edifícios e acessar lugares de difícil alcance com uma destreza impressionante. Ele conhece os atalhos e os pontos fracos das cidades como ninguém.</p><br/>
+                <p style="font-size: 18px;">Manipulação e Engano</p><p>Ele é um grande manipulador, capaz de enganar e mentir com facilidade para se infiltrar em locais restritos ou desviar a atenção de seu verdadeiro objetivo.</p><br/>
+            </div>
+            <div class="characteristic-box">
+                <h2>Equipamentos</h2><br/>
+                <p style="font-size: 18px;">Adagas Gêmeas</p><p>Marcus carrega duas adagas curtas, afiadas e bem equilibradas, que usa tanto para se defender quanto para atacar de forma rápida e precisa. Elas são suas armas favoritas, ideais para furtividade e combates rápidos.</p><br/>
+                <p style="font-size: 18px;">Kit de Ladino</p><p>Um conjunto de ferramentas de ladrão, incluindo chaves mestras, fios de cabelo e alavancas, que lhe permitem abrir fechaduras e invadir locais de segurança alta com facilidade.</p><br/>
+                <p style="font-size: 18px;">Bolsa de Furtos</p><p>Uma bolsa mágica que pode expandir sem fim, onde ele guarda todos os itens roubados. Ela é forrada com tecidos especiais que neutralizam encantamentos de detecção mágica.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Curiosidades</h2><br/>
+                <p style="font-size: 18px;">Mentor de Ladrões</p><p>Marcus foi treinado por um ladrão experiente chamado Varus, que lhe ensinou todas as táticas de roubo e fuga que ele conhece. Após a morte de Varus, Marcus jurou continuar o legado de seu mestre, mas com sua própria visão de justiça.</p><br/><br/>
+                <p style="font-size: 18px;">Passado Misterioso</p><p>Embora Marcus sempre tenha sido um ladrão, ele não fala muito sobre seu passado antes de ser encontrado nas ruas de Avaria. Muitos acreditam que ele é um ex-nobre caído em desgraça, embora isso nunca tenha sido confirmado.</p><br/><br/>
+                <p style="font-size: 18px;">Amor por Desafios: </p><p>Marcus tem uma queda por desafios e sempre busca testar seus limites, seja roubo, fuga ou até mesmo confrontos diretos. Ele adora uma boa adrenalina e, muitas vezes, assume riscos para se divertir.</p>
+            </div>
+            <div class="characteristic-box">
+                <h2>Reputação</h2><br/>
+                <p>Marcus é um ladrão humano astuto, especialista em furtos e roubos, sempre à sombra da lei e das autoridades. Ele é um mestre da furtividade, agilidade e disfarces, roubando dos ricos para sobreviver em um mundo onde a desigualdade é uma constante. Sua habilidade de enganar, manipular e escapar de situações complicadas o torna um dos criminosos mais procurados e ao mesmo tempo, mais habilidosos. Embora suas ações possam parecer egoístas, Marcus é movido por um forte senso de justiça pessoal, acreditando que os ricos e poderosos muitas vezes não merecem a fortuna que possuem.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Carrossel para dispositivos móveis -->
+        <div id="characteristicsCarousel" class="carousel slide d-md-none" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="characteristic-box">
+                        <h2>Atributos</h2><br/>
+                        <p>Força (FOR): Refere-se ao poder físico e a capacidade de realizar tarefas que exigem força bruta, como combate corpo a corpo e resistência a danos. <center><strong>2/11 - Discípulo</strong></p></center><br/>
+                        <p>Destreza (DES): Envolve agilidade, reflexos rápidos e precisão, sendo importante para ataques à distância e furtividade. <center><strong>4/11 - Veterano</strong></p></center><br/>
+                        <p>Carisma (CAR): Reflete a habilidade de interagir socialmente, influenciar outros e liderar com persuasão ou intimidação. <center><strong>4/11 - Veterano</strong></p></center><br/>
+                        <p>Inteligência (INT): Relaciona-se ao raciocínio, conhecimento e habilidades mágicas ou estratégicas. <center><strong>2/11 - Discípulo</strong></p></center><br/>
+                        <p>Resistência (RES): Representa a saúde, resistência física e capacidade de suportar condições adversas. <center><strong>2/11 - Discípulo</strong></p></center>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Golpes</h2><br/>
+                        <p style="font-size: 18px;">Ataque Furtivo</p><p>Marcus aproveita o elemento surpresa para desferir um ataque devastador em um inimigo desprevenido, atingindo pontos vitais com precisão cirúrgica.<br/><br/></p>
+                        <p style="font-size: 18px;">Mãos Ligeiras</p><p>Com dedos rápidos e olhos atentos, Marcus é mestre em roubar ou manipular objetos sem ser notado. Ele também pode desarmar armadilhas ou abrir fechaduras com facilidade.<br/><br/></p>
+                        <p style="font-size: 18px;">Fumaça Evasiva</p><p>Quando encurralado, Marcus lança uma bomba de fumaça, obscurecendo a visão dos inimigos e permitindo que ele escape ou reposicione-se para um ataque estratégico.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Aparência</h2><br/>
+                        <p>Altura: 1,90 metros</p><br/>
+                        <p>Peso: 95 kg</p><br/>
+                        <p>Cabelos: Castanho escuro, curto e bagunçado, normalmente coberto por um capuz ou bandana quando em ação</p><br/>
+                        <p>Olhos: Castanhos escuros, com um brilho astuto que reflete sua inteligência e astúcia</p><br/>
+                        <p>Cor da Pele: Morena, com marcas de sol devido ao tempo que passa nas ruas e em seus roubos</p><br/>
+                        <p>Postura: Ágil e sempre atento, com uma postura relaxada, mas pronta para a ação a qualquer momento. Sempre vigilante ao ambiente ao seu redor.</p><br/>
+                        <p>Características Faciais: Seu rosto é afilado, com um olhar penetrante que transmite inteligência, astúcia e uma ponta de desconfiança. Seus lábios são curvados em um sorriso sarcástico.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Personalidade</h2><br/>
+                        <p>Marcus é pragmático, astuto e tem uma visão bem formada do mundo ao seu redor. Ele acredita que as regras sociais foram feitas para beneficiar os ricos e poderosos, e que ele, como um homem do povo, tem o direito de “redistribuir” essa riqueza de acordo com seu próprio código moral. Sua lealdade é limitada, e ele costuma manter uma distância emocional de outros, pois sabe que no mundo em que vive, ninguém é confiável por completo.<br/><br/>
+                            Apesar de sua natureza egoísta, Marcus tem um código de honra próprio: ele nunca rouba de pessoas que não merecem e, sempre que possível, ajuda os mais necessitados com o que “conquista”. Seu espírito aventureiro e sua habilidade em escapar de qualquer situação difícil o tornam uma figura carismática e, em alguns momentos, até heróica aos olhos dos mais pobres.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Habilidades</h2><br/>
+                        <p style="font-size: 18px;">Furtividade</p><p>Marcus é um mestre do silêncio e da invisibilidade. Ele pode se mover nas sombras, evitando ser detectado por guardas e câmeras. Sua habilidade em se esconder é praticamente incomparável.</p><br/>
+                        <p style="font-size: 18px;">Escalada e Acesso</p><p>Marcus pode escalar paredes, saltar entre edifícios e acessar lugares de difícil alcance com uma destreza impressionante. Ele conhece os atalhos e os pontos fracos das cidades como ninguém.</p><br/>
+                        <p style="font-size: 18px;">Manipulação e Engano</p><p>Ele é um grande manipulador, capaz de enganar e mentir com facilidade para se infiltrar em locais restritos ou desviar a atenção de seu verdadeiro objetivo.</p><br/>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Equipamentos</h2><br/>
+                        <p style="font-size: 18px;">Adagas Gêmeas</p><p>Marcus carrega duas adagas curtas, afiadas e bem equilibradas, que usa tanto para se defender quanto para atacar de forma rápida e precisa. Elas são suas armas favoritas, ideais para furtividade e combates rápidos.</p><br/>
+                        <p style="font-size: 18px;">Kit de Ladino</p><p>Um conjunto de ferramentas de ladrão, incluindo chaves mestras, fios de cabelo e alavancas, que lhe permitem abrir fechaduras e invadir locais de segurança alta com facilidade.</p><br/>
+                        <p style="font-size: 18px;">Bolsa de Furtos</p><p>Uma bolsa mágica que pode expandir sem fim, onde ele guarda todos os itens roubados. Ela é forrada com tecidos especiais que neutralizam encantamentos de detecção mágica.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Curiosidades</h2><br/>
+                        <p style="font-size: 18px;">Mentor de Ladrões</p><p>Marcus foi treinado por um ladrão experiente chamado Varus, que lhe ensinou todas as táticas de roubo e fuga que ele conhece. Após a morte de Varus, Marcus jurou continuar o legado de seu mestre, mas com sua própria visão de justiça.</p><br/><br/>
+                        <p style="font-size: 18px;">Passado Misterioso</p><p>Embora Marcus sempre tenha sido um ladrão, ele não fala muito sobre seu passado antes de ser encontrado nas ruas de Avaria. Muitos acreditam que ele é um ex-nobre caído em desgraça, embora isso nunca tenha sido confirmado.</p><br/><br/>
+                        <p style="font-size: 18px;">Amor por Desafios: </p><p>Marcus tem uma queda por desafios e sempre busca testar seus limites, seja roubo, fuga ou até mesmo confrontos diretos. Ele adora uma boa adrenalina e, muitas vezes, assume riscos para se divertir.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="characteristic-box">
+                        <h2>Reputação</h2><br/>
+                        <p>Marcus é um ladrão humano astuto, especialista em furtos e roubos, sempre à sombra da lei e das autoridades. Ele é um mestre da furtividade, agilidade e disfarces, roubando dos ricos para sobreviver em um mundo onde a desigualdade é uma constante. Sua habilidade de enganar, manipular e escapar de situações complicadas o torna um dos criminosos mais procurados e ao mesmo tempo, mais habilidosos. Embora suas ações possam parecer egoístas, Marcus é movido por um forte senso de justiça pessoal, acreditando que os ricos e poderosos muitas vezes não merecem a fortuna que possuem.
+                        </p>
+                    </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <br/>
+        <br/>
+
+<!-- ADS GOOGLE -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4434635049222289"
+data-ad-slot="1596018270"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        
+
+
+<br/>
+<br/>
+
+<!-- RODAPÉ -->
+        <footer class="bg-dark text-light py-5">
+        <div class="container">
+        <div class="row justify-content-center text-center text-md-left align-items-center">
+  
+        <!-- Logo -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-left logo-container">
+            <img src="../Imagens_outras/006.png" alt="Logo" class="img-fluid">
+        </div>
+  
+        <!-- Informações de Contato -->
+        <div class="col-md-4 mb-4 mb-md-0 text-md-center">
+          <p>© 2024 Todos os Direitos Reservados</p>
+          <p>Mail: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
+          <p>Tel: <a href="tel:+5511991058957" class="text-light">+55 11 99105-8957</a></p>
+        </div>
+        <!-- Redes Sociais -->
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end footer-social">
+          <a href="" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
+          </a>
+          <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
+          </a>
+          <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
+          </a>
+          <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
+          </a>
+          <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
+            <img src="../Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<script src="../search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
