@@ -236,3 +236,16 @@ document.addEventListener("DOMContentLoaded", () => {
         carouselInner.scrollLeft = firstItem.offsetLeft;
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+

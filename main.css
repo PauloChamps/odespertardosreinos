@@ -805,6 +805,7 @@ body {
     border-right: 10px solid #000; 
     cursor: pointer;
 }
+
 @media (max-width: 374px){
     .arrow-link-right {
         right: 20px; 
@@ -2025,6 +2026,7 @@ footer {
         font-size: 16px; 
     }
 }
+
 
 
 
