@@ -93,7 +93,11 @@
   </div>
 </div>
 
-
+<div class="container text-center my-4">
+  <button class="btn btn-primary" onclick="sharePage()">
+      📤 Compartilhar
+  </button>
+</div>
 
 
 <div class="noticias-container" style="font-family: 'Sedan SC';">
@@ -122,6 +126,24 @@
   Os RPGs de mesa solo vieram para ficar, oferecendo uma alternativa para quem deseja explorar mundos imaginários sem depender de um grupo. Com mecânicas inovadoras e narrativas envolventes, essa vertente dos RPGs continua a crescer, conquistando jogadores que buscam uma experiência profunda e personalizada.
   </p><br/><br/>
 </div>
+
+
+
+<script>
+function sharePage() {
+  if (navigator.share) {
+      navigator.share({
+          title: document.title,
+          text: 'Confira este artigo incrível sobre RPG!',
+          url: window.location.href
+      })
+      .then(() => console.log('Compartilhado com sucesso'))
+      .catch((error) => console.log('Erro ao compartilhar:', error));
+  } else {
+      alert('Seu navegador não suporta compartilhamento automático.');
+  }
+}
+</script>
 
 
 
