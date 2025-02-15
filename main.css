@@ -1666,6 +1666,14 @@ footer {
         background-color: rgb(50, 50, 50);
     }
 } 
+
+@media (max-width: 1100px) {
+    .navbar-nav .nav-link {
+        margin: 0 5px;
+        font-size: 12px;
+        padding: 8px 5px;
+    }
+}
 /* ######################################### ícones sociais MENU ######################################### */
 .social-icons {
     position: absolute;
