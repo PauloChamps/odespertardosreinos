@@ -1,25 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="Imagens_outras/ico.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>I T E N S</title>
+    <title>H O M E</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb"/>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
-     crossorigin="anonymous"></script>
+    <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb">
+    <meta name="description" content="Tudo sobre RPG">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://www.google.com;">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289" 
+    crossorigin="anonymous"></script>
+    <script async custom-element="amp-auto-ads"src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#mesa-jogo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.carta {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: white;
+}
+
+
+    </style>
+    <script>
+
+[
+    {
+        "nome": "Dragão de Fogo",
+        "tipo": "Monstro",
+        "ataque": 2000,
+        "defesa": 1500
+    },
+    {
+        "nome": "Mago das Sombras",
+        "tipo": "Mágico",
+        "ataque": 1700,
+        "defesa": 1200
+    }
+]
+
+let baralho = [];
+
+// Carregar cartas do JSON
+async function carregarCartas() {
+    const response = await fetch("cartas.json");
+    baralho = await response.json();
+    console.log("Cartas carregadas:", baralho);
+}
+
+// Exibir cartas na mesa
+function exibirCartas() {
+    let mesa = document.getElementById("mesa-jogo");
+    mesa.innerHTML = "";
+    baralho.forEach(carta => {
+        let cartaDiv = document.createElement("div");
+        cartaDiv.classList.add("carta");
+        cartaDiv.innerHTML = `<strong>${carta.nome}</strong><br>🛡️ ${carta.defesa} ⚔️ ${carta.ataque}`;
+        mesa.appendChild(cartaDiv);
+    });
+}
+
+// Comprar uma carta
+function comprarCarta() {
+    if (baralho.length > 0) {
+        let cartaComprada = baralho.pop();
+        console.log("Carta comprada:", cartaComprada);
+        exibirCartas();
+    } else {
+        alert("O baralho está vazio!");
+    }
+}
+
+// Embaralhar cartas
+function embaralharCartas() {
+    baralho.sort(() => Math.random() - 0.5);
+    console.log("Cartas embaralhadas!");
+    exibirCartas();
+}
+
+// Iniciar carregamento das cartas
+carregarCartas();
+
+    </script>
+
 </head>
 <body> 
+<amp-auto-ads type="adsense"data-ad-client="ca-pub-4434635049222289"></amp-auto-ads>
 
 <!-- Menu Principal -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <div class="container" >
         <!-- Botão de hambúrguer -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -56,63 +146,26 @@
         </div>
     </div>
 </nav>
-<br/><br/>
-
-<div class="container my-5">
-    <h1 class="text-center mb-4" style="font-family: 'Sedan SC';">O Olho de Azaroth</h1>
-</div>
-
-    <!-- Texto da história -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="text-center">
-                <div class="img-container">
-                    <img src="Imagens_reliquias/amuleto de azaroth.jpeg" class="img-fluid" alt="Imagem de Solaria" style="border-radius: 10px;"/>
-                </div>
-            </div>
-            <br/><br/>
-
-            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC';">
-                Descrição: O Olho de Azaroth é uma relíquia lendária, envolta em mistério e poderes antigos. Diz-se que foi forjado nos primórdios do mundo por uma civilização há muito perdida, e desde então passou de mãos em mãos, deixando um rastro de sorte e desgraça por onde quer que vá. Este artefato tem a forma de uma esfera de cristal azulada, brilhante e translúcida, com uma marca sinistra gravada em sua superfície que se assemelha a um olho estilizado.
-            </p><br/>
-
-            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC';">
-                História: A história do Olho de Azaroth é envolta em lendas e contos antigos, com muitos mistérios e segredos que foram perdidos ao longo dos séculos. Diz-se que aqueles que buscam a relíquia devem estar preparados para enfrentar desafios inimagináveis e sacrifícios terríveis em sua busca pela verdade e pelo poder supremo que o artefato promete conceder.<br/><br/>O Olho de Azaroth é uma relíquia de grande poder e perigo, capaz de moldar o destino daqueles que ousam possuí-la. Seu legado é marcado por tragédias e triunfos, e seu verdadeiro propósito e origem permanecem envoltos em mistério. Aqueles que buscam sua posse devem estar preparados para enfrentar as consequências de suas escolhas, pois o Olho de Azaroth é uma força que não pode ser controlada facilmente.
-            </p><br/>
-
-            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC';">
-                Poderes:  <br/><br/>   
-                Visão Além do Comum:
-                Aqueles que olham através do Olho de Azaroth podem ter visões do futuro, revelando possibilidades e eventos que ainda estão por vir. No entanto, essas visões muitas vezes são enevoadas e ambíguas, e interpretá-las corretamente pode ser desafiador.<br/><br/>
-                Sorte e Azar: 
-                O Olho de Azaroth tem o poder de influenciar a sorte de seu portador, trazendo tanto fortuna quanto desgraça em igual medida. Às vezes, ele pode conceder bênçãos inesperadas e momentos de grande sucesso, enquanto em outros momentos pode atrair calamidades e contratempos inesperados.<br/><br/>
-                Atração de Perigo: 
-                A presença do Olho de Azaroth muitas vezes atrai a atenção de seres malignos e entidades sinistras, que buscam possuir o artefato para seus próprios fins nefastos. A relíquia parece estar ligada a forças sombrias além da compreensão mortal, e aqueles que a possuem correm o risco de despertar a ira dessas entidades.<br/><br/>
-                Proteção contra Magia: 
-                O Olho de Azaroth oferece uma certa proteção contra poderes mágicos hostis, desviando ou enfraquecendo os ataques de feitiçaria direcionados ao seu portador. No entanto, essa proteção é instável e imprevisível, e não pode ser invocada a vontade.<br/><br/>
-            </p><br/><br/><br/>
  
-
-        </div>
-    </div>
+<h1>O Despertar dos Reinos - Jogo de Cartas</h1>
+    
+<div id="mesa-jogo">
+    <!-- Aqui as cartas serão exibidas -->
 </div>
 
+<button onclick="comprarCarta()">Comprar Carta</button>
+<button onclick="embaralharCartas()">Embaralhar</button>
+
+<script src="script.js"></script>
 
 
-<!-- ADS GOOGLE -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
-crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-style="display:block"
-data-ad-client="ca-pub-4434635049222289"
-data-ad-slot="1596018270"
-data-ad-format="auto"
-data-full-width-responsive="true"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-        
+
+
+
+
+
+
+
 
 
 
@@ -160,7 +213,7 @@ data-full-width-responsive="true"></ins>
       </footer>
     
 
-    <script src="search.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="search.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer></script>
     </body>
     </html>

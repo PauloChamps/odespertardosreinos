@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const items = document.querySelectorAll('.image-item-magic');
             items.forEach(item => {
                 let shouldDisplay = true;
-                item.style.display = 'block'; // Reset display
+                item.style.display = 'block'; 
                 switch (filterType) {
                     case 'nome-asc':
                         sortItems('asc');
@@ -142,49 +142,46 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Calculadora
-    let currentTotal = 3000;
-    let currentInput = "";
-    let operator = null;
+// CALCULADORA
+let currentTotal = 3000;
+let currentInput = "";
+let operator = null;
+function appendNumber(number) {
+    currentInput += number;
+    updateDisplay(currentInput);
+}
+function setOperator(op) {
+    if (currentInput !== "") {
+        calculate();
+    }
+    operator = op;
+    currentTotal = parseInt(document.getElementById('display').value); 
+    currentInput = "";
+}
+function calculate() {
+    if (currentInput === "") return;
 
-    function appendNumber(number) {
-        currentInput += number;
-        updateDisplay(currentInput);
+    let inputNumber = parseInt(currentInput);
+    if (operator === "+") {
+        currentTotal += inputNumber;
+    } else if (operator === "-") {
+        currentTotal -= inputNumber;
     }
 
-    function setOperator(op) {
-        if (currentInput !== "") {
-            calculate();
-        }
-        operator = op;
-        currentTotal = parseInt(document.getElementById('display').value);
-        currentInput = "";
-    }
-
-    function calculate() {
-        if (currentInput === "") return;
-        let inputNumber = parseInt(currentInput);
-        if (operator === "+") {
-            currentTotal += inputNumber;
-        } else if (operator === "-") {
-            currentTotal -= inputNumber;
-        }
-        currentInput = "";
-        operator = null;
-        updateDisplay(currentTotal);
-    }
-
-    function resetCalculator() {
-        currentTotal = 3000;
-        currentInput = "";
-        operator = null;
-        updateDisplay(currentTotal);
-    }
-
-    function updateDisplay(value) {
-        const display = document.getElementById('display');
-        display.value = value;
-    }
+    currentInput = "";
+    operator = null;
+    updateDisplay(currentTotal);
+}
+function resetCalculator() {
+    currentTotal = 3000; 
+    currentInput = "";
+    operator = null;
+    updateDisplay(currentTotal);
+}
+function updateDisplay(value) {
+    const display = document.getElementById('display');
+    display.value = value;
+}
 
     // Configura o primeiro item como ativo no carrossel
     const carouselInner = document.querySelector(".carousel-inner");
