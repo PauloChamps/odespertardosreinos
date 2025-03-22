@@ -80,19 +80,25 @@
         });
 
         // Carregando a imagem do mapa personalizado
-        var imageUrl = 'Imagens_outras/map01.png'; // Substitua pelo seu arquivo
-        var imageBounds = [[0, 0], [2048, 2048]]; // Tamanho da imagem em pixels
+        var imageUrl = 'Imagens_outras/map01.jpg'; // Substitua pelo seu arquivo
+        var imageBounds = [[0, 0], [3402, 6048]]; // Tamanho da imagem em pixels
         L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
         map.fitBounds(imageBounds); // Ajusta o zoom para ver a imagem completa
 
+        map.setMaxBounds(imageBounds);
+
+
+
+
+
         // Exemplo: Adicionando um marcador no mapa
-        var marker = L.marker([600, 500]).addTo(map)
-            .bindPopup('Bem-vindo ao centro do mapa!');
+        var marker = L.marker([1701, 3024]).addTo(map)
+            .bindPopup('Bem-vindo ao nosso do mapa, estamos em construção!');
 
                    // Exemplo: Adicionando um marcador no mapa
-        var marker = L.marker([500, 500]).addTo(map)
-            .bindPopup('Bem-vindo ao centro do mapa!');
+        //var marker = L.marker([2500, 2100]).addTo(map)
+            //.bindPopup('Bem-vindo ao centro do mapa!');
 
 
 
@@ -112,41 +118,41 @@ L.marker([600, 400], { icon: customIcon }).addTo(map)
 
 
 // Adicionando Linhas e Caminhos
-    var caminho = L.polyline([
-    [500, 500],
-    [700, 600],
-    [900, 500]
-], {
-    color: 'blue',
-    weight: 5,
-    opacity: 0.7
-}).addTo(map);
+//    var caminho = L.polyline([
+//    [500, 500],
+//    [700, 600],
+//    [900, 500]
+//], {
+//    color: 'blue',
+//    weight: 5,
+//    opacity: 0.7
+//}).addTo(map);
 
 
 
 
         // Exemplo: Criando um círculo ao redor de um ponto importante
-        var circle = L.circle([700, 300], {
-            color: 'red', // Cor da borda
-            fillColor: '#f03', // Cor de preenchimento
-            fillOpacity: 0.5, // Opacidade de preenchimento
-            radius: 50 // Tamanho do círculo
-        }).addTo(map).bindPopup('Uma área importante');
+        //var circle = L.circle([700, 300], {
+        //    color: 'red', // Cor da borda
+        //    fillColor: '#f03', // Cor de preenchimento
+        //    fillOpacity: 0.5, // Opacidade de preenchimento
+        //    radius: 50 // Tamanho do círculo
+        //}).addTo(map).bindPopup('Uma área importante');
 
 
 //pode usar o DivIcon 
-        var divIcon = L.divIcon({
-    className: 'custom-div-icon',
-    html: "<div style='background-color: yellow; border-radius: 50%; width: 30px; height: 30px;'></div>",
-    iconSize: [30, 30]
-});
-var marker = L.marker([500, 1100], {icon: divIcon}).addTo(map)
-    .bindPopup('Este é um marcador com um ícone de div personalizado');
+//        var divIcon = L.divIcon({
+//    className: 'custom-div-icon',
+//    html: "<div style='background-color: yellow; border-radius: 50%; width: 30px; height: 30px;'></div>",
+//    iconSize: [30, 30]
+//});
+//var marker = L.marker([500, 1100], {icon: divIcon}).addTo(map)
+//    .bindPopup('Este é um marcador com um ícone de div personalizado');
 
 
 //marcador que fica pulando
-    var marker = L.marker([350, 600], {bounceOnAdd: true}).addTo(map)
-    .bindPopup('Este é um marcador com animação de salto');
+//    var marker = L.marker([350, 600], {bounceOnAdd: true}).addTo(map)
+//    .bindPopup('Este é um marcador com animação de salto');
 
 
 
