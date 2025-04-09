@@ -7,15 +7,119 @@
     <link href="main.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="Imagens_outras/ico.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>H O M E</title>
+    <title>M A P</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb">
     <meta name="description" content="Tudo sobre RPG">
     <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://www.google.com;">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289" 
+    crossorigin="anonymous"></script>
     <script async custom-element="amp-auto-ads"src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
     <style>
         body { margin: 0; padding: 0; }
         #map { width: 100vw; height: 100vh; }
+
+/* Estilo personalizado para o botão de filtros */
+.leaflet-control-layers {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5) !important;
+    font-family: 'Sedan SC' !important;
+    padding: 8px !important;
+}
+
+/* Área da lista de camadas */
+.leaflet-control-layers-list {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: #fff !important;
+}
+
+/* Título do controle (Reinos, Florestas, etc) */
+.leaflet-control-layers-overlays label {
+    display: flex !important;
+    align-items: center !important;
+    padding: 5px 0 !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+    color: #fff !important;
+}
+
+/* Caixas de seleção */
+.leaflet-control-layers-overlays input[type="checkbox"] {
+    accent-color: #ffffff !important;
+    margin-right: 8px !important;
+    transform: scale(1.2) !important;
+}
+
+/* Ícone do botão no canto do mapa */
+.leaflet-control-layers-toggle {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+}
+
+/* Ícone dentro do botão */
+.leaflet-control-layers-toggle::before {
+    content: "";
+    display: block;
+    background-image: url('Imagens-icones-map/book-05.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 3px;
+} 
+
+
+/* Texto "Filtro" dentro do botão */
+.leaflet-control-layers-toggle::after {
+    content: "Filtro";
+    font-size: 12px;
+    color: #000;
+    font-family: 'Vollkorn SC', serif;
+    text-decoration: none;
+}
+
+
+/* Força o alinhamento de todos os itens à esquerda */
+.leaflet-control-layers-list {
+    text-align: left !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    color: #000 !important;
+    padding: 5px !important;
+}
+
+/* Força os labels (itens de camada) a ocuparem a largura toda e ficarem à esquerda */
+.leaflet-control-layers-overlays label {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+    margin-left: 0 !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    color: #000 !important; /* <- aqui garante a cor preta */
+    font-family: 'Sedan SC', serif !important;
+}
+
+/* Alinha os checkbox com o texto */
+.leaflet-control-layers-overlays input[type="checkbox"] {
+    vertical-align: middle !important;
+    margin-right: 8px !important;
+    accent-color: #000000 !important;
+}
+
+ 
+
+
     </style>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
@@ -39,21 +143,21 @@
 
         <!-- Links do menu -->
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto" >
-                <!-- Links -->
-                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-                <li class="nav-item"><a class="nav-link" href="historia.html">HISTÓRIA</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">EPISÓDIOS</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">HQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="rpg.html">RPG</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">MAPA DO MUNDO</a></li>
-                <li class="nav-item"><a class="nav-link" href="personagens.html">PERSONAGENS</a></li>
-                <li class="nav-item"><a class="nav-link" href="itens.html">ITENS</a></li>
-                <li class="nav-item"><a class="nav-link" href="tcg_game.html">TCG - GAME</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">LOJA</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="sobre.html">SOBRE NÓS</a></li>-->
-            </ul>
-        </div>
+          <ul class="navbar-nav mx-auto" >
+              <!-- Links -->
+              <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">EPISÓDIOS</a></li>
+              <li class="nav-item"><a class="nav-link" href="hq.html">HQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="rpg.html">RPG</a></li>
+              <li class="nav-item"><a class="nav-link" href="Map.html">MAPA DO MUNDO</a></li>
+              <li class="nav-item"><a class="nav-link" href="reinos.html">REINOS</a></li>
+              <li class="nav-item"><a class="nav-link" href="personagens.html">PERSONAGENS</a></li>
+              <li class="nav-item"><a class="nav-link" href="bestiario.html">BESTIÁRIO</a></li>
+              <li class="nav-item"><a class="nav-link" href="itens.html">ITENS</a></li>
+              <li class="nav-item"><a class="nav-link" href="tcg_game.html">TCG - GAME</a></li>
+              <li class="nav-item"><a class="nav-link" href="loja.html">LOJA</a></li>
+          </ul>
+      </div>
         <!-- Ícones sociais -->
         <div class="social-icons d-none d-lg-flex">
             <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank" aria-label="Instagram do O Despertar dos Reinos">
@@ -65,12 +169,12 @@
         </div>
     </div>
 </nav>
+
+ 
  
 
-<div id="map"></div> <!-- Aqui o mapa será carregado -->
-
-    <script>
-        // Criando o mapa e definindo a posição e o zoom inicial
+<div id="map"></div>  
+<script>
         var map = L.map('map', {
             crs: L.CRS.Simple, // Para usar imagens personalizadas
             minZoom: -2, // Permite zoom mais distante
@@ -78,12 +182,10 @@
         });
 
         // Carregando a imagem do mapa personalizado
-        var imageUrl = 'Imagens_outras/map0-2.webp'; // Substitua pelo seu arquivo
+        var imageUrl = 'Imagens_outras/map01-2.webp'; // Substitua pelo seu arquivo
         var imageBounds = [[0, 0], [3402, 6048]]; // Tamanho da imagem em pixels
         L.imageOverlay(imageUrl, imageBounds).addTo(map);
-
         map.fitBounds(imageBounds); // Ajusta o zoom para ver a imagem completa
-
         map.setMaxBounds(imageBounds);
 
 
@@ -103,15 +205,240 @@
 
 //Adicionando Ícones Personalizados
             var customIcon = L.icon({
-    iconUrl: 'icone-reino.png', // Substitua pelo seu ícone
+    iconUrl: 'Imagens-icones-map/castle-02.png', // Substitua pelo seu ícone
     iconSize: [50, 50], // Tamanho do ícone
     iconAnchor: [25, 50], // Posição de ancoragem
     popupAnchor: [0, -50] // Posição do popup
 });
-
 L.marker([600, 400], { icon: customIcon }).addTo(map)
     .bindPopup('Um castelo lendário!');
 
+
+
+
+  var reinoFogoIcon = L.icon({
+  iconUrl: 'Imagens-icones-map/castle-01.png',
+  iconSize: [50, 50],
+  iconAnchor: [25, 50],
+  popupAnchor: [0, -50]
+});
+L.marker([1800, 2600], { icon: reinoFogoIcon }).addTo(map)
+  .bindPopup("Reino do Fogo!");
+
+
+  
+  var reinoPopup = `
+  <div style="text-align: center;">
+    <h3>Reino de Eldoria</h3>
+    <img src="imagens/reino-eldoria.jpg" alt="Reino Eldoria" style="width: 100px; border-radius: 8px;">
+    <p>Um reino mágico cheio de mistérios e criaturas encantadas.</p>
+  </div>
+`;
+
+L.marker([1500, 2000], { icon: customIcon }).addTo(map)
+  .bindPopup(reinoPopup);
+
+
+
+
+
+
+
+
+
+
+
+
+//FILTRO
+
+
+
+// Criando ícones diferentes para cada grupo
+var reinoIcon = L.icon({
+    iconUrl: 'imagens-icones/reino.png',
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
+});
+
+var territorioIcon = L.icon({
+    iconUrl: 'imagens-icones/territorio.png',
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
+});
+
+var bossIcon = L.icon({
+    iconUrl: 'imagens-icones/boss.png',
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
+});
+
+var magiaIcon = L.icon({
+    iconUrl: 'imagens-icones/magia.png',
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
+});
+
+var animalIcon = L.icon({
+    iconUrl: 'imagens-icones/animal.png',
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
+});
+
+// Grupos de camadas
+var reinos = L.layerGroup();
+var territorios = L.layerGroup();
+var boss = L.layerGroup();
+var escolasMagia = L.layerGroup();
+var animaisMisticos = L.layerGroup();
+
+// Reinos
+L.marker([1200, 2000], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Reino da Luz</h3>
+        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Um reino próspero iluminado por magia ancestral.</p>
+        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+L.marker([1400, 2000], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Reino da Luz</h3>
+        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Um reino próspero iluminado por magia ancestral.</p>
+        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+L.marker([1600, 2000], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Reino da Luz</h3>
+        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Um reino próspero iluminado por magia ancestral.</p>
+        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+L.marker([1800, 2000], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Reino da Luz</h3>
+        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Um reino próspero iluminado por magia ancestral.</p>
+        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+L.marker([2000, 2000], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Reino da Luz</h3>
+        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Um reino próspero iluminado por magia ancestral.</p>
+        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+L.marker([2200, 2000], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Reino da Luz</h3>
+        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Um reino próspero iluminado por magia ancestral.</p>
+        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+L.marker([2400, 2000], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Reino da Luz</h3>
+        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Um reino próspero iluminado por magia ancestral.</p>
+        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+L.marker([2600, 2000], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Reino da Luz</h3>
+        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Um reino próspero iluminado por magia ancestral.</p>
+        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+L.marker([2800, 2000], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Reino da Luz</h3>
+        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Um reino próspero iluminado por magia ancestral.</p>
+        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+
+
+
+
+// Territórios
+L.marker([1100, 2100], { icon: territorioIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🗺️ Território das Sombras</h3>
+        <img src="imagens/territorio-sombras.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Zona instável entre reinos, repleta de mistérios.</p>
+        <a href="https://seudominio.com/territorios/sombras" target="_blank">Ver território</a>
+    </div>
+`).addTo(territorios);
+
+// Boss
+L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+
+// Escola de Magia
+L.marker([1500, 2500], { icon: magiaIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>📚 Escola de Magia Elemental</h3>
+        <img src="imagens/escola-magia.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Onde se ensina o domínio dos quatro elementos.</p>
+        <a href="https://seudominio.com/magias/elemental" target="_blank">Detalhes</a>
+    </div>
+`).addTo(escolasMagia);
+
+// Animal Místico
+L.marker([1800, 2800], { icon: animalIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🐉 Dragão Azul Celestial</h3>
+        <img src="imagens/dragao-azul.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Guardião das nuvens eternas. Raríssimo.</p>
+        <a href="https://seudominio.com/animais/dragao-azul" target="_blank">Ver criatura</a>
+    </div>
+`).addTo(animaisMisticos);
+// Animal Místico
+
+
+// Adicionando controle de camadas (Filtro)
+var baseMaps = {};
+var overlayMaps = {
+    "Reinos": reinos,
+    "Territórios": territorios,
+    "Boss": boss,
+    "Escolas de Magia": escolasMagia,
+    "Animais Místicos": animaisMisticos
+};
+
+L.control.layers(baseMaps, overlayMaps, { position: 'topleft' }).addTo(map);
+
+// Ativando camadas por padrão
+reinos.addTo(map);
+territorios.addTo(map);
+boss.addTo(map);
+escolasMagia.addTo(map);
+animaisMisticos.addTo(map);
+
+
+
+ 
+
+ 
 
 
 
@@ -154,38 +481,10 @@ L.marker([600, 400], { icon: customIcon }).addTo(map)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </script>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+ 
  
     <br/>
     <br/>
