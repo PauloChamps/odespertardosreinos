@@ -1,177 +1,437 @@
+ 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../main.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="../Imagens_outras/icon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>KROTH</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
-     crossorigin="anonymous"></script>
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="description" content="Humanos do RPG: guerreiros, magos e heróis da raça mais adaptável.">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://www.odespertardosreinos.com.br/">
+    <title>KROTH | Mundo de RPG - Personagens, Reinos e Magias</title>
+  
+    <!-- Open Graph -->
+    <meta property="og:title" content="O Despertar dos Reinos | RPG e Fantasia Épica">
+    <meta property="og:description" content="Explore um universo mágico com RPG, HQs, cartas e vídeos.">
+    <meta property="og:image" content="https://www.odespertardosreinos.com.br/imagens/og-image.jpg">
+    <meta property="og:url" content="https://www.odespertardosreinos.com.br/">
+    <meta property="og:type" content="website">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="../../Imagens_outras/ico.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Imagens_outras/005.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Imagens_outras/ico.ico">
+
+    <!-- Fonts e CSS -->
+    <link href="../../main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289" crossorigin="anonymous"></script>
 </head>
-<body style="background-color:rgb(255, 255, 255)">
-    <header>
-        <img src="../Imagens_banners/banner01.jpg"  class="banner_img"  />
-        <!-- Botão de Entrar 
-        <a href="login.html" class="btn btn-login">Entrar</a>
-         Botão de Cadastre-se 
-        <a href="cadastro.html" class="btn btn-cadastrar">Cadastre-se</a>-->
-    
-        <!-- Ícones de redes sociais -->
-        <div class="social-icons">
-            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
-            <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
-            <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
-        </div>
-    </header>
-    
-<!--MENU PRINCIPAL-->
-<center>
-    <nav id="menu-h">
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-        <ul>
-            <li><a href="../index.html">H O M E</a></li>
-            <li><a href="../historia.html">H I S T Ó R I A</a></li>
-            <li><a href="../reinos.html">R E I N O S</a></li>
-            <li><a href="../bosses.html">B O S S</a></li>
-            <li><a href="../magic.html">C A R T A S - M Á G I C A S</a></li>
-            <li><a href="../loja.html">L O J A</a></li>
-            <li><a href="../help.html">A J U D A</a></li>
-        </ul>
-       <!-- Botão de Busca -->
-     <div class="btn-buscar">
-            <form action="search.php" method="post">
-                <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                <input type="search" id="search" name="search">
-                <!--<button type="submit" class="btn btn-buscar">Buscar Cartas</button>-->
-            </form>
-        </div>
-    </nav>
-</center>
-<script src="../search.js"></script>
+<body>
 
-<!-- MONSTRO KROTH -->
-<div class="personagens">
-    <div class="photo">
-        <img src="../Imagens_personagens/monstros/monstros_kroth02.jpeg" alt="Aurora">
+<!-- Menu Principal -->
+<nav class="nav">
+  <div class="container">
+      <div class="logo">
+        <a href="in"><img src="../../Imagens_outras/001.png" alt="Logo"></a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li class="nav-item"><a class="nav-link" href="../../index.html">HOME <span class="menu-icon" data-icon="HOME"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">EPISÓDIOS <span class="menu-icon" data-icon="EPISÓDIOS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hq.html">HQ <span class="menu-icon" data-icon="HQ"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../rpg.html">RPG <span class="menu-icon" data-icon="RPG"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../Map.html">MAPA DO MUNDO <span class="menu-icon" data-icon="MAPA DO MUNDO"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../reinos.html">REINOS <span class="menu-icon" data-icon="REINOS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../personagens.html">PERSONAGENS <span class="menu-icon" data-icon="PERSONAGENS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../bestiario.html">BESTIÁRIO <span class="menu-icon" data-icon="BESTIÁRIO"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../itens.html">ITENS <span class="menu-icon" data-icon="ITENS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tcg_game.html">TCG - GAME <span class="menu-icon" data-icon="TCG - GAME"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../loja.html">LOJA <span class="menu-icon" data-icon="LOJA"></span></a></li>
+          </ul>
+      </div>
+      <span class="navTrigger">
+          <i><a href="#"></a></i>
+          <i><a href="#"></a></i>
+          <i><a href="#"></a></i>
+      </span>
+  </div>
+</nav>
+<br/> 
+
+<!-- CRIATURA KROTH-->
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col text-center d-flex justify-content-center align-items-center">
+            <!-- Seta Esquerda -->
+            <a href="./arquidemonio.html" class="me-3" style="color: white; font-size: 30px; text-decoration: none;">
+                &#8592;
+            </a>
+
+            <!-- Nome do Personagem -->
+            <h2 class="mb-0" style="font-family: 'Sedan SC'; color: white;">KROTH</h2>
+
+            <!-- Seta Direita -->
+            <a href="./sylas.html" class="ms-3" style="color: white; font-size: 30px; text-decoration: none;">
+                &#8594;
+            </a>
+        </div>
     </div>
-</div>
-
-
-<!-- Seta Direita -->
-<div class="arrow-container-right">
-    <a href="./morgath.html" class="arrow-link-right"></a>
-</div>
-
-<!-- Seta Esquerda -->
-<div class="arrow-container-let">
-    <a href="./ignatius.html" class="arrow-link-left"></a>
-</div>
-
-<div class="boss-description">
     <br/>
-        <h1>K R O T H</h1>
-        <p> Nos labirintos escuros e cavernas sinistras de Quimeria, onde o eco dos passos ressoa como trovões distantes e o cheiro de sangue impregna o ar, reside Kroth, um minotauro cuja presença é tão temida quanto a própria escuridão que o envolve. Com chifres afiados como lanças e músculos poderosos que se contorcem sob uma pele grossa e áspera, Kroth é uma figura imponente e temida em todo o reino, sua presença marcada pelo rugido estrondoso que ecoa pelos corredores sombrios de Quimeria.<br/><br/>
-            Desde o nascimento, Kroth foi marcado pela fúria e pela dor, sua pele coberta por cicatrizes e seus olhos brilhando com uma luz selvagem que inspirava medo e pavor naqueles que o viam. Ele nasceu com o dom da força bruta, sua capacidade de esmagar tudo em seu caminho sendo tanto uma bênção quanto uma maldição em seu mundo sombrio.<br/><br/>
-            À medida que amadurecia, Kroth aprendeu a controlar sua fúria selvagem, usando-a para subjugar aqueles que ousavam desafiá-lo e proteger aqueles que considerava aliados. Ele se tornou uma lenda entre as criaturas de Quimeria, sua reputação como um minotauro implacável e imparável se espalhando como fogo selvagem pelos corredores mais escuros do reino.<br/><br/>
-            No entanto, a solidão e o isolamento que o acompanhavam muitas vezes o deixavam dividido entre seu desejo por companhia e seu temperamento violento. Ele vivia nas sombras, evitando o contato com outros seres e mantendo-se isolado em seu labirinto de escuridão e dor.<br/><br/>
-            Como um minotauro, Kroth é uma força da natureza em si mesmo, sua força bruta e seu temperamento violento tornando-o praticamente imparável para qualquer que ousasse desafiá-lo. Ele esmaga seus inimigos com golpes poderosos de seus punhos enormes e seus chifres afiados, deixando uma trilha de destruição por onde passa.<br/><br/>
-            No entanto, apesar de sua reputação como um monstro temível, Kroth também possui um lado mais vulnerável e humano, sua solidão e isolamento refletindo-se em sua busca por companhia e aceitação em um mundo que muitas vezes o vê como um monstro a ser temido e evitado.<br/><br/>
-            Para aqueles que o conhecem verdadeiramente, Kroth é mais do que um simples minotauro; ele é uma alma solitária, uma criatura ferida, uma prova viva de que mesmo os mais poderosos monstros podem ansiar por amor e companhia. E enquanto houver corredores para vagar e corações para conquistar, Kroth estará lá, vagando pelos labirintos sombrios de Quimeria com uma determinação implacável e uma sede insaciável por redenção em nome do reino sombrio que ele chama de lar.
-            </p>
-        </div>
-    <br/>
-
-
-<div class="characteristics-grid">
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>atributos<hr></h2><br/><br/>
-            <p>HP: <strong>90</strong></p><br/>
-            <p>Vantagem: Híbridos<br/><br/>
-                Desvantagem: Humanos, Arquidemônio, Lich
-            </p>
+    
+    <div class="row align-items-center mt-4">
+        <div class="col-12 text-center">
+            <img src="../../Imagens_personagens/criaturas/criaturas-kroth.jpeg" class="img-fluid rounded shadow" alt="Guerreiro forte personagem RPG">
         </div>
     </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>golpes<hr></h2>
-            <p>Cauda Esmagadora: Kroth usa sua poderosa cauda para golpear o inimigo com força esmagadora.<br/>Causa <strong>5</strong> de dano.<br/><br/>
-                Investida Brutal: Kroth baixa a cabeça e investe com seus chifres afiados, arremessando tudo em seu caminho.<br/>Causa <strong>20</strong> de dano.<br/><br/></p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aparência<hr></h2><br/>
-            <p>Kroth é uma figura imponente, com um corpo musculoso coberto de pelos castanhos. Seus chifres são longos e afiados, e seus olhos brilham com uma fúria incontrolável. Ele usa uma armadura rudimentar feita de couro e ossos.</p>      
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>personalidade<hr></h2><br/>
-            <p>Violento e indomável, Kroth é movido por uma raiva constante. Ele é impetuoso e prefere a ação à diplomacia, confiando em sua força bruta para resolver qualquer problema.</p>      
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>habilidades<hr></h2><br/>
-            <p>Kroth possui uma força descomunal e uma resistência física excepcional, tornando-o um adversário formidável em combate corpo a corpo. Sua fúria aumenta sua força e velocidade, tornando-o ainda mais perigoso quando está enfurecido.</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>equipamentos<hr></h2><br/>
-            <p>Kroth empunha um enorme machado de guerra, pesado e brutal, que complementa sua força devastadora. Além disso, ele carrega amuletos rústicos que dizem aumentar sua resistência e ferocidade em batalha.</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aliados<hr></h2><br/>
-            <p>Gromm, o Orc Bruto - Um guerreiro orc poderoso, conhecido por sua brutalidade e ferocidade em combate.<br/><br/>
-                Morgath, o Behemoth das Sombras - Um behemoth sombrio com poderes das trevas, capaz de invocar sombras e corromper a mente de seus inimigos.<br/><br/>
-                Morgrim Um xamã poderoso que invoca espíritos antigos e magias primitivas para liderar sua tribo em batalha.</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>inimigos<hr></h2><br/>
-            <p>Oliver, um bardo humano cujas músicas inspiram aliados e atordoam inimigos.<br/><br/>
-                Arquidemônio: Um demônio de imenso poder e astúcia, que busca abrir um portal para o próprio inferno e lançar o mundo na escuridão eterna.
-            </p>
+</div>
+ 
+<!-- TEXTO PRINCIPAL-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC'; color: white;">
+                🐂 Forjado na Escuridão<br><br>
+                Nas profundezas esquecidas de Quiméria, entre labirintos eternos e cavernas onde o eco é o único som, Kroth nasceu. Não veio de berço nobre, nem de lendas gloriosas — foi moldado pela pedra bruta, pelo frio e pela solidão. Desde o primeiro dia, sua existência foi marcada pela luta; cada cicatriz que cobre seu corpo é uma lembrança viva da brutalidade que o mundo lhe impôs.<br><br>
+            
+                🩸 Sangue e Sobrevivência<br><br>
+                Enquanto outros buscavam poder por ambição, Kroth lutava por pura necessidade. Sua força colossal, seus chifres afiados como espadas e sua resistência inumana fizeram dele uma lenda entre as criaturas de Quiméria. Nos corredores escuros onde poucos ousavam entrar, seu nome era sussurrado com medo e respeito. Kroth esmagava tudo o que ameaçava sua existência — não por prazer, mas pela simples vontade de continuar respirando em um mundo implacável.<br><br>
+            
+                ⚔️ Guardião dos Labirintos<br><br>
+                Com o passar dos anos, Kroth não era apenas uma fera; tornou-se o verdadeiro senhor dos labirintos. Seus inimigos aprendiam, tarde demais, que enfrentar Kroth era enfrentar a própria força da natureza. Suas emboscadas eram brutais, seus rugidos ecoavam como trovões nas cavernas e seus golpes deixavam apenas ruína para trás. Nenhum mapa ousava registrar as terras que ele chamava de lar — apenas advertências e lendas desesperadas.<br><br>
+            
+                🌑 Solidão Implacável<br><br>
+                Apesar da aparência monstruosa e da força devastadora, Kroth carregava uma dor silenciosa: a solidão. Evitado e temido até por aqueles que poderiam ter sido seus aliados, ele caminhava sozinho, dia após dia, pelos corredores infinitos de pedra. Em seu coração endurecido, havia um desejo que nem mesmo a violência podia apagar — o desejo de pertencer, de ser mais do que uma arma viva.<br><br>
+            
+                🕯️ A Lenda Viva<br><br>
+                Hoje, Kroth permanece como uma sombra vigilante nas profundezas de Quiméria. Dizem que aqueles que se perdem em seus domínios podem escutar o som distante de seus passos pesados ou o ressoar de seus chifres contra a pedra. Para uns, ele é um monstro a ser temido. Para poucos, é uma força incontrolável que poderia, um dia, mudar o destino do próprio reino. Pois até mesmo nas trevas mais profundas, um coração pode desejar algo além da guerra: redenção.<br><br>
+             </p>
         </div>
     </div>
 </div>
 
+<!-- VIDEO -->    
+<div class="row my-5">
+    <div class="col-12" style="max-width: 1052px; margin: 0 auto;">
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube-nocookie.com/embed/3et1KV6Wf58" title="Personagem Kroth" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>    
+
+<!-- TEXTO DEPOIS DO VIDEO-->
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC'; color: white;">
+            Cada personagem carrega em si uma história única, moldada pelas experiências, crenças e batalhas que enfrentou ao longo de sua jornada. Seus traços não se limitam apenas às habilidades físicas ou mágicas, mas também refletem a força interior, a coragem em tempos de incerteza e a sabedoria conquistada nas horas mais sombrias. São essas qualidades que definem a verdadeira essência de cada herói.
+            <br><br>
+        
+            As características individuais vão muito além do que os olhos podem ver. De talentos extraordinários a dons ocultos, cada personagem possui atributos que o tornam singular e indispensável em seu mundo. Sua personalidade, seus ideais e seus conflitos internos se entrelaçam, formando uma tapeçaria complexa que enriquece suas ações e escolhas ao longo da história.
+            <br><br>
+
+            Domínio em combate, maestria em artes mágicas, habilidades estratégicas ou uma determinação inabalável — todas essas facetas se combinam para construir a identidade de um verdadeiro aventureiro. E é através desses detalhes que cada personagem deixa sua marca no destino dos reinos, gravando seu nome nas páginas da eternidade.
+            <br><br> 
+        </p>
+    </div>
+</div>
+</div><br/>
 
 
-<br/>
-<br/>
-<br/>
 
-    <!--Rodapé -->
-    <footer>
-        <div class="footer--area">
-            <div class="footer--item area1">
-                <img src="./Imagens_outras/006.png"/>
+
+<!-- CARROUSEL MODO DESK -->
+<div id="characteristicsCarouselDesk" class="carousel slide d-none d-md-block" style="max-width: 1032px;"> 
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Atributos</h2><br/>
+                <p>Força (FOR):<strong> 5/11</strong> - Habilidoso <br/>Kroth é uma força da natureza, com uma força bruta que o torna praticamente imparável em combate corpo a corpo. <br/><br/>
+                <p>Destreza (DES): <strong> 2/11</strong> - Discípulo <br/>Ele não é ágil, mas sua presença imponente e habilidades brutais compensam essa falta. <br/><br/>
+                <p>Carisma (CAR):  <strong> 2/11</strong> - Discípulo <br/>Kroth não é carismático no sentido tradicional, mas sua aura de perigo e fúria é capaz de intimidar até os mais corajosos.  <br/><br/>
+                <p>Inteligência (INT): <strong> 2/11</strong> - Discípulo <br/> Ele não é um estrategista, mas sua experiência em combate o torna astuto em situações de luta. <br/><br/>
+                <p>Resistência (RES): <strong> 5/11</strong> - Habilidoso <br/>Kroth é extremamente resistente, com um corpo robusto e uma capacidade regenerativa que o torna difícil de derrubar. </p>
             </div>
-            <div class="footer--item area2">
-                <p>© 2024 Todos os Direitos Reservados</p>
-                <p>Mail: suporte@odespertardosreinos.com.br</p>
-                <p>Tel: +55 11 99105-8957</p>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Golpes</h2><br/>
+                <p style="font-size: 18px;">Rugido da Fúria</p><p>Kroth libera um rugido ensurdecedor, carregado com a energia das cavernas que habita. O som reverbera por toda a região, desorientando os inimigos próximos e causando danos físicos a todos em um raio de 10 metros. <br/><br/></p>
+                <p style="font-size: 18px;">Golpe da Pedra</p><p>Kroth usa sua força bruta para esmagar o solo com seus chifres afiados, criando uma onda de choque de pedra que se propaga rapidamente. A onda atinge seus inimigos com uma força devastadora, quebrando defesas e causando grandes danos.<br/><br/></p>
+                <p style="font-size: 18px;">Emboscada Sombria</p><p>Aproveitando sua habilidade de se mover nas sombras, Kroth se esconde momentaneamente, tornando-se invisível para seus inimigos. Quando ele ataca, sua força é amplificada, e o inimigo é pego de surpresa com um golpe certeiro. </p>
+             </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Aparência</h2><br/>
+                <p>Altura: 2,5 metros</p><br/>
+                <p>Peso: 500 Kg</p><br/>
+                <p>Olhos: Olhos âmbar, com um brilho feroz</p><br/>
+                <p>Traje: Seus ombros são protegidos por placas de ferro, e seus chifres são adornados com runas antigas.</p><br/>
+                <p>Cicatrizes: Seu corpo é marcado por inúmeras cicatrizes de batalhas passadas.</p><br/>
+                <p>Postura: Kroth mantém uma postura imponente e desafiadora, com os ombros largos e a cabeça erguida. Sua presença é intimidadora.</p><br/>
+                <p>Características Faciais: Seu rosto é ameaçador, com pele áspera e marcada, sem sinais de suavidade.</p>
             </div>
-            <div class="footer--item area3">
-                <div class="footer-social">
-                    <a href=""><img src="./Imagens_outras/00facebook.png" target="_blank"/></a>
-                    <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="./Imagens_outras/00insta.png"/></a>
-                    <a href="https://www.tiktok.com/@o_despertar_dos_reinos" target="_blank"><img src="./Imagens_outras/00tiktok.png"/></a>
-                    <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="./Imagens_outras/00youtube.png"/></a>
-                    <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank"><img src="./Imagens_outras/00pinterest.png"/></a>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Personalidade</h2><br/>
+                <p>Kroth é uma figura marcada pela violência e pela indomabilidade. Desde o momento em que nasceu, nas profundezas inexploradas de Quiméria, ele foi moldado pela luta e pela necessidade de sobrevivência. Sua raiva é uma chama constante que consome sua mente e espírito, e sua natureza impetuosa o leva a tomar decisões rápidas e radicais, sem hesitar. Para ele, a força é a única linguagem que o mundo entende, e ele a utiliza com uma fúria incontrolável.<br/><br/>
+                    Kroth não conhece a diplomacia; para ele, conversas e negociações são apenas distrações que o afastam de seu único objetivo: garantir sua sobrevivência e domínio. 
+                    </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Habilidades</h2><br/>
+                <p style="font-size: 18px;">Força Brutal:</p><p>Kroth pode destruir paredes de pedra, arrancar árvores com suas mãos e esmagar qualquer inimigo com um simples golpe. Sua força é lendária e temida. </p><br/>
+                <p style="font-size: 18px;">Raiva Explosiva:</p><p>Quando provocado, Kroth entra em um estado de fúria intensa que aumenta ainda mais sua força e resistência, tornando-o quase imbatível. </p><br/>
+                <p style="font-size: 18px;">Rugido Destruidor:</p><p> O rugido de Kroth é tão potente que pode estourar e desintegrar rochas, causando danos em uma área ao seu redor e desorientando inimigos. </p><br/>
+                <p style="font-size: 18px;">Resistência Imensa: </p><p> Kroth pode resistir a golpes severos e ferimentos, curando-se rapidamente devido ao seu poder regenerativo. </p>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Equipamentos</h2><br/>
+                <p style="font-size: 18px;">Machado de Guerra de Kroth:</p><p> Um machado maciço, forjado nas profundezas de uma mina abandonada. O machado é tão grande quanto o próprio Kroth e é usado com um único golpe devastador que pode cortar qualquer coisa em seu caminho. Sua lâmina é feita de uma liga de ferro impenetrável.</p><br/>
+                  </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Curiosidades</h2><br/>
+                <p style="font-size: 18px;">Proteger as terras sombrias e as criaturas que vivem nelas:</p><p>Desde que compreendeu a fragilidade de seu lar, Kroth vê sua força colossal como um escudo contra invasores e destruidores. Ele acredita que até mesmo um minotauro temível pode defender o lugar de onde veio, não permitindo que ameaças externas subjulguem Quimeria.<br/><br/>
+                <p style="font-size: 18px;">Encontrar um equilíbrio entre sua natureza selvagem e seu desejo por companhia: </p><p>O A ediência e justiça divina. Ele jurou destruir seu antigo inimigo e provar que o caos é superior à ordem.<br/><br/>
+                 </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Território</h2><br/>
+                <img src="../../paginas-territorios/Imagens-territorios/quimeria-ghulmar.webp" class="img-fluid rounded" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagem de Aiden">
+                <br/>
+                <p>Nas profundezas de Ghulmar, entre florestas retorcidas e ruínas de castelos antigos, Kroth surgiu como a personificação da brutalidade e da solidão. Forjado pelas trevas de Quiméria, ele cresceu entre feras e criaturas corrompidas, aprendendo desde cedo que somente a força poderia garantir sua sobrevivência. Com o tempo, tornou-se o Senhor imbatível de Ghulmar, com seu nome sussurrado em temor por aqueles que se aventuravam nesse território amaldiçoado. Suas batalhas eram ferozes, e seu rugido ecoava nas cavernas e montanhas quebradas, reverberando sua supremacia sobre as trevas.<br/><br/>
+                   
+                    </p>
+            </div>
+        </div>
+    </div>
+    <!-- Controles do carrossel -->
+            <!-- Botão Anterior -->
+        <a class="carousel-control-prev d-flex align-items-center justify-content-center" 
+            href="#characteristicsCarouselDesk" role="button" data-bs-slide="prev" style="width: 5%; left: -50px;">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+            <!-- Botão Próximo -->
+        <a class="carousel-control-next d-flex align-items-center justify-content-center" 
+            href="#characteristicsCarouselDesk" role="button" data-bs-slide="next" style="width: 5%; right: -50px;">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+</div> 
+
+<!-- Carrossel para dispositivos móveis -->
+<div id="characteristicsCarousel" class="carousel slide d-md-none" data-bs-ride="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="characteristic-box">
+                <h2>Atributos</h2><br/>
+                <p>Força (FOR):<strong> 5/11</strong> - Habilidoso <br/>Kroth é uma força da natureza, com uma força bruta que o torna praticamente imparável em combate corpo a corpo. <br/><br/>
+                <p>Destreza (DES): <strong> 2/11</strong> - Discípulo <br/>Ele não é ágil, mas sua presença imponente e habilidades brutais compensam essa falta. <br/><br/>
+                <p>Carisma (CAR):  <strong> 2/11</strong> - Discípulo <br/>Kroth não é carismático no sentido tradicional, mas sua aura de perigo e fúria é capaz de intimidar até os mais corajosos.  <br/><br/>
+                <p>Inteligência (INT): <strong> 2/11</strong> - Discípulo <br/> Ele não é um estrategista, mas sua experiência em combate o torna astuto em situações de luta. <br/><br/>
+                <p>Resistência (RES): <strong> 5/11</strong> - Habilidoso <br/>Kroth é extremamente resistente, com um corpo robusto e uma capacidade regenerativa que o torna difícil de derrubar. </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Golpes</h2><br/>
+                <p style="font-size: 18px;">Rugido da Fúria</p><p>Kroth libera um rugido ensurdecedor, carregado com a energia das cavernas que habita. O som reverbera por toda a região, desorientando os inimigos próximos e causando danos físicos a todos em um raio de 10 metros. <br/><br/></p>
+                <p style="font-size: 18px;">Golpe da Pedra</p><p>Kroth usa sua força bruta para esmagar o solo com seus chifres afiados, criando uma onda de choque de pedra que se propaga rapidamente. A onda atinge seus inimigos com uma força devastadora, quebrando defesas e causando grandes danos.<br/><br/></p>
+                <p style="font-size: 18px;">Emboscada Sombria</p><p>Aproveitando sua habilidade de se mover nas sombras, Kroth se esconde momentaneamente, tornando-se invisível para seus inimigos. Quando ele ataca, sua força é amplificada, e o inimigo é pego de surpresa com um golpe certeiro. </p>
+             </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Aparência</h2><br/>
+                <p>Altura: 2,5 metros</p><br/>
+                <p>Peso: 500 Kg</p><br/>
+                <p>Olhos: Olhos âmbar, com um brilho feroz</p><br/>
+                <p>Traje: Seus ombros são protegidos por placas de ferro, e seus chifres são adornados com runas antigas.</p><br/>
+                <p>Cicatrizes: Seu corpo é marcado por inúmeras cicatrizes de batalhas passadas.</p><br/>
+                <p>Postura: Kroth mantém uma postura imponente e desafiadora, com os ombros largos e a cabeça erguida. Sua presença é intimidadora.</p><br/>
+                <p>Características Faciais: Seu rosto é ameaçador, com pele áspera e marcada, sem sinais de suavidade.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Personalidade</h2><br/>
+                <p>Kroth é uma figura marcada pela violência e pela indomabilidade. Desde o momento em que nasceu, nas profundezas inexploradas de Quiméria, ele foi moldado pela luta e pela necessidade de sobrevivência. Sua raiva é uma chama constante que consome sua mente e espírito, e sua natureza impetuosa o leva a tomar decisões rápidas e radicais, sem hesitar. Para ele, a força é a única linguagem que o mundo entende, e ele a utiliza com uma fúria incontrolável.<br/><br/>
+                    Kroth não conhece a diplomacia; para ele, conversas e negociações são apenas distrações que o afastam de seu único objetivo: garantir sua sobrevivência e domínio. 
+                    </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Habilidades</h2><br/>
+                <p style="font-size: 18px;">Força Brutal:</p><p>Kroth pode destruir paredes de pedra, arrancar árvores com suas mãos e esmagar qualquer inimigo com um simples golpe. Sua força é lendária e temida. </p><br/>
+                <p style="font-size: 18px;">Raiva Explosiva:</p><p>Quando provocado, Kroth entra em um estado de fúria intensa que aumenta ainda mais sua força e resistência, tornando-o quase imbatível. </p><br/>
+                <p style="font-size: 18px;">Rugido Destruidor:</p><p> O rugido de Kroth é tão potente que pode estourar e desintegrar rochas, causando danos em uma área ao seu redor e desorientando inimigos. </p><br/>
+                <p style="font-size: 18px;">Resistência Imensa: </p><p> Kroth pode resistir a golpes severos e ferimentos, curando-se rapidamente devido ao seu poder regenerativo. </p>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Equipamentos</h2><br/>
+                <p style="font-size: 18px;">Machado de Guerra de Kroth:</p><p> Um machado maciço, forjado nas profundezas de uma mina abandonada. O machado é tão grande quanto o próprio Kroth e é usado com um único golpe devastador que pode cortar qualquer coisa em seu caminho. Sua lâmina é feita de uma liga de ferro impenetrável.</p><br/>
+                  </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Curiosidades</h2><br/>
+                <p style="font-size: 18px;">Proteger as terras sombrias e as criaturas que vivem nelas:</p><p>Desde que compreendeu a fragilidade de seu lar, Kroth vê sua força colossal como um escudo contra invasores e destruidores. Ele acredita que até mesmo um minotauro temível pode defender o lugar de onde veio, não permitindo que ameaças externas subjulguem Quimeria.<br/><br/>
+                <p style="font-size: 18px;">Encontrar um equilíbrio entre sua natureza selvagem e seu desejo por companhia: </p><p>O A ediência e justiça divina. Ele jurou destruir seu antigo inimigo e provar que o caos é superior à ordem.<br/><br/>
+                 </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Território</h2><br/>
+                <img src="../../paginas-territorios/Imagens-territorios/quimeria-ghulmar.webp" class="img-fluid rounded" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagem de Aiden">
+                <br/>
+                <p>Nas profundezas de Ghulmar, entre florestas retorcidas e ruínas de castelos antigos, Kroth surgiu como a personificação da brutalidade e da solidão. Forjado pelas trevas de Quiméria, ele cresceu entre feras e criaturas corrompidas, aprendendo desde cedo que somente a força poderia garantir sua sobrevivência. Com o tempo, tornou-se o Senhor imbatível de Ghulmar, com seu nome sussurrado em temor por aqueles que se aventuravam nesse território amaldiçoado. Suas batalhas eram ferozes, e seu rugido ecoava nas cavernas e montanhas quebradas, reverberando sua supremacia sobre as trevas.<br/><br/>
+                   
+                </p>
+        </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</div>  <br/>
+
+
+
+
+<!-- TITULO "FICHAS DO PERSONAGEM" -->  
+    <div class="row my-5">
+        <div class="col-12" style="max-width: 1052px; margin: 0 auto;">
+            <h2 class="text-center mb-4" style="font-family: 'Sedan SC'; color: white;"> Fichas do Personagem</h2>
+        </div>
+    </div>    
+    
+<!-- TEXTO -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC'; color: white;">
+                    As fichas de personagem representam a essência de cada herói em diferentes estágios de sua jornada. Elas carregam informações vitais sobre habilidades, poderes, fraquezas e conquistas, sendo fundamentais para guiar sua evolução no mundo de aventuras e batalhas.
+                    <br><br>
+                
+                    Ficha Iniciante: Descreve o personagem em seu estado mais puro, quando ainda está descobrindo suas forças e aprendendo a dominar suas capacidades. É o primeiro passo de uma trajetória repleta de desafios e crescimento.
+                    <br><br>
+
+                    Ficha Lendário: Retrata o personagem após anos de experiência, quando suas habilidades atingem um novo patamar e seu nome ecoa como uma lenda entre os povos. Ela revela o poder e a maturidade conquistados através de inúmeras batalhas e escolhas difíceis.
+                    <br><br> 
+
+                    Ficha Boss: É a representação máxima de poder e respeito. Aqui, o personagem se torna uma entidade temida ou reverenciada, um verdadeiro titã cujo domínio influencia o destino de reinos inteiros. Essa ficha simboliza o ápice de sua história.
+                    <br><br> 
+                </p>
+            </div>
+        </div>
+    </div>    
+
+<!-- Fichas -->
+    <section id="fichas">
+        <h2 class="text-center mb-4" style="font-family: 'Sedan SC';color: white;"> </h2>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <img src="Imagens_outras/ficha-pb.jpg" alt="Kroth Iniciante" class="img-fluid mb-2">
+                <div>
+                    <a href="#" class="btn btn-dark" download style="font-family: 'Sedan SC';color: white;">Ficha Iniciante</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="Imagens_outras/ficha-colorida.jpg" alt="Kroth Lendário" class="img-fluid mb-2">
+                <div>
+                    <a href="#" class="btn btn-dark" download style="font-family: 'Sedan SC';color: white;">Ficha Lendário</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="Imagens_outras/ficha-colorida.jpg" alt="Kroth Boss" class="img-fluid mb-2">
+                <div>
+                    <a href="#" class="btn btn-dark" download style="font-family: 'Sedan SC';color: white;">Ficha BOSS</a>
                 </div>
             </div>
         </div>
-    </footer>
-    
-    </body>
-    </html>
+    </section>
+<style>
+        .btn-dark {
+        background-color: #000 !important;
+        border-color: #000 !important;
+        color: #fff;
+      }
+      .btn-dark:hover {
+        color: #ff3c00 !important;
+        text-shadow: 0 0 5px #ff3c00, 0 0 10px #6a0d0d;
+        box-shadow: 0 0 8px #ff3c00, 0 0 16px #6a0d0d;
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+      }
+</style>
+
+<!-- BOTÃO VOLTAR --> 
+<div class="text-center my-5">
+    <a href="../../personagens-criaturas.html" class="btn btn-dark" style="font-family: 'Sedan SC'; color: white;">Voltar</a>
+</div>
+
+<!-- RODAPÉ --> 
+<footer class="bg-dark text-light py-3" style="background-color: rgba(0, 0, 0, 0.3) !important;">
+    <div class="container"> 
+    <hr class="linha-rodape"> 
+        <div class="row text-center text-md-left align-items-center">     
+        <!-- LOGO -->   
+            <div class="col-md-4 mb-4 mb-md-0 logo-container d-flex justify-content-center justify-content-md-start">
+                <img src="../../Imagens_outras/001.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+            </div>
+        <!-- INFORMAÇÕES -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <p>Contato: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
+                <p class="m-b-footer">O Despertar dos Reinos © 2025<br/>Todos os Direitos Reservados</p>
+                <p class="by">Desenvolvido por: <a href="https://www.linkedin.com/in/paulo-campos-55453176/?trk=opento_sprofile_details" target="_blank">Paulo Campos</a></p>
+            </div>
+        <!-- REDES SOCIAIS -->
+            <div class="col-md-4 footer-social d-flex justify-content-center justify-content-md-end flex-wrap">
+                <a href="#" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
+                </a>
+                <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
+                </a>
+            </div> 
+        </div>       
+    </div>
+    <hr class="linha-rodape"> 
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../../search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>            
