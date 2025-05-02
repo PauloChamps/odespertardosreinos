@@ -9,10 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
     <title>MAP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
     <meta name="p:domain_verify" content="53adfdf26e33056363b5f72969e38efb">
     <meta name="description" content="Tudo sobre RPG">
-    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://www.google.com;">
-    crossorigin="anonymous"></script>
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://www.google.com;
+    crossorigin=anonymous"></script>
     <script async custom-element="amp-auto-ads"src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
     <style>
         body { margin: 0; padding: 0; }
@@ -124,50 +126,40 @@
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     
 </head>
-<body> 
-<amp-auto-ads type="adsense"data-ad-client="ca-pub-4434635049222289"></amp-auto-ads>
+<body>  
 
 <!-- Menu Principal -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-    <div class="container" >
-        <!-- Botão de hambúrguer -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-            <img src="Imagens_outras/006.png" alt="Logo" style="width: 80px; height: auto;">
-        </a>
-
-        <!-- Links do menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto" >
-              <!-- Links -->
-              <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">EPISÓDIOS</a></li>
-              <li class="nav-item"><a class="nav-link" href="hq.html">HQ</a></li>
-              <li class="nav-item"><a class="nav-link" href="rpg.html">RPG</a></li>
-              <li class="nav-item"><a class="nav-link" href="Map.html">MAPA DO MUNDO</a></li>
-              <li class="nav-item"><a class="nav-link" href="reinos.html">REINOS</a></li>
-              <li class="nav-item"><a class="nav-link" href="personagens.html">PERSONAGENS</a></li>
-              <li class="nav-item"><a class="nav-link" href="bestiario.html">BESTIÁRIO</a></li>
-              <li class="nav-item"><a class="nav-link" href="itens.html">ITENS</a></li>
-              <li class="nav-item"><a class="nav-link" href="tcg_game.html">TCG - GAME</a></li>
-              <li class="nav-item"><a class="nav-link" href="loja.html">LOJA</a></li>
-          </ul>
-      </div>
-        <!-- Ícones sociais -->
-        <div class="social-icons d-none d-lg-flex">
-            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank" aria-label="Instagram do O Despertar dos Reinos">
-                <img src="Imagens_outras/insta2.png" alt="Instagram">
-            </a>
-            <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank" aria-label="YouTube do O Despertar dos Reinos">
-                <img src="Imagens_outras/you2.png" alt="YouTube">
-            </a>
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="Imagens_outras/001.png" alt="Logo"></a>
         </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+              <li class="nav-item"><a class="nav-link" href="index.html">HOME <span class="menu-icon" data-icon="HOME"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">EPISÓDIOS <span class="menu-icon" data-icon="EPISÓDIOS"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="hq.html">HQ <span class="menu-icon" data-icon="HQ"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="rpg.html">RPG <span class="menu-icon" data-icon="RPG"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="Map.html">MAPA DO MUNDO <span class="menu-icon" data-icon="MAPA DO MUNDO"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="reinos.html">REINOS <span class="menu-icon" data-icon="REINOS"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="personagens.html">PERSONAGENS <span class="menu-icon" data-icon="PERSONAGENS"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="bestiario.html">BESTIÁRIO <span class="menu-icon" data-icon="BESTIÁRIO"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="itens.html">ITENS <span class="menu-icon" data-icon="ITENS"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="tcg_game.html">TCG - GAME <span class="menu-icon" data-icon="TCG - GAME"></span></a></li>
+              <li class="nav-item"><a class="nav-link" href="loja.html">LOJA <span class="menu-icon" data-icon="LOJA"></span></a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i><a href="#"></a></i>
+            <i><a href="#"></a></i>
+            <i><a href="#"></a></i>
+        </span>
     </div>
-</nav>
+  </nav>
+<br/>
+<br/>
+<br/>
+<br/>
 
  
  
@@ -181,14 +173,20 @@
         });
 
         // Carregando a imagem do mapa personalizado
-        var imageUrl = 'Imagens_outras/map-novo.webp'; // Substitua pelo seu arquivo
+        var imageUrl = 'Imagens_outras/004-2.webp'; // Substitua pelo seu arquivo
         var imageBounds = [[0, 0], [3402, 6048]]; // Tamanho da imagem em pixels
         L.imageOverlay(imageUrl, imageBounds).addTo(map);
         map.fitBounds(imageBounds); // Ajusta o zoom para ver a imagem completa
         //map.setMaxBounds(imageBounds);
 
 
-
+        map.on('click', function(e) {
+    var coord = e.latlng;
+    var x = Math.floor(coord.lat);
+    var y = Math.floor(coord.lng);
+    console.log("Coordenadas: [" + x + ", " + y + "]");
+    alert("Coordenadas: [" + x + ", " + y + "]");
+});
 
 
         // Exemplo: Adicionando um marcador no mapa
@@ -208,9 +206,7 @@
     iconSize: [50, 50], // Tamanho do ícone
     iconAnchor: [25, 50], // Posição de ancoragem
     popupAnchor: [0, -50] // Posição do popup
-});
-L.marker([600, 400], { icon: customIcon }).addTo(map)
-    .bindPopup('Um castelo lendário!');
+}); 
 
 
 
@@ -221,8 +217,8 @@ L.marker([600, 400], { icon: customIcon }).addTo(map)
   iconAnchor: [25, 50],
   popupAnchor: [0, -50]
 });
-L.marker([1800, 2600], { icon: reinoFogoIcon }).addTo(map)
-  .bindPopup("Reino do Fogo!");
+//L.marker([1800, 2600], { icon: reinoFogoIcon }).addTo(map)
+ // .bindPopup("Reino do Fogo!");
 
 
   
@@ -234,8 +230,8 @@ L.marker([1800, 2600], { icon: reinoFogoIcon }).addTo(map)
   </div>
 `;
 
-L.marker([1500, 2000], { icon: customIcon }).addTo(map)
-  .bindPopup(reinoPopup);
+//L.marker([1500, 2000], { icon: customIcon }).addTo(map)
+  //.bindPopup(reinoPopup);
 
 
 
@@ -253,33 +249,18 @@ L.marker([1500, 2000], { icon: customIcon }).addTo(map)
 
 
 // Criando ícones diferentes para cada grupo
-var reinoIcon = L.icon({
-    iconUrl: 'imagens-icones/reino.png',
-    iconSize: [40, 40],
-    iconAnchor: [20, 40],
-    popupAnchor: [0, -40]
-});
+
 
 var territorioIcon = L.icon({
-    iconUrl: 'imagens-icones/territorio.png',
+    iconUrl: 'Imagens-icones-map/castle-01.png',
     iconSize: [40, 40],
     iconAnchor: [20, 40],
     popupAnchor: [0, -40]
 });
 
-var bossIcon = L.icon({
-    iconUrl: 'imagens-icones/boss.png',
-    iconSize: [40, 40],
-    iconAnchor: [20, 40],
-    popupAnchor: [0, -40]
-});
 
-var magiaIcon = L.icon({
-    iconUrl: 'imagens-icones/magia.png',
-    iconSize: [40, 40],
-    iconAnchor: [20, 40],
-    popupAnchor: [0, -40]
-});
+
+
 
 var animalIcon = L.icon({
     iconUrl: 'imagens-icones/animal.png',
@@ -294,80 +275,476 @@ var territorios = L.layerGroup();
 var boss = L.layerGroup();
 var escolasMagia = L.layerGroup();
 var animaisMisticos = L.layerGroup();
+ 
+
+//REINOS
+var reinoIcon = L.icon({
+    iconUrl: 'Imagens-icones-map/castle-01.png',
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
+});
+// Reinos Solária
+L.marker([1264, 4196], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Solária</h3>
+        <img src="paginas-territorios/Imagens-reinos/solaria.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Reino das areias escaldantes e do sol sem fim.</p>
+        <a href="paginas-territorios/reino-solaria.html" target="_blank">Saiba mais</a>
+    </div>`).addTo(reinos);
+// Reinos Arbória    
+L.marker([1180, 3100], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Arbória</h3>
+        <img src="paginas-territorios/Imagens-reinos/arboria.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Coração verde das florestas eternas.</p>
+        <a href="paginas-territorios/reino-arboria.html" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+// Reinos Verdanthia
+L.marker([2540, 2154], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Verdanthia</h3>
+        <img src="paginas-territorios/Imagens-reinos/verdanthia.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Picos imponentes banhados em névoas místicas.</p>
+        <a href="paginas-territorios/reino-verdanthia.html" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+// Reinos Quiméria
+L.marker([2100, 4900], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Quiméria</h3>
+        <img src="paginas-territorios/Imagens-reinos/quimeria.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Refúgio das criaturas lendárias.</p>
+        <a href="paginas-territorios/reino-quimeria.html" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos); 
+// Reinos Noctharis
+L.marker([820, 3760], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Noctharis</h3>
+        <img src="paginas-territorios/Imagens-reinos/noctharis.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Véu sombrio onde a noite rein­a.</p>
+        <a href="paginas-territorios/reino-noctharis.html" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+// Reinos Gor'Vhaal
+L.marker([1500, 5080], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Gor'Vhaal</h3>
+        <img src="paginas-territorios/Imagens-reinos/gorvhaal.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Terra selvagem dos orcs indomáveis.</p>
+        <a href="paginas-territorios/reino-gorvhaal.html" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+// Reinos Khaz'Varn
+L.marker([2500, 3662], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Khaz'Varn</h3>
+        <img src="paginas-territorios/Imagens-reinos/khazvarn.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Forja ancestral dos anões destemidos.</p>
+        <a href="paginas-territorios/reino-khazvarn.html" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+// Reinos Celestalis
+L.marker([1300, 850], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Celestalis</h3>
+        <img src="paginas-territorios/Imagens-reinos/celestalis.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Domínio sagrado dos seres celestiais.</p>
+        <a href="paginas-territorios/reino-celestalis.html" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+// Reinos Sylvalis
+L.marker([1300, 2500], { icon: reinoIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🏰 Sylvalis</h3>
+        <img src="paginas-territorios/Imagens-reinos/sylvalis.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Florestas encantadas dos elfos eternos.</p>
+        <a href="paginas-territorios/reino-sylvalis.html" target="_blank">Saiba mais</a>
+    </div>
+`).addTo(reinos);
+
+//ESCOLAS DE MAGIA
+var magiaIcon = L.icon({
+    iconUrl: 'Imagens-icones-map/escola02.png',
+    iconSize: [30, 30],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
+});
+// Escola de Magia Elemental
+L.marker([2750, 2300], { icon: magiaIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>📚 Escola de Magia Elemental</h3>
+        <img src="paginas-escolas-de-magia/imagens/elemental.jpeg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Onde se ensina o domínio dos quatro elementos.</p>
+        <a href="#" target="_blank">Detalhes</a>
+    </div>
+`).addTo(escolasMagia);
+// Escola de Magia Trevas
+L.marker([1000, 4050], { icon: magiaIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>📚 Escola de Magia das Trevas</h3>
+        <img src="paginas-escolas-de-magia/imagens/trevas.jpeg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Onde se ensina o domínio das trevas</p>
+        <a href="#" target="_blank">Detalhes</a>
+    </div>
+`).addTo(escolasMagia);
+// Escola de Magia Pura
+L.marker([1080, 2600], { icon: magiaIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>📚 Escola de Magia Pura</h3>
+        <img src="paginas-escolas-de-magia/imagens/pura.jpeg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Onde se ensina o domínio da magia Pura</p>
+        <a href="#" target="_blank">Detalhes</a>
+    </div>
+`).addTo(escolasMagia);
+
+//BOSSES
+var bossIcon = L.icon({
+    iconUrl: 'Imagens-icones-map/boss01.png',
+    iconSize: [20, 20],
+    iconAnchor: [ 0, 0],
+    popupAnchor: [0, -40]
+});
+// Boss Celestalis
+L.marker([1800, 650], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1100, 950], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+// Boss Verdanthia
+L.marker([2480, 2400], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2150, 3000], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2850, 3100], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2500, 1900], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2840, 2100], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+// Boss Arbória
+L.marker([1180, 2700], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([780, 2850], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1000, 3030], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1820, 2900], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1780, 3400], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1250, 3400], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+// Boss Sylvalis
+L.marker([1250, 2200], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1800, 2520], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1680, 2400], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+// Boss Noctharis
+L.marker([920, 3460], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([820, 3960], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+// Boss Solária
+L.marker([1790, 4180], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1830, 4000], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1330, 3730], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1330, 4300], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1150, 4580], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+// Boss Khaz'Varn
+L.marker([2450, 4000], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2750, 3400], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2000, 3900], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+// Boss Gor'Vhaal
+L.marker([1950, 5280], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([1100, 5480], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([950, 5000], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2000, 4380], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+// Boss Quiméria
+L.marker([2600, 4400], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([3100, 4200], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2700, 4900], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2100, 5550], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+L.marker([2600, 5500], { icon: bossIcon }).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>💀 Lorde Varkan</h3>
+        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>O mais temido dos chefes do submundo.</p>
+        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
+    </div>
+`).addTo(boss);
+
+
+
+//selecionar regiao
 /*
-// Reinos
-L.marker([1200, 2000], { icon: reinoIcon }).bindPopup(`
+var region = L.polygon([
+    [1240, 2180],
+    [1214, 2169],
+    [1169, 2224],
+    [1161, 2222],
+    [1132, 2235],
+    [1133, 2272],
+    [1093, 2287],
+    [1084, 2303],
+    [1113, 2340],
+    [1125, 2347],
+    [1114, 2381],
+    [1133, 2420],
+    [1128, 2430],
+    [1145, 2470],
+    [1138, 2492],
+    [1121, 2508],
+    [1140, 2562],
+    [1189, 2557],
+    [1183, 2617],
+    [1230, 2629],
+    [1292, 2595],
+    [1240, 2463]
+], {
+  color: '#f00',        // cor da borda
+  weight: 1,            // grossura da linha (padrão é 3)
+  fillColor: '#f03',    // cor de preenchimento
+  fillOpacity: 0.1,     // opacidade do preenchimento (0 a 1) 
+  lineJoin: 'round'     // junção das linhas ('miter', 'round', 'bevel')
+}).addTo(territorios).bindPopup(`
     <div style="max-width: 250px;">
-        <h3>🏰 Reino da Luz</h3>
-        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Um reino próspero iluminado por magia ancestral.</p>
-        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
+        <h3>📍 Região Proibida</h3>
+        <img src="imagens/area-perigosa.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Uma região isolada do mapa, cercada por perigos desconhecidos.</p>
+        <a href="https://seudominio.com/regioes/proibida" target="_blank">Explorar mais</a>
     </div>
-`).addTo(reinos);
-L.marker([1400, 2000], { icon: reinoIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>🏰 Reino da Luz</h3>
-        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Um reino próspero iluminado por magia ancestral.</p>
-        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
-    </div>
-`).addTo(reinos);
-L.marker([1600, 2000], { icon: reinoIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>🏰 Reino da Luz</h3>
-        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Um reino próspero iluminado por magia ancestral.</p>
-        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
-    </div>
-`).addTo(reinos);
-L.marker([1800, 2000], { icon: reinoIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>🏰 Reino da Luz</h3>
-        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Um reino próspero iluminado por magia ancestral.</p>
-        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
-    </div>
-`).addTo(reinos);
-L.marker([2000, 2000], { icon: reinoIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>🏰 Reino da Luz</h3>
-        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Um reino próspero iluminado por magia ancestral.</p>
-        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
-    </div>
-`).addTo(reinos);
-L.marker([2200, 2000], { icon: reinoIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>🏰 Reino da Luz</h3>
-        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Um reino próspero iluminado por magia ancestral.</p>
-        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
-    </div>
-`).addTo(reinos);
-L.marker([2400, 2000], { icon: reinoIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>🏰 Reino da Luz</h3>
-        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Um reino próspero iluminado por magia ancestral.</p>
-        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
-    </div>
-`).addTo(reinos);
-L.marker([2600, 2000], { icon: reinoIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>🏰 Reino da Luz</h3>
-        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Um reino próspero iluminado por magia ancestral.</p>
-        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
-    </div>
-`).addTo(reinos);
-L.marker([2800, 2000], { icon: reinoIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>🏰 Reino da Luz</h3>
-        <img src="imagens/reino-luz.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Um reino próspero iluminado por magia ancestral.</p>
-        <a href="https://seudominio.com/reinos/luz" target="_blank">Saiba mais</a>
-    </div>
-`).addTo(reinos);
+`);
+
+*/
+
+
+/*
+
+
 
 // Territórios
 L.marker([1100, 2100], { icon: territorioIcon }).bindPopup(`
@@ -651,313 +1028,42 @@ L.marker([1100, 2100], { icon: territorioIcon }).bindPopup(`
     </div>
 `).addTo(territorios);
 
-// Boss
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
-L.marker([1300, 2300], { icon: bossIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>💀 Lorde Varkan</h3>
-        <img src="imagens/boss-varkan.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>O mais temido dos chefes do submundo.</p>
-        <a href="https://seudominio.com/bosses/varkan" target="_blank">Conhecer Boss</a>
-    </div>
-`).addTo(boss);
 
-// Escola de Magia
-L.marker([1500, 2500], { icon: magiaIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>📚 Escola de Magia Elemental</h3>
-        <img src="imagens/escola-magia.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Onde se ensina o domínio dos quatro elementos.</p>
-        <a href="https://seudominio.com/magias/elemental" target="_blank">Detalhes</a>
-    </div>
-`).addTo(escolasMagia);
-L.marker([1500, 2500], { icon: magiaIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>📚 Escola de Magia Elemental</h3>
-        <img src="imagens/escola-magia.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Onde se ensina o domínio dos quatro elementos.</p>
-        <a href="https://seudominio.com/magias/elemental" target="_blank">Detalhes</a>
-    </div>
-`).addTo(escolasMagia);
-L.marker([1500, 2500], { icon: magiaIcon }).bindPopup(`
-    <div style="max-width: 250px;">
-        <h3>📚 Escola de Magia Elemental</h3>
-        <img src="imagens/escola-magia.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
-        <p>Onde se ensina o domínio dos quatro elementos.</p>
-        <a href="https://seudominio.com/magias/elemental" target="_blank">Detalhes</a>
-    </div>
-`).addTo(escolasMagia);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Animal Místico
 L.marker([1800, 2800], { icon: animalIcon }).bindPopup(`
@@ -1251,7 +1357,6 @@ var overlayMaps = {
     "Escolas de Magia": escolasMagia,
     "Animais Místicos": animaisMisticos
 };
-
 L.control.layers(baseMaps, overlayMaps, { position: 'topleft' }).addTo(map);
 
 // Ativando camadas por padrão
@@ -1262,10 +1367,608 @@ escolasMagia.addTo(map);
 animaisMisticos.addTo(map);
 
 
+// TEXTO 1 – REINO SYLVALIS
+var textoMarkerSylvalis = L.marker([1530, 2370], {
+    icon: L.divIcon({
+        html: '<div style="font-size: 40px; color: black; font-family: \'Alex Brush\', cursive;">Sylvalis</div>',
+        className: 'texto-no-mapa',
+        iconSize: [100, 30],
+        iconAnchor: [50, 15]
+    })
+}).addTo(map);
+// TEXTO 1 – REINO ARBÓRIA
+var textoMarkerArboria = L.marker([1460, 3132], {
+    icon: L.divIcon({
+        html: '<div style="font-size: 40px; color: black; font-family: \'Alex Brush\', cursive;">Arbória</div>',
+        className: 'texto-no-mapa',
+        iconSize: [100, 30],
+        iconAnchor: [50, 15]
+    })
+}).addTo(map);
+// TEXTO 1 – REINO SOLÁRIA
+var textoMarkerSolaria = L.marker([1600, 4092], {
+    icon: L.divIcon({
+        html: '<div style="font-size: 40px; color: black; font-family: \'Alex Brush\', cursive;">Solária</div>',
+        className: 'texto-no-mapa',
+        iconSize: [100, 30],
+        iconAnchor: [50, 15]
+    })
+}).addTo(map);
+// TEXTO 1 – REINO VERDANTHIA
+var textoMarkerVerdanthia = L.marker([2352, 2400], {
+    icon: L.divIcon({
+        html: '<div style="font-size: 40px; color: black; font-family: \'Alex Brush\', cursive;">Verdanthia</div>',
+        className: 'texto-no-mapa',
+        iconSize: [100, 30],
+        iconAnchor: [50, 15]
+    })
+}).addTo(map);
+// TEXTO 1 – REINO NOCTHARIS
+var textoMarkerNoctharis = L.marker([1060, 3690], {
+    icon: L.divIcon({
+        html: '<div style="font-size: 40px; color: black; font-family: \'Alex Brush\', cursive;">Noctharis</div>',
+        className: 'texto-no-mapa',
+        iconSize: [100, 30],
+        iconAnchor: [50, 15]
+    })
+}).addTo(map);
+// TEXTO 1 – REINO GOR'VHAAL
+var textoMarkerGorVhaal = L.marker([1744, 5032], {
+    icon: L.divIcon({
+        html: '<div style="font-size: 40px; color: black; font-family: \'Alex Brush\', cursive;">Gor\'Vhaal</div>',
+        className: 'texto-no-mapa',
+        iconSize: [100, 30],
+        iconAnchor: [50, 15]
+    })
+}).addTo(map);
+// TEXTO 1 – REINO KHAZ'VARN
+var textoMarkerKhazVarn = L.marker([2376, 3500], {
+    icon: L.divIcon({
+        html: '<div style="font-size: 40px; color: black; font-family: \'Alex Brush\', cursive;">Khaz\'Varn</div>',
+        className: 'texto-no-mapa',
+        iconSize: [100, 30],
+        iconAnchor: [50, 15]
+    })
+}).addTo(map);
+// TEXTO 1 – REINO CELESTALIS
+var textoMarkerCelestalis = L.marker([1536, 780], {
+    icon: L.divIcon({
+        html: '<div style="font-size: 40px; color: black; font-family: \'Alex Brush\', cursive;">Celestalis</div>',
+        className: 'texto-no-mapa',
+        iconSize: [100, 30],
+        iconAnchor: [50, 15]
+    })
+}).addTo(map);
+// TEXTO 1 – REINO QUIMERIA
+var textoMarkerQuimeria = L.marker([2400, 5000], {
+    icon: L.divIcon({
+        html: '<div style="font-size: 40px; color: black; font-family: \'Alex Brush\', cursive;">Quiméria</div>',
+        className: 'texto-no-mapa',
+        iconSize: [100, 30],
+        iconAnchor: [50, 15]
+    })
+}).addTo(map);
+
+
+
+// TEXTO 2: KORGARD 
+var textoIconKorgard = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Korgard</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerKorgard = L.marker([1023, 4982], { icon: textoIconKorgard });
+// TEXTO 2: GEODRASIS 
+var textoIconGeodrasis = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Geodrasis</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerGeodrasis = L.marker([1505, 5365], { icon: textoIconGeodrasis });
+// TEXTO 2: DRAKNARR 
+var textoIconDraknarr = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Draknarr</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerDraknarr = L.marker([1749, 5533], { icon: textoIconDraknarr });
+// TEXTO 2: AURELON 
+var textoIconAurelon = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Aurelon</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerAurelon = L.marker([1690, 4836], { icon: textoIconAurelon });
+// TEXTO 2: AURORA 
+var textoIconAurora = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Aurora</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerAurora = L.marker([1191, 943], { icon: textoIconAurora });
+// TEXTO 2: NYTRHRAVEL 
+var textoIconNythravel = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Nythravel</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerNythravel = L.marker([1694, 844], { icon: textoIconNythravel });
+// TEXTO 2: ASHKHOR 
+var textoIconAshkhor = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Ashkhor</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerAshkhor = L.marker([1682, 2872], { icon: textoIconAshkhor });
+// TEXTO 2: DRAKTHAL 
+var textoIconDrakthal = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Drakthal</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerDrakthal = L.marker([1481, 3195], { icon: textoIconDrakthal });
+// TEXTO 2: DULLASKUS 
+var textoIconDullaskus = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Dullaskus</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerDullaskus = L.marker([951, 3225], { icon: textoIconDullaskus });
+// TEXTO 2: FENKARR 
+var textoIconFenkarr = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Fenkarr</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerFenkarr = L.marker([1184, 2882], { icon: textoIconFenkarr });
+// TEXTO 2: KRATHOR 
+var textoIconKrathor = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Krathor</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerKrathor = L.marker([1725, 3600], { icon: textoIconKrathor });
+// TEXTO 2: THALLASSARI
+var textoIconThallassari = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Thallassari</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerThallassari = L.marker([898, 2813], { icon: textoIconThallassari });
+// TEXTO 2: DRENVAR
+var textoIconDrenvar = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Drenvar</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerDrenvar = L.marker([2529, 3998], { icon: textoIconDrenvar });
+// TEXTO 2: ERMOS
+var textoIconErmos = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Ermos</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerErmos = L.marker([2535, 3411], { icon: textoIconErmos });
+// TEXTO 2: ETHRAKAR
+var textoIconEthrakar = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Ethrakar</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerEthrakar = L.marker([2102, 3578], { icon: textoIconEthrakar });
+// TEXTO 2: DRAVOKAHN
+var textoIconDravokahn = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Dravokahn</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerDravokahn = L.marker([830, 3526], { icon: textoIconDravokahn });
+// TEXTO 2: VARKATHIS
+var textoIconVarkathis = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Varkathis</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerVarkathis = L.marker([1049, 3858], { icon: textoIconVarkathis });
+// TEXTO 2: GHULMAR
+var textoIconGhulmar = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Ghulmar</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerGhulmar = L.marker([2161, 5514], { icon: textoIconGhulmar });
+// TEXTO 2: VELGAROTH
+var textoIconVelgaroth = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Velgaroth</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerVelgaroth = L.marker([2429, 5354], { icon: textoIconVelgaroth });
+// TEXTO 2: NARAKTHUL
+var textoIconNarakthul = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Narakthul</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerNarakthul = L.marker([2964, 4243], { icon: textoIconNarakthul });
+// TEXTO 2: VALDROS
+var textoIconValdros = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Valdros</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerValdros = L.marker([2363, 4375], { icon: textoIconValdros });
+// TEXTO 2: VALGHU
+var textoIconValghu = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Valghu</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerValghu = L.marker([2577, 4808], { icon: textoIconValghu });
+// TEXTO 2: ALTHARA
+var textoIconAlhtara = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Alhtara</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerAlhtara = L.marker([1269, 4515], { icon: textoIconAlhtara });
+// TEXTO 2: DUNSKI
+var textoIconDunski = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Dunski</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerDunski = L.marker([1724, 4264], { icon: textoIconDunski });
+// TEXTO 2: EMBERSTORM
+var textoIconEmberstorm = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Emberstorm</div>',
+    className: 'texto-no-mapa',
+    iconSize: [140, 30],
+    iconAnchor: [70, 15]
+});
+var textoMarkerEmberstorm = L.marker([1671, 3987], { icon: textoIconEmberstorm });
+// TEXTO 2: ERETHIS
+var textoIconErethis = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Erethis</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerErethis = L.marker([1401, 4184], { icon: textoIconErethis });
+// TEXTO 2: HEL'DARIM
+var textoIconHeldarim = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Heldarim</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerHeldarim = L.marker([1376, 3841], { icon: textoIconHeldarim });
+// TEXTO 2: YVREN 
+var textoIconYvren = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Yvren</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerYvren = L.marker([1592, 2567], { icon: textoIconYvren });  
+// TEXTO 2: ETERNO
+var textoIconEterno = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Eterno</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerEterno = L.marker([1325, 2391], { icon: textoIconEterno });
+// TEXTO 2: UMBROTH
+var textoIconUmbroth = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Umbroth</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerUmbroth = L.marker([1745, 2428], { icon: textoIconUmbroth });
+// TEXTO 2: ARATHORN
+var textoIconArathorn = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Arathorn</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerArathorn = L.marker([2650, 2233], { icon: textoIconArathorn });
+// TEXTO 2: ASTRON
+var textoIconAstron = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Astron</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerAstron = L.marker([2255, 2945], { icon: textoIconAstron });
+// TEXTO 2: FEROL
+var textoIconFerol = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Ferol</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerFerol = L.marker([2394, 1888], { icon: textoIconFerol });
+// TEXTO 2: VALORITH
+var textoIconValorith = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Va\'lorith</div>',
+    className: 'texto-no-mapa',
+    iconSize: [140, 30],
+    iconAnchor: [70, 15]
+});
+var textoMarkerValorith = L.marker([2304, 2408], { icon: textoIconValorith });
+// TEXTO 2: ZYRAK
+var textoIconZyrak = L.divIcon({
+    html: '<div style="font-size: 30px; color: darkred; font-family: \'Alex Brush\', cursive;">Zyrak</div>',
+    className: 'texto-no-mapa',
+    iconSize: [120, 30],
+    iconAnchor: [60, 15]
+});
+var textoMarkerZyrak = L.marker([2672, 3058], { icon: textoIconZyrak });
+
+
+
+// REGIÕES
+var eterno = L.polygon([
+    [1240, 2180], [1214, 2169], [1169, 2224], [1161, 2222], [1132, 2235], [1133, 2272],
+    [1093, 2287], [1084, 2303], [1113, 2340], [1125, 2347], [1114, 2381], [1133, 2420],
+    [1128, 2430], [1145, 2470], [1138, 2492], [1121, 2508], [1140, 2562], [1189, 2557],
+    [1183, 2617], [1230, 2629], [1292, 2595], [1297, 2673], [1331, 2668], [1345, 2674],
+    [1398, 2673], [1417, 2637], [1466, 2594], [1473, 2570], [1491, 2562], [1485, 2515],
+    [1521, 2483], [1528, 2483], [1547, 2433], [1603, 2452], [1604, 2389], [1242, 2179]
+], {
+    color: '#f00',
+    weight: 1,
+    fillColor: '#f03',
+    fillOpacity: 0.1,
+    lineJoin: 'round'
+}).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>📍 Região Proibida</h3>
+        <img src="imagens/area-perigosa.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Uma região isolada do mapa, cercada por perigos desconhecidos.</p>
+        <a href="https://seudominio.com/regioes/proibida" target="_blank">Explorar mais</a>
+    </div>
+`);
+
+
+
+// REGIÃO PROIBIDA
+var yvren = L.polygon([
+    [1758, 3896], [1848, 3310], [1542, 3326], [1702, 3854]
+], {
+    color: '#f00',
+    weight: 1,
+    fillColor: '#f03',
+    fillOpacity: 0.1,
+    lineJoin: 'round'
+}).bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>📍 Região Proibida</h3>
+        <img src="imagens/area-perigosa.jpg" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Uma região isolada do mapa, cercada por perigos desconhecidos.</p>
+        <a href="https://seudominio.com/regioes/proibida" target="_blank">Explorar mais</a>
+    </div>
+`);
+
+
 
  
 
+
+
+
  
+// Lógica do zoom
+map.on('zoomend', function () {
+    var currentZoom = map.getZoom(); 
+
+    if (currentZoom > -2) {
+        // REMOVER todos os reinos (Texto 1)
+        map.removeLayer(textoMarkerSylvalis);
+        map.removeLayer(textoMarkerArboria);
+        map.removeLayer(textoMarkerSolaria);
+        map.removeLayer(textoMarkerVerdanthia);
+        map.removeLayer(textoMarkerNoctharis);
+        map.removeLayer(textoMarkerGorVhaal);
+        map.removeLayer(textoMarkerKhazVarn);
+        map.removeLayer(textoMarkerCelestalis);
+        map.removeLayer(textoMarkerQuimeria);
+
+        // ADICIONAR textos de regiões (Texto 2)
+        map.addLayer(textoMarkerYvren);
+        map.addLayer(textoMarkerKorgard);
+        map.addLayer(textoMarkerGeodrasis);
+        map.addLayer(textoMarkerDraknarr);
+        map.addLayer(textoMarkerAurelon);
+        map.addLayer(textoMarkerAurora);
+        map.addLayer(textoMarkerNythravel);
+        map.addLayer(textoMarkerAshkhor);
+        map.addLayer(textoMarkerDrakthal);
+        map.addLayer(textoMarkerDullaskus);
+        map.addLayer(textoMarkerFenkarr);
+        map.addLayer(textoMarkerKrathor);
+        map.addLayer(textoMarkerThallassari);
+        map.addLayer(textoMarkerDrenvar);
+        map.addLayer(textoMarkerErmos);
+        map.addLayer(textoMarkerEthrakar);
+        map.addLayer(textoMarkerDravokahn);
+        map.addLayer(textoMarkerVarkathis);
+        map.addLayer(textoMarkerGhulmar);
+        map.addLayer(textoMarkerVelgaroth);
+        map.addLayer(textoMarkerNarakthul);
+        map.addLayer(textoMarkerValdros);
+        map.addLayer(textoMarkerValghu);
+        map.addLayer(textoMarkerAlhtara);
+        map.addLayer(textoMarkerDunski);
+        map.addLayer(textoMarkerEmberstorm);
+        map.addLayer(textoMarkerErethis);
+        map.addLayer(textoMarkerHeldarim);
+        map.addLayer(textoMarkerEterno);
+        map.addLayer(textoMarkerUmbroth);
+        map.addLayer(textoMarkerArathorn);
+        map.addLayer(textoMarkerAstron);
+        map.addLayer(textoMarkerFerol);
+        map.addLayer(textoMarkerValorith);
+        map.addLayer(textoMarkerZyrak);
+
+        
+
+    } else {
+        // ADICIONAR todos os reinos (Texto 1)
+        map.addLayer(textoMarkerSylvalis);
+        map.addLayer(textoMarkerArboria);
+        map.addLayer(textoMarkerSolaria);
+        map.addLayer(textoMarkerVerdanthia);
+        map.addLayer(textoMarkerNoctharis);
+        map.addLayer(textoMarkerGorVhaal);
+        map.addLayer(textoMarkerKhazVarn);
+        map.addLayer(textoMarkerCelestalis);
+        map.addLayer(textoMarkerQuimeria);
+
+        // REMOVER textos de regiões (Texto 2)
+        map.removeLayer(textoMarkerYvren);
+        map.removeLayer(textoMarkerKorgard);
+        map.removeLayer(textoMarkerGeodrasis);
+        map.removeLayer(textoMarkerDraknarr);
+        map.removeLayer(textoMarkerAurelon);
+        map.removeLayer(textoMarkerAurora);
+        map.removeLayer(textoMarkerNythravel);
+        map.removeLayer(textoMarkerAshkhor);
+        map.removeLayer(textoMarkerDrakthal);
+        map.removeLayer(textoMarkerDullaskus);
+        map.removeLayer(textoMarkerFenkarr);
+        map.removeLayer(textoMarkerKrathor);
+        map.removeLayer(textoMarkerThallassari);
+        map.removeLayer(textoMarkerDrenvar);
+        map.removeLayer(textoMarkerErmos);
+        map.removeLayer(textoMarkerEthrakar);
+        map.removeLayer(textoMarkerDravokahn);
+        map.removeLayer(textoMarkerVarkathis);
+        map.removeLayer(textoMarkerGhulmar);
+        map.removeLayer(textoMarkerVelgaroth);
+        map.removeLayer(textoMarkerNarakthul);
+        map.removeLayer(textoMarkerValdros);
+        map.removeLayer(textoMarkerValghu);
+        map.removeLayer(textoMarkerAlhtara);
+        map.removeLayer(textoMarkerDunski);
+        map.removeLayer(textoMarkerEmberstorm);
+        map.removeLayer(textoMarkerErethis);
+        map.removeLayer(textoMarkerHeldarim);
+        map.removeLayer(textoMarkerEterno);
+        map.removeLayer(textoMarkerUmbroth);
+        map.removeLayer(textoMarkerArathorn);
+        map.removeLayer(textoMarkerAstron);
+        map.removeLayer(textoMarkerFerol);
+        map.removeLayer(textoMarkerValorith);
+        map.removeLayer(textoMarkerZyrak);
+
+        
+    }
+
+    if (currentZoom > -1) {
+        territorios.addLayer(eterno);
+        territorios.addLayer(yvren);
+        territorios.addLayer(umbroth);
+        territorios.addLayer(ashkhor);
+        territorios.addLayer(krathor);
+        territorios.addLayer(fenkarr);
+        territorios.addLayer(dullaskus);
+        territorios.addLayer(drakthal);
+        territorios.addLayer(thallassari);
+        territorios.addLayer(arathorn);
+        territorios.addLayer(astron);
+        territorios.addLayer(ferol);
+        territorios.addLayer(valorith);
+        territorios.addLayer(zyrak);
+        territorios.addLayer(alhtara);
+        territorios.addLayer(dunski);
+        territorios.addLayer(emberstorm);
+        territorios.addLayer(erethis);
+        territorios.addLayer(heldarim);
+        territorios.addLayer(valghu);
+        territorios.addLayer(valdros);
+        territorios.addLayer(narakthul);
+        territorios.addLayer(velgaroth);
+        territorios.addLayer(ghulmar);
+        territorios.addLayer(dravokahn);
+        territorios.addLayer(varkathis);
+        territorios.addLayer(ethrakar);
+        territorios.addLayer(ermos);
+        territorios.addLayer(drenvar);
+        territorios.addLayer(nythravel);
+        territorios.addLayer(aurora);
+        territorios.addLayer(aurelon);
+        territorios.addLayer(draknarr);
+        territorios.addLayer(geodrasis);
+        territorios.addLayer(korgard);
+    } else {
+        territorios.removeLayer(eterno);
+        territorios.removeLayer(yvren);
+        territorios.removeLayer(umbroth);
+        territorios.removeLayer(ashkhor);
+        territorios.removeLayer(krathor);
+        territorios.removeLayer(fenkarr);
+        territorios.removeLayer(dullaskus);
+        territorios.removeLayer(drakthal);
+        territorios.removeLayer(thallassari);
+        territorios.removeLayer(arathorn);
+        territorios.removeLayer(astron);
+        territorios.removeLayer(ferol);
+        territorios.removeLayer(valorith);
+        territorios.removeLayer(zyrak);
+        territorios.removeLayer(alhtara);
+        territorios.removeLayer(dunski);
+        territorios.removeLayer(emberstorm);
+        territorios.removeLayer(erethis);
+        territorios.removeLayer(heldarim);
+        territorios.removeLayer(valghu);
+        territorios.removeLayer(valdros);
+        territorios.removeLayer(narakthul);
+        territorios.removeLayer(velgaroth);
+        territorios.removeLayer(ghulmar);
+        territorios.removeLayer(dravokahn);
+        territorios.removeLayer(varkathis);
+        territorios.removeLayer(ethrakar);
+        territorios.removeLayer(ermos);
+        territorios.removeLayer(drenvar);
+        territorios.removeLayer(nythravel);
+        territorios.removeLayer(aurora);
+        territorios.removeLayer(aurelon);
+        territorios.removeLayer(draknarr);
+        territorios.removeLayer(geodrasis);
+        territorios.removeLayer(korgard);
+    }
+});
+ 
+
+
 
 
 
@@ -1283,16 +1986,21 @@ animaisMisticos.addTo(map);
 
 
 
-        // Exemplo: Criando um círculo ao redor de um ponto importante
+        //Criando um círculo ao redor de um ponto importante
         //var circle = L.circle([700, 300], {
         //    color: 'red', // Cor da borda
-        //    fillColor: '#f03', // Cor de preenchimento
-        //    fillOpacity: 0.5, // Opacidade de preenchimento
+         //   fillColor: '#f03', // Cor de preenchimento
+         //   fillOpacity: 0.5, // Opacidade de preenchimento
         //    radius: 50 // Tamanho do círculo
         //}).addTo(map).bindPopup('Uma área importante');
 
+ 
+     // Fecha o polígono voltando ao ponto inicial
 
-//pode usar o DivIcon 
+    
+
+
+//CRIANDO UM CIRCULO AMAARELO 
 //        var divIcon = L.divIcon({
 //    className: 'custom-div-icon',
 //    html: "<div style='background-color: yellow; border-radius: 50%; width: 30px; height: 30px;'></div>",
@@ -1309,54 +2017,48 @@ animaisMisticos.addTo(map);
 
 
     </script>
-
-
- 
- 
     <br/>
     <br/>
     
-    <!-- RODAPÉ -->
-            <footer class="bg-dark text-light py-5">
-            <div class="container">
-            <div class="row justify-content-center text-center text-md-left align-items-center">
-      
-            <!-- Logo -->
-            <div class="col-md-4 mb-4 mb-md-0 text-md-left logo-container">
-                <img src="./Imagens_outras/006.png" alt="Logo" class="img-fluid">
+<!-- RODAPÉ --> 
+<footer class="bg-dark text-light py-3" style="background-color: rgba(0, 0, 0, 0.3) !important;">
+    <div class="container"> 
+    <hr class="linha-rodape"> 
+        <div class="row text-center text-md-left align-items-center">     
+        <!-- LOGO -->   
+            <div class="col-md-4 mb-4 mb-md-0 logo-container d-flex justify-content-center justify-content-md-start">
+                <img src="./Imagens_outras/001.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
             </div>
-      
-            <!-- Informações de Contato -->
-            <div class="col-md-4 mb-4 mb-md-0 text-md-center">
-              <p>© 2024 Todos os Direitos Reservados</p>
-              <p>Mail: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
-              <p>Tel: <a href="tel:+5511991058957" class="text-light">+55 11 99105-8957</a></p>
+        <!-- INFORMAÇÕES -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <p>Contato: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
+                <p class="m-b-footer">O Despertar dos Reinos © 2025<br/>Todos os Direitos Reservados</p>
+                <p class="by">Desenvolvido por: <a href="https://www.linkedin.com/in/paulo-campos-55453176/?trk=opento_sprofile_details" target="_blank">Paulo Campos</a></p>
             </div>
-      
-            <!-- Redes Sociais -->
-            <div class="col-md-4 d-flex justify-content-center justify-content-md-end footer-social">
-              <a href="" class="mx-2" target="_blank">
-                <img src="./Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
-              </a>
-              <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
-                <img src="./Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
-              </a>
-              <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
-                <img src="./Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
-              </a>
-              <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
-                <img src="./Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
-              </a>
-              <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
-                <img src="./Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    
-
-    <script src="search.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer></script>
-    </body>
-    </html>
+        <!-- REDES SOCIAIS -->
+            <div class="col-md-4 footer-social d-flex justify-content-center justify-content-md-end flex-wrap">
+                <a href="#" class="mx-2" target="_blank">
+                    <img src="./Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
+                    <img src="./Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
+                    <img src="./Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
+                    <img src="./Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
+                </a>
+                <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
+                    <img src="./Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
+                </a>
+            </div> 
+        </div>       
+    </div>
+    <hr class="linha-rodape"> 
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

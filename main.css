@@ -4,16 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    
+    /*outline: 1px solid red; verificar se ha algum iten fora do site*/
 }
 /* #########################################  PLANO DE FUNDO  ######################################### */
 body {
-    background-image: url('Imagens_outras/fundo05.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-
+    background-image: url('Imagens_outras/fundo09.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;}
 /* #########################################  CAMPO DE BUSCA  ######################################### */
 .btn-buscar {
     float: right; 
@@ -146,7 +147,7 @@ body {
 .image-item-magic .btn:hover {
     background-color: #333;
 }
-/* #########################################  IMAGENS BOSS -- PAGINA BOSS --  ######################################### */
+/* #########################################  IMAGENS CARTAS -- PAGINA TCG-BOSS --  ######################################### */
 .image-container-boss {
     display: flex;
     justify-content: center; 
@@ -376,13 +377,12 @@ body {
 .close {
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 20px;
     color: white;
     font-size: 35px;
     font-weight: bold;
     cursor: pointer;
 }
-
 /* #########################################  IMAGENS - PAGINA LOJA - PERSONAGENS ######################################### */
 .grid-container-loja {
     display: flex;
@@ -410,7 +410,6 @@ body {
 .zoom-container:hover .zoom-image {
     transform: scale(1.07); 
 }
-
 @media (max-width: 374px) {
     .grid-container-loja {
         grid-template-columns: 1fr;
@@ -420,31 +419,28 @@ body {
         margin: 0 auto;
     }
 }
+/* #########################################  BOTAO PADRAO  ######################################### */
+ 
+ 
+  .btn-dark {
+  background-color: #000 !important;
+  border-color: #000 !important;
+  color: #fff;
+}
+.btn-dark:hover {
+  color: #ff3c00 !important;
+  text-shadow: 0 0 5px #ff3c00, 0 0 10px #6a0d0d;
+  box-shadow: 0 0 8px #ff3c00, 0 0 16px #6a0d0d;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+ 
 
 
-/* #########################################  BOTAO INDEX  ######################################### */
-.button-in {
-    display:inline-block;
-    background-color:#000000;
-    color:#FFF;
-    text-transform: uppercase;
-    font-family: 'Sedan SC';
-    font-size:12px;
-    font-weight:600;
-    text-decoration: none;
-    padding:10px 30px;
-    margin-top:25px;
-    border-radius:20px;
-}
-.button-in:hover {
-    background-color:rgb(50, 50, 50);
-}
-.button-in--dark {
-    background-color:#000;
-}
-.button-in--dark:hover {
-    background-color:#999;
-}
+
+
+
+
 
 
 
@@ -457,13 +453,9 @@ body {
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
 }
-
 .photo img:hover {
     transform: scale(1.05);
 }
-
-
-
 .personagens {
     clear: both;
     margin-bottom: 25px;
@@ -481,7 +473,6 @@ body {
     transition: filter 0.3s ease-in-out; 
     margin-top: 140px;
 }
-
 .personagens img {
     width: 650px;
     transition: filter 0.3s ease-in-out; 
@@ -523,139 +514,9 @@ body {
         width: 400px;
     }
 }
-
-/* #########################################  3 QUADRADOS CARACTERISTICAS BOSS  ######################################### */
-.characteristics-grid-boss {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    margin: 0px auto;
-    max-width: 90%;
-}
-.characteristic-boss {
-    text-align: center;
-}
-.characteristic-box-boss {
-    width: 250px;
-    height: 300px;
-    background-image: url('Imagens_outras/fundo08.JPG'); 
-    background-size: cover; 
-    background-position: center; 
-    border: 2px solid #ccc;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-}
-
-.characteristic-box-boss h2 {
-    font-family: 'Sedan SC', serif;
-    font-size: 40px;
-    color: #333;
-    margin-top: 0;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 100%;
-}
-.characteristic-box-boss p {
-    font-family: 'Sedan SC';
-    font-size: 16px;
-    color: #000000;
-    margin: 0;
-    text-align: left;
-    width: 100%;
-}
-
-@media (min-width: 320px) and (max-width: 374px) {
-    .characteristics-grid-boss {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px;
-    }
-    
-    .characteristic-box-boss {
-        width: 140px; 
-        padding: 10px; 
-    }
-    
-    .characteristic-box-boss h2 {
-        font-size: 24px; 
-    }
-    
-    .characteristic-box-boss p {
-        font-size: 12px; 
-        text-align: center;
-    }
-}
-@media (min-width: 375px) and (max-width: 424px) {
-    .characteristics-grid-boss {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px; 
-    }
-    
-    .characteristic-box-boss {
-        width: 150px; 
-        padding: 10px; 
-    }
-    
-    .characteristic-box-boss h2 {
-        font-size: 24px; 
-    }
-    
-    .characteristic-box-boss p {
-        font-size: 12px; 
-        text-align: center;
-    }
-}
-@media (min-width: 425px)and (max-width: 767px)  {
-    .characteristics-grid-boss {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px; 
-    }
-    
-    .characteristic-box-boss {
-        width: 180px; 
-        padding: 10px; 
-    }
-    
-    .characteristic-box-boss h2 {
-        font-size: 24px; 
-    }
-    
-    .characteristic-box-boss p {
-        font-size: 12px; 
-        text-align: center;
-    }
-}
-@media (min-width: 768px)and (max-width: 1023px)  {
-    .characteristics-grid-boss {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 10px; 
-    }
-    
-    .characteristic-box-boss {
-        width: 250px; 
-        padding: 10px; 
-    }
-    
-    .characteristic-box-boss h2 {
-        font-size: 24px; 
-    }
-    
-    .characteristic-box-boss p {
-        font-size: 12px; 
-        text-align: center;
-    }
-}
-
+ 
 
 /* #########################################  ZOOM QUANOD CLICAREM NA FOTO  ######################################### */
-
-/* Overlay */
 .overlay {
     display: none;
     position: fixed;
@@ -668,15 +529,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* Overlay Content */
 .overlay-content {
     max-width: 90%;
     max-height: 90%;
     margin: auto;
 }
-
-/* Close Button */
 .close {
     position: absolute;
     top: 20px;
@@ -685,15 +542,9 @@ body {
     color: white;
     cursor: pointer;
 }
-
-
-
-
-
 /* #########################################  CONTEUDOS PAGINA HOME  ######################################### */
 
 /* #########################################  3 NOTICIAS HOME*/
-
 .column{
     flex-direction: column;
 }
@@ -758,7 +609,6 @@ body {
     border-radius: 20px;
     text-transform: uppercase;
 }
-
 .banner_options a:hover{
     background-color: black;
     color: white;
@@ -772,7 +622,7 @@ body {
     .banner2,
     .banner3 {
         width: 100%; 
-        max-width: 350px;
+        max-height: 200px;
     }
     .banner_options a {
         padding: 8px 15px; 
@@ -810,9 +660,7 @@ body {
     margin-top: 60px;
 
 }
-
 /* #########################################  PAGINA LOJA  ######################################### */
-
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -1095,20 +943,19 @@ article .news_resume {
     }
 }
 /* #########################################  PRODUTOS LOJA PERSONAGENS  ######################################### */
-
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
-.product-item {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+.product-item { 
     padding: 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
-  }
+    color: white;
+    border-radius: 15px;
+}
 .product-item img {
     width: 100%;
     transition: transform 0.3s ease;
@@ -1119,25 +966,7 @@ article .news_resume {
     font-size: 18px;
     line-height: 24px;
   } 
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-.pagination a {
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    margin: 0 4px;
-  }
-.pagination a.active {
-    background-color: #333;
-    color: white;
-  }
-.pagination a:hover:not(.active) {
-    background-color: #ddd;
-  }
+  
 .product-item .icon {
     vertical-align: middle;
     width: 25px; 
@@ -1161,6 +990,10 @@ article .news_resume {
     .product-item {
         padding: 10px; 
     }
+
+    .product-item span {
+        font-size: 15px;
+    }
     .product-item h3, .product-item p {
         font-size: 16px; 
         line-height: 20px; 
@@ -1170,6 +1003,30 @@ article .news_resume {
         width: 150px; 
     }
 }
+
+
+/* #########################################  OK BOTÕES DE PASSAR PAGINAS (TCG MERCADOR)  ######################################### */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;}
+.pagination a {
+    background-color: #000 !important; 
+    border: 1px solid #000 !important; 
+    color: #fff !important; 
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 5px; 
+    transition: all 0.3s ease-in-out; }
+.pagination a.active {
+    background-color: #6a0d0d !important; /* Tom diferente para ativo */
+    color: #fff !important;} 
+.pagination a:hover:not(.active) {
+    color: #ff3c00 !important;
+    text-shadow: 0 0 5px #ff3c00, 0 0 10px #6a0d0d;
+    box-shadow: 0 0 8px #ff3c00, 0 0 16px #6a0d0d;
+    transform: scale(1.05);}
 /* #########################################  BARRA FILTRAGEM  ######################################### */
 .filter-bar {
     display: flex;
@@ -1192,7 +1049,7 @@ article .news_resume {
     border: 1px solid #333;
     font-family: 'Sedan SC';
 }
-/* #########################################  CALCULADORA  ######################################### */
+/* ######################################### OK CALCULADORA  ######################################### */
 .calculator {
     display: flex;
     flex-direction: column;
@@ -1225,44 +1082,88 @@ article .news_resume {
     background-color: #999;
     color: #ffffff;
 }
-/* ######################################### IMAGEM PAGINA AJUDA VANTAGENS  ######################################### */
-.vantagens {
+
+
+
+
+
+
+
+
+
+ 
+/* ######################################### CARDS PAGINAS PERSONAGENS e ANIMAÇÂO  ######################################### */
+.box {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5); 
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    font-size: 1.5rem;
+   /* da parte da animação */
+    transition: all 0.3s ease-in-out;
+    transform: translateZ(0);
+    position: relative;
+    overflow: hidden; } 
+  .box.tall {
+    grid-row: span 2;}
+  @media (min-width: 768px) {
+    .box {
+      height: 300px;
+    }
+    .box.tall {
+      height: 620px;
+    }}
+  @media (max-width: 767px) {
+    .box {
+      height: auto;
+    }}
+  .box:hover {
+    box-shadow: 0 8px 10px 3px rgba(0,0,0,0.6);
+    transform: translateY(-10px) scale(1.03);
+    cursor: pointer;
+    z-index: 10;}
+  .box::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 200%;
+    height: 100%;
+    top: -100%;
+    left: -20px;
+    opacity: 0.1;
+    transform: rotate(45deg);
+    background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+    transition: 0.3s;
+    pointer-events: none;}
+  .box:hover::after {
+    transform: rotate(25deg);
+    top: -30%;
+    opacity: 0.15;}
+/* ######################################### OK TEXTOS ARTIGOS  ######################################### */
+  .noticias-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 17px; 
 }
-.vantagens img {
-    
-    height: 800PX;
-    border-radius: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+.noticia img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.noticias-container p{
+    color: white;
+    font-family: 'Sedan SC'; 
+}
+.noticias-container h3{
+    color: white;
+    font-family: 'Sedan SC'; 
+}  
 /* #########################################  3 NOTICIAS PAGINA ATUALIZAÇÃO ######################################### */
 .column2 {
     display: flex;
@@ -1348,184 +1249,436 @@ article .news_resume {
         font-size: 24px; 
     }
 }
-/* #########################################  RODAPÉ  ######################################### */
-footer {
+/* ######################################### OK LINHA ANTES DO RODAPÉ  ######################################### */
+.linha-rodape {
+    border: none; 
+    height: 4px;
+    width: 90%;
+    margin: 15px auto 20px auto; 
+    background: linear-gradient(to right, #8B0000, #aa2e01, #8B0000);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.6);
+    transition: all 0.3s ease; }
+.linha-rodape:hover {
+    animation: piscar 1s infinite;}
+@keyframes piscar {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+        transform: scaleX(1.1); 
+    }
+    100% {
+        opacity: 1;
+    }}
+    /* #########################################  OK RODAPÉ  ######################################### */
+.footer {
     background-color: #000 !important;
     color: white;
     font-family: 'Sedan SC', sans-serif;
-    padding: 40px 0;
-    
-  }
-  footer.bg-dark {
-    background-color: #000 !important; 
-    color: white; 
-}
+    padding: 50px 0; }
   .footer-social {
-    display: flex;
-    gap: 10px;
-  }
+    gap: 10px;}
   .logo-container {
-    margin-left: -80px;
-  }
+    margin-left: 0;
+    transform: scale(1.5); }
   .footer-social a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #000; 
+    background-color: #000;
     border-radius: 50%;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
-  }
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;}
   .footer-social a:hover {
-    transform: scale(1.1);
-    background-color: #333; 
-  }
+    transform: scale(1.5);
+    background-color: #000000;}
   .footer-social img {
     width: 25px;
-    height: 25px;
-  }
+    height: 25px; }
   p {
     margin: 0;
     line-height: 1.6;
     font-size: 16px;
-  }
+    font-family: 'Sedan SC';
+    text-decoration: none;} 
+  .by a {
+    color: white !important;
+    text-decoration: none !important;
+    font-family: 'Sedan SC';}
+  .by a:hover {
+    color: #ccc !important;
+    text-decoration: underline; }
   @media (max-width: 767px) {
     .footer-social {
       margin-top: 20px;
       justify-content: center;
       flex-wrap: wrap;
+      gap: 15px;  
     }
+  
     .footer-social a {
-      margin: 5px;
+      margin: 10px;  
     }
+  
     .logo-container {
-        margin-left: 0;
-      }
-  }
-  @media (min-width: 768px) {
-    .footer-social {
-      justify-content: flex-end;
-    }
-  }
-
- /* #########################################  MENU  ######################################### */
- .navbar {
-    background-color: #000 !important; 
-    color: white !important;
-    background-color: transparent !important;
-}
-.navbar.navbar-dark {
-    background-color: #000 !important;
-    color: white !important;
-}
- .navbar .container {
-    padding-left: 0;
-}
-.navbar-brand {
-    /* margin-left: -120px; */  /* Remova ou comente isso */
-    padding-left: 10px; 
-    display: flex; 
-    align-items: center; 
-}
-
-.navbar-nav .nav-link {
-    color: #FFF;
-    font-family: 'Sedan SC';
-    padding: 1px;
-    margin: 0 8px; 
-    text-transform: uppercase;
-    transition: background-color 0.4s;
-}
-.navbar-nav .nav-link:hover {
-    background-color: rgb(50, 50, 50);
-}
-.navbar-toggler {
-    background-color: rgb(0, 0, 0);
-    border: none;
-    color: white;
-    font-size: 24px;
-    margin-left: 14px; 
-}
-
-
-
-
-@media (max-width: 992px) { 
-    .navbar-brand {
-        margin-left: 150px; 
-        margin-right: auto; 
-        padding-left: 10px;
-    }
-    .navbar-collapse .navbar-nav {
-        width: 100%;
-    }
-    .navbar-collapse .navbar-nav .nav-item {
-        width: 100%; 
-    }
-    .navbar-collapse .navbar-nav .nav-link {
-        color: #FFF;
-        font-family: 'Sedan SC';
-        padding: 10px;
-        transition: background-color 0.4s;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        display: block; 
-        width: 100%;
-    }
-    .navbar-collapse .navbar-nav .nav-item:last-child .nav-link {
-        border-bottom: none; 
-    }
-    .navbar-collapse .navbar-nav .nav-link:hover {
-        background-color: rgb(50, 50, 50);
-    }
-} 
-
-@media (max-width: 1100px) {
-    .navbar-nav .nav-link {
-        margin: 0 5px;
-        font-size: 12px;
-        padding: 8px 5px;
-    }
-}
-
-/* ######################################### ícones sociais MENU ######################################### */
-.social-icons {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    display: flex;
-    gap: 15px;
-}
-.social-icons img {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s;
-}
-.social-icons img:hover {
-    transform: scale(1.2);
-}
-@media (max-width: 992px) {
-    .social-icons {
-        position: absolute;
-        top: 30px;
-        left: 50%;
-        transform: translateX(-50%);
+        transform: none;
         display: flex;
-        z-index: 10;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+      }
+      .logo-container img {
+        max-width: 150px;  
+        height: auto;
+      }
+    
+      footer .col-md-4:nth-child(2) {
+        margin-top: 10px;  
+      }
+    
+  
+    footer .col-md-4 {
+      margin-bottom: 20px;  
     }
-        .social-icons a {
-            margin-left: 5px; 
-            margin-right: 5px; 
-        }
-    .social-icons img {
-        width: 30px;
-        height: 30px;
+  
+    footer .row {
+      gap: 20px;  
+    }}
+  .main_footer_copy {
+    text-align: center;
+    background-color: #220303;
+    padding: 13px;}
+/* #########################################  MENU  ######################################### */
+.nav {
+    width: 100%;
+    height: 65px; 
+    line-height: 65px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    z-index: 9999;
+    font-size: 1.6rem; } 
+.nav div.logo {
+    position: absolute;
+    left: 40px; 
+    width: auto;
+    height: auto;
+    padding-left: 0; } 
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;}
+.nav div.logo img {
+    width: 100px; 
+    height: auto; }
+.nav div.main_list {
+    height: 65px;
+    float: right; }
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;}
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 1rem; }
+ .nav div.main_list ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #dcdcdc;
+    line-height: 65px; 
+    font-size: 15px;
+    white-space: nowrap;  
+    font-family: 'Sedan SC';
+    transition: color 0.3s ease-in-out;
+    z-index: 1; }
+.nav div.main_list ul li a::before,
+.nav div.main_list ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #8b0000, transparent);
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;}
+.nav div.main_list ul li a::after {
+    top: auto;
+    bottom: 0;
+    transform-origin: right;}
+.nav div.main_list ul li a:hover::before,
+.nav div.main_list ul li a:hover::after {
+    transform: scaleX(1);}
+.nav div.main_list ul li a:hover {
+    color: #ff3c00;
+    text-shadow: 0 0 5px #ff3c00, 0 0 10px #6a0d0d;} 
+.menu-icon {
+    display: none;}    
+.navTrigger {
+display: none; }
+@media screen and (max-width:1024px) {
+    .nav {
+        position: fixed;
     }
-    .navbar-toggler {
-        left: 10px;
-        z-index: 20;
+    .navTrigger {
+        display: block;
+        cursor: pointer;
     }
+    .nav div.logo {
+        margin-left: -20px;
+        top: 40px;
+        display: none;  
+    } 
+    
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        display: none;  
+        padding: 0;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list.show_list {
+        display: block;  
+    }
+    .nav div.main_list ul {
+    flex-direction: column;
+    width: 100%;
+    height: 460px;  
+    max-height: 80vh;  
+    border-radius: 10px;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);  
+    background-position: center top; 
+    padding: 0;  
+    margin: 0;  
 }
+
+.nav div.main_list ul li {
+    width: 100%;
+    text-align: right;
+    margin-bottom: -70px;  
+    margin-top: 40px;
+    margin-right: -18px;
+} 
+.nav div.main_list ul li a {
+    font-size: 1rem;  
+    text-align: right;
+    width: 100%;
+    padding: 5px 20px;  
+    margin: 0;  
+    display: block; 
+    color: #fff;
+}
+.nav div.main_list ul li a::before,
+  .nav div.main_list ul li a::after {
+    display: none;
+  }
+
+  .nav div.main_list ul li a:hover {
+    color: #fff;
+    text-shadow: none;
+  }
+    .nav div.media_button {
+        display: block;
+    }
+    .menu-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    vertical-align: middle;
+    transform: translateY(-3px);
+}
+.menu-icon[data-icon="HOME"] {
+    background-image: url('Imagens-icones-map/home2.png');}
+.menu-icon[data-icon="EPISÓDIOS"] {
+    background-image: url('Imagens-icones-map/tv2.png');}
+.menu-icon[data-icon="HQ"] {
+    background-image: url('Imagens-icones-map/hq2.png');}
+.menu-icon[data-icon="RPG"] {
+    background-image: url('Imagens-icones-map/dados2.png');}
+.menu-icon[data-icon="MAPA DO MUNDO"] {
+    background-image: url('Imagens-icones-map/map5.png');}
+.menu-icon[data-icon="REINOS"] {
+    background-image: url('Imagens-icones-map/castle-06.png');}
+.menu-icon[data-icon="PERSONAGENS"] {
+    background-image: url('Imagens-icones-map/personagens4.png');}
+.menu-icon[data-icon="BESTIÁRIO"] {
+    background-image: url('Imagens-icones-map/bestiario2.png');}
+.menu-icon[data-icon="ITENS"] {
+    background-image: url('Imagens-icones-map/itens4.png');}
+.menu-icon[data-icon="TCG - GAME"] {
+    background-image: url('Imagens-icones-map/tcg4.png');}
+.menu-icon[data-icon="LOJA"] {
+    background-image: url('Imagens-icones-map/loja3.png');}} 
+/* Animação */
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 30px;
+    top: 20;
+    z-index: 1001;
+    bottom: 0;}
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;}
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;}
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;}
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;}
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;}
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;}
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;}
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }}
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }}
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }}
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }}
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }}
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }}
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }}
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }}
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }}
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }}
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }}
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }}
 /* ######################################### NOTICIAS HOME  ######################################### */
 .noticias-titulo {
     font-size: 35px;
@@ -1579,29 +1732,29 @@ footer {
         margin: 0 auto;
     }
 }
-    .noticias-item {
+.noticias-item {
         text-align: center; 
         padding: 0 15px; 
-    }
-    .noticias-item img {
+}
+.noticias-item img {
         max-width: 100%; 
         margin-bottom: 15px; 
-    }
-    /* #########################################  PAGINA HISTORIA --  ######################################### */
-    .centralizado {
+}
+/* #########################################  OK PAGINA REINOS (TEXTO CENTRALIZADO E IMAGENS RETANGULARES)  ######################################### */
+.centralizado {
         text-align: justify;
         line-height: 1.8;
         font-size: 17px;
         margin: 0 auto;
         width: 80%; 
-    }
-    .spacer {
+}
+.spacer {
         margin: 3rem 0;
-    }
-    p + p {
+}
+p + p {
         margin-top: 1.5rem;
-    }
-    .titulo-centralizado {
+}
+.titulo-centralizado {
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -1640,49 +1793,47 @@ footer {
     object-fit: cover; 
     object-position: center; 
 }
-/* #########################################  PAGINA GALERIA CLICAR NA FOTO E AMPLIAR ######################################### */
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 9999; 
-    padding-top: 10%; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-/* #########################################  PAGINA PERSONAGEN ######################################### */
+ /* ######################################### OK  PAGINAS PERSONAGENS (humanos, hibridos, criaturas etc...)  #########################################*/ 
 .card {
     display: flex;
     flex-direction: column;
     height: 100%;
+    background-color: transparent !important;
+    border: 1px solid rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;  
+    transition: all 0.3s ease-in-out;
+    transform: translateZ(0);
+}
+.card:hover {
+    box-shadow: 0 8px 10px 3px rgba(0, 0, 0, 0.6);
+    transform: translateY(-10px) scale(1.03);
+    cursor: pointer;
+    z-index: 10;
+    border: 1px solid #ff3c00;
+    box-shadow: 0 0 10px #ff3c00, 0 0 20px #6a0d0d; 
+    
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.card::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 200%;
+    height: 100%;
+    top: -100%;
+    left: -20px;
+    opacity: 0.1;
+    transform: rotate(45deg);
+    background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+    transition: 0.3s;
+    pointer-events: none;
+}
+.card:hover::after {
+    transform: rotate(25deg);
+    top: -30%;
+    opacity: 0.15;
 }
 .card-body {
     display: flex;
@@ -1690,14 +1841,20 @@ footer {
     justify-content: flex-start;
     align-items: center;
     flex-grow: 1; 
-}
+    background-color: transparent !important;  
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top: none;  
+}  
 .card-body p {
     margin-bottom: 1rem;
     font-family: 'Sedan SC';
+    color: white;
 }
 .card-body h5{
     margin-bottom: 1rem;
     font-family: 'Sedan SC';
+    color: white;
 }
 .card-body .btn {
     margin-top: 1rem; 
@@ -1710,27 +1867,25 @@ footer {
     box-shadow: none;
 }
 .card-body .btn:hover {
-    background-color: #333;
+    background-color: #000;
+    color: #ff3c00; text-shadow: 0 0 5px #ff3c00, 0 0 10px #6a0d0d; 
     
 }
-/* #########################################  PAGINA PERSONAGEN ######################################### */
+/* #########################################  PAGINA GALERIA DE IMAGENS (GRID) ######################################### */
 .gallery-item {
     overflow: hidden;
-    border-radius: 10px; 
+    border-radius: 80px; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     height: 100%; 
 }
-
 .gallery-item img {
     object-fit: cover; 
     transition: transform 0.3s ease; 
 }
-
 .gallery-item:hover img {
     transform: scale(1.05); 
 }
-/* #########################################  8 QUADRADOS CARACTERISTICAS PERSONAGENS  ######################################### */
-
+/* #########################################  OK  8 QUADRADOS CARACTERISTICAS PERSONAGENS  ######################################### */
 .characteristics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1848,9 +2003,4 @@ footer {
         font-size: 16px; 
     }
 }
-
-
-
-
-
-
+ 
