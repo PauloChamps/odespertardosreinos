@@ -1,185 +1,432 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../main.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="../Imagens_outras/icon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&family=Vollkorn+SC:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>ROWAN</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
-     crossorigin="anonymous"></script>
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="description" content="Humanos do RPG: guerreiros, magos e heróis da raça mais adaptável.">
+    <meta name="theme-color" content="#000000">
+    <link rel="canonical" href="https://www.odespertardosreinos.com.br/">
+    <title>ROWAN | Mundo de RPG - Personagens, Reinos e Magias</title>
+  
+    <!-- Open Graph -->
+    <meta property="og:title" content="O Despertar dos Reinos | RPG e Fantasia Épica">
+    <meta property="og:description" content="Explore um universo mágico com RPG, HQs, cartas e vídeos.">
+    <meta property="og:image" content="https://www.odespertardosreinos.com.br/imagens/og-image.jpg">
+    <meta property="og:url" content="https://www.odespertardosreinos.com.br/">
+    <meta property="og:type" content="website">
+  
+    <!-- Favicon -->
+    <link rel="icon" href="../../Imagens_outras/ico.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../Imagens_outras/005.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../Imagens_outras/ico.ico">
+
+    <!-- Fonts e CSS -->
+    <link href="../../main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289" crossorigin="anonymous"></script>
 </head>
-<body style="background-color:rgb(255, 255, 255)">
-    <header>
-        <img src="../Imagens_banners/banner01.jpg"  class="banner_img"  />
-        <!-- Botão de Entrar 
-        <a href="login.html" class="btn btn-login">Entrar</a>
-         Botão de Cadastre-se 
-        <a href="cadastro.html" class="btn btn-cadastrar">Cadastre-se</a>-->
-    
-        <!-- Ícones de redes sociais -->
-        <div class="social-icons">
-            <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" target="_blank"><img src="../Imagens_outras/insta2.png"/></a>
-            <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/you2.png"/></a>
-            <a href="https://www.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/pint2.png"/></a>
-        </div>
-    </header>
-    
-<!--MENU PRINCIPAL-->
-<center>
-    <nav id="menu-h">
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-        <ul>
-            <li><a href="../index.html">H O M E</a></li>
-            <li><a href="../historia.html">H I S T Ó R I A</a></li>
-            <li><a href="../reinos.html">R E I N O S</a></li>
-            <li><a href="../bosses.html">B O S S</a></li>
-            <li><a href="../magic.html">C A R T A S - M Á G I C A S</a></li>
-            <li><a href="../loja.html">L O J A</a></li>
-            <li><a href="../help.html">A J U D A</a></li>
-        </ul>
-       <!-- Botão de Busca -->
-     <div class="btn-buscar">
-            <form action="search.php" method="post">
-                <label for="search" style="color: white; font-family: 'Sedan SC';">Buscar Cartas:</label>
-                <input type="search" id="search" name="search">
-                <!--<button type="submit" class="btn btn-buscar">Buscar Cartas</button>-->
-            </form>
-        </div>
-    </nav>
-</center>
-<script src="../search.js"></script>
+<body>
 
-<!-- HIBRIDO ROWAN-->
-<div class="personagens">
-    <div class="photo">
-        <img src="../Imagens_personagens/híbridos/hibridos_rowan02.jpeg" alt="Rowan">
+<!-- Menu Principal -->
+<nav class="nav">
+  <div class="container">
+      <div class="logo">
+        <a href="in"><img src="../../Imagens_outras/001.png" alt="Logo"></a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li class="nav-item"><a class="nav-link" href="../../index.html">HOME <span class="menu-icon" data-icon="HOME"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">EPISÓDIOS <span class="menu-icon" data-icon="EPISÓDIOS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../hq.html">HQ <span class="menu-icon" data-icon="HQ"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../rpg.html">RPG <span class="menu-icon" data-icon="RPG"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../Map.html">MAPA DO MUNDO <span class="menu-icon" data-icon="MAPA DO MUNDO"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../reinos.html">REINOS <span class="menu-icon" data-icon="REINOS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../personagens.html">PERSONAGENS <span class="menu-icon" data-icon="PERSONAGENS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../bestiario.html">BESTIÁRIO <span class="menu-icon" data-icon="BESTIÁRIO"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../itens.html">ITENS <span class="menu-icon" data-icon="ITENS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../tcg_game.html">TCG - GAME <span class="menu-icon" data-icon="TCG - GAME"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="../../loja.html">LOJA <span class="menu-icon" data-icon="LOJA"></span></a></li>
+          </ul>
+      </div>
+      <span class="navTrigger">
+          <i><a href="#"></a></i>
+          <i><a href="#"></a></i>
+          <i><a href="#"></a></i>
+      </span>
+  </div>
+</nav>
+<br/> 
+
+<!-- CRIATURA ARQUIDEMONIO-->
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col text-center d-flex justify-content-center align-items-center">
+            <!-- Seta Esquerda -->
+            <a href="./megan.html" class="me-3" style="color: white; font-size: 30px; text-decoration: none;">
+                &#8592;
+            </a>
+
+            <!-- Nome do Personagem -->
+            <h2 class="mb-0" style="font-family: 'Sedan SC'; color: white;">ROWAN</h2>
+
+            <!-- Seta Direita -->
+            <a href="./megan.html" class="ms-3" style="color: white; font-size: 30px; text-decoration: none;">
+                &#8594;
+            </a>
+        </div>
     </div>
-</div>
-
-
-<!-- Seta Direita -->
-<div class="arrow-container-right">
-    <a href="./tristan.html" class="arrow-link-right"></a>
-</div>
-
-<!-- Seta Esquerda -->
-<div class="arrow-container-let">
-    <a href="./megan.html" class="arrow-link-left"></a>
-</div>
-
-<div class="boss-description">
     <br/>
-        <h1>R O W A N</h1>
-        <p> Entre as árvores antigas e os riachos cristalinos de Arboria, onde a vida pulsa em harmonia com a natureza, vive Rowan, um meio-orc cuja alma é tão selvagem quanto a própria floresta que o acolhe. Filho de uma união incomum entre um druida humano e uma orc da floresta, Rowan nasceu com um vínculo profundo com a natureza e uma determinação inabalável em proteger os bosques que chamava de lar.<br/><br/>
-            Desde tenra idade, Rowan foi iniciado nos mistérios da magia druídica, aprendendo a canalizar o poder dos elementos e a se conectar com os espíritos da natureza que habitam as profundezas da floresta. Ele aprendeu com os animais selvagens e as árvores ancestrais, absorvendo sua sabedoria antiga e sua força resiliente.<br/><br/>
-            No entanto, a jornada de Rowan como druida não foi fácil, pois ele enfrentou o preconceito e a hostilidade de ambos os mundos dos quais ele vinha: os humanos desconfiavam de suas origens orc, enquanto os orcs desconfiavam de sua conexão com os druidas humanos. Mas Rowan se recusou a deixar que o julgamento dos outros o definisse, escolhendo em vez disso seguir seu próprio caminho e proteger os bosques que amava com todas as suas forças.<br/><br/>
-            Como druida, Rowan se tornou um guardião da natureza, usando sua magia para curar as feridas infligidas à terra e defender os inocentes da ganância dos exploradores e da destruição causada pelo homem. Ele era uma força da natureza em si mesmo, sua determinação inabalável e sua conexão com os espíritos da floresta inspirando medo e respeito em igual medida.<br/><br/>
-            No entanto, apesar de sua força e coragem, Rowan também era um símbolo de equilíbrio e harmonia, sua presença na floresta trazendo paz e tranquilidade para aqueles que o encontravam. Ele era um amigo para todas as criaturas da floresta, um defensor dos fracos e uma voz para aqueles que não tinham voz.<br/><br/>
-            Para aqueles que o conheciam verdadeiramente, Rowan era mais do que um simples druida; ele era um guardião da terra, um protetor dos bosques e um exemplo vivo do poder da determinação e da conexão com a natureza. E enquanto houvesse bosques a serem protegidos e espíritos a serem ouvidos, Rowan estaria lá, pronto para lutar com todas as suas forças pela paz e pela harmonia em Arboria e além.
-            </p>
-        </div>
-    <br/>
-
-
-<div class="characteristics-grid">
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>atributos<hr></h2><br/><br/>
-            <p>HP: <strong>150</strong></p><br/>
-            <p>Vantagem: Monstros<br/><br/>
-               Desvantagem: Elementais, Bruxa dos Pesadelos, Rei dos Caçadores
-            </p>
+    
+    <div class="row align-items-center mt-4">
+        <div class="col-12 text-center">
+            <img src="../../Imagens_personagens/híbridos/hibridos-rowan.jpeg" class="img-fluid rounded shadow" alt="Guerreira forte personagem RPG">
         </div>
     </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>golpes<hr></h2>
-            <p>Lâmina da Alvorada: Um ataque rápido e preciso realizado com uma lâmina reluzente como a luz da manhã.<br/>Causa <strong>20</strong> de dano.<br/><br/>
-               Golpe do Despertar: Um golpe que desperta a energia interior do atacante, liberando-a em uma explosão de força bruta.<br/>Causa <strong>30</strong> de dano.<br/><br/>
-               Livro dos Homens: Invocando a sabedoria e força dos antigos guerreiros registrados no Livro dos Homens.<br/>Causa <strong>40</strong> de dano.</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aparência<hr></h2><br/>
-            <p>Altura: 1,85 metros<br/><br/>
-               Peso: 85 kg<br/><br/>
-               Cabelos: Castanhos escuros<br/><br/>
-               Olhos: Verdes como a savana<br/><br/>
-               Traje: Armadura leve de couro reforçado com placas de metal, ornamentada com símbolos do sol<br/><br/>       
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>personalidade<hr></h2><br/>
-            <p>Qualidades: Corajoso, determinado, leal e protetor<br/><br/>
-               Defeitos: Teimoso, reservado e por vezes impulsivo<br/><br/>
-               Habilidades Sociais: Líder nato, respeitado por seus aliados, mas com dificuldades para confiar em estranhos</p>      
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>habilidades<hr></h2><br/>
-            <p>Armas: Espada longa e escudo<br/><br/>
-               Táticas de Combate: Mestre em combate corpo a corpo e em táticas de guerrilha<br/><br/>
-               Outras Habilidades: Conhecimento profundo do terreno de Solária, rastreamento e sobrevivência</p>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>equipamentos<hr></h2><br/>
-            <p>Arma Principal: Espada da Alvorada, uma lâmina forjada com aço raro, imbuída com a energia do sol<br/><br/>
-               Escudo: Escudo do Despertar, resistente e leve, com um emblema do sol nascente<br/><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>aliados<hr></h2><br/>
-            <p>Elena: uma feiticeira humana que estuda magia ancestral para desvendar segredos perdidos.<br/><br/>
-               Marcus: um ladrão humano astuto que rouba dos ricos para sobreviver.<br/><br/>
-               Kiera: uma meio-elfa guerreira arqueira que luta para encontrar seu lugar em um mundo dividido.</p><br/>
-        </div>
-    </div>
-    <div class="characteristic">
-        <div class="characteristic-box">
-            <h2>inimigos<hr></h2><br/>
-            <p>Gromm: o Orc Bruto - Um guerreiro orc poderoso, conhecido por sua brutalidade e ferocidade em combate.<br/><br/>
-               Rei dos Caçadores: Um humano transformado em um monstro bestial, caçando humanos e criaturas inocentes para satisfazer sua fome insaciável por carne.
+</div>
+ 
+<!-- TEXTO PRINCIPAL-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC'; color: white;">
+                🌿 O Guardião dos Bosques<br><br>
+                Entre as árvores milenares e os rios cintilantes de Arboria, onde a vida pulsa em sincronia com os sussurros da terra, caminha Rowan — meio-orc, filho da floresta, espírito selvagem. Forjado pela união improvável de um druida humano e uma orc da mata, Rowan carrega em sua alma a força bruta da natureza e a sabedoria antiga dos espíritos.<br><br>
+            
+                🦅 A Alma da Natureza<br><br>
+                Desde pequeno, ele aprendeu os mistérios da magia druídica. Conversava com as árvores, ouvia os ventos e lia os sinais nas estrelas. Com os animais selvagens, tornou-se irmão; com as raízes profundas, parte da própria terra. A floresta não era apenas seu lar — era sua essência.<br><br>
+            
+                ⚡ Contra Todos os Preconceitos<br><br>
+                Rowan, porém, nasceu entre dois mundos que raramente se tocavam. Dos humanos, recebeu olhares desconfiados; dos orcs, rejeição silenciosa. Mas como as árvores que crescem firmes sob a tempestade, ele nunca se dobrou. Escolheu seu próprio caminho: o de proteger aquilo que lhe deu vida — os bosques ancestrais de Arboria.<br><br>
+            
+                🛡️ O Guardião Inabalável<br><br>
+                Como druida, Rowan tornou-se um verdadeiro guardião. Seus feitiços curavam feridas na terra, sua fúria esmagava aqueles que ousavam corrompê-la. Quando exploradores ou gananciosos ameaçavam a floresta, a resposta vinha rápida e feroz: uma força que se erguia como um trovão verde, moldada pela vontade dos próprios espíritos.<br><br>
+            
+                🍃 O Espírito da Harmonia<br><br>
+                Apesar da força imensa que carregava, Rowan era também uma presença de paz. Onde passava, a floresta florescia mais vibrante, os rios corriam mais puros. Ele era conselheiro dos desesperados, defensor dos fracos e a voz dos que não podiam falar — um verdadeiro elo entre todos os seres vivos.<br><br>
+                
+                🌳 A Promessa do Guardião<br><br>
+                Para aqueles que o conheciam de verdade, Rowan era mais que um druida: era a personificação da esperança e da harmonia entre os mundos. Enquanto houver raízes que precisem de proteção e ventos que carreguem canções de liberdade, Rowan estará lá — espada embainhada, coração aberto — lutando por Arboria e por tudo o que é selvagem e livre.<br>
+             
             </p>
         </div>
     </div>
 </div>
 
-
-
-<br/>
-<br/>
-<br/>
-
-<footer>
-    <div class="footer--area">
-        <div class="footer--item area1">
-            <img src="../Imagens_outras/006.png" alt="Facebook"/>
+<!-- VIDEO -->    
+<div class="row my-5">
+    <div class="col-12" style="max-width: 1052px; margin: 0 auto;">
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube-nocookie.com/embed/hnldHt1g4A4" title="Personagem Rowan" allowfullscreen></iframe>
         </div>
-        <div class="footer--item area2">
-            <p>© 2024 Todos os Direitos Reservados</p>
-            <p>Mail: odespertardosreinos@gmail.com</p>
-            <p>Tel: +55 11 99105-8957</p>
+    </div>
+</div>    
+
+<!-- TEXTO DEPOIS DO VIDEO-->
+<div class="container">
+<div class="row">
+    <div class="col-md-12">
+        <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC'; color: white;">
+            Cada personagem carrega em si uma história única, moldada pelas experiências, crenças e batalhas que enfrentou ao longo de sua jornada. Seus traços não se limitam apenas às habilidades físicas ou mágicas, mas também refletem a força interior, a coragem em tempos de incerteza e a sabedoria conquistada nas horas mais sombrias. São essas qualidades que definem a verdadeira essência de cada herói.
+            <br><br>
+        
+            As características individuais vão muito além do que os olhos podem ver. De talentos extraordinários a dons ocultos, cada personagem possui atributos que o tornam singular e indispensável em seu mundo. Sua personalidade, seus ideais e seus conflitos internos se entrelaçam, formando uma tapeçaria complexa que enriquece suas ações e escolhas ao longo da história.
+            <br><br>
+
+            Domínio em combate, maestria em artes mágicas, habilidades estratégicas ou uma determinação inabalável — todas essas facetas se combinam para construir a identidade de um verdadeiro aventureiro. E é através desses detalhes que cada personagem deixa sua marca no destino dos reinos, gravando seu nome nas páginas da eternidade.
+            <br><br> 
+        </p>
+    </div>
+</div>
+</div><br/>
+
+
+
+
+<!-- CARROUSEL MODO DESK -->
+<div id="characteristicsCarouselDesk" class="carousel slide d-none d-md-block" style="max-width: 1032px;"> 
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Atributos</h2><br/>
+                <p>Força (FOR):<strong> 4/11</strong> - Veterano <br/> Sua linhagem orc lhe confere uma força robusta, permitindo que ele execute feitos impressionantes. <br/><br/>
+                <p>Destreza (DES): <strong> 3/11</strong> - Explorador  <br/> Embora não seja sua maior marca, sua agilidade o ajuda a se deslocar com certa leveza pela floresta. <br/><br/>
+                <p>Carisma (CAR):  <strong> 3/11</strong> - Explorador  <br/>  A união entre sua natureza bruta e a serenidade dos druidas lhe confere uma presença que inspira respeito. <br/><br/>
+                <p>Inteligência (INT): <strong> 4/11</strong> - Veterano  <br/> Os ensinamentos do druida ancião e sua profunda conexão com os mistérios da terra.<br/><br/>
+                <p>Resistência (RES): <strong> 5/11</strong> - Habilidoso  <br/>  A combinação da tenacidade orc com a disciplina druídica faz dele um combatente extremamente resiliente, capaz de suportar e se recuperar dos desafios mais árduos.  </p>
+            </div>
         </div>
-        <div class="footer--item area3">
-            <div class="footer-social">
-                <a href=""><img src="../Imagens_outras/00facebook.png" alt="Facebook"/></a>
-                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0"><img src="../Imagens_outras/00insta.png" alt="Instagram"/></a>
-                <a href=""><img src="../Imagens_outras/00tiktok.png" alt="TikTok"/></a>
-                <a href="https://www.youtube.com/@ODespertardosReinos" target="_blank"><img src="../Imagens_outras/00youtube.png"/></a>
-                <a href="https://br.pinterest.com/odespertardosreinos/" target="_blank"><img src="../Imagens_outras/00pinterest.png"/></a>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Golpes</h2><br/>
+                <p style="font-size: 18px;">Raízes do Trovão: </p><p> Rowan invoca a força ancestral da floresta, fazendo raízes gigantescas emergirem do solo para prender e esmagar os inimigos, enquanto uma descarga de energia natural percorre os galhos, atordoando-os.<br/><br/></p>
+                <p style="font-size: 18px;">Espírito Indomável: </p><p> Canalizando a essência dos grandes animais de Arboria, Rowan assume temporariamente uma forma bestial coberta de energia verde, aumentando sua força física, velocidade e resistência a ataques mágicos.<br/><br/></p>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Aparência</h2><br/>
+                <p>Altura: 1,85m</p><br/> 
+                <p>Peso: 92kg</p><br/> 
+                <p>Olhos: Castanhos claros </p><br/>   
+                <p>Postura: Erguida e imponente, mas com uma presença serena, como a de uma árvore ancestral que resiste às tempestades </p><br/> 
+                <p>Características Faciais: Mandíbula forte, coberta por uma barba curta e rústica; cabelos castanho-escuros presos em tranças simples adornadas com pequenas folhas e penas. </p>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Personalidade</h2><br/>
+                <p>Rowan é um guardião de princípios, guiado por um profundo respeito pela natureza e um senso de dever para com o equilíbrio do mundo. Ele acredita que a força deve ser usada para proteger, não para dominar, e vive por um código de harmonia, lealdade e conexão com a terra. Embora sério e introspectivo, ele tem um lado gentil e compassivo, especialmente com os animais e os espíritos da floresta. Sente-se responsável por manter o equilíbrio natural e carrega o peso de proteger os bosques e suas criaturas. <br/><br/>
+                    Sua desconfiança em relação a estranhos é fruto de sua vida solitária e das tensões entre suas duas heranças, humana e orc. No entanto, no fundo, Rowan luta não por reconhecimento, mas por um propósito maior: garantir que a natureza sobreviva e prospere.
+                     </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Habilidades</h2><br/>
+                <p style="font-size: 18px;">Transformação em Animal :</p><p> Rowan pode se metamorfosear em diversas criaturas, como lobos, ursos ou águias, adaptando-se às necessidades do momento e utilizando as habilidades naturais de cada forma.  </p><br/>
+                <p style="font-size: 18px;">Conjuração de Magia Natural :</p><p>Ele invoca os elementos da natureza para curar feridas, controlar o crescimento de plantas ou até mesmo desencadear tempestades, demonstrando seu profundo vínculo com a terra. </p><br/>
+                <p style="font-size: 18px;">Força Bruta Orc :</p><p> Mesmo como druida, ele mantém a ferocidade e a força dos ancestrais orcs.</p><br/>
+                 </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Equipamentos</h2><br/>
+                <p style="font-size: 18px;">Pelagem de Urso:</p><p> Uma capa feita da pele de um urso que Rowan enfrentou em sua juventude. </p><br/>
+                <p style="font-size: 18px;">Amuleto da Terra:</p><p> Um amuleto de pedra verde, dado a Rowan pelo druida ancião que o criou. </p><br/>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Curiosidades</h2><br/>
+                <p style="font-size: 18px;">Guardião Solitário:</p><p> Embora Rowan seja um protetor dedicado da natureza, ele prefere trabalhar sozinho, acreditando que poucos compreendem verdadeiramente a importância de sua missão. <br/><br/>
+                <p style="font-size: 18px;">Inimigo dos Destruidores: </p><p> Rowan tem uma rivalidade com um grupo de exploradores e madeireiros que devastaram parte de Arboria no passado. <br/><br/>
+                 </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box" style="height: 500px; width: 100%; background-color: #f0f0f0;">
+                <h2>Território</h2><br/>
+                <img src="../../paginas-territorios/Imagens-territorios/arboria-dullaskus.webp" class="img-fluid rounded" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagem de Aiden">
+                <br/>
+                <p> Em meio às muralhas vivas e raízes ancestrais de Dullaskus, Rowan se ergue como um verdadeiro espírito da floresta encarnado. Apesar da atmosfera feroz do Forte dos Guerreiros Selvagens, ele é a prova de que força e sabedoria podem coexistir. Filho da terra e irmão das árvores, Rowan molda sua fúria e sua magia para proteger não apenas seu lar, mas a própria essência de Arboria. Onde as raízes entrelaçadas guardam as histórias dos antigos campeões, o Guardião dos Bosques caminha — um elo eterno entre o selvagem e o sagrado.<br/><br/>
+                </p>
             </div>
         </div>
     </div>
-</footer>
+    <!-- Controles do carrossel -->
+            <!-- Botão Anterior -->
+        <a class="carousel-control-prev d-flex align-items-center justify-content-center" 
+            href="#characteristicsCarouselDesk" role="button" data-bs-slide="prev" style="width: 5%; left: -50px;">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+            <!-- Botão Próximo -->
+        <a class="carousel-control-next d-flex align-items-center justify-content-center" 
+            href="#characteristicsCarouselDesk" role="button" data-bs-slide="next" style="width: 5%; right: -50px;">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+</div> 
 
+<!-- Carrossel para dispositivos móveis -->
+<div id="characteristicsCarousel" class="carousel slide d-md-none" data-bs-ride="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="characteristic-box">
+                <h2>Atributos</h2><br/>
+                <p>Força (FOR):<strong> 4/11</strong> - Veterano <br/> Sua linhagem orc lhe confere uma força robusta, permitindo que ele execute feitos impressionantes. <br/><br/>
+                <p>Destreza (DES): <strong> 3/11</strong> - Explorador  <br/> Embora não seja sua maior marca, sua agilidade o ajuda a se deslocar com certa leveza pela floresta. <br/><br/>
+                <p>Carisma (CAR):  <strong> 3/11</strong> - Explorador  <br/>  A união entre sua natureza bruta e a serenidade dos druidas lhe confere uma presença que inspira respeito. <br/><br/>
+                <p>Inteligência (INT): <strong> 4/11</strong> - Veterano  <br/> Os ensinamentos do druida ancião e sua profunda conexão com os mistérios da terra.<br/><br/>
+                <p>Resistência (RES): <strong> 5/11</strong> - Habilidoso  <br/>  A combinação da tenacidade orc com a disciplina druídica faz dele um combatente extremamente resiliente, capaz de suportar e se recuperar dos desafios mais árduos.  </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Golpes</h2><br/>
+                <p style="font-size: 18px;">Raízes do Trovão: </p><p> Rowan invoca a força ancestral da floresta, fazendo raízes gigantescas emergirem do solo para prender e esmagar os inimigos, enquanto uma descarga de energia natural percorre os galhos, atordoando-os.<br/><br/></p>
+                <p style="font-size: 18px;">Espírito Indomável: </p><p> Canalizando a essência dos grandes animais de Arboria, Rowan assume temporariamente uma forma bestial coberta de energia verde, aumentando sua força física, velocidade e resistência a ataques mágicos.<br/><br/></p>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Aparência</h2><br/>
+                <p>Altura: 1,85m</p><br/> 
+                <p>Peso: 92kg</p><br/> 
+                <p>Olhos: Castanhos claros </p><br/>   
+                <p>Postura: Erguida e imponente, mas com uma presença serena, como a de uma árvore ancestral que resiste às tempestades </p><br/> 
+                <p>Características Faciais: Mandíbula forte, coberta por uma barba curta e rústica; cabelos castanho-escuros presos em tranças simples adornadas com pequenas folhas e penas. </p>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Personalidade</h2><br/>
+                <p>Rowan é um guardião de princípios, guiado por um profundo respeito pela natureza e um senso de dever para com o equilíbrio do mundo. Ele acredita que a força deve ser usada para proteger, não para dominar, e vive por um código de harmonia, lealdade e conexão com a terra. Embora sério e introspectivo, ele tem um lado gentil e compassivo, especialmente com os animais e os espíritos da floresta. Sente-se responsável por manter o equilíbrio natural e carrega o peso de proteger os bosques e suas criaturas. <br/><br/>
+                    Sua desconfiança em relação a estranhos é fruto de sua vida solitária e das tensões entre suas duas heranças, humana e orc. No entanto, no fundo, Rowan luta não por reconhecimento, mas por um propósito maior: garantir que a natureza sobreviva e prospere.
+                     </div>
+            </div>
+        
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Habilidades</h2><br/>
+                <p style="font-size: 18px;">Transformação em Animal :</p><p> Rowan pode se metamorfosear em diversas criaturas, como lobos, ursos ou águias, adaptando-se às necessidades do momento e utilizando as habilidades naturais de cada forma.  </p><br/>
+                <p style="font-size: 18px;">Conjuração de Magia Natural :</p><p>Ele invoca os elementos da natureza para curar feridas, controlar o crescimento de plantas ou até mesmo desencadear tempestades, demonstrando seu profundo vínculo com a terra. </p><br/>
+                <p style="font-size: 18px;">Força Bruta Orc :</p><p> Mesmo como druida, ele mantém a ferocidade e a força dos ancestrais orcs.</p><br/>
+                 </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Equipamentos</h2><br/>
+                <p style="font-size: 18px;">Pelagem de Urso:</p><p> Uma capa feita da pele de um urso que Rowan enfrentou em sua juventude. </p><br/>
+                <p style="font-size: 18px;">Amuleto da Terra:</p><p> Um amuleto de pedra verde, dado a Rowan pelo druida ancião que o criou. </p><br/>
+                </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Curiosidades</h2><br/>
+                <p style="font-size: 18px;">Guardião Solitário:</p><p> Embora Rowan seja um protetor dedicado da natureza, ele prefere trabalhar sozinho, acreditando que poucos compreendem verdadeiramente a importância de sua missão. <br/><br/>
+                <p style="font-size: 18px;">Inimigo dos Destruidores: </p><p> Rowan tem uma rivalidade com um grupo de exploradores e madeireiros que devastaram parte de Arboria no passado. <br/><br/>
+                 </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="characteristic-box">
+                <h2>Território</h2><br/>
+                <img src="../../paginas-territorios/Imagens-territorios/quimeria-ghulmar.webp" class="img-fluid rounded" style="width: 150px; height: 150px; object-fit: cover;" alt="Imagem de Aiden">
+                <br/>
+                <p> Em meio às muralhas vivas e raízes ancestrais de Dullaskus, Rowan se ergue como um verdadeiro espírito da floresta encarnado. Apesar da atmosfera feroz do Forte dos Guerreiros Selvagens, ele é a prova de que força e sabedoria podem coexistir. Filho da terra e irmão das árvores, Rowan molda sua fúria e sua magia para proteger não apenas seu lar, mas a própria essência de Arboria. Onde as raízes entrelaçadas guardam as histórias dos antigos campeões, o Guardião dos Bosques caminha — um elo eterno entre o selvagem e o sagrado.<br/><br/>
+                </p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#characteristicsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+    </button>
+</div>  
+
+
+
+
+<!-- TITULO "FICHAS DO PERSONAGEM" -->  
+    <div class="row my-5">
+        <div class="col-12" style="max-width: 1052px; margin: 0 auto;">
+            <h2 class="text-center mb-4" style="font-family: 'Sedan SC'; color: white;"> Fichas do Personagem</h2>
+        </div>
+    </div>    
+    
+<!-- TEXTO -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="centralizado" style="font-size: 17px; font-family: 'Sedan SC'; color: white;">
+                    As fichas de personagem representam a essência de cada herói em diferentes estágios de sua jornada. Elas carregam informações vitais sobre habilidades, poderes, fraquezas e conquistas, sendo fundamentais para guiar sua evolução no mundo de aventuras e batalhas.
+                    <br><br>
+                
+                    Ficha Iniciante: Descreve o personagem em seu estado mais puro, quando ainda está descobrindo suas forças e aprendendo a dominar suas capacidades. É o primeiro passo de uma trajetória repleta de desafios e crescimento.
+                    <br><br>
+
+                    Ficha Lendário: Retrata o personagem após anos de experiência, quando suas habilidades atingem um novo patamar e seu nome ecoa como uma lenda entre os povos. Ela revela o poder e a maturidade conquistados através de inúmeras batalhas e escolhas difíceis.
+                    <br><br> 
+
+                    Ficha Boss: É a representação máxima de poder e respeito. Aqui, o personagem se torna uma entidade temida ou reverenciada, um verdadeiro titã cujo domínio influencia o destino de reinos inteiros. Essa ficha simboliza o ápice de sua história.
+                    <br><br> 
+                </p>
+            </div>
+        </div>
+    </div>    
+
+<!-- Fichas -->
+    <section id="fichas">
+        <h2 class="text-center mb-4" style="font-family: 'Sedan SC';color: white;"> </h2>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <img src="Imagens_outras/ficha-pb.jpg" alt="Rowan Iniciante" class="img-fluid mb-2">
+                <div>
+                    <a href="#" class="btn btn-dark" download style="font-family: 'Sedan SC';color: white;">Ficha Iniciante</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="Imagens_outras/ficha-colorida.jpg" alt="Rowan Lendário" class="img-fluid mb-2">
+                <div>
+                    <a href="#" class="btn btn-dark" download style="font-family: 'Sedan SC';color: white;">Ficha Lendário</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="Imagens_outras/ficha-colorida.jpg" alt="Rowan Boss" class="img-fluid mb-2">
+                <div>
+                    <a href="#" class="btn btn-dark" download style="font-family: 'Sedan SC';color: white;">Ficha BOSS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- BOTÃO VOLTAR --> 
+<div class="text-center my-5">
+    <a href="../personagens-hibridos.html" class="btn btn-dark" style="font-family: 'Sedan SC'; color: white;">Voltar</a>
+</div>
+<style>
+    .btn-dark {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #fff;
+  }
+  .btn-dark:hover {
+    color: #ff3c00 !important;
+    text-shadow: 0 0 5px #ff3c00, 0 0 10px #6a0d0d;
+    box-shadow: 0 0 8px #ff3c00, 0 0 16px #6a0d0d;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
+</style>
+
+<!-- RODAPÉ --> 
+<footer class="bg-dark text-light py-3" style="background-color: rgba(0, 0, 0, 0.3) !important;">
+    <div class="container"> 
+    <hr class="linha-rodape"> 
+        <div class="row text-center text-md-left align-items-center">     
+        <!-- LOGO -->   
+            <div class="col-md-4 mb-4 mb-md-0 logo-container d-flex justify-content-center justify-content-md-start">
+                <img src="../../Imagens_outras/001.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+            </div>
+        <!-- INFORMAÇÕES -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <p>Contato: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
+                <p class="m-b-footer">O Despertar dos Reinos © 2025<br/>Todos os Direitos Reservados</p>
+                <p class="by">Desenvolvido por: <a href="https://www.linkedin.com/in/paulo-campos-55453176/?trk=opento_sprofile_details" target="_blank">Paulo Campos</a></p>
+            </div>
+        <!-- REDES SOCIAIS -->
+            <div class="col-md-4 footer-social d-flex justify-content-center justify-content-md-end flex-wrap">
+                <a href="#" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/odespertardosreinos/?igsh=cXN2NjYwenA5bGF0" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00insta.png" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.tiktok.com/@o_despertar_dos_reinos" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00tiktok.png" alt="TikTok" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/@ODespertardosReinos" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00youtube.png" alt="YouTube" class="social-icon">
+                </a>
+                <a href="https://br.pinterest.com/odespertardosreinos/" class="mx-2" target="_blank">
+                    <img src="../../Imagens_outras/00pinterest.png" alt="Pinterest" class="social-icon">
+                </a>
+            </div> 
+        </div>       
+    </div>
+    <hr class="linha-rodape"> 
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../../search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
+</html>            
