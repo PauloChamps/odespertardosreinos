@@ -1,0 +1,24 @@
+name: Gerar Sitemap
+
+on:
+  push:
+    branches:
+      - main  # ou a branch que você utiliza
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Gerar sitemap.xml
+        uses: cicirello/generate-sitemap@v1
+        with:
+          sitemap_format: xml
+          base_url: https://www.odespertardosreinos.com.br
+      - name: Commit sitemap.xml
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add sitemap.xml
+          git commit -m "Adiciona sitemap.xml"
+          git push
