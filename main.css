@@ -8,22 +8,32 @@
     
     /*outline: 1px solid red; verificar se ha algum iten fora do site*/
 }
-/* #########################################  PLANO DE FUNDO  ######################################### */
+/* #########################################  PLANO DE FUNDO  #########################################  
 body {
     background-image: url('Imagens_outras/fundo09.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* Corrige o problema em telas pequenas (mobile) */
-@media (max-width: 767px) {
-    body {
-        background-attachment: scroll; /* remove o fixo que estica no mobile */
-        background-size: cover;       /* mantém proporção sem zoom */
-        background-position: center;
-    }
+    background-attachment: fixed; */ 
+
+html, body {
+    height: 100%;
+    margin: 0;
 }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url('Imagens_outras/fundo09.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 /* #########################################  CAMPO DE BUSCA  ######################################### */
 .btn-buscar {
     float: right; 
