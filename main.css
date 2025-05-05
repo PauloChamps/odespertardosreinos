@@ -14,7 +14,16 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+    /* Corrige o problema em telas pequenas (mobile) */
+@media (max-width: 767px) {
+    body {
+        background-attachment: scroll; /* remove o fixo que estica no mobile */
+        background-size: cover;       /* mantém proporção sem zoom */
+        background-position: center;
+    }
+}
+}
 /* #########################################  CAMPO DE BUSCA  ######################################### */
 .btn-buscar {
     float: right; 
