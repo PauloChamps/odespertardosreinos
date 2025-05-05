@@ -14,10 +14,10 @@ jobs:
       - name: Gerar sitemap.xml
         uses: cicirello/generate-sitemap@v1
         with:
-        base_url: https://www.odespertardosreinos.com.br
-        include_html: true
-        include_pdf: false
-        sitemap_filename: sitemap.xml 
+          base_url: https://www.odespertardosreinos.com.br
+          include_html: true
+          include_pdf: false
+          sitemap_filename: sitemap.xml
 
       - name: Commit sitemap.xml
         env:
