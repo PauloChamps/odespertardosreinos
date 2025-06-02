@@ -5,14 +5,12 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box; 
-    
     /*outline: 1px solid red; verificar se ha algum iten fora do site*/
 }
 /* #########################################  PLANO DE FUNDO  ######################################### */
 html, body {
     height: 100%;
-    margin: 0;
-}
+    margin: 0;}
 body::before {
     content: "";
     position: fixed;
@@ -21,12 +19,10 @@ body::before {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-image: url('Imagens_outras/fundo09.webp');
+    background-image: url('Imagens_outras/fundo18.jpg'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-}
-
+    background-repeat: no-repeat;}
 /* #########################################  IMAGENS CARTAS MAGICAS -- PAGINA CARTAS MAGICAS --  ######################################### */
 .image-container-magic {
     display: flex;
@@ -272,7 +268,7 @@ body::before {
         top: 5px;
     }
 }
-/* #########################################  IMAGENS BOSS ZOOM -- BOTAO PROXIMA E ANTERIOR -- ######################################### */
+/* #########################################  OK IMAGENS BOSS ZOOM -- BOTAO PROXIMA E ANTERIOR -- ######################################### */
 .overlay {
     position: fixed;
     display: flex;
@@ -284,17 +280,18 @@ body::before {
     height: 100%;
     background-color: rgba(0,0,0,0.8);
     z-index: 999;
+    display: none; 
 }
 .overlay-content {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
 }
 .next-button, .prev-button {
     position: absolute;
     top: 50%;
     background-color: black;
-    color: white;
-    border: none;
+    color: white; 
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
@@ -318,10 +315,10 @@ body::before {
     top: 20px;
     left: 20px;
     color: white;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-}
+} 
 /* #########################################  IMAGENS - PAGINA LOJA - PERSONAGENS ######################################### */
 .grid-container-loja {
     display: flex;
@@ -358,15 +355,16 @@ body::before {
         margin: 0 auto;
     }
 }
-/* #########################################  BOTAO PADRAO  ######################################### */
+/* ######################################### OK BOTAO PADRAO  ######################################### */
  
  
   .btn-dark {
-  background-color: #000 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important; 
   border-color: #000 !important;
   color: #fff;
+  font-family: 'Sedan SC';
 }
-.btn-dark:hover {
+.btn-dark:hover { 
   color: #ff3c00 !important;
   text-shadow: 0 0 5px #ff3c00, 0 0 10px #6a0d0d;
   box-shadow: 0 0 8px #ff3c00, 0 0 16px #6a0d0d;
@@ -452,35 +450,7 @@ body::before {
     .personagens img {
         width: 400px;
     }
-}
- 
-
-/* #########################################  ZOOM QUANOD CLICAREM NA FOTO  ######################################### */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
-.overlay-content {
-    max-width: 90%;
-    max-height: 90%;
-    margin: auto;
-}
-.close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-}
+} 
 /* #########################################  CONTEUDOS PAGINA HOME  ######################################### */
 
 /* #########################################  3 NOTICIAS HOME*/
@@ -1292,6 +1262,7 @@ article .news_resume {
     padding: 13px;}
 /* #########################################  MENU  ######################################### */
 .nav {
+
     width: 100%;
     height: 65px; 
     line-height: 65px;
@@ -1302,6 +1273,9 @@ article .news_resume {
     transition: all 0.4s ease;
     z-index: 9999;
     font-size: 1.6rem; } 
+nav .container {
+  max-width: 1140px;
+  margin-left: 275px;}    
 .nav div.logo {
     position: absolute;
     left: 40px; 

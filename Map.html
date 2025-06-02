@@ -155,20 +155,19 @@ nav.nav {
           <a href="index.html"><img src="Imagens_outras/001.png" alt="Logo"></a>
         </div>
         <div id="mainListDiv" class="main_list">
-            <ul class="navlinks">
-              <li class="nav-item"><a class="nav-link" href="index.html">HOME <span class="menu-icon" data-icon="HOME"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/watch?v=EDNjN4qahcU&list=PLuBPQhq6qrUvTRFYh8pEuNSJaOm3iOXZr" target="_blank">EPISÓDIOS <span class="menu-icon" data-icon="EPISÓDIOS"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="hq.html">HQ <span class="menu-icon" data-icon="HQ"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="rpg.html">RPG <span class="menu-icon" data-icon="RPG"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="Map.html">MAPA DO MUNDO <span class="menu-icon" data-icon="MAPA DO MUNDO"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="reinos.html">REINOS <span class="menu-icon" data-icon="REINOS"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="personagens.html">PERSONAGENS <span class="menu-icon" data-icon="PERSONAGENS"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="bestiario.html">BESTIÁRIO <span class="menu-icon" data-icon="BESTIÁRIO"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="itens.html">ITENS <span class="menu-icon" data-icon="ITENS"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="tcg_game.html">TCG - GAME <span class="menu-icon" data-icon="TCG - GAME"></span></a></li>
-              <li class="nav-item"><a class="nav-link" href="loja.html">LOJA <span class="menu-icon" data-icon="LOJA"></span></a></li>
-            </ul>
-        </div>
+          <ul class="navlinks">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME <span class="menu-icon" data-icon="HOME"></span></a></li>  
+            <li class="nav-item"><a class="nav-link" href="campanhas.html">CAMPANHAS <span class="menu-icon" data-icon="HQ"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="rpg.html">RPG <span class="menu-icon" data-icon="RPG"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="Map.html">MAPA DO MUNDO <span class="menu-icon" data-icon="MAPA DO MUNDO"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="reinos.html">REINOS <span class="menu-icon" data-icon="REINOS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="personagens.html">PERSONAGENS <span class="menu-icon" data-icon="PERSONAGENS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="bestiario.html">BESTIÁRIO <span class="menu-icon" data-icon="BESTIÁRIO"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="itens.html">ITENS <span class="menu-icon" data-icon="ITENS"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="tcg_game.html">TCG - GAME <span class="menu-icon" data-icon="TCG - GAME"></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="loja.html">LOJA <span class="menu-icon" data-icon="LOJA"></span></a></li>
+          </ul>
+      </div>
         <span class="navTrigger">
             <i><a href="#"></a></i>
             <i><a href="#"></a></i>
@@ -205,14 +204,25 @@ nav.nav {
 
 
 
-        // Exemplo: Adicionando um marcador no mapa
-        var marker = L.marker([1701, 3024]).addTo(map)
-            .bindPopup('Bem-vindo ao nosso do mapa, estamos em construção!');
-
-                   // Exemplo: Adicionando um marcador no mapa
-        //var marker = L.marker([2500, 2100]).addTo(map)
-            //.bindPopup('Bem-vindo ao centro do mapa!');
-
+// Exemplo: Adicionando um marcador no mapa
+var marker = L.marker([1701, 3024], {
+    icon: L.icon({
+        iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+        iconSize: [20, 30], // menor que o padrão (25, 41)
+        iconAnchor: [10, 30],
+        popupAnchor: [0, -30],
+        shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+        shadowSize: [30, 30]
+    })
+}).addTo(map)
+  .bindPopup(`
+    <div style="max-width: 250px;">
+        <h3>🔨 Em construção</h3>
+        <img src="imagens/em-construcao.webp" style="width: 100%; border-radius: 6px; margin: 5px 0;">
+        <p>Bem-vindo ao nosso mapa! Esta área ainda está em desenvolvimento.</p>
+        <a href="paginas-territorios/construcao.html" target="_blank">Saiba mais</a>
+    </div>
+`);   
 
 
 /*
@@ -274,6 +284,7 @@ var territorios = L.layerGroup();
 var boss = L.layerGroup();
 var escolasMagia = L.layerGroup();
 var animaisMisticos = L.layerGroup();
+var UmaEstrela = L.layerGroup();
  
 
 //VARIAVEL ICONES REINOS
@@ -1350,11 +1361,11 @@ L.marker([1800, 2800], { icon: animalIcon }).bindPopup(`
 // Adicionando controle de camadas (Filtro)
 var baseMaps = {};
 var overlayMaps = {
-    "Reinos": reinos,
-    "Territórios": territorios,
-    "Boss": boss,
-    "Escolas de Magia": escolasMagia,
-    "Animais Místicos": animaisMisticos
+    "🌍 Reinos de Celestian": reinos,
+    "🧭 Jornada Iniciante": animaisMisticos,
+    "🛡️ Missões Intermediárias": territorios,
+    "🔥 Desafios Avançados": boss,
+    "💀 Bosses Lendários": escolasMagia
 };
 L.control.layers(baseMaps, overlayMaps, { position: 'topleft' }).addTo(map);
 
@@ -2017,7 +2028,7 @@ map.on('zoomend', function () {
 
     </script> 
 <!-- RODAPÉ --> 
-<footer class="bg-dark text-light py-3" style="background-color: rgba(0, 0, 0, 0.3) !important;">
+<footer class="bg-dark text-light py-3" style="background-color: rgba(0, 0, 0, 0.5) !important;">
     <div class="container"> 
     <hr class="linha-rodape"> 
         <div class="row text-center text-md-left align-items-center">     
@@ -2027,10 +2038,12 @@ map.on('zoomend', function () {
             </div>
         <!-- INFORMAÇÕES -->
             <div class="col-md-4 mb-4 mb-md-0">
-                <p>Contato: <a href="mailto:suporte@odespertardosreinos.com.br" class="text-light">suporte@odespertardosreinos.com.br</a></p>
-                <p class="m-b-footer">O Despertar dos Reinos © 2025<br/>Todos os Direitos Reservados</p>
-                <p class="by">Desenvolvido por: <a href="https://www.linkedin.com/in/paulo-campos-55453176/?trk=opento_sprofile_details" target="_blank">Paulo Campos</a></p>
-            </div>
+                <p>
+                    <a href="contato.html" class="text-light"   style="font-family: 'Sedan SC';">Contato</a> |
+                    <a href="sobre.html" class="text-light"   style="font-family: 'Sedan SC';">Sobre nós</a> |
+                    <a href="politica-privacidade.html" class="text-light"   style="font-family: 'Sedan SC';">Política de privacidade</a>
+                </p>
+                <p class="m-b-footer">O Despertar dos Reinos © 2025<br/>Todos os Direitos Reservados</p></div>
         <!-- REDES SOCIAIS -->
             <div class="col-md-4 footer-social d-flex justify-content-center justify-content-md-end flex-wrap">
                 <a href="#" class="mx-2" target="_blank">
