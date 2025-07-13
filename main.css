@@ -19,7 +19,7 @@ body::before {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-image: url('Imagens_outras/fundo18.webp'); 
+    background-image: url('Imagens_outras/fundo11.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;}
@@ -1342,6 +1342,11 @@ display: none; }
 @media screen and (max-width:1024px) {
     .nav {
         position: fixed;
+        
+    }
+        nav .container {
+        margin-left: 0 !important;
+        padding-left: 10px;  
     }
     .navTrigger {
         display: block;
@@ -1352,7 +1357,6 @@ display: none; }
         top: 40px;
         display: none;  
     } 
-    
     .nav div.main_list {
         width: 100%;
         height: 0;
@@ -1365,16 +1369,14 @@ display: none; }
         display: none;
     }
     .nav div.main_list.show_list {
-        display: block;  
+        display: block;
     }
     .nav div.main_list ul {
-    flex-direction: column;
+    flex-direction: column;  
     width: 100%;
     height: 460px;  
     max-height: 80vh;  
-    border-radius: 10px;
-    right: 0;
-    left: 0;
+    border-radius: 10px; 
     background-color: rgba(0, 0, 0, 0.9);  
     background-position: center top; 
     padding: 0;  
