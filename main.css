@@ -1921,3 +1921,40 @@ p + p {
     }
 }
  
+
+
+
+
+/* #########################################  ADS  ######################################### */
+
+  .a-ads-desktop {
+    display: block;
+  }
+  .a-ads-mobile {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .a-ads-desktop {
+      display: none;
+    }
+    .a-ads-mobile {
+      display: block;
+    }
+  }
+
+
+
+ 
+  /* Exibe somente em telas menores que 768px (mobile) */
+  .ad-mobile-1 {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ad-mobile-1 {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  } 
