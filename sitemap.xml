@@ -1421,6 +1421,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.odespertardosreinos.com.br/personagens.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1992,11 +1997,6 @@
   </url>
   <url>
     <loc>https://www.odespertardosreinos.com.br/Paginas_artigos/rpgs-de-horror-e-o-uso-de-itens-para-aumentar-a-tensao.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.odespertardosreinos.com.br/TrabalheNaEuropa.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
