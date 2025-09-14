@@ -81,39 +81,55 @@
 
     /* Pequeno ajuste para acessibilidade visual */
     .paginacao a:focus { outline: 3px solid rgba(0,64,128,0.2); outline-offset: 2px; }
+ 
+ 
+ /* === Responsividade: força 1 coluna no mobile e corrige overflow === */
+@media (max-width: 900px) {
+  /* força 1 coluna (important para sobrescrever repeat(auto-fit, minmax(...))) */
+  main {
+    grid-template-columns: 1fr !important;
+    grid-auto-flow: row;
+    max-width: 100%;
+    margin: 20px 12px;
+    padding: 0 12px;
+  }
 
-        /* Responsividade */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-      }
+  /* cards ocupam 100% e podem encolher sem causar overflow */
+  .vaga {
+    width: 100%;
+    min-width: 0;          /* permite o item encolher dentro do grid */
+    box-sizing: border-box;
+    padding: 14px;         /* mantém o visual (ajustável) */
+    font-size: 0.95rem;
+  }
 
-      header img {
-        height: 40px;
-        margin-bottom: 10px;
-      }
+  /* cabeçalho em coluna, centralizado (mantém o estilo, só reordena) */
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 12px;
+    gap: 8px;
+  }
+  header img { height: 40px; margin: 0; }
+  header h1 { font-size: 1.1rem; }
 
-      header h1 {
-        font-size: 1.2rem;
-      }
+  /* paginação mais amigável no touch */
+  .paginacao {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    overflow-x: auto;      /* permite rolar os botões se muitos existirem */
+    -webkit-overflow-scrolling: touch;
+  }
+  .paginacao a {
+    padding: 10px 14px;
+    margin: 0 6px;
+    white-space: nowrap;
+  }
 
-      main {
-        grid-template-columns: 1fr; /* cada vaga ocupa a tela toda */
-        margin: 20px auto;
-      }
-
-      .vaga {
-        padding: 15px;
-        font-size: 0.9rem;
-      }
-
-      .paginacao a {
-        padding: 10px 14px;
-        margin: 3px;
-      }
-    }
+  /* prevenção de scroll horizontal indesejado */
+  html, body { overflow-x: hidden; }
+}
 
   </style>
 </head>
@@ -304,4 +320,5 @@
   </script>
 </body>
 </html>
+
 
