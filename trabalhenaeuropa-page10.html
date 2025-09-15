@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oportunidades de Emprego na Europa</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289" 
+  crossorigin="anonymous"></script>
+  <style>
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #004080;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+    }
+
+    header img { height: 50px; object-fit: contain; }
+    header h1 { font-size: 1.5rem; }
+
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .vaga {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .vaga:hover { transform: translateY(-5px); }
+
+    .vaga h2 { font-size: 1.2rem; margin-bottom: 10px; color: #004080; }
+    .vaga p { margin-bottom: 8px; font-size: 0.95rem; }
+    .contato { margin-top: 10px; font-weight: bold; color: #0066cc; }
+
+    /* Paginação */
+    footer {
+      background: #fff;
+      padding: 15px;
+      text-align: center;
+      border-top: 1px solid #ddd;
+    }
+
+    .paginacao { display: inline-block; }
+    .paginacao a {
+      color: #004080;
+      display: inline-block;
+      padding: 8px 12px;
+      text-decoration: none;
+      margin: 0 5px;
+      border-radius: 5px;
+      border: 1px solid #004080;
+      transition: 0.15s;
+    }
+
+    .paginacao a:hover { background-color: #004080; color: #fff; }
+    .paginacao a.ativo { background-color: #004080; color: #fff; }
+    .paginacao a[aria-disabled="true"] { opacity: 0.4; pointer-events: none; }
+
+    /* Pequeno ajuste para acessibilidade visual */
+    .paginacao a:focus { outline: 3px solid rgba(0,64,128,0.2); outline-offset: 2px; }
+ 
+ 
+ /* === Responsividade: força 1 coluna no mobile e corrige overflow === */
+@media (max-width: 900px) {
+  /* força 1 coluna (important para sobrescrever repeat(auto-fit, minmax(...))) */
+  main {
+    grid-template-columns: 1fr !important;
+    grid-auto-flow: row;
+    max-width: 100%;
+    margin: 20px 12px;
+    padding: 0 12px;
+  }
+
+  /* cards ocupam 100% e podem encolher sem causar overflow */
+  .vaga {
+    width: 100%;
+    min-width: 0;          /* permite o item encolher dentro do grid */
+    box-sizing: border-box;
+    padding: 14px;         /* mantém o visual (ajustável) */
+    font-size: 0.95rem;
+  }
+
+  /* cabeçalho em coluna, centralizado (mantém o estilo, só reordena) */
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 16px 12px;
+    gap: 8px;
+  }
+  header img { height: 40px; margin: 0; }
+  header h1 { font-size: 1.1rem; }
+
+  /* paginação mais amigável no touch */
+  .paginacao {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    overflow-x: auto;      /* permite rolar os botões se muitos existirem */
+    -webkit-overflow-scrolling: touch;
+  }
+  .paginacao a {
+    padding: 10px 14px;
+    margin: 0 6px;
+    white-space: nowrap;
+  }
+
+  /* prevenção de scroll horizontal indesejado */
+  html, body { overflow-x: hidden; }
+}
+
+  </style>
+</head>
+<body>
+<header>
+  <a href="trabalhenaeuropa.html"><img src="logo.jpeg" alt="Logo da Empresa"></a>
+  <h1>Oportunidades de Emprego na Europa</h1>
+</header>
+
+  <main id="vagas-container">
+ 
+
+    <!-- vagas --> 
+ 
+    <div class="vaga"><h2>Manobrador de Mini Pá</h2><p><strong>Descrição:</strong> ...</p><p><strong>Local:</strong> Portugal</p><p class="contato">Contato: porto@job-impulse.pt </br> 912 154 406</p></div>
+    <div class="vaga"><h2>Manobrador de Autobetoneira</h2><p><strong>Descrição:</strong> ...</p><p><strong>Local:</strong> Portugal</p><p class="contato">Contato: porto@job-impulse.pt </br> 912 154 406</p></div>
+    <div class="vaga"><h2>Manobrador de Retroescavadora</h2><p><strong>Descrição:</strong> ...</p><p><strong>Local:</strong> Portugal</p><p class="contato">Contato: porto@job-impulse.pt </br> 912 154 406</p></div>
+    <div class="vaga"><h2>Manobrador de Giratória</h2><p><strong>Descrição:</strong> ...</p><p><strong>Local:</strong> Portugal</p><p class="contato">Contato: porto@job-impulse.pt </br> 912 154 406</p></div>
+    <div class="vaga"><h2>Manobrador de Cilindro Pneus</h2><p><strong>Descrição:</strong> ...</p><p><strong>Local:</strong> Portugal</p><p class="contato">Contato: porto@job-impulse.pt </br> 912 154 406</p></div>
+    <div class="vaga"><h2>Operador de Logística</h2><p><strong>Descrição:</strong> Não fornecemos alojamento/transporte</p><p><strong>Local:</strong> V. N. de Gaia - Portugal</p><p class="contato">Contato: recrutamento.ramosteel@gmail.com </br> 969 280 814/229 428 309</p></div>
+    <div class="vaga"><h2>Ajudante de Serralheiro</h2><p><strong>Descrição:</strong> Não fornecemos alojamento/transporte</p><p><strong>Local:</strong> V. N. de Gaia - Portugal</p><p class="contato">Contato: recrutamento.ramosteel@gmail.com </br> 969 280 814/229 428 309</p></div>
+    <div class="vaga"><h2>Serralheiro de Alumínio</h2><p><strong>Descrição:</strong> Não fornecemos alojamento/transporte</p><p><strong>Local:</strong> V. N. de Gaia - Portugal</p><p class="contato">Contato: recrutamento.ramosteel@gmail.com </br> 969 280 814/229 428 309</p></div>
+    <div class="vaga"><h2>Operador CNC (Alumínio)</h2><p><strong>Descrição:</strong> Não fornecemos alojamento/transporte</p><p><strong>Local:</strong> V. N. de Gaia - Portugal</p><p class="contato">Contato: recrutamento.ramosteel@gmail.com </br> 969 280 814/229 428 309</p></div>
+    
+
+
+  </main>
+
+     <footer>
+    <div class="paginacao" aria-label="Navegação de páginas">
+      <a href="trabalhenaeuropa-page9.html">Página Anterior</a>
+      <a href="trabalhenaeuropa.html">Próxima Página</a>
+    </div>
+  </footer>
+
+ 
+</body>
+</html>
+
+
+
