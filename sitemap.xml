@@ -2036,6 +2036,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page11.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.odespertardosreinos.com.br/loja.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2047,6 +2052,11 @@
   </url>
   <url>
     <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page4.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page12.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
