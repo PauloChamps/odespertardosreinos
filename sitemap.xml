@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page15.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.odespertardosreinos.com.br/galeria.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page14.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2147,6 +2157,11 @@
   </url>
   <url>
     <loc>https://www.odespertardosreinos.com.br/Paginas_mercador/loja_cartas_magicas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page13.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
