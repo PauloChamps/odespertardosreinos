@@ -26,6 +26,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page18.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.odespertardosreinos.com.br/paginas-personagens/personagens-elfos.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -602,6 +607,11 @@
   </url>
   <url>
     <loc>https://www.odespertardosreinos.com.br/paginas-personagens/paginas-orcs/gromm.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page16.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2177,6 +2187,11 @@
   </url>
   <url>
     <loc>https://www.odespertardosreinos.com.br/mapa-do-site.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page17.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
