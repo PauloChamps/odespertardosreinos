@@ -21,6 +21,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropagrupos1.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page6.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -611,12 +616,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page21.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page16.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page7.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page22.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -642,6 +657,11 @@
   </url>
   <url>
     <loc>https://www.odespertardosreinos.com.br/reinos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.odespertardosreinos.com.br/trabalhenaeuropa-page23.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
