@@ -79,11 +79,13 @@
     .paginacao a.ativo { background-color: #004080; color: #fff; }
     .paginacao a[aria-disabled="true"] { opacity: 0.4; pointer-events: none; }
 
+    /* Pequeno ajuste para acessibilidade visual */
     .paginacao a:focus { outline: 3px solid rgba(0,64,128,0.2); outline-offset: 2px; }
  
  
+ /* === Responsividade: força 1 coluna no mobile e corrige overflow === */
 @media (max-width: 900px) {
-  
+  /* força 1 coluna (important para sobrescrever repeat(auto-fit, minmax(...))) */
   main {
     grid-template-columns: 1fr !important;
     grid-auto-flow: row;
@@ -92,14 +94,16 @@
     padding: 0 12px;
   }
 
+  /* cards ocupam 100% e podem encolher sem causar overflow */
   .vaga {
     width: 100%;
-    min-width: 0;          
+    min-width: 0;          /* permite o item encolher dentro do grid */
     box-sizing: border-box;
-    padding: 14px;         
+    padding: 14px;         /* mantém o visual (ajustável) */
     font-size: 0.95rem;
   }
 
+  /* cabeçalho em coluna, centralizado (mantém o estilo, só reordena) */
   header {
     flex-direction: column;
     text-align: center;
@@ -109,11 +113,12 @@
   header img { height: 40px; margin: 0; }
   header h1 { font-size: 1.1rem; }
 
+  /* paginação mais amigável no touch */
   .paginacao {
     display: block;
     width: 100%;
     padding: 10px 0;
-    overflow-x: auto;     
+    overflow-x: auto;      /* permite rolar os botões se muitos existirem */
     -webkit-overflow-scrolling: touch;
   }
   .paginacao a {
@@ -122,6 +127,7 @@
     white-space: nowrap;
   }
 
+  /* prevenção de scroll horizontal indesejado */
   html, body { overflow-x: hidden; }
 }
 
@@ -134,89 +140,68 @@
 </header>
 
   <main id="vagas-container">
+ 
 
     <!-- vagas --> 
 
+    
+
+
+
+<div class="vaga"><h2>Picheleiros</h2><p><strong>Descrição:</strong>Entrada Imediata</p><p><strong>Local:</strong>Porto/Portugal</p><p class="contato">Contato: +351 937 225 811</br>+351 938 750 966</p></div>
+
+<div class="vaga"><h2>Abate de Porco</h2><p><strong>Descrição:</strong>10 vagas</p><p><strong>Local:</strong>Espanha</p><p class="contato">Contato: +352 962 275 350</p></div>
+
+<div class="vaga"><h2>Desossa de Presunto</h2><p><strong>Descrição:</strong>4 vagas</p><p><strong>Local:</strong>Portugal</p><p class="contato">Contato: +352 962 275 350</p></div>
+
+<div class="vaga"><h2>Servente de Pedreiro</h2><p><strong>Descrição:</strong>Remuneração 950€ a 1000€</p><p><strong>Local:</strong>Coimbra/Portugal</p><p class="contato">Contato: recrutamento@omstart.pt</p></div>
+
+<div class="vaga"><h2>Mecanico (M/F)</h2><p><strong>Descrição:</strong>Com Experiência</p><p><strong>Local:</strong>Lisboa/Portugal</p><p class="contato">Contato: geral@redeautosolutions.pt </br> +351 911 194 310</p></div>
+
+<div class="vaga"><h2>Cuidadores</h2><p><strong>Descrição:</strong>Com Experiência</p><p><strong>Local:</strong>Oeiras/Portugal</p><p class="contato">Contato: +351 928 122 372</p></div>
+
+<div class="vaga"><h2>Motorista de Pesados</h2><p><strong>Descrição:</strong>Carta C</p><p><strong>Local:</strong>Faro/Portugal</p><p class="contato">Contato: futuro.centro@manpower.pt </br> +351 924 493 650</p></div>
 <div class="vaga">
-<h2>Limpeza de Shopping</h2>
-<p><strong>Descrição:</strong>6X2 com folgas rotativas
-</p><p><strong>Local:</strong> Tomar/Portugal</p>Shopping Maia
-<p class="contato">Contato: margaridavieira@daccord.pt</p>
+  <h2>Novos Grupos de Whatsapp </br>para Brasileiros em Portugal</h2></br></br>
+ <a href="gruposwhatsportugal.html" rel="noopener noreferrer" class="btn-entrar" aria-label="Entrar no grupo WhatsApp Brasileiros em Lisboa">
+      Novos Grupos WhatsApp Aqui...
+    </a>
 </div>
+<div class="vaga"><h2>Cuidador</h2><p><strong>Descrição:</strong>Com Experiência</p><p><strong>Local:</strong>A Combinar</p><p class="contato">Contato: geral@pluriapoio.pt </br> +351 963 471 324</p></div>
 
+<div class="vaga"><h2>Apoio Domestico</h2><p><strong>Descrição:</strong>Com Carta Condução Obrigatória</p><p><strong>Local:</strong>Leiria/Portugal</p><p class="contato">Contato: geral@redeautosolutions.pt </br> +351 917 604 502</p></div>
 
-<div class="vaga">
-<h2>Limpeza de Supermercado</h2>
-<p><strong>Descrição:</strong>4X2 folgas rotativas
-</p><p><strong>Local:</strong> Tomar/Portugal</p>Santo Tirso
-<p class="contato">Contato: margaridavieira@daccord.pt</p>
-</div>
-
-<div class="vaga">
-<h2>Chefe de Oficina</h2>
-<p><strong>Descrição:</strong>...
-</p><p><strong>Local:</strong> Tomar/Portugal</p>Guimarães 
-<p class="contato">Contato: +351 912 154 406
-porto@job-impulse.pt</p>
-</div>
-
-
-<div class="vaga">
-<h2>Serralheiro Mecânico (M/F) </h2>
-<p><strong>Descrição:</strong>...
-</p><p><strong>Local:</strong> Tomar/Portugal</p>Guimarães 
-<p class="contato">Contato: +351 912 154 406
-porto@job-impulse.pt</p>
-</div>
-
-<div class="vaga">
-<h2>Motorista de Pesados</h2>
-<p><strong>Descrição:</strong>...
-</p><p><strong>Local:</strong> Tomar/Portugal</p>Guimarães 
-<p class="contato">Contato: +351 912 154 406
-porto@job-impulse.pt</p>
-</div>
-
-
-<div class="vaga">
-<h2>Canalizadores</h2>
-<p><strong>Descrição:</strong>...
-</p><p><strong>Local:</strong> Tomar/Portugal</p>Guimarães 
-<p class="contato">Contato: +351 912 154 406
-porto@job-impulse.pt</p>
-</div>
-
-<div class="vaga">
-<h2>Operador de Produção</h2>
-<p><strong>Descrição:</strong>...
-</p><p><strong>Local:</strong> Tomar/Portugal</p>Barcelos
-<p class="contato">Contato: +351 917 312 571</p>
-</div>
-
-
-<div class="vaga">
-<h2>Operador de Produção</h2>
-<p><strong>Descrição:</strong>...
-</p><p><strong>Local:</strong> Tomar/Portugal</p>Vila Nova de Famalição 
-<p class="contato">Contato: +351 917 312 571</p>
-</div>
-
-<div class="vaga"><h2>Técnico de CNC</h2><p><strong>Descrição:</strong>...</p><p><strong>Local:</strong>Porto/Portugal</p><p class="contato">Contato: catia.ferreira@inoxnoseixos.pt</p></div>  
-
+<div class="vaga"><h2>Abate de Porco</h2><p><strong>Descrição:</strong>Cartão de Residência Valido</p><p><strong>Local:</strong>Espanha</p><p class="contato">Contato: +351 962 275 350</p></div>
 
 <!-- Anúncio A-ADS integrado -->
   <div class="anuncio" style="margin-top: 10px; text-align: center;">
     <iframe data-aa='2395177' src='//ad.a-ads.com/2395177/?size=728x90'
       style='border:0; padding:0; width:100%; max-width:728px; height:90px; overflow:hidden;'></iframe>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </main>
 
      <footer>
     <div class="paginacao" aria-label="Navegação de páginas">
-      <a href="trabalhenaeuropa.html">Página Anterior</a>
-      <a href="trabalhenaeuropa-page3.html">Próxima Página</a></br></br>
+      <a href="trabalhenaeuropa-page22.html">Página Anterior</a>
+      <a href="trabalhenaeuropa.html">Próxima Página</a></br></br>
       <a href="gruposwhatsportugal.html">Grupos de Whatsapp para</br>Brasileiros em Portugal</a></br></br>
             <a href="quartos-alugar-portugal.html">Quartos Para Alugar</a>
+
     </div>
   </footer>
 
